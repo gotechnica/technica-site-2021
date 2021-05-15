@@ -1,0 +1,29 @@
+{
+  "name": "technica-site-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build-scss": "node-sass -o ./css ./scss; npm run min",
+    "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run build-scss\"",
+    "min": "minify ./css/main.css > ./css/main.min.css; minify ./css/base.css > ./css/base.min.css; minify ./js/effects.js > ./js/effects.min.js; minify ./css/beginner.css > ./css/beginner.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gotechnica/technica-site-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gotechnica/technica-site-2020/issues"
+  },
+  "homepage": "https://github.com/gotechnica/technica-site-2020#readme",
+  "dependencies": {
+    "hoek": "^5.0.4",
+    "minify": "^5.1.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.17.5",
+    "sass": "^1.26.9"
+  }
+}
