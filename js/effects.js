@@ -1,76 +1,17 @@
-var birdScene = document.getElementById('birds');
-var parallaxInstance = new Parallax(birdScene, {
-  clipRelativeInput: true //not working, revisit later for performance optimization
-});
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        this.classList.toggle("accordion-active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
+      this.classList.toggle("accordion-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+      } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+      }
     });
-  }
-//changing navbar color
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar");
-    var $main = $(".main");
-    if($(window).scrollTop() >= $("#intro").offset().top - 100) {
-      $nav.addClass('scrolled');
-    } else {
-      $nav.removeClass('scrolled');
-    }
-
-    //tracks
-    if($(window).scrollTop() >= $("#tracks").offset().top - 100) {
-      $main.addClass('scroll-tracks');
-    } else {
-      $main.removeClass('scroll-tracks');
-    }
-
-    //registration
-    if($(window).scrollTop() >= $("#registration").offset().top - 100) {
-      $main.addClass('scroll-registration');
-    } else {
-      $main.removeClass('scroll-registration');
-    }
-    //faq
-    if($(window).scrollTop() >= $("#schedule").offset().top - 100) {
-      $main.addClass('scroll-faq');
-    } else {
-      $main.removeClass('scroll-faq');
-    }
-    //sponsors
-    if($(window).scrollTop() >= $("#sponsors").offset().top - 150 || $(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-      $main.addClass('scroll-sponsors');
-    } else {
-      $main.removeClass('scroll-sponsors');
-    }
-  });
-});
-
-// Scrolling effect
-$(document).ready(function() {
-  $('.nav-link').click(function(e) {
-    var linkedHref = $(this).attr('href');
-    if (linkedHref == "#tracks") {
-      $('html, body').animate({
-        scrollTop: $(linkedHref).offset().top - 45
-      }, 1000);
-    } else {
-      $('html, body').animate({
-        scrollTop: $(linkedHref).offset().top - 85
-      }, 1000);
-    }
-    e.preventDefault();
-  });
-});
+}
 
 //track carousel
 var flky = new Flickity( '.gallery', {
@@ -128,12 +69,4 @@ var flky = new Flickity( '.gallery', {
   // activates if #element:after { content: 'flickity' }
   wrapAround: true
   // at end of cells, wraps-around to first for infinite scrolling
-});
-
-//schedule
-$(function () {
-  var $sat = $("#sattogglecontainer");
-  var $sun = $("#suntogglecontainer");
-  $("#sattoggle").click(function() { $sat.addClass('active-day'); $sun.removeClass('active-day');});
-  $("#suntoggle").click(function() { $sun.addClass('active-day'); $sat.removeClass('active-day');});
 });

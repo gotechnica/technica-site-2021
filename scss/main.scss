@@ -7,17 +7,12 @@ $pink: #FF6B98;
 $lavender: #A88AA8;
 
 $light-lavender: #CCA8C1;
+$ex-light-lavender: #E9E3ED;
 $dark-blue: #324d66;
 $peach: #EBB8BE;
 $blue: #C3DDE2;
 $grey: #C4C4C4;
 $light-grey: #E5E5E5;
-
-//for the sky gradient
-$gradient-peach: #EDA29F;
-$gradient-lavender: #C4A3BE;
-$gradient-blue: #47BCBB;
-$wave-blue: #628CB2;
 
 $animation-length: 80s;
 
@@ -44,9 +39,9 @@ $animation-length: 80s;
   opacity: 0.95;
 }
 
-/*.disabled-btn {
+.disabled-btn {
   pointer-events: none !important;
-}*/
+}
 
 .section {
   padding: 3%;
@@ -59,26 +54,14 @@ $animation-length: 80s;
   padding-bottom: 1%;
 }
 
-// Track Box Class
-@mixin box() {
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
-  background: white; /* IE8 8 */
-  background: rgba(255, 255, 255, .9);
-  border-radius: 8px;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-// **** navbar ****
+// *** navbar ***
 
 #navbar {
   background-color: none;
   display: flex;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  visibility: hidden;
+  visibility: visible !important;
   transition: all 200ms linear;
   .nav-link {
     @include dinpro-text(24px,bold,transparent);
@@ -96,7 +79,7 @@ $animation-length: 80s;
   }
 }
 
-.scrolled {
+/*.scrolled {
   visibility: visible !important;
   background-color: white !important;
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
@@ -109,17 +92,10 @@ $animation-length: 80s;
     transition: color 200ms linear;
   }
 
-  .logo {
-    
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-  }
-
   .navbar-toggler {
     border: none;
   }
-}
+}*/
 
 @media (max-width: 767px) {
     .scrolled{
@@ -140,13 +116,12 @@ $animation-length: 80s;
   }
 }
 
-
 // **** hero section ****
 
 .hero {
   overflow: hidden;
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 10%;
 }
 
 @keyframes wait {
@@ -167,27 +142,33 @@ $animation-length: 80s;
 .hero-information {
   position: relative; //allows us to set z index so it appears on top of illustrations
   z-index: 3;
-  margin-top: 100px;
+  //margin-top: 100px;
   @include fade-in(600ms);
-  @include dinpro-text(30px, normal, white)
   .hero-logo {
       margin-bottom: 15px;
   }
   #technica-logo {
+    padding-top: 10%;
     width: 600px;
   }
 }
 
-.register-btn {
-  position: relative;
-  z-index: 2;
-  opacity: 0;
-  @media (min-width: 1200px) {
-    pointer-events: none;
+.hero-action {
+  padding-top: 125px;
+  align-content: center;
+
+  .register-btn {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    @media (min-width: 1200px) {
+      pointer-events: none;
+    }
+    animation: fade-in 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
   }
-  animation: fade-in 2s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
 }
 
 .hero-horizon {
@@ -195,7 +176,6 @@ $animation-length: 80s;
   width: 100%;
   padding-top: 500px;
   z-index: 1;
-  background-image: url(img/hero-clouds.png);
 
   @media (max-width: 991px) {
     padding-top: 550px;
@@ -229,48 +209,12 @@ $animation-length: 80s;
     #technica-logo {
       width: 500px;
     }
-    #theme-logo {
-      width: 200px;
-    }
+  }
+  .hero-tagline {
+    font-size: 5%;
   }
   .register-btn {
     font-size: 20px !important;
-  }
-}
-
-//hardcoding for now - fix later to a responsive cloud animation
-@media only screen and (min-width: 1200px) {
-  #cloud1 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.5)
-  }
-  #cloud2 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.6)
-  }
-  #cloud3 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.33)
-  }
-  #cloud4 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.35)
-  }
-  #cloud5 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.12)
-  }
-  #cloud6 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.05)
-  }
-  #cloud7 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.85)
-  }
-  #cloud8 {
-    animation: move_cloud_large $animation-length infinite linear;
-    @include cloud-wait(.9)
   }
 }
 
@@ -288,62 +232,14 @@ $animation-length: 80s;
       min-width: 120px;
     }
   }
-  #cloud1 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.5)
-  }
-  #cloud2 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.6)
-  }
-  #cloud3 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.33)
-  }
-  #cloud4 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.35)
-  }
-  #cloud5 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.12)
-  }
-  #cloud6 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.05)
-  }
-  #cloud7 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.85)
-  }
-  #cloud8 {
-    animation: move_cloud_mobile $animation-length infinite linear;
-    @include cloud-wait(.9)
-  }
 }
 
-// *** body ***
-.main {
-  background-color: $blue;
-  transition: background-color 200ms linear;
+// *** testimonial section ***
+.testimonial {
+  background-color: $ex-light-lavender;
 }
 
-.scroll-registration {
-  background-color: $peach !important;
-  transition: background-color 200ms linear;
-}
-
-.scroll-faq {
-  background-color: $light-lavender !important;
-  transition: background-color 200ms linear;
-}
-
-.scroll-sponsors {
-  background-color: $dark-blue !important;
-  transition: background-color 200ms linear;
-}
-
-// **** registration section ****
+// *** registration section ***
 
 .registration {
     @media (max-width: 575px) {
@@ -352,8 +248,9 @@ $animation-length: 80s;
 }
 
 .hacker, .mentor, .volunteer {
-  background-color: #B6A1C4;
-    @include box();
+  background-color: $ex-light-lavender;
+  border-radius: 8px;
+    
     text-align: center;
     padding: 4%;
     .btn {
@@ -398,7 +295,7 @@ $animation-length: 80s;
 }
 
 .faq-container {
-  background-color: white;
+  background-color: $ex-light-lavender;
   padding: 3%;
   border-radius: 8px;
 }
@@ -410,7 +307,7 @@ $animation-length: 80s;
     padding-bottom: 2%;
     padding-top: 2%;
     margin-bottom: 2%;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid $ex-light-lavender;
     transition: ease all 0.3s;
     cursor: pointer;
     h4 {
@@ -513,7 +410,7 @@ $animation-length: 80s;
 }
 
 .contact-header {
-  @include dinpro-text(36px, bold, black)
+  @include dinpro-text(36px, bold, black);
 
   @media (max-width: 575px) {
     padding-bottom: 3%;
@@ -531,7 +428,7 @@ $animation-length: 80s;
 }
 
 .black-link {
-  color: black;
+  color: black !important;
 }
 
 .black-link:hover {
