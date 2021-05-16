@@ -1,5 +1,5 @@
 {
-  "name": "technica-site-2020",
+  "name": "technica-site-2021",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,18 +7,18 @@
     "start": "node server.js",
     "build-scss": "node-sass -o ./css ./scss; npm run min",
     "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run build-scss\"",
-    "min": "minify ./css/main.css > ./css/main.min.css; minify ./css/base.css > ./css/base.min.css; minify ./js/effects.js > ./js/effects.min.js; minify ./css/beginner.css > ./css/beginner.min.css"
+    "min": "minify ./css/main.css > ./css/main.min.css; minify ./css/base.css > ./css/base.min.css; minify ./js/effects.js > ./js/effects.min.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gotechnica/technica-site-2020.git"
+    "url": "git+https://github.com/gotechnica/technica-site-2021.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gotechnica/technica-site-2020/issues"
+    "url": "https://github.com/gotechnica/technica-site-2021/issues"
   },
-  "homepage": "https://github.com/gotechnica/technica-site-2020#readme",
+  "homepage": "https://github.com/gotechnica/technica-site-2021#readme",
   "dependencies": {
     "hoek": "^5.0.4",
     "minify": "^5.1.1",
