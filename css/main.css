@@ -28,17 +28,15 @@
   padding-bottom: 1%; }
 
 #navbar {
-  background-color: none;
-  display: flex;
+  background-color: white;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  visibility: visible;
   transition: all 200ms linear; }
   #navbar .nav-link {
     font-family: DINPro;
     font-size: 24px;
     font-weight: bold;
-    color: transparent;
+    color: #A88AA8;
     text-transform: uppercase; }
     @media (max-width: 767px) {
       #navbar .nav-link {
@@ -60,24 +58,8 @@
   .scrolled .nav-link {
     color: #A88AA8 !important;
     transition: color 200ms linear; }
-  .scrolled .logo {
-    background: -o-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    background: -moz-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    background: -webkit-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    background: linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50px; }
-  .scrolled .navbar-brand {
-    margin-left: 10px;
-    margin-right: 10px; }
   .scrolled .navbar-toggler {
     border: none; }
-
-@media (max-width: 767px) {
-  .scrolled .logo {
-    width: 35px;
-    height: 35px; } }
 
 .navbar-nav > li {
   margin: 0vw 4vw; }
@@ -129,6 +111,9 @@
       .hero-information #hero-tagline {
         font-size: 115%;
         width: 100%; } }
+    @media only screen and (min-width: 767px) and (max-width: 1042px) {
+      .hero-information #hero-tagline {
+        width: 85%; } }
 
 .hero-action {
   padding-top: 125px;
@@ -143,12 +128,12 @@
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 768px) {
       .hero-action .register-btn {
-        margin-left: 20%; } }
+        margin-left: 28%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
       .hero-action .register-btn {
-        margin-left: 35%; } }
+        margin-left: 45%; } }
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
@@ -188,12 +173,19 @@
   margin: 0px 5px;
   width: 675px;
   background-color: #E9E3ED;
-  border-radius: 8px; }
+  border-radius: 33px; }
 
 .testimonial-text {
   padding: 0px 30px;
   font-size: 200%;
   font-weight: 200; }
+
+.testimonial-image {
+  padding-bottom: 5%; }
+  @media only screen and (max-width: 767px) {
+    .testimonial-image {
+      height: 50%;
+      width: 75%; } }
 
 .gallery {
   height: 450px; }
@@ -238,9 +230,9 @@
 
 .hacker, .mentor, .volunteer {
   background-color: #E9E3ED;
-  border-radius: 8px;
+  border-radius: 33px;
   text-align: center;
-  padding: 4%; }
+  padding: 5%; }
   .hacker .btn, .mentor .btn, .volunteer .btn {
     margin: 3% 0%; }
 
@@ -265,7 +257,7 @@
 .faq-container {
   background-color: #E9E3ED;
   padding: 3%;
-  border-radius: 8px; }
+  border-radius: 33px; }
 
 .accordion {
   display: flex;
@@ -288,7 +280,7 @@
   width: 10px;
   height: 10px;
   margin-top: 8px;
-  /* Vertical line */
+  /* vertical line */
   /* horizontal line */ }
   .faq-toggle-icon:before, .faq-toggle-icon:after {
     content: "";

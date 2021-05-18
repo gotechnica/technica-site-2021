@@ -1,19 +1,21 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+// scrolling effect
+$(document).ready(function() {
+  $('.nav-link').click(function(e) {
+    var linkedHref = $(this).attr('href');
+    if (linkedHref == "#about") {
+      $('html, body').animate({
+        scrollTop: $(linkedHref).offset().top - 45
+      }, 1000);
+    } else {
+      $('html, body').animate({
+        scrollTop: $(linkedHref).offset().top - 85
+      }, 1000);
+    }
+    e.preventDefault();
+  });
+});
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("accordion-active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-      } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-}
-
-//testimonial carousel
+// testimonial carousel
 var flky = new Flickity( '.gallery', {
   // options, defaults listed
   accessibility: true,
@@ -51,11 +53,11 @@ var flky = new Flickity( '.gallery', {
   // set to number to load images adjacent cells
   percentPosition: true,
   // sets positioning in percent values, rather than pixels
-  // Enable if items have percent widths
-  // Disable if items have pixel widths, like images
-  prevNextButtons: true,
+  // enable if items have percent widths
+  // disable if items have pixel widths, like images
+  prevNextButtons: false,
   // creates and enables buttons to click to previous & next cells
-  pageDots: false,
+  pageDots: true,
   // create and enable page dots
   resize: true,
   // listens to window resize events to adjust size & positions
@@ -70,3 +72,19 @@ var flky = new Flickity( '.gallery', {
   wrapAround: true
   // at end of cells, wraps-around to first for infinite scrolling
 });
+
+// faq accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("accordion-active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+      } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+}
