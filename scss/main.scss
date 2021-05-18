@@ -16,7 +16,6 @@ $light-grey: #E5E5E5;
 
 $animation-length: 80s;
 
-
 @mixin dinpro-text($size, $weight, $color){
     font-family: DINPro;
     font-size: $size;
@@ -55,13 +54,12 @@ $animation-length: 80s;
 }
 
 // *** navbar ***
-
 #navbar {
   background-color: none;
   display: flex;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  visibility: visible !important;
+  visibility: visible;
   transition: all 200ms linear;
   .nav-link {
     @include dinpro-text(24px,bold,transparent);
@@ -79,7 +77,7 @@ $animation-length: 80s;
   }
 }
 
-/*.scrolled {
+.scrolled {
   visibility: visible !important;
   background-color: white !important;
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
@@ -92,11 +90,25 @@ $animation-length: 80s;
     transition: color 200ms linear;
   }
 
+  .logo {
+    background: -o-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    background: -moz-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    background: -webkit-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    background: linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .navbar-toggler {
     border: none;
   }
-}*/
-
+}
 @media (max-width: 767px) {
     .scrolled{
         .logo {
@@ -117,11 +129,19 @@ $animation-length: 80s;
 }
 
 // **** hero section ****
+.hero-clouds {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
 
 .hero {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   padding-bottom: 10%;
+  @media only screen and (max-width: 767px) {
+    
+  }
 }
 
 @keyframes wait {
@@ -142,7 +162,6 @@ $animation-length: 80s;
 .hero-information {
   position: relative; //allows us to set z index so it appears on top of illustrations
   z-index: 3;
-  //margin-top: 100px;
   @include fade-in(600ms);
   .hero-logo {
       margin-bottom: 15px;
@@ -151,44 +170,38 @@ $animation-length: 80s;
     padding-top: 10%;
     width: 600px;
   }
+  #hero-tagline {
+    color: #464343;
+    font-size: 150%;
+    width: 55%;
+    @media only screen and (max-width: 767px) {
+      font-size: 115%;
+      width: 100%;
+    }
+  }
 }
 
 .hero-action {
   padding-top: 125px;
   align-content: center;
+  position: relative;
+  z-index: 2;
 
   .register-btn {
-    text-align: center;
     position: relative;
+    margin-left: 40.5%;
     z-index: 2;
     opacity: 0;
-    @media (min-width: 1200px) {
-      pointer-events: none;
+    //media queries per device not best option - fix later
+    @media only screen and (max-width: 900px) {
+      margin-left: 20%;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+      margin-left: 35%;
     }
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
-  }
-}
-
-.hero-horizon {
-  position: absolute;
-  width: 100%;
-  padding-top: 500px;
-  z-index: 1;
-
-  @media (max-width: 991px) {
-    padding-top: 550px;
-  }
-
-  @media (max-width: 767px) {
-    padding-top: 700px;
-    
-  }
-
-  @media (max-width: 575px) {
-    padding-top: 600px;
-    
   }
 }
 
@@ -210,12 +223,7 @@ $animation-length: 80s;
       width: 500px;
     }
   }
-  .hero-tagline {
-    font-size: 5%;
-  }
-  .register-btn {
-    font-size: 20px !important;
-  }
+  
 }
 
 @media only screen and (max-width: 575px) {
@@ -234,13 +242,27 @@ $animation-length: 80s;
   }
 }
 
+// *** intro section ***
+// not sure if photobooth img is too big on mobile
+/*#about-image{
+  @media only screen and (max-width: 600px) {
+    height: 50%;
+    width: 50%;
+  }
+}*/
+
 // *** testimonial section ***
 .testimonial {
   background-color: $ex-light-lavender;
 }
+#testimonial-image {
+  @media only screen and (max-width: 767px) {
+    width: 50%;
+    height: 75%;
+  }
+}
 
 // *** registration section ***
-
 .registration {
     @media (max-width: 575px) {
       font-size: 1rem;
@@ -256,14 +278,6 @@ $animation-length: 80s;
     .btn {
       margin: 3% 0%;
     }
-}
-
-.registration-image {
-  height: 450px;
-  @media (max-width: 1000px) {
-    height: auto;
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -285,8 +299,7 @@ $animation-length: 80s;
     }
 }
 
-// **** FAQ section ****
-
+// *** FAQ section ***
 .faq {
   @media (max-width: 575px) {
     padding-left: 3%;
@@ -368,31 +381,21 @@ $animation-length: 80s;
     }
  }
 
-// **** footer section ****
+ .link, .link:visited {
+  font-weight: bold;
+  color: $lavender;
+}
 
+.link:hover {
+  color: $lavender;
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+// *** footer section ***
 .contact-footer {
-  background-image: url("../img/contact_horizon.svg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  @media (min-width: 1850px) {
-    background-position: top;
-  }
-  @media (max-width: 1199px) {
-    background-size: 1199px;
-    background-position: bottom;
-  }
-  @media (max-width: 991px) {
-    background-size: 1000px;
-    background-position: 80% 70%;
-  }
-  @media (max-width: 768px) {
-    background-size: 1000px;
-    background-position: 50% 70%;
-  }
-  @media (max-width: 575px) {
-    background-size: 0px;
-  }
+  color: black;
 }
 
 .contact {
@@ -422,24 +425,12 @@ $animation-length: 80s;
   margin-bottom: 20px;
 }
 
-.link, .link:visited {
-  font-weight: bold;
-  color: $lavender;
-}
-
-.black-link {
-  color: black !important;
-}
-
-.black-link:hover {
+.email-link, .email-link:visited {
   color: black;
-  transition: ease 0.3s;
-  opacity: 0.7;
-  text-decoration: none;
 }
 
-.link:hover {
-  color: $lavender;
+.email-link:hover{
+  color: black;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
@@ -491,33 +482,31 @@ $animation-length: 80s;
 }
 
 .footer {
-    @media (min-width: 1200px) {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-    @media (min-width: 1850px) {
-      padding-top: 0px;
-      padding-bottom: 4%;
-    }
-    @media (min-width: 2300px) {
-      padding-bottom: 6%;
-    }
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    @media (max-width: 575px) {
-      font-size: 0.9rem;
-      padding: 0.5rem 0rem;
-    }
-    #footer-links {
-      color: black;
-      margin-bottom: 5px;
-    }
-}
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
 
-.footer {
-  a:link, a:visited {
-    color: black;
+  #footer-links {
+    a:link, a:visited {
+      color: black;
+    }
+    a:hover{
+      transition: ease 0.3s;
+      opacity: 0.7;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: 1850px) {
+    padding-top: 0px;
+    padding-bottom: 4%;
+  }
+  @media (min-width: 2300px) {
+    padding-bottom: 6%;
+  }
+  @media (max-width: 575px) {
+    font-size: 0.9rem;
+      adding: 0.5rem 0rem;
   }
 }
 
