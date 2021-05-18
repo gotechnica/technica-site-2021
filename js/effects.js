@@ -13,7 +13,7 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-//track carousel
+//testimonial carousel
 var flky = new Flickity( '.gallery', {
   // options, defaults listed
   accessibility: true,

@@ -177,13 +177,60 @@
     width: 50%;
   }
 }*/
-.testimonial {
-  background-color: #E9E3ED; }
+.testimonials {
+  position: relative;
+  z-index: 5;
+  margin-top: -1vw; }
 
-@media only screen and (max-width: 767px) {
-  #testimonial-image {
-    width: 50%;
-    height: 75%; } }
+.beginner, .hardware, .general, .research {
+  padding: 25px 10px;
+  height: 100%;
+  margin: 0px 5px;
+  width: 675px;
+  background-color: #E9E3ED;
+  border-radius: 8px; }
+
+.testimonial-text {
+  padding: 0px 30px;
+  font-size: 200%;
+  font-weight: 200; }
+
+.gallery {
+  height: 450px; }
+
+@media (max-width: 991px) {
+  .gallery {
+    height: 500px; }
+  .beginner, .hardware, .general, .research {
+    width: 500px; } }
+
+@media (max-width: 767px) {
+  .gallery {
+    height: 500px;
+    width: 100%;
+    position: relative; }
+  .beginner, .hardware, .general, .research {
+    margin: 0px 3px; } }
+
+@media (max-width: 575px) {
+  .gallery {
+    height: 510px; }
+  .beginner, .hardware, .general, .research {
+    width: 85%; } }
+
+@media (max-width: 500px) {
+  .gallery {
+    height: 540px; } }
+
+@media (max-width: 425px) {
+  .gallery {
+    height: 580px; }
+  .general-text, .beginner-text {
+    padding: 0px; } }
+
+@media (max-width: 385px) {
+  .gallery {
+    height: 640px; } }
 
 @media (max-width: 575px) {
   .registration {
