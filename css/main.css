@@ -48,6 +48,19 @@
     #navbar {
       display: none !important; } }
 
+.scrolled {
+  visibility: visible !important;
+  background-color: white !important;
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  transition: all 200ms linear; }
+  .scrolled .nav-link {
+    color: #A88AA8 !important;
+    transition: color 200ms linear; }
+  .scrolled .navbar-toggler {
+    border: none; }
+
 .navbar-nav > li {
   margin: 0vw 4vw; }
   @media (max-width: 991px) {
@@ -98,6 +111,9 @@
       .hero-information #hero-tagline {
         font-size: 115%;
         width: 100%; } }
+    @media only screen and (min-width: 767px) and (max-width: 1042px) {
+      .hero-information #hero-tagline {
+        width: 85%; } }
 
 .hero-action {
   padding-top: 125px;
@@ -112,12 +128,12 @@
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 768px) {
       .hero-action .register-btn {
-        margin-left: 20%; } }
+        margin-left: 28%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
       .hero-action .register-btn {
-        margin-left: 35%; } }
+        margin-left: 45%; } }
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
@@ -157,7 +173,7 @@
   margin: 0px 5px;
   width: 675px;
   background-color: #E9E3ED;
-  border-radius: 8px; }
+  border-radius: 33px; }
 
 .testimonial-text {
   padding: 0px 30px;
@@ -166,6 +182,10 @@
 
 .testimonial-image {
   padding-bottom: 5%; }
+  @media only screen and (max-width: 767px) {
+    .testimonial-image {
+      height: 50%;
+      width: 75%; } }
 
 .gallery {
   height: 450px; }
@@ -210,9 +230,9 @@
 
 .hacker, .mentor, .volunteer {
   background-color: #E9E3ED;
-  border-radius: 8px;
+  border-radius: 33px;
   text-align: center;
-  padding: 4%; }
+  padding: 5%; }
   .hacker .btn, .mentor .btn, .volunteer .btn {
     margin: 3% 0%; }
 
@@ -237,7 +257,7 @@
 .faq-container {
   background-color: #E9E3ED;
   padding: 3%;
-  border-radius: 8px; }
+  border-radius: 33px; }
 
 .accordion {
   display: flex;

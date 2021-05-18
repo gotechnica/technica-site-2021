@@ -75,6 +75,24 @@ $animation-length: 80s;
   }
 }
 
+.scrolled {
+  visibility: visible !important;
+  background-color: white !important;
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  transition: all 200ms linear;
+
+  .nav-link {
+    color: $lavender !important;
+    transition: color 200ms linear;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+}
+
 .navbar-nav > li{
   margin: 0vw 4vw;
   @media (max-width: 991px) {
@@ -132,6 +150,9 @@ $animation-length: 80s;
       font-size: 115%;
       width: 100%;
     }
+    @media only screen and (min-width: 767px) and (max-width: 1042px) {
+      width: 85%;
+    }
   }
 }
 
@@ -147,11 +168,11 @@ $animation-length: 80s;
     z-index: 2;
     opacity: 0;
     //media queries per device not best option - fix later
-    @media only screen and (max-width: 900px) {
-      margin-left: 20%;
+    @media only screen and (max-width: 768px) {
+      margin-left: 28%;
     }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-      margin-left: 35%;
+      margin-left: 45%;
     }
     animation: fade-in 2s;
     animation-delay: 1.5s;
@@ -219,7 +240,8 @@ $animation-length: 80s;
   margin: 0px 5px;
   width: 675px;
   background-color: $ex-light-lavender;
-  border-radius: 8px;
+  border-radius: 33px;
+  //padding: 5%;
 }
 
 .testimonial-text {
@@ -230,6 +252,10 @@ $animation-length: 80s;
 
 .testimonial-image {
   padding-bottom: 5%;
+  @media only screen and (max-width: 767px) {
+    height: 50%;
+    width: 75%;
+  }
 }
 
 .gallery {
@@ -296,9 +322,9 @@ $animation-length: 80s;
 
 .hacker, .mentor, .volunteer {
   background-color: $ex-light-lavender;
-  border-radius: 8px;
+  border-radius: 33px;
   text-align: center;
-  padding: 4%;
+  padding: 5%;
   .btn {
     margin: 3% 0%;
   }
@@ -334,7 +360,7 @@ $animation-length: 80s;
 .faq-container {
   background-color: $ex-light-lavender;
   padding: 3%;
-  border-radius: 8px;
+  border-radius: 33px;
 }
 
 .accordion {
