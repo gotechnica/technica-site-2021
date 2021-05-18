@@ -28,17 +28,15 @@
   padding-bottom: 1%; }
 
 #navbar {
-  background-color: none;
-  display: flex;
+  background-color: white;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  visibility: visible;
   transition: all 200ms linear; }
   #navbar .nav-link {
     font-family: DINPro;
     font-size: 24px;
     font-weight: bold;
-    color: transparent;
+    color: #A88AA8;
     text-transform: uppercase; }
     @media (max-width: 767px) {
       #navbar .nav-link {
@@ -49,35 +47,6 @@
   @media (max-width: 575px) {
     #navbar {
       display: none !important; } }
-
-.scrolled {
-  visibility: visible !important;
-  background-color: white !important;
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-  transition: all 200ms linear; }
-  .scrolled .nav-link {
-    color: #A88AA8 !important;
-    transition: color 200ms linear; }
-  .scrolled .logo {
-    background: -o-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    background: -moz-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    background: -webkit-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    background: linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50px; }
-  .scrolled .navbar-brand {
-    margin-left: 10px;
-    margin-right: 10px; }
-  .scrolled .navbar-toggler {
-    border: none; }
-
-@media (max-width: 767px) {
-  .scrolled .logo {
-    width: 35px;
-    height: 35px; } }
 
 .navbar-nav > li {
   margin: 0vw 4vw; }
@@ -195,6 +164,9 @@
   font-size: 200%;
   font-weight: 200; }
 
+.testimonial-image {
+  padding-bottom: 5%; }
+
 .gallery {
   height: 450px; }
 
@@ -288,7 +260,7 @@
   width: 10px;
   height: 10px;
   margin-top: 8px;
-  /* Vertical line */
+  /* vertical line */
   /* horizontal line */ }
   .faq-toggle-icon:before, .faq-toggle-icon:after {
     content: "";
