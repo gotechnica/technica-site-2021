@@ -116,6 +116,9 @@
     </script>
   </head>
   <body>
+    <div class="hero-clouds">
+      <img src="img/hero-clouds.png" alt="pastel pink and purple sky and clouds">
+    </div>
     <!-- navbar -->
     <nav id="navbar" class="navbar navbar-expand-sm navbar-light sticky-top d-sm-block d-none">
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,13 +139,13 @@
      </div>
    </nav>
 
-    <div class="hero" style="background-image: url(img/hero-clouds.png); background-size: 100%; overflow: hidden; position: relative;">
+    <div class="hero">
       <div class="container">
         <div class="hero-information">
           <div class="hero-logo">
             <img id="technica-logo" src="img/technica-logo.png" alt="Technica logo">
           </div>
-          <p class="hero-tagline" style="color: #464343; font-size: 125%; width: 55%;">Join hackers from around the globe in the world's largest all-women, non-binary hybrid hackathon on November 6, 2021</p>
+          <p id="hero-tagline">Join hackers from around the globe in the world's largest all-women, non-binary hybrid hackathon on November 6, 2021</p>
         </div>
         <div class="hero-action">
           <button class="register-btn btn" onclick="location.href='https://portal.gotechnica.org'">Register Now</button>
@@ -162,7 +165,7 @@
             <p>At Technica, we want to challenge our hackers to step out of their comfort zone and try something new, whether that's exploring a new technology, tinkering with hardware hacks, or coding for the very first time! This year we're introducing our beginners and hardware tracks, designed for hackers looking for extra support or interested in trying their hand at electronics. At Technica, we want our hackers to learn, grow, and meet new people, so join us at Technica 2021!</p>
           </div>
           <div class="col-lg-4">
-              <img src="img/photobooth.png" width="100%" height="100%" alt="hackers posing in four squares of a polaroid">
+              <img id="about-image" src="img/photobooth.png" width="100%" height="100%" alt="hackers posing in four squares of a polaroid">
           </div>
         </div>
       </div>
@@ -175,7 +178,7 @@
           <div class="row">
             <div class="testimonial">
               <h4 style="font-size: 150%;">"Quote quote quote" - Hacker</h4>
-              <img src="img/hackers.PNG" width="25%" height="75%" alt="two hackers standing next to each other talking">
+              <img id="testimonial-image" src="img/hackers.PNG" width="25%" height="75%" alt="two hackers standing next to each other talking">
             </div>
           </div>
         </div>
@@ -341,7 +344,7 @@
             <h1 style="font-size: 100%;">Contact Us</h1>
           </div>
           <div class="contact-content">
-              <h4>Reach out to us at <a style="font-weight: 300;" href="mailto:hello@gotechnica.org">hello@gotechnica.org</a></h4>
+              <h4>Reach out to us at <a class="email-link" href="mailto:hello@gotechnica.org">hello@gotechnica.org</a></h4>
           </div>
           <div class="social-buttons">
               <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/">

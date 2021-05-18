@@ -32,7 +32,7 @@
   display: flex;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  visibility: visible !important;
+  visibility: visible;
   transition: all 200ms linear; }
   #navbar .nav-link {
     font-family: DINPro;
@@ -50,23 +50,30 @@
     #navbar {
       display: none !important; } }
 
-/*.scrolled {
+.scrolled {
   visibility: visible !important;
   background-color: white !important;
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-  transition: all 200ms linear;
+  transition: all 200ms linear; }
+  .scrolled .nav-link {
+    color: #A88AA8 !important;
+    transition: color 200ms linear; }
+  .scrolled .logo {
+    background: -o-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    background: -moz-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    background: -webkit-linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    background: linear-gradient(90deg, #00FFFF 0%, #AA96CA 46.35%, #FF6B98 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; }
+  .scrolled .navbar-brand {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .scrolled .navbar-toggler {
+    border: none; }
 
-  .nav-link {
-    color: $lavender !important;
-    transition: color 200ms linear;
-  }
-
-  .navbar-toggler {
-    border: none;
-  }
-}*/
 @media (max-width: 767px) {
   .scrolled .logo {
     width: 35px;
@@ -81,9 +88,14 @@
     .navbar-nav > li {
       margin: 0vw 1vw; } }
 
+.hero-clouds {
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+
 .hero {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   padding-bottom: 10%; }
 
 @keyframes wait {
@@ -109,36 +121,34 @@
   .hero-information #technica-logo {
     padding-top: 10%;
     width: 600px; }
+  .hero-information #hero-tagline {
+    color: #464343;
+    font-size: 150%;
+    width: 55%; }
+    @media only screen and (max-width: 767px) {
+      .hero-information #hero-tagline {
+        font-size: 115%;
+        width: 100%; } }
 
 .hero-action {
   padding-top: 125px;
-  align-content: center; }
+  align-content: center;
+  position: relative;
+  z-index: 2; }
   .hero-action .register-btn {
-    text-align: center;
     position: relative;
+    margin-left: 40.5%;
     z-index: 2;
     opacity: 0;
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards; }
-    @media (min-width: 1200px) {
+    @media only screen and (max-width: 900px) {
       .hero-action .register-btn {
-        pointer-events: none; } }
-
-.hero-horizon {
-  position: absolute;
-  width: 100%;
-  padding-top: 500px;
-  z-index: 1; }
-  @media (max-width: 991px) {
-    .hero-horizon {
-      padding-top: 550px; } }
-  @media (max-width: 767px) {
-    .hero-horizon {
-      padding-top: 700px; } }
-  @media (max-width: 575px) {
-    .hero-horizon {
-      padding-top: 600px; } }
+        margin-left: 20%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .hero-action .register-btn {
+        margin-left: 35%; } }
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
@@ -148,11 +158,7 @@
   .hero-information .hero-logo {
     margin-top: 225px; }
   .hero-information #technica-logo {
-    width: 500px; }
-  .hero-tagline {
-    font-size: 5%; }
-  .register-btn {
-    font-size: 20px !important; } }
+    width: 500px; } }
 
 @media only screen and (max-width: 575px) {
   .hero {
@@ -165,8 +171,19 @@
       width: 40vw;
       min-width: 120px; } }
 
+/*#about-image{
+  @media only screen and (max-width: 600px) {
+    height: 50%;
+    width: 50%;
+  }
+}*/
 .testimonial {
   background-color: #E9E3ED; }
+
+@media only screen and (max-width: 767px) {
+  #testimonial-image {
+    width: 50%;
+    height: 75%; } }
 
 @media (max-width: 575px) {
   .registration {
@@ -179,13 +196,6 @@
   padding: 4%; }
   .hacker .btn, .mentor .btn, .volunteer .btn {
     margin: 3% 0%; }
-
-.registration-image {
-  height: 450px; }
-  @media (max-width: 1000px) {
-    .registration-image {
-      height: auto;
-      width: 100%; } }
 
 @media only screen and (max-width: 991px) {
   .registration .btn {
@@ -265,29 +275,18 @@
     .panel {
       font-size: 1rem; } }
 
+.link, .link:visited {
+  font-weight: bold;
+  color: #A88AA8; }
+
+.link:hover {
+  color: #A88AA8;
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none; }
+
 .contact-footer {
-  background-image: url("../img/contact_horizon.svg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat; }
-  @media (min-width: 1850px) {
-    .contact-footer {
-      background-position: top; } }
-  @media (max-width: 1199px) {
-    .contact-footer {
-      background-size: 1199px;
-      background-position: bottom; } }
-  @media (max-width: 991px) {
-    .contact-footer {
-      background-size: 1000px;
-      background-position: 80% 70%; } }
-  @media (max-width: 768px) {
-    .contact-footer {
-      background-size: 1000px;
-      background-position: 50% 70%; } }
-  @media (max-width: 575px) {
-    .contact-footer {
-      background-size: 0px; } }
+  color: black; }
 
 @media (min-width: 1750px) {
   .contact {
@@ -316,21 +315,11 @@
   margin-top: -10px;
   margin-bottom: 20px; }
 
-.link, .link:visited {
-  font-weight: bold;
-  color: #A88AA8; }
+.email-link, .email-link:visited {
+  color: black; }
 
-.black-link {
-  color: black !important; }
-
-.black-link:hover {
+.email-link:hover {
   color: black;
-  transition: ease 0.3s;
-  opacity: 0.7;
-  text-decoration: none; }
-
-.link:hover {
-  color: #A88AA8;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
@@ -369,10 +358,12 @@
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center; }
-  @media (min-width: 1200px) {
-    .footer {
-      padding-top: 30px;
-      padding-bottom: 30px; } }
+  .footer #footer-links a:link, .footer #footer-links a:visited {
+    color: black; }
+  .footer #footer-links a:hover {
+    transition: ease 0.3s;
+    opacity: 0.7;
+    text-decoration: none; }
   @media (min-width: 1850px) {
     .footer {
       padding-top: 0px;
@@ -383,13 +374,7 @@
   @media (max-width: 575px) {
     .footer {
       font-size: 0.9rem;
-      padding: 0.5rem 0rem; } }
-  .footer #footer-links {
-    color: black;
-    margin-bottom: 5px; }
-
-.footer a:link, .footer a:visited {
-  color: black; }
+      adding: 0.5rem 0rem; } }
 
 @media (max-width: 991px) {
   #mlh-trust-badge {
