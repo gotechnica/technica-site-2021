@@ -1,28 +1,26 @@
 /*@use 'vars';*/
 //temporary until resolve _vars.scss issue
-$cyan: #82ECEC;
-$dark-cyan: #4CA1A7;
-$darker-cyan: #324D66;
-$pink: #FF6B98;
-$lavender: #A88AA8;
+$cyan: #82ecec;
+$dark-cyan: #4ca1a7;
+$darker-cyan: #324d66;
+$pink: #ff6b98;
+$lavender: #a88aa8;
 
-$light-lavender: #CCA8C1;
-$ex-light-lavender: #E9E3ED;
+$light-lavender: #cca8c1;
+$ex-light-lavender: #e9e3ed;
 $dark-blue: #324d66;
-$peach: #EBB8BE;
-$blue: #C3DDE2;
-$grey: #C4C4C4;
-$light-grey: #E5E5E5;
+$peach: #ebb8be;
+$blue: #c3dde2;
+$grey: #c4c4c4;
+$light-grey: #e5e5e5;
 
 $animation-length: 80s;
 
-@mixin dinpro-text($size, $weight, $color){
+@mixin dinpro-text($size, $weight, $color) {
   font-family: DINPro;
   font-size: $size;
   font-weight: $weight;
   color: $color;
-    
-       font-weight: bold;
 }
 
 .btn {
@@ -32,7 +30,7 @@ $animation-length: 80s;
   text-transform: uppercase;
   margin-top: 3%;
   padding: 3px 25px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -62,14 +60,14 @@ $animation-length: 80s;
   padding-bottom: 0.25rem;
   transition: all 200ms linear;
   .nav-link {
-    @include dinpro-text(24px,bold,$lavender);
+    @include dinpro-text(24px, bold, $lavender);
     text-transform: uppercase;
     @media (max-width: 767px) {
       font-size: 18px;
     }
   }
   .nav-link:hover {
-    transition: .3s ease;
+    transition: 0.3s ease;
     opacity: 0.8;
   }
   @media (max-width: 575px) {
@@ -95,7 +93,7 @@ $animation-length: 80s;
   }
 }
 
-.navbar-nav > li{
+.navbar-nav > li {
   margin: 0vw 4vw;
   @media (max-width: 991px) {
     margin: 0vw 2vw;
@@ -119,13 +117,22 @@ $animation-length: 80s;
 }
 
 @keyframes wait {
-  0% { opacity: 0;}
-  100% { opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-  0% { opacity: 0;}
-  100% { opacity: 1; pointer-events: auto;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 @mixin fade-in($waitTime) {
@@ -173,7 +180,7 @@ $animation-length: 80s;
     @media only screen and (max-width: 768px) {
       margin-left: 28%;
     }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
       margin-left: 45%;
     }
     animation: fade-in 2s;
@@ -200,7 +207,6 @@ $animation-length: 80s;
       width: 500px;
     }
   }
-  
 }
 
 @media only screen and (max-width: 575px) {
@@ -236,7 +242,10 @@ $animation-length: 80s;
 }
 
 //can't rename from tracks without js breaking - figure out later
-.beginner, .hardware, .general, .research {
+.beginner,
+.hardware,
+.general,
+.research {
   padding: 25px 10px;
   height: 100%;
   margin: 0px 5px;
@@ -269,7 +278,10 @@ $animation-length: 80s;
     height: 500px;
   }
 
-  .beginner, .hardware, .general, .research {
+  .beginner,
+  .hardware,
+  .general,
+  .research {
     width: 500px;
   }
 }
@@ -281,7 +293,10 @@ $animation-length: 80s;
     position: relative;
   }
 
-  .beginner, .hardware, .general, .research {
+  .beginner,
+  .hardware,
+  .general,
+  .research {
     margin: 0px 3px;
   }
 }
@@ -291,7 +306,10 @@ $animation-length: 80s;
     height: 510px;
   }
 
-  .beginner, .hardware, .general, .research {
+  .beginner,
+  .hardware,
+  .general,
+  .research {
     width: 85%;
   }
 }
@@ -305,7 +323,8 @@ $animation-length: 80s;
   .gallery {
     height: 580px;
   }
-  .general-text, .beginner-text {
+  .general-text,
+  .beginner-text {
     padding: 0px;
   }
 }
@@ -322,7 +341,9 @@ $animation-length: 80s;
   }
 }
 
-.hacker, .mentor, .volunteer {
+.hacker,
+.mentor,
+.volunteer {
   background-color: $ex-light-lavender;
   border-radius: 33px;
   text-align: center;
@@ -340,7 +361,9 @@ $animation-length: 80s;
 
 //mobile
 @media only screen and (max-width: 767px) {
-  .hacker, .mentor, .volunteer {
+  .hacker,
+  .mentor,
+  .volunteer {
     text-align: center;
     width: 100%;
     padding: 3%;
@@ -380,18 +403,20 @@ $animation-length: 80s;
   }
 }
 
-.accordion:hover, .accordion-active {
+.accordion:hover,
+.accordion-active {
   border-color: $lavender;
 }
 
-.faq-toggle-icon { //https://jsfiddle.net/psullivan6/0eL3jezk/
+.faq-toggle-icon {
+  //https://jsfiddle.net/psullivan6/0eL3jezk/
   position: relative;
   width: 10px;
   height: 10px;
   margin-top: 8px;
 
   &:before,
-  &:after{
+  &:after {
     content: "";
     position: absolute;
     background-color: black;
@@ -399,7 +424,7 @@ $animation-length: 80s;
   }
 
   /* vertical line */
-  &:before{
+  &:before {
     top: 0;
     left: 50%;
     width: 2px;
@@ -408,7 +433,7 @@ $animation-length: 80s;
   }
 
   /* horizontal line */
-  &:after{
+  &:after {
     top: 50%;
     left: 0;
     width: 100%;
@@ -419,8 +444,12 @@ $animation-length: 80s;
 
 .accordion-active {
   .faq-toggle-icon {
-      &:before{ transform: rotate(90deg);}
-      &:after{ transform: rotate(180deg);}
+    &:before {
+      transform: rotate(90deg);
+    }
+    &:after {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -431,9 +460,10 @@ $animation-length: 80s;
   @media (max-width: 575px) {
     font-size: 1rem;
   }
- }
+}
 
- .link, .link:visited {
+.link,
+.link:visited {
   font-weight: bold;
   color: $lavender;
 }
@@ -477,11 +507,12 @@ $animation-length: 80s;
   margin-bottom: 20px;
 }
 
-.email-link, .email-link:visited {
+.email-link,
+.email-link:visited {
   color: black;
 }
 
-.email-link:hover{
+.email-link:hover {
   color: black;
   transition: ease 0.3s;
   opacity: 0.7;
@@ -539,10 +570,11 @@ $animation-length: 80s;
   text-align: center;
 
   #footer-links {
-    a:link, a:visited {
+    a:link,
+    a:visited {
       color: black;
     }
-    a:hover{
+    a:hover {
       transition: ease 0.3s;
       opacity: 0.7;
       text-decoration: none;
@@ -558,7 +590,7 @@ $animation-length: 80s;
   }
   @media (max-width: 575px) {
     font-size: 0.9rem;
-      adding: 0.5rem 0rem;
+    adding: 0.5rem 0rem;
   }
 }
 
