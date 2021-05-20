@@ -48,6 +48,9 @@
     #navbar {
       display: none !important; } }
 
+.navbar-toggler {
+  border: none; }
+
 .scrolled {
   visibility: visible !important;
   background-color: white !important;
