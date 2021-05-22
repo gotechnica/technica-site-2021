@@ -73,10 +73,16 @@
     .navbar-nav > li {
       margin: 0vw 1vw; } }
 
+.navbar-toggler .navbar-toggler-icon {
+  color: #a88aa8 !important; }
+
 .hero-clouds {
   position: absolute;
   width: 100%;
   z-index: 1; }
+  @media (min-width: 1280px) and (max-width: 991px) {
+    .hero-clouds {
+      padding-top: 550px; } }
 
 .hero {
   position: relative;
@@ -133,7 +139,7 @@
     animation-fill-mode: forwards; }
     @media only screen and (max-width: 768px) {
       .hero-action .register-btn {
-        margin-left: 28%; } }
+        margin-left: 20%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
       .hero-action .register-btn {
         margin-left: 45%; } }
@@ -170,6 +176,29 @@
   z-index: 5;
   margin-top: -1vw; }
 
+.testimonial-text {
+  padding: 0px 30px;
+  font-size: 200%;
+  font-weight: 200; }
+  @media only screen and (max-width: 767px) {
+    .testimonial-text {
+      font-size: 150%; } }
+
+.testimonial-image {
+  padding-top: 2%;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+  padding-bottom: 5%; }
+  @media (max-width: 991px) {
+    .testimonial-image {
+      height: 45%;
+      width: 35%; } }
+  @media only screen and (max-width: 767px) {
+    .testimonial-image {
+      height: 40%;
+      width: 65%; } }
+
 .beginner,
 .hardware,
 .general,
@@ -181,17 +210,18 @@
   background-color: #e9e3ed;
   border-radius: 33px; }
 
-.testimonial-text {
-  padding: 0px 30px;
-  font-size: 200%;
-  font-weight: 200; }
+.flickity-page-dots {
+  top: 105%; }
 
-.testimonial-image {
-  padding-bottom: 5%; }
-  @media only screen and (max-width: 767px) {
-    .testimonial-image {
-      height: 50%;
-      width: 75%; } }
+.flickity-page-dots .dot {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid #e9e3ed; }
+
+.flickity-page-dots .dot.is-selected {
+  background: #e9e3ed; }
 
 .gallery {
   height: 450px; }

@@ -107,11 +107,19 @@ $animation-length: 80s;
   }
 }
 
+.navbar-toggler .navbar-toggler-icon {
+  color: $lavender !important;
+}
+
 // *** hero section ***
 .hero-clouds {
   position: absolute;
   width: 100%;
   z-index: 1;
+
+  @media (min-width: 1280px) and (max-width: 991px) {
+    padding-top: 550px;
+  }
 }
 
 .hero {
@@ -182,7 +190,7 @@ $animation-length: 80s;
     opacity: 0;
     //media queries per device not best option - fix later
     @media only screen and (max-width: 768px) {
-      margin-left: 28%;
+      margin-left: 20%;
     }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
       margin-left: 45%;
@@ -245,6 +253,31 @@ $animation-length: 80s;
   margin-top: -1vw; //white line was appearing between sections
 }
 
+.testimonial-text {
+  padding: 0px 30px;
+  font-size: 200%;
+  font-weight: 200;
+  @media only screen and (max-width: 767px) {
+    font-size: 150%;
+  }
+}
+
+.testimonial-image {
+  padding-top: 2%;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+  padding-bottom: 5%;
+  @media (max-width: 991px) {
+    height: 45%;
+    width: 35%;
+  }
+  @media only screen and (max-width: 767px) {
+    height: 40%;
+    width: 65%;
+  }
+}
+
 //can't rename from tracks without js breaking - figure out later
 .beginner,
 .hardware,
@@ -259,18 +292,20 @@ $animation-length: 80s;
   //padding: 5%;
 }
 
-.testimonial-text {
-  padding: 0px 30px;
-  font-size: 200%;
-  font-weight: 200;
+.flickity-page-dots {
+  top: 105%;
 }
 
-.testimonial-image {
-  padding-bottom: 5%;
-  @media only screen and (max-width: 767px) {
-    height: 50%;
-    width: 75%;
-  }
+.flickity-page-dots .dot {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid $ex-light-lavender;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: $ex-light-lavender;
 }
 
 .gallery {
