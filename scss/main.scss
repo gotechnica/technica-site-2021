@@ -185,9 +185,9 @@ $animation-length: 80s;
 
   .register-btn {
     position: relative;
-    margin-left: 40.5%;
     z-index: 2;
     opacity: 0;
+
     //media queries per device not best option - fix later
     @media only screen and (max-width: 768px) {
       margin-left: 20%;
@@ -237,15 +237,6 @@ $animation-length: 80s;
   }
 }
 
-// *** intro section ***
-// not sure if photobooth img is too big on mobile
-/*#about-image{
-  @media only screen and (max-width: 600px) {
-    height: 50%;
-    width: 50%;
-  }
-}*/
-
 // *** testimonials section ***
 .testimonials {
   position: relative;
@@ -255,26 +246,40 @@ $animation-length: 80s;
 
 .testimonial-text {
   padding: 0px 30px;
-  font-size: 200%;
   font-weight: 200;
+  padding-top: 2%;
+  padding-bottom: 2%;
   @media only screen and (max-width: 767px) {
-    font-size: 150%;
+    padding-bottom: 0%;
+  }
+}
+
+.testimonial-quote {
+  font-size: 125%;
+  @media only screen and (max-width: 767px) {
+    font-size: 100%;
+  }
+}
+
+.testimonial-name {
+  font-size: 115%;
+  @media only screen and (max-width: 767px) {
+    font-size: 100%;
   }
 }
 
 .testimonial-image {
-  padding-top: 2%;
-  height: 60%;
-  width: 30%;
+  height: 15vw;
+  width: 15vw;
+  //border: 5px solid $pink;
   border-radius: 50%;
-  padding-bottom: 5%;
-  @media (max-width: 991px) {
-    height: 45%;
-    width: 35%;
-  }
   @media only screen and (max-width: 767px) {
-    height: 40%;
-    width: 65%;
+    height: 30vw;
+    width: 30vw;
+  }
+  @media only screen and (min-width: 1280px) {
+    height: 10vw;
+    width: 10vw;
   }
 }
 
