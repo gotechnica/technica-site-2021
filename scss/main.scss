@@ -115,11 +115,12 @@ $animation-length: 80s;
 .hero-clouds {
   position: absolute;
   width: 100%;
+  height: auto;
   z-index: 1;
 
-  @media (min-width: 1280px) and (max-width: 991px) {
+  /*@media (min-width: 1280px) and (max-width: 991px) {
     padding-top: 550px;
-  }
+  }*/
 }
 
 .hero {
@@ -237,6 +238,12 @@ $animation-length: 80s;
   }
 }
 
+// *** intro section ***
+.about-image {
+  width: 5%;
+  height: 5%;
+}
+
 // *** testimonials section ***
 .testimonials {
   position: relative;
@@ -247,11 +254,7 @@ $animation-length: 80s;
 .testimonial-text {
   padding: 0px 30px;
   font-weight: 200;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  @media only screen and (max-width: 767px) {
-    padding-bottom: 0%;
-  }
+  padding-bottom: 1%;
 }
 
 .testimonial-quote {
@@ -269,18 +272,9 @@ $animation-length: 80s;
 }
 
 .testimonial-image {
-  height: 15vw;
-  width: 15vw;
+  width: 200px;
   //border: 5px solid $pink;
   border-radius: 50%;
-  @media only screen and (max-width: 767px) {
-    height: 30vw;
-    width: 30vw;
-  }
-  @media only screen and (min-width: 1280px) {
-    height: 10vw;
-    width: 10vw;
-  }
 }
 
 //can't rename from tracks without js breaking - figure out later
