@@ -175,7 +175,6 @@ $animation-length: 80s;
 }
 
 .hero-action {
-  padding-top: 100px;
   position: relative;
   z-index: 2;
 
@@ -234,10 +233,7 @@ $animation-length: 80s;
 // media queries for hero
 @media only screen and (min-width: 992px) {
   .hero-action {
-    padding-top: 400px;
-  }
-  .intro-container {
-    padding-top: 25px;
+    padding-top: 125px;
   }
 }
 

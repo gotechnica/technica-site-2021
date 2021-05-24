@@ -120,7 +120,6 @@
         width: 85%; } }
 
 .hero-action {
-  padding-top: 100px;
   position: relative;
   z-index: 2; }
   .hero-action .register-btn {
@@ -158,9 +157,7 @@
 
 @media only screen and (min-width: 992px) {
   .hero-action {
-    padding-top: 400px; }
-  .intro-container {
-    padding-top: 25px; } }
+    padding-top: 125px; } }
 
 .testimonials {
   position: relative;
