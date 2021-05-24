@@ -117,10 +117,6 @@ $animation-length: 80s;
   width: 100%;
   height: auto;
   z-index: 1;
-
-  /*@media (min-width: 1280px) and (max-width: 991px) {
-    padding-top: 550px;
-  }*/
 }
 
 .hero {
@@ -154,7 +150,7 @@ $animation-length: 80s;
 }
 
 .hero-information {
-  position: relative; //allows us to set z index so it appears on top of illustrations
+  position: relative;
   z-index: 3;
   @include fade-in(600ms);
   .hero-logo {
@@ -179,8 +175,7 @@ $animation-length: 80s;
 }
 
 .hero-action {
-  padding-top: 125px;
-  //align-content: center;
+  padding-top: 100px;
   position: relative;
   z-index: 2;
 
@@ -234,6 +229,16 @@ $animation-length: 80s;
 .about-image {
   width: 5%;
   height: 5%;
+}
+
+// media queries for hero
+@media only screen and (min-width: 992px) {
+  .hero-action {
+    padding-top: 400px;
+  }
+  .intro-container {
+    padding-top: 25px;
+  }
 }
 
 // *** testimonials section ***
