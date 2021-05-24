@@ -59,6 +59,17 @@ $animation-length: 80s;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   transition: all 200ms linear;
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    color: $lavender !important;
+    width: 2em;
+    height: 2em;
+  }
+
   .nav-link {
     @include dinpro-text(24px, bold, $lavender);
     text-transform: uppercase;
@@ -70,13 +81,6 @@ $animation-length: 80s;
     transition: 0.3s ease;
     opacity: 0.8;
   }
-  @media (max-width: 575px) {
-    display: none !important;
-  }
-}
-
-.navbar-toggler {
-  border: none;
 }
 
 .scrolled {
@@ -105,10 +109,6 @@ $animation-length: 80s;
   @media (max-width: 767px) {
     margin: 0vw 1vw;
   }
-}
-
-.navbar-toggler .navbar-toggler-icon {
-  color: $lavender !important;
 }
 
 // *** hero section ***
@@ -180,7 +180,7 @@ $animation-length: 80s;
 
 .hero-action {
   padding-top: 125px;
-  align-content: center;
+  //align-content: center;
   position: relative;
   z-index: 2;
 
@@ -188,14 +188,6 @@ $animation-length: 80s;
     position: relative;
     z-index: 2;
     opacity: 0;
-
-    //media queries per device not best option - fix later
-    @media only screen and (max-width: 768px) {
-      margin-left: 20%;
-    }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-      margin-left: 45%;
-    }
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;

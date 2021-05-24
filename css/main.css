@@ -32,6 +32,12 @@
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   transition: all 200ms linear; }
+  #navbar .navbar-toggler {
+    border: none; }
+  #navbar .navbar-toggler-icon {
+    color: #a88aa8 !important;
+    width: 2em;
+    height: 2em; }
   #navbar .nav-link {
     font-family: DINPro;
     font-size: 24px;
@@ -44,12 +50,6 @@
   #navbar .nav-link:hover {
     transition: 0.3s ease;
     opacity: 0.8; }
-  @media (max-width: 575px) {
-    #navbar {
-      display: none !important; } }
-
-.navbar-toggler {
-  border: none; }
 
 .scrolled {
   visibility: visible !important;
@@ -72,9 +72,6 @@
   @media (max-width: 767px) {
     .navbar-nav > li {
       margin: 0vw 1vw; } }
-
-.navbar-toggler .navbar-toggler-icon {
-  color: #a88aa8 !important; }
 
 .hero-clouds {
   position: absolute;
@@ -127,7 +124,6 @@
 
 .hero-action {
   padding-top: 125px;
-  align-content: center;
   position: relative;
   z-index: 2; }
   .hero-action .register-btn {
@@ -137,12 +133,6 @@
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards; }
-    @media only screen and (max-width: 768px) {
-      .hero-action .register-btn {
-        margin-left: 20%; } }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-      .hero-action .register-btn {
-        margin-left: 45%; } }
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
