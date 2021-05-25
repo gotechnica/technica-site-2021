@@ -161,7 +161,6 @@ $animation-length: 80s;
     width: 600px;
   }
   #hero-tagline {
-    color: #464343;
     font-size: 150%;
     width: 55%;
     @media only screen and (max-width: 767px) {
@@ -540,14 +539,15 @@ $animation-length: 80s;
 
 .email-link,
 .email-link:visited {
-  color: black;
+  color: $lavender;
+  text-decoration: none;
 }
 
 .email-link:hover {
   color: black;
   transition: ease 0.3s;
   opacity: 0.7;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .social-buttons > a:hover {

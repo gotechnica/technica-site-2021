@@ -1,29 +1,35 @@
 // scrolling effect
-$(document).ready(function() {
-  $('.nav-link').click(function(e) {
-    var linkedHref = $(this).attr('href');
+$(document).ready(function () {
+  $(".nav-link").click(function (e) {
+    var linkedHref = $(this).attr("href");
     if (linkedHref == "#about") {
-      $('html, body').animate({
-        scrollTop: $(linkedHref).offset().top - 45
-      }, 1000);
+      $("html, body").animate(
+        {
+          scrollTop: $(linkedHref).offset().top - 45,
+        },
+        1000
+      );
     } else {
-      $('html, body').animate({
-        scrollTop: $(linkedHref).offset().top - 85
-      }, 1000);
+      $("html, body").animate(
+        {
+          scrollTop: $(linkedHref).offset().top - 85,
+        },
+        1000
+      );
     }
     e.preventDefault();
   });
 });
 
 // testimonial carousel
-var flky = new Flickity( '.gallery', {
+var flky = new Flickity(".gallery", {
   // options, defaults listed
   accessibility: true,
   // enable keyboard navigation, pressing left & right keys
   adaptiveHeight: false,
   // set carousel height to the selected slide
   autoPlay: false,
-  cellAlign: 'center',
+  cellAlign: "center",
   // alignment of cells, 'center', 'left', or 'right'
   // or a decimal 0-1, 0 is beginning (left) of container, 1 is end (right)
   cellSelector: undefined,
@@ -32,7 +38,7 @@ var flky = new Flickity( '.gallery', {
   // will contain cells to container
   // so no excess scroll at beginning or end
   // has no effect if wrapAround is enabled
-  draggable: '>1',
+  draggable: ">1",
   // enables dragging & flicking
   // if at least 2 cells
   dragThreshold: 3,
@@ -55,7 +61,7 @@ var flky = new Flickity( '.gallery', {
   // sets positioning in percent values, rather than pixels
   // enable if items have percent widths
   // disable if items have pixel widths, like images
-  prevNextButtons: false,
+  prevNextButtons: true,
   // creates and enables buttons to click to previous & next cells
   pageDots: true,
   // create and enable page dots
@@ -69,7 +75,7 @@ var flky = new Flickity( '.gallery', {
   watchCSS: false,
   // watches the content of :after of the element
   // activates if #element:after { content: 'flickity' }
-  wrapAround: true
+  wrapAround: true,
   // at end of cells, wraps-around to first for infinite scrolling
 });
 
@@ -78,13 +84,13 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("accordion-active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-      } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("accordion-active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
