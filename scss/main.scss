@@ -3,12 +3,13 @@
 $cyan: #82ecec;
 $dark-cyan: #4ca1a7;
 $darker-cyan: #324d66;
-$pink: #ff6b98;
-$lavender: #a88aa8;
+$pink: #f27aaa;
+$lavender: #b5a1c4;
 
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $dark-blue: #324d66;
+$hero-blue: #6fcbdc;
 $peach: #ebb8be;
 $blue: #c3dde2;
 $grey: #c4c4c4;
@@ -540,14 +541,14 @@ $animation-length: 80s;
 .email-link,
 .email-link:visited {
   color: $lavender;
-  text-decoration: none;
+  font-weight: 300;
 }
 
 .email-link:hover {
   color: black;
   transition: ease 0.3s;
   opacity: 0.7;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .social-buttons > a:hover {
@@ -582,7 +583,7 @@ $animation-length: 80s;
 
 .blue-circle {
   @extend %contact-circle;
-  background-color: $dark-cyan;
+  background-color: $hero-blue;
 }
 
 .purple-circle {
