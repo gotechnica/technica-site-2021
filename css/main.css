@@ -4,7 +4,7 @@
   font-size: 140%;
   font-weight: bold;
   color: #fff;
-  background-color: #a88aa8;
+  background-color: #b5a1c4;
   border-radius: 50px;
   text-transform: uppercase;
   margin-top: 3%;
@@ -35,14 +35,14 @@
   #navbar .navbar-toggler {
     border: none; }
   #navbar .navbar-toggler-icon {
-    color: #a88aa8 !important;
+    color: #b5a1c4 !important;
     width: 2em;
     height: 2em; }
   #navbar .nav-link {
     font-family: DINPro;
     font-size: 24px;
     font-weight: bold;
-    color: #a88aa8;
+    color: #b5a1c4;
     text-transform: uppercase; }
     @media (max-width: 767px) {
       #navbar .nav-link {
@@ -59,7 +59,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   transition: all 200ms linear; }
   .scrolled .nav-link {
-    color: #a88aa8 !important;
+    color: #b5a1c4 !important;
     transition: color 200ms linear; }
   .scrolled .navbar-toggler {
     border: none; }
@@ -313,7 +313,7 @@
 
 .accordion:hover,
 .accordion-active {
-  border-color: #a88aa8; }
+  border-color: #b5a1c4; }
 
 .faq-toggle-icon {
   position: relative;
@@ -357,10 +357,10 @@
 .link,
 .link:visited {
   font-weight: bold;
-  color: #a88aa8; }
+  color: #b5a1c4; }
 
 .link:hover {
-  color: #a88aa8;
+  color: #b5a1c4;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
@@ -397,14 +397,14 @@
 
 .email-link,
 .email-link:visited {
-  color: #a88aa8;
-  text-decoration: none; }
+  color: #b5a1c4;
+  font-weight: 300; }
 
 .email-link:hover {
   color: black;
   transition: ease 0.3s;
   opacity: 0.7;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .social-buttons > a:hover {
   text-decoration: none; }
@@ -428,13 +428,13 @@
       height: 40px; } }
 
 .blue-circle {
-  background-color: #4ca1a7; }
+  background-color: #6fcbdc; }
 
 .purple-circle {
-  background-color: #a88aa8; }
+  background-color: #b5a1c4; }
 
 .pink-circle {
-  background-color: #ff6b98; }
+  background-color: #f27aaa; }
 
 .footer {
   padding-top: 20px;
