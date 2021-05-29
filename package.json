@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build-scss": "node-sass -o ./css ./scss; npm run min",
-    "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run build-scss\"",
+    "scss": "node-sass --watch scss -o css",
+    "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run scss\"",
     "min": "minify ./css/main.css > ./css/main.min.css; minify ./css/base.css > ./css/base.min.css; minify ./js/effects.js > ./js/effects.min.js"
   },
   "repository": {
@@ -22,9 +22,8 @@
   "dependencies": {
     "hoek": "^5.0.4",
     "minify": "^5.1.1",
-    "node-sass": "^4.13.0",
     "nodemon": "^1.17.5",
-    "sass": "^1.26.9"
+    "sass": "^1.34.0"
   },
   "devDependencies": {
     "prettier": "2.3.0"
