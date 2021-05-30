@@ -116,8 +116,21 @@ $animation-length: 80s;
 .hero-clouds {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100vh;
   z-index: 1;
+  @media only screen and (max-width: 767px) {
+    width: 834px;
+    height: 663px;
+    left: -100px;
+    top: -26px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 834px;
+    height: 663px;
+    left: 0px;
+    top: 69px;
+  }
 }
 
 .hero {
@@ -157,6 +170,10 @@ $animation-length: 80s;
   .hero-logo {
     margin-bottom: 15px;
   }
+
+  @media only screen and (max-width: 767px) {
+    margin-top: -225px;
+  }
   #technica-logo {
     padding-top: 10%;
     width: 600px;
@@ -165,8 +182,8 @@ $animation-length: 80s;
     font-size: 150%;
     width: 55%;
     @media only screen and (max-width: 767px) {
-      font-size: 115%;
-      width: 100%;
+      font-size: 100%;
+      width: 95%;
     }
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
       width: 85%;
@@ -178,13 +195,32 @@ $animation-length: 80s;
   position: relative;
   z-index: 2;
 
+  @media only screen and (min-width: 996px) {
+    padding-top: 115px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    padding-top: 350px;
+  }
+
   .register-btn {
+    @include dinpro-text(175%, bold, #fff);
     position: relative;
     z-index: 2;
     opacity: 0;
     animation: fade-in 2s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
+    @media only screen and (max-width: 767px) {
+      @include dinpro-text(125%, bold, #fff);
+    }
+  }
+  .hero-learn {
+    color: #b6a1c4;
+    font-size: 150%;
+    @media only screen and (max-width: 767px) {
+      font-size: 115%;
+    }
   }
 }
 
@@ -194,9 +230,11 @@ $animation-length: 80s;
       margin-top: 150px;
     }
   }
+  .hero-action {
+    padding-top: 100px;
+  }
 }
 
-// change to mobile
 @media only screen and (max-width: 767px) {
   .hero-information {
     .hero-logo {
@@ -205,6 +243,9 @@ $animation-length: 80s;
     #technica-logo {
       width: 500px;
     }
+  }
+  .hero-action {
+    padding-top: 100px;
   }
 }
 
@@ -228,13 +269,6 @@ $animation-length: 80s;
 .about-image {
   width: 5%;
   height: 5%;
-}
-
-// media queries for hero
-@media only screen and (min-width: 992px) {
-  .hero-action {
-    padding-top: 125px;
-  }
 }
 
 // *** testimonials section ***
