@@ -54,6 +54,11 @@ $animation-length: 80s;
   padding-bottom: 1%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 // *** navbar ***
 #navbar {
   background-color: white;
