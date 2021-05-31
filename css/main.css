@@ -29,7 +29,7 @@
 
 html,
 body {
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 #navbar {
   background-color: white;

@@ -1,19 +1,11 @@
 /*@use 'vars';*/
 //temporary until resolve _vars.scss issue
 $cyan: #82ecec;
-$dark-cyan: #4ca1a7;
-$darker-cyan: #324d66;
 $pink: #f27aaa;
 $lavender: #b5a1c4;
-
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
-$dark-blue: #324d66;
 $hero-blue: #6fcbdc;
-$peach: #ebb8be;
-$blue: #c3dde2;
-$grey: #c4c4c4;
-$light-grey: #e5e5e5;
 
 $animation-length: 80s;
 
@@ -56,7 +48,7 @@ $animation-length: 80s;
 
 html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 // *** navbar ***
