@@ -48,7 +48,12 @@ $animation-length: 80s;
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  position: relative;
 }
 
 // *** navbar ***
