@@ -196,6 +196,10 @@ body {
 .hero-action {
   position: relative;
   z-index: 2;
+  opacity: 0;
+  animation: fade-in 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 
   @media only screen and (min-width: 996px) {
     padding-top: 115px;
@@ -209,10 +213,7 @@ body {
     @include dinpro-text(175%, bold, #fff);
     position: relative;
     z-index: 2;
-    opacity: 0;
-    animation: fade-in 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
+
     @media only screen and (max-width: 767px) {
       @include dinpro-text(125%, bold, #fff);
     }
@@ -278,12 +279,6 @@ body {
   position: relative;
   z-index: 5;
   margin-top: -1vw; //white line was appearing between sections
-}
-
-.testimonial-text {
-  padding: 0px 30px;
-  font-weight: 200;
-  padding-bottom: 1%;
 }
 
 .testimonial-quote {
