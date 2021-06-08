@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "scss": "node-sass --watch scss -o css",
-    "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run scss\"",
+    "build-scss": "node-sass ./scss -o ./css && npm run min",
+    "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run build-scss\"",
     "min": "minify ./css/main.css > ./css/main.min.css; minify ./css/base.css > ./css/base.min.css; minify ./js/effects.js > ./js/effects.min.js"
   },
   "repository": {
