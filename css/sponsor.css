@@ -1,0 +1,19 @@
+/* Text */
+.heading-pink {
+  font-size: 2rem;
+  color: #f27aaa;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  font-weight: bold; }
+
+.heading-lavender {
+  font-size: 2rem;
+  color: #b5a1c4;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  font-weight: bold; }
+
+/* Demographics */
+.demographics {
+  margin-top: 30px;
+  font-size: .95vw; }

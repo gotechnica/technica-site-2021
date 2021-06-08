@@ -15,6 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -83,6 +86,8 @@
 </head>
 <body>
 
+
+
   <!-- navbar -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,6 +111,93 @@
     </div>
    </nav>
 
+<!-- Demographics Section -->
+  <div class="container">
+    <div class="heading-lavender">
+      Demographics
+    </div>
+
+    <div class="row-lg">
+          <div class="col-lg-5">
+            <div class="demo-section stretch edu">
+              <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img">
+              <span class="demo-name text-left edu-text"><span class="edu-dot"
+                  style="background: #00FFFF"></span>Undergraduate</span>
+              <span class="demo-stat">63%</span>
+              <br>
+              <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High
+                School</span>
+              <span class="demo-stat">26%</span>
+              <br>
+              <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate
+                School</span>
+              <span class="demo-stat">7.2%</span>
+              <br>
+              <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle
+                School</span>
+              <span class="demo-stat">3.8%</span>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="demo-section pl-0">
+              <span class="demo-name">American Indian or Alaska Native</span>
+              <span class="demo-stat">0.8%</span>
+              <br>
+              <span class="demo-name">Asian / Pacific Islander</span>
+              <span class="demo-stat">48.6%</span>
+              <br>
+              <span class="demo-name">Black or African American</span>
+              <span class="demo-stat">15.6%</span>
+              <br>
+              <span class="demo-name">Hispanic or Latino</span>
+              <span class="demo-stat">7.4%</span>
+              <br>
+              <span class="demo-name">Middle Eastern or North African</span>
+              <span class="demo-stat">3.6%</span>
+              <br>
+              <span class="demo-name">Native Hawaiian or Pacific Islander</span>
+              <span class="demo-stat">0.9%</span>
+              <br>
+              <span class="demo-name">White / Caucasian</span>
+              <span class="demo-stat">19.5%</span>
+              <br>
+              <span class="demo-name">Prefer not to answer</span>
+              <span class="demo-stat">3.6%</span>
+            </div>
+          </div>
+        </div>
+        <div class="row lower">
+          <div class="col order-1">
+            <div class="demo-section pt-lg-2 pr-lg-4 stretch order-1">
+              <span class="demo-name">Minors</span>
+              <span class="demo-stat">32.2%</span>
+              <br>
+              <span class="demo-name">Non-Minors</span>
+              <span class="demo-stat">67.8%</span>
+            </div>
+          </div>
+          <div class="col-lg-6 order-3 order-lg-2">
+            <div class="demo-section pt-2 pb-2">
+              <span class="demo-name">First time hackers</span>
+              <span class="demo-stat">79.7%</span>
+              <br>
+              <span class="demo-name">First time at Technica</span>
+              <span class="demo-stat">75%</span>
+            </div>
+          </div>
+          <div class="col order-2 order-lg-3">
+            <div class="demo-section stretch mr-lg-3 pt-lg-2 pr-lg-4 pl-lg-0">
+              <span class="demo-name">Female</span>
+              <span class="demo-stat">98.2%</span>
+              <br>
+              <span class="demo-name">Non-Binary</span>
+              <span class="demo-stat">1.8%</span>
+            </div>
+            <div class="med-spark blue-spark d-none d-lg-block" style="bottom: -50px; right: -5px"></div>
+          </div>
+        
+    </div>
+  </div>
 
   <div class="contact-footer">
     <div class="contact section text-center">
@@ -157,3 +249,53 @@
   <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 </body>
 </html>
+
+<!-- Pie Chart -->
+<script>
+  var ctx = document.getElementById('edulevels');
+  colors = [
+    'rgb(0, 255, 255)',
+    'rgb(255, 123, 172)',
+    'rgb(45, 45, 45)',
+    'rgb(182, 161, 196)'
+  ]
+
+  // patterns = [
+  //   pattern.draw('diagonal','rgb(0, 255, 255)'),
+  //   pattern.draw('diagonal-right-left','rgb(255, 123, 172)'),
+  //   pattern.draw('line-vertical','rgb(45, 45, 45)'),
+  //   pattern.draw('line','rgb(182, 161, 196)')
+  // ]
+  
+  var eduChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Undergraduate College', 'High School', 'Graduate College', 'Middle School'],
+      datasets: [{
+        data: [585, 241, 67, 35],
+        backgroundColor: colors,
+        borderColor: [
+          'rgba(0, 255, 255)',
+          'rgba(255, 123, 172)',
+          'rgb(45, 45, 45)',
+          'rgb(182, 161, 196)'
+        ],
+      }]
+    },
+    options: {
+      cutoutPercentage: 60,
+      legend: {
+        display: false,
+      },
+      elements: {
+        center: {
+        text: 'Educational',
+        text2: 'Levels',
+        color: '#B6A1C4',
+        fontStyle: 'Poppins',
+      }
+    }
+    }
+  });
+  
+  </script>
