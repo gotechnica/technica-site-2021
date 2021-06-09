@@ -111,93 +111,114 @@
     </div>
    </nav>
 
-<!-- Demographics Section -->
-  <div class="container">
-    <div class="heading-lavender">
-      Demographics
-    </div>
-
-    <div class="row-lg">
-          <div class="col-lg-5">
-            <div class="demo-section stretch edu">
-              <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img">
-              <span class="demo-name text-left edu-text"><span class="edu-dot"
-                  style="background: #00FFFF"></span>Undergraduate</span>
-              <span class="demo-stat">63%</span>
-              <br>
-              <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High
-                School</span>
-              <span class="demo-stat">26%</span>
-              <br>
-              <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate
-                School</span>
-              <span class="demo-stat">7.2%</span>
-              <br>
-              <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle
-                School</span>
-              <span class="demo-stat">3.8%</span>
-            </div>
+  <div class="container-fluid">
+    <article>
+      <!-- Demographics Section -->
+      <div class="demographics">
+        <div class="row g-3">
+          <div class="col-lg-3 pr-lg pt-3">
+            <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img"></canvas>
+            <!-- <div class="custom-control custom-checkbox">
+              <div class="row justify-content-center">
+                <input type="checkbox" class="custom-control-input" id="togglePattern">
+                <label class="custom-control-label" for="togglePattern">Show Patterns</label>
+              </div>
+            </div> -->
           </div>
           <div class="col-lg-7">
-            <div class="demo-section pl-0">
-              <span class="demo-name">American Indian or Alaska Native</span>
-              <span class="demo-stat">0.8%</span>
-              <br>
-              <span class="demo-name">Asian / Pacific Islander</span>
-              <span class="demo-stat">48.6%</span>
-              <br>
-              <span class="demo-name">Black or African American</span>
-              <span class="demo-stat">15.6%</span>
-              <br>
-              <span class="demo-name">Hispanic or Latino</span>
-              <span class="demo-stat">7.4%</span>
-              <br>
-              <span class="demo-name">Middle Eastern or North African</span>
-              <span class="demo-stat">3.6%</span>
-              <br>
-              <span class="demo-name">Native Hawaiian or Pacific Islander</span>
-              <span class="demo-stat">0.9%</span>
-              <br>
-              <span class="demo-name">White / Caucasian</span>
-              <span class="demo-stat">19.5%</span>
-              <br>
-              <span class="demo-name">Prefer not to answer</span>
-              <span class="demo-stat">3.6%</span>
+            <div class="heading-lavender d-none d-lg-block pl-3">
+              Demographics
+            </div>
+            <div class="row mb-lg">
+              <div class="col-lg-5">
+                <div class="demo-legend demo-section stretch edu">
+                  <span class="demo-name text-left edu-text"><span class="edu-dot"
+                      style="background: #00FFFF"></span>Undergraduate</span>
+                  <span class="demo-stat">63%</span>
+                  <br>
+                  <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High
+                    School</span>
+                  <span class="demo-stat">26%</span>
+                  <br>
+                  <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate
+                    School</span>
+                  <span class="demo-stat">7.2%</span>
+                  <br>
+                  <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle
+                    School</span>
+                  <span class="demo-stat">3.8%</span>
+                </div>
+              </div>
+              <div class="col-lg-7 pl-0">
+                <div class="demo-section pl-0">
+                  <span class="demo-name">American Indian or Alaska Native</span>
+                  <span class="demo-stat">0.8%</span>
+                  <br>
+                  <span class="demo-name">Asian / Pacific Islander</span>
+                  <span class="demo-stat">48.6%</span>
+                  <br>
+                  <span class="demo-name">Black or African American</span>
+                  <span class="demo-stat">15.6%</span>
+                  <br>
+                  <span class="demo-name">Hispanic or Latino</span>
+                  <span class="demo-stat">7.4%</span>
+                  <br>
+                  <span class="demo-name">Middle Eastern or North African</span>
+                  <span class="demo-stat">3.6%</span>
+                  <br>
+                  <span class="demo-name">Native Hawaiian or Pacific Islander</span>
+                  <span class="demo-stat">0.9%</span>
+                  <br>
+                  <span class="demo-name">White / Caucasian</span>
+                  <span class="demo-stat">19.5%</span>
+                  <br>
+                  <span class="demo-name">Prefer not to answer</span>
+                  <span class="demo-stat">3.6%</span>
+                </div>
+              </div>
+            </div>
+            <div class="row lower pt-3">
+              <div class="col order-1">
+                <div class="demo-section stretch order-1">
+                  <span class="demo-name">Minors</span>
+                  <span class="demo-stat">32.2%</span>
+                  <br>
+                  <span class="demo-name">Non-Minors</span>
+                  <span class="demo-stat">67.8%</span>
+                </div>
+              </div>
+              <div class="col-lg-6 order-3 order-lg-2 pl-0">
+                <div class="demo-section pt-2 pb-2">
+                  <span class="demo-name">First time hackers</span>
+                  <span class="demo-stat">79.7%</span>
+                  <br>
+                  <span class="demo-name">First time at Technica</span>
+                  <span class="demo-stat">75%</span>
+                </div>
+              </div>
+              <div class="col order-2 order-lg-3 pl-0 pr-0">
+                <div class="demo-section stretch mr-lg-3 pt-lg-2 pr-lg-4 pl-lg-0">
+                  <span class="demo-name">Female</span>
+                  <span class="demo-stat">98.2%</span>
+                  <br>
+                  <span class="demo-name">Non-Binary</span>
+                  <span class="demo-stat">1.8%</span>
+                </div>
+                <div class="med-spark blue-spark d-none d-lg-block" style="bottom: -50px; right: -5px"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row lower">
-          <div class="col order-1">
-            <div class="demo-section pt-lg-2 pr-lg-4 stretch order-1">
-              <span class="demo-name">Minors</span>
-              <span class="demo-stat">32.2%</span>
-              <br>
-              <span class="demo-name">Non-Minors</span>
-              <span class="demo-stat">67.8%</span>
-            </div>
-          </div>
-          <div class="col-lg-6 order-3 order-lg-2">
-            <div class="demo-section pt-2 pb-2">
-              <span class="demo-name">First time hackers</span>
-              <span class="demo-stat">79.7%</span>
-              <br>
-              <span class="demo-name">First time at Technica</span>
-              <span class="demo-stat">75%</span>
-            </div>
-          </div>
-          <div class="col order-2 order-lg-3">
-            <div class="demo-section stretch mr-lg-3 pt-lg-2 pr-lg-4 pl-lg-0">
-              <span class="demo-name">Female</span>
-              <span class="demo-stat">98.2%</span>
-              <br>
-              <span class="demo-name">Non-Binary</span>
-              <span class="demo-stat">1.8%</span>
-            </div>
-            <div class="med-spark blue-spark d-none d-lg-block" style="bottom: -50px; right: -5px"></div>
-          </div>
-        
-    </div>
+      </div>
   </div>
+  </article>
+  
+  <!-- mlh badge -->
+  <a id="mlh-trust-badge"
+    style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+    target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+      alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 
   <div class="contact-footer">
     <div class="contact section text-center">
@@ -260,15 +281,8 @@
     'rgb(182, 161, 196)'
   ]
 
-  // patterns = [
-  //   pattern.draw('diagonal','rgb(0, 255, 255)'),
-  //   pattern.draw('diagonal-right-left','rgb(255, 123, 172)'),
-  //   pattern.draw('line-vertical','rgb(45, 45, 45)'),
-  //   pattern.draw('line','rgb(182, 161, 196)')
-  // ]
-  
   var eduChart = new Chart(ctx, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
       labels: ['Undergraduate College', 'High School', 'Graduate College', 'Middle School'],
       datasets: [{
@@ -285,17 +299,24 @@
     options: {
       cutoutPercentage: 60,
       legend: {
-        display: false,
+        display: false
       },
       elements: {
         center: {
-        text: 'Educational',
-        text2: 'Levels',
-        color: '#B6A1C4',
-        fontStyle: 'Poppins',
+          text: 'Educational',
+          text2: 'Levels',
+          color: '#B6A1C4',
+          fontStyle: 'Poppins',
+        }
       }
     }
-    }
   });
-  
-  </script>
+
+  var togglePattern = document.getElementById('togglePattern');
+
+  togglePattern.addEventListener('change', function (e) {
+    var fill = (e.currentTarget.checked) ? patterns : colors;
+    eduChart.data.datasets[0].backgroundColor = fill;
+    eduChart.update();
+  });
+</script>
