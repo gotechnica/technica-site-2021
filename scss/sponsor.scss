@@ -1,0 +1,58 @@
+$cyan: #82ecec;
+$pink: #f27aaa;
+$lavender: #b5a1c4;
+$light-lavender: #cca8c1;
+$ex-light-lavender: #e9e3ed;
+$hero-blue: #6fcbdc;
+$container-gray: #f3f3f3;
+
+$animation-length: 80s;
+
+/* Text */
+@mixin heading($color) {
+    font-size: 2rem;
+    color: $color;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    font-weight: bold;
+  }
+.heading-pink {
+    @include heading($pink);
+}
+
+.heading-lavender {
+    @include heading($lavender);
+}
+.demo-section {
+    background-color: $container-gray;
+    padding: 2rem;
+    font-size: 1.25rem;
+    height: 100%;
+}
+
+.demo-name {
+    text-align: right;
+    padding-right: 5%;
+    float: left;
+    width: 85%;
+}
+
+.demo-legend {
+    line-height: 3rem;
+}
+
+.demo-stat {
+    text-align: left;
+    float: right;
+    width: 15%;
+}
+
+.edu-dot {
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: -.3vw;
+    margin-right: 10px;
+  }
+  
