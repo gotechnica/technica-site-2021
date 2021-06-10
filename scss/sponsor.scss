@@ -25,26 +25,22 @@ $animation-length: 80s;
 }
 .demo-section {
     background-color: $container-gray;
-    padding: 2rem;
     font-size: 1.25rem;
     height: 100%;
+    padding: 2rem;
 }
 
 .demo-name {
     text-align: right;
-    padding-right: 5%;
-    float: left;
-    width: 85%;
 }
 
 .demo-legend {
-    line-height: 3rem;
+    line-height: 4rem;
 }
 
 .demo-stat {
     text-align: left;
     float: right;
-    width: 15%;
 }
 
 .edu-dot {
