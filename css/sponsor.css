@@ -1,0 +1,74 @@
+/*@use 'vars';*/
+.prospectus {
+  margin-top: 60px;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.heading h2 {
+  color: #ea668e;
+  text-transform: none; }
+
+td {
+  border-top: none !important; }
+
+th {
+  border-top: none !important;
+  padding-bottom: 5px !important;
+  border-bottom: solid 1px black;
+  background-color: white !important; }
+
+.add-ons td {
+  border-bottom: 2px solid #dee2e6; }
+
+.benefit {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin: 0 auto; }
+
+.general-spons {
+  background: #ea668e; }
+
+.general-text {
+  color: #ea668e; }
+
+.recruit {
+  background: #a88aa8; }
+
+.brand {
+  background: #8cd8ed; }
+
+.brand-text {
+  color: #8cd8ed; }
+
+.prospectus span {
+  cursor: default;
+  color: #c4c4c4;
+  padding-left: 3px; }
+
+.prospectus a {
+  color: #a88aa8; }
+
+.prospectus a:hover,
+.prospectus a:active {
+  color: #a88aa8;
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+  text-decoration: none; }
+
+.tooltip-inner {
+  min-width: 200px;
+  max-width: 350px; }
+
+.add-ons {
+  overflow-x: visible !important; }
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .heading {
+    text-align: center; } }
+
+/* mobile */
+@media only screen and (max-width: 575px) {
+  .prospectus {
+    font-size: 0.9rem; } }
