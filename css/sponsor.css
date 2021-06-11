@@ -5,7 +5,7 @@
   padding-right: 15%; }
 
 .heading h2 {
-  color: #ea668e;
+  color: #f27aaa;
   text-transform: none; }
 
 td {
@@ -27,19 +27,19 @@ th {
   margin: 0 auto; }
 
 .general-spons {
-  background: #ea668e; }
+  background: #f27aaa; }
 
 .general-text {
-  color: #ea668e; }
+  color: #f27aaa; }
 
 .recruit {
-  background: #a88aa8; }
+  background: #b5a1c4; }
 
 .brand {
-  background: #8cd8ed; }
+  background: #6fcbdc; }
 
 .brand-text {
-  color: #8cd8ed; }
+  color: #6fcbdc; }
 
 .prospectus span {
   cursor: default;
@@ -47,11 +47,11 @@ th {
   padding-left: 3px; }
 
 .prospectus a {
-  color: #a88aa8; }
+  color: #b5a1c4; }
 
 .prospectus a:hover,
 .prospectus a:active {
-  color: #a88aa8;
+  color: #b5a1c4;
   filter: brightness(1.2);
   transition: 0.3s ease;
   text-decoration: none; }
@@ -71,4 +71,8 @@ th {
 /* mobile */
 @media only screen and (max-width: 575px) {
   .prospectus {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .heading {
+    text-align: center; }
+  .heading h2 {
+    font-size: 31px; } }

@@ -1,12 +1,12 @@
 /*@use 'vars';*/
 //temporary until resolve _vars.scss issue
 $cyan: #82ecec;
-$pink: #ea668e;
-$lavender: #a88aa8;
-$light-lavender: #ded2e6;
+$pink: #f27aaa;
+$lavender: #b5a1c4;
+$light-lavender: #cca8c1;
 $light-grey: #e5e5e5;
 $grey: #c4c4c4;
-$spons-blue: #8cd8ed;
+$spons-blue: #6fcbdc;
 
 .prospectus {
   margin-top: 60px;
@@ -99,5 +99,13 @@ th {
 @media only screen and (max-width: 575px) {
   .prospectus {
     font-size: 0.9rem;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading h2 {
+    font-size: 31px;
   }
 }

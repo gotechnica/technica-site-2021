@@ -1,41 +1,41 @@
 /* Defines custom DINPro and DINPro bold fonts */
 @font-face {
-  font-family: 'DINPro';
-  src: url('../fonts/dinpro/DINPro-Regular.otf');
+  font-family: "DINPro";
+  src: url("../fonts/dinpro/DINPro-Regular.otf");
 }
 
 @font-face {
-  font-family: 'DINPro';
+  font-family: "DINPro";
   font-weight: 600;
-  src: url('../fonts/dinpro/DINPro-Bold.otf');
+  src: url("../fonts/dinpro/DINPro-Bold.otf");
 }
 
 @font-face {
-  font-family: 'DINPro';
+  font-family: "DINPro";
   font-weight: 300;
-  src: url('../fonts/dinpro/DINPro-Medium.otf')
+  src: url("../fonts/dinpro/DINPro-Medium.otf");
 }
 
 /* Defines custom NotoSans font */
 @font-face {
-  font-family: 'NotoSans';
-  src: url('../fonts/notosans/NotoSans-Regular.ttf');
+  font-family: "NotoSans";
+  src: url("../fonts/notosans/NotoSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
   font-weight: 300;
-  src: url('../fonts/notosans/NotoSans-Medium.ttf');
+  src: url("../fonts/notosans/NotoSans-Medium.ttf");
 }
 
 @font-face {
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
   font-weight: 600;
-  src: url('../fonts/notosans/NotoSans-Bold.ttf');
+  src: url("../fonts/notosans/NotoSans-Bold.ttf");
 }
 
 body {
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
 }
 
 h1 {
@@ -84,7 +84,8 @@ h4 {
 }
 
 @media (max-width: 575px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 }
