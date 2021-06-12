@@ -115,19 +115,13 @@
     <article>
       <!-- Demographics Section -->
       <div class="demographics">
-        <div class="row g-3">
-          <div class="col-lg-3 pr-lg pt-3">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-10 mx-auto p-5">
             <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img"></canvas>
-            <!-- <div class="custom-control custom-checkbox">
-              <div class="row justify-content-center">
-                <input type="checkbox" class="custom-control-input" id="togglePattern">
-                <label class="custom-control-label" for="togglePattern">Show Patterns</label>
-              </div>
-            </div> -->
           </div>
-          <div class="col-lg-7">
-            <div class="heading-lavender d-none d-lg-block pl-3">
-              Demographics
+          <div class="col-lg-8">
+            <div class="heading-lavender pl-3 d-lg-block d-none">
+              <h2>Demographics</h2>
             </div>
             <div class="row mb-lg">
               <div class="col-lg-5 p-0">
@@ -284,7 +278,7 @@
   var eduChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Undergraduate College', 'High School', 'Graduate College', 'Middle School'],
+      // labels: ['Undergraduate College', 'High School', 'Graduate College', 'Middle School'],
       datasets: [{
         data: [585, 241, 67, 35],
         backgroundColor: colors,

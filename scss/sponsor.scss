@@ -9,6 +9,10 @@ $container-gray: #f3f3f3;
 $animation-length: 80s;
 
 /* Text */
+
+h2 {
+  text-transform: none;
+}
 @mixin heading($color) {
     font-size: 2rem;
     color: $color;
@@ -16,6 +20,7 @@ $animation-length: 80s;
     margin-left: -15px;
     font-weight: bold;
   }
+  
 .heading-pink {
     @include heading($pink);
 }
@@ -26,18 +31,17 @@ $animation-length: 80s;
 
 /* Mobile Text */
 @media only screen and (max-width: 575px) {
-    h1 {
-      font-size: 1.6rem;
-    }
-  
+
     h2 {
-      font-size: 1.45rem;
+      font-size: 2rem;
     }
-  
-    h3 {
-      font-size: 1.25rem;
+
+    p {
+      font-size: 0.4rem;
     }
 }
+
+// Demo Section
 
 .demo-section {
     background-color: $container-gray;
@@ -67,3 +71,88 @@ $animation-length: 80s;
     margin-right: 10px;
   }
   
+  /* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .stat-number {
+    font-size: 6rem;
+  }
+
+  .stat-text {
+    font-size: 2.3rem;
+  }
+
+  .demo-stat {
+    width: 30%;
+  }
+
+  .edu {
+    padding: 5rem;
+  }
+
+  .edu .demo-name {
+    padding-left: 20%;
+  }
+
+  .edu-dot {
+    width: 25px;
+    height: 25px;
+    vertical-align: -6px;
+  }
+
+  .lower .demo-name {
+    width: 60%;
+  }
+
+  .lower .demo-stat {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .stat-number {
+    font-size: 5rem;
+  }
+
+  .stat-text {
+    font-size: 2.25rem;
+  }
+
+  .demo-name {
+    width: 80%;
+  }
+
+  .demo-stat {
+    width: 20%
+  }
+
+  .lower .demo-name {
+    width: 70%;
+  }
+
+  .lower .demo-stat {
+    width: 30%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 575px) {
+  .stat-number {
+    font-size: 3.7rem;
+  }
+
+  .stat-text {
+    font-size: 1.7rem;
+  }
+
+  .demographics {
+    font-size: 3.5vw;
+  }
+
+  .demo-name {
+    width: 85%;
+  }
+
+  .demo-stat {
+    width: 15%
+  }
+}
