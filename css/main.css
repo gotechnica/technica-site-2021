@@ -18,6 +18,10 @@
 .disabled-btn {
   pointer-events: none !important; }
 
+@media only screen and (min-width: 2000px) {
+  #about {
+    padding-top: 10%; } }
+
 .section {
   padding: 3%; }
   @media (max-width: 767px) {
@@ -154,6 +158,9 @@ body {
   @media only screen and (min-width: 1400px) {
     .hero-action {
       padding-top: 350px; } }
+  @media only screen and (min-width: 3000px) {
+    .hero-action {
+      font-size: 150%; } }
   .hero-action .register-btn {
     font-family: DINPro;
     font-size: 175%;

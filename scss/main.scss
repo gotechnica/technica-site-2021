@@ -35,6 +35,12 @@ $animation-length: 80s;
   pointer-events: none !important;
 }
 
+@media only screen and (min-width: 2000px) {
+  #about {
+    padding-top: 10%;
+  }
+}
+
 .section {
   padding: 3%;
   @media (max-width: 767px) {
@@ -207,6 +213,10 @@ body {
 
   @media only screen and (min-width: 1400px) {
     padding-top: 350px;
+  }
+
+  @media only screen and (min-width: 3000px) {
+    font-size: 150%;
   }
 
   .register-btn {
