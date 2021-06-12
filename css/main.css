@@ -22,6 +22,14 @@
   #about {
     padding-top: 10%; } }
 
+@media only screen and (min-width: 2560px) {
+  #about {
+    padding-top: 12%; } }
+
+@media only screen and (min-width: 3000px) {
+  #about {
+    padding-top: 15%; } }
+
 .section {
   padding: 3%; }
   @media (max-width: 767px) {
@@ -88,7 +96,8 @@ body {
 .hero-clouds {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  display: block;
   z-index: 1; }
   @media only screen and (max-width: 767px) {
     .hero-clouds {
@@ -158,7 +167,7 @@ body {
   @media only screen and (min-width: 1400px) {
     .hero-action {
       padding-top: 350px; } }
-  @media only screen and (min-width: 3000px) {
+  @media only screen and (min-width: 2000px) {
     .hero-action {
       font-size: 150%; } }
   .hero-action .register-btn {
