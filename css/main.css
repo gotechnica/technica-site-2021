@@ -51,7 +51,10 @@ body {
   background-color: white;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  transition: all 200ms linear; }
+  transition: all 200ms linear;
+  position: fixed;
+  width: 100%;
+  top: 0; }
   #navbar .navbar-toggler {
     border: none; }
   #navbar .navbar-toggler-icon {
