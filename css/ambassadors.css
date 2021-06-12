@@ -6,6 +6,12 @@
 .heading {
   color: #ff6b98; }
 
+h1 {
+  font-size: 300%; }
+
+h2 {
+  font-size: 200%; }
+
 .position-desc img {
   height: 20vw;
   min-height: 250px;
@@ -27,8 +33,7 @@
   padding-bottom: 5%; }
 
 .position-desc li {
-  padding: 5px 0px;
-  left: 200px; }
+  padding: 5px 0px; }
 
 .perk-list li {
   padding: 2px; }
@@ -71,6 +76,13 @@
 .email {
   font-size: 1.75rem;
   padding-bottom: 5%; }
+
+/* large breakpoint, lists not aligned with headings */
+@media only screen and (min-width: 1300px) {
+  #responsibilities {
+    margin-left: 5%; }
+  #why-apply {
+    margin-left: 15%; } }
 
 /* large breakpoint, position description collapses */
 @media only screen and (max-width: 991px) {
