@@ -1,3 +1,15 @@
+$cyan: #82ecec;
+$pink: #f27aaa;
+$lavender: #b5a1c4;
+$light-lavender: #cca8c1;
+$ex-light-lavender: #e9e3ed;
+$hero-blue: #6fcbdc;
+$container-gray: #f3f3f3;
+$light-grey: #e5e5e5;
+$grey: #c4c4c4;
+$spons-blue: #6fcbdc;
+$animation-length: 80s;
+
 .container-fluid {
   padding-left: 4%;
   padding-right: 4%;
@@ -142,24 +154,14 @@
 
 .edu .demo-stat {
   color: black;
-
-$cyan: #82ecec;
-$pink: #f27aaa;
-$lavender: #b5a1c4;
-$light-lavender: #cca8c1;
-$ex-light-lavender: #e9e3ed;
-$hero-blue: #6fcbdc;
-$container-gray: #f3f3f3;
-$light-grey: #e5e5e5;
-$grey: #c4c4c4;
-$spons-blue: #6fcbdc;
-$animation-length: 80s;
+}
 
 /* Text */
 
 h2 {
   text-transform: none;
 }
+
 @mixin heading($color) {
     font-size: 2rem;
     color: $color;
@@ -320,7 +322,8 @@ h2 {
   margin-top: 60px;
   padding-left: 15%;
   padding-right: 15%;
-  
+}
+
 .heading h2 {
   color: $pink;
   text-transform: none;
@@ -366,6 +369,8 @@ th {
 
 .brand-text {
   color: #8cd8ed;
+}
+
 .general-spons {
   background: $pink;
 }
@@ -580,6 +585,8 @@ th {
   .lower .demo-stat {
     width: 30%;
   }
+}
+
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
   .heading {
