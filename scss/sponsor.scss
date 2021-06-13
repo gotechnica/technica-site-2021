@@ -114,3 +114,32 @@ th {
     max-width: 300px;
   }
 }
+
+.contact {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.info-input {
+  padding: 10px;
+  background-color: #ff5789;
+}
+
+.inquiry-box {
+  border: 3px solid #ff5789;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+}
+
+.inquiry-btn {
+  border-radius: 0;
+  background-color: #ff5789;
+}
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+}
