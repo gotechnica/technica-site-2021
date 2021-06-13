@@ -1,3 +1,13 @@
+.container-fluid {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.stats {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .heading {
   font-size: 2.5rem;
   color: #ff7bac;
