@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container-fluid {
   padding-left: 4%;
   padding-right: 4%;
@@ -147,22 +148,44 @@
 td {
   border-top: none !important;
 }
+=======
+/*@use 'vars';*/
+.prospectus {
+  margin-top: 60px;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.heading h2 {
+  color: #f27aaa;
+  text-transform: none; }
+
+td {
+  border-top: none !important; }
+>>>>>>> 00e073f4b838f6d248eca5edb009deafbce52c49
 
 th {
   border-top: none !important;
   padding-bottom: 5px !important;
   border-bottom: solid 1px black;
+<<<<<<< HEAD
   background-color: white !important;
 }
 
 .add-ons td {
   border-bottom: 2px solid #dee2e6;
 }
+=======
+  background-color: white !important; }
+
+.add-ons td {
+  border-bottom: 2px solid #dee2e6; }
+>>>>>>> 00e073f4b838f6d248eca5edb009deafbce52c49
 
 .benefit {
   width: 12px;
   height: 12px;
   border-radius: 50px;
+<<<<<<< HEAD
   margin: 0 auto;
 }
 
@@ -185,10 +208,29 @@ th {
 .brand-text {
   color: #8cd8ed;
 }
+=======
+  margin: 0 auto; }
+
+.general-spons {
+  background: #f27aaa; }
+
+.general-text {
+  color: #f27aaa; }
+
+.recruit {
+  background: #b5a1c4; }
+
+.brand {
+  background: #6fcbdc; }
+
+.brand-text {
+  color: #6fcbdc; }
+>>>>>>> 00e073f4b838f6d248eca5edb009deafbce52c49
 
 .prospectus span {
   cursor: default;
   color: grey;
+<<<<<<< HEAD
   padding-left: 3px;
 }
 
@@ -440,3 +482,63 @@ th {
     width: 300px;
   }
 }
+=======
+  padding-left: 3px; }
+
+.prospectus a {
+  color: #b5a1c4; }
+
+.prospectus a:hover,
+.prospectus a:active {
+  color: #b5a1c4;
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+  text-decoration: none; }
+
+.tooltip-inner {
+  min-width: 200px;
+  max-width: 350px; }
+
+.add-ons {
+  overflow-x: visible !important; }
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .heading {
+    text-align: center; } }
+
+/* mobile */
+@media only screen and (max-width: 575px) {
+  .prospectus {
+    font-size: 0.9rem; }
+  .heading {
+    text-align: center; }
+  .heading h2 {
+    font-size: 31px; }
+  .tooltip-inner {
+    min-width: 200px;
+    max-width: 300px; } }
+
+.contact {
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.info-input {
+  padding: 10px;
+  background-color: #ff5789; }
+
+.inquiry-box {
+  border: 3px solid #ff5789; }
+
+.form-control {
+  border-radius: 0;
+  border: none; }
+
+.inquiry-btn {
+  border-radius: 0;
+  background-color: #ff5789; }
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: 0.3s ease; }
+>>>>>>> 00e073f4b838f6d248eca5edb009deafbce52c49

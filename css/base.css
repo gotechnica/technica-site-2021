@@ -71,5 +71,6 @@ h4 {
       font-size: 1.15rem; } }
 
 @media (max-width: 575px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden; } }
