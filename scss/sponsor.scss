@@ -55,10 +55,12 @@ h2 {
 
 .demo-legend {
     line-height: 4rem;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .demo-stat {
-    text-align: left;
+    text-align: right;
     float: right;
 }
 
@@ -82,7 +84,7 @@ h2 {
   }
 
   .demo-stat {
-    width: 30%;
+    width: 10%;
   }
 
   .edu {
@@ -150,6 +152,10 @@ h2 {
 
   .demo-name {
     width: 85%;
+  }
+
+  .demo-legend {
+    font-size: 1rem;
   }
 
   .demo-stat {

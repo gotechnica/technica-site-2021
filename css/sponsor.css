@@ -32,10 +32,12 @@ h2 {
   text-align: right; }
 
 .demo-legend {
-  line-height: 4rem; }
+  line-height: 4rem;
+  text-align: left;
+  font-size: 1.2rem; }
 
 .demo-stat {
-  text-align: left;
+  text-align: right;
   float: right; }
 
 .edu-dot {
@@ -53,7 +55,7 @@ h2 {
   .stat-text {
     font-size: 2.3rem; }
   .demo-stat {
-    width: 30%; }
+    width: 10%; }
   .edu {
     padding: 5rem; }
   .edu .demo-name {
@@ -91,5 +93,7 @@ h2 {
     font-size: 3.5vw; }
   .demo-name {
     width: 85%; }
+  .demo-legend {
+    font-size: 1rem; }
   .demo-stat {
     width: 15%; } }
