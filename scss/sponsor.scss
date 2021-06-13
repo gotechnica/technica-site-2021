@@ -1,3 +1,17 @@
+.container-fluid {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.stats {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.heading {
+  color: #ff5789;
+}
+
 .contact,
 .stats,
 .prospectus {
@@ -45,8 +59,8 @@
 }
 
 .overall-stats img {
-  height: 100%;
-  width: 100%;
+  height: 75%;
+  width: 95%;
   object-fit: cover;
   box-shadow: -2rem 0rem 0 -20px #a88aa8, 0.75rem -0.75rem #ff7bac;
 }
