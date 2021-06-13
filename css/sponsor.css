@@ -75,4 +75,7 @@ th {
   .heading {
     text-align: center; }
   .heading h2 {
-    font-size: 31px; } }
+    font-size: 31px; }
+  .tooltip-inner {
+    min-width: 200px;
+    max-width: 300px; } }
