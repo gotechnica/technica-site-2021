@@ -7,6 +7,7 @@
     "start": "node server.js",
     "build-scss": "node-sass -o ./css ./scss; npm run min",
     "web": "nodemon -e scss,js --ignore js/effects.min.js -x \"npm run build-scss\"",
+    "scss-windows": "node-sass ./scss -o ./css && npm run min",
     "min": "minify ./css/main.css > ./css/main.min.css; minify ./css/base.css > ./css/base.min.css; minify ./js/effects.js > ./js/effects.min.js"
   },
   "repository": {
