@@ -5,15 +5,11 @@ h2 {
 .heading-pink {
   font-size: 2rem;
   color: #f27aaa;
-  margin-bottom: 10px;
-  margin-left: -15px;
   font-weight: bold; }
 
 .heading-lavender {
   font-size: 2rem;
   color: #b5a1c4;
-  margin-bottom: 10px;
-  margin-left: -15px;
   font-weight: bold; }
 
 /* Mobile Text */
@@ -27,6 +23,11 @@ h2 {
   background-color: #f3f3f3;
   height: 100%;
   padding: 1.25rem; }
+
+.demo-container {
+  margin-top: 3rem;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 .demo-name {
   text-align: right; }
@@ -97,3 +98,103 @@ h2 {
     font-size: 1rem; }
   .demo-stat {
     width: 15%; } }
+
+.prospectus {
+  margin-top: 60px;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+td {
+  border-top: none !important; }
+
+th {
+  border-top: none !important;
+  padding-bottom: 5px !important;
+  border-bottom: solid 1px black;
+  background-color: white !important; }
+
+.add-ons td {
+  border-bottom: 2px solid #dee2e6; }
+
+.benefit {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin: 0 auto; }
+
+.general-spons {
+  background: #f27aaa; }
+
+.general-text {
+  color: #f27aaa; }
+
+.recruit {
+  background: #b5a1c4; }
+
+.brand {
+  background: #6fcbdc; }
+
+.brand-text {
+  color: #6fcbdc; }
+
+.prospectus span {
+  cursor: default;
+  color: grey;
+  padding-left: 3px; }
+
+.prospectus a {
+  color: #b5a1c4; }
+
+.prospectus a:hover,
+.prospectus a:active {
+  color: #b5a1c4;
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+  text-decoration: none; }
+
+.tooltip-inner {
+  min-width: 200px;
+  max-width: 350px; }
+
+.add-ons {
+  overflow-x: visible !important; }
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .heading {
+    text-align: center; } }
+
+/* mobile */
+@media only screen and (max-width: 575px) {
+  .prospectus {
+    font-size: 0.9rem; }
+  .heading {
+    text-align: center; }
+  .heading h2 {
+    font-size: 31px; }
+  .tooltip-inner {
+    min-width: 200px;
+    max-width: 300px; } }
+
+.contact {
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.info-input {
+  padding: 10px;
+  background-color: #ff5789; }
+
+.inquiry-box {
+  border: 3px solid #ff5789; }
+
+.form-control {
+  border-radius: 0;
+  border: none; }
+
+.inquiry-btn {
+  border-radius: 0;
+  background-color: #ff5789; }
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: 0.3s ease; }

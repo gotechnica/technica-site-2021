@@ -62,6 +62,9 @@ body {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   transition: all 200ms linear;
+  position: fixed;
+  width: 100%;
+  top: 0;
 
   .navbar-toggler {
     border: none;
@@ -479,7 +482,7 @@ body {
 
   &:before,
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: black;
     transition: transform 0.25s ease-out;
