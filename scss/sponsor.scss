@@ -122,21 +122,21 @@ th {
 
 .info-input {
   padding: 10px;
-  background-color: #ff5789;
+  background-color: $pink;
 }
 
 .inquiry-box {
-  border: 3px solid #ff5789;
+  border: 3px solid $pink;
 }
 
 .form-control {
-  border-radius: 0;
+  border-radius: 25px;
   border: none;
 }
 
 .inquiry-btn {
-  border-radius: 0;
-  background-color: #ff5789;
+  border-radius: 50px;
+  background-color: $pink;
 }
 
 .inquiry-btn:hover {
