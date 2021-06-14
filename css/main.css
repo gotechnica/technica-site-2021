@@ -96,6 +96,12 @@ body {
     .navbar-nav > li {
       margin: 0vw 1vw; } }
 
+.hero {
+  margin-top: 17%; }
+  @media only screen and (min-width: 767px) and (max-width: 1000px) {
+    .hero {
+      margin-top: 2%; } }
+
 .hero-clouds {
   position: absolute;
   width: 100%;
