@@ -134,4 +134,134 @@ h2 {
     font-size: 4vw;
   }
 
+  .demo-stat {
+    width: 15%
+  }
+}
+
+// Prospectus Section
+.prospectus {
+  margin-top: 60px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.heading h2 {
+  color: $pink;
+  text-transform: none;
+}
+
+td {
+  border-top: none !important;
+}
+
+th {
+  border-top: none !important;
+  padding-bottom: 5px !important;
+  border-bottom: solid 1px black;
+  background-color: white !important;
+}
+
+.add-ons td {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.contr-amt {
+  width: 11%;
+}
+
+.benefit {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.benefit-text {
+  color: $lavender;
+}
+
+.general-spons {
+  background: $pink;
+}
+
+.general-text {
+  color: $pink;
+}
+
+.recruit {
+  background: $lavender;
+}
+
+.brand {
+  background: $spons-blue;
+}
+
+.brand-text {
+  color: $spons-blue;
+}
+
+.prospectus span {
+  cursor: default;
+  color: grey;
+  padding-left: 3px;
+}
+
+.prospectus a {
+  color: #a88aa8;
+  color: $lavender;
+}
+
+.prospectus a:hover,
+.prospectus a:active {
+  color: $lavender;
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.tooltip-inner {
+  min-width: 200px;
+  max-width: 350px;
+}
+
+.add-ons {
+  overflow-x: visible !important;
+}
+
+#thank-you {
+  background-color: #ff5789;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1370px) {
+  .main {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .stat-number {
+    font-size: 6.25vw;
+  }
+
+  .stat-text {
+    font-size: 2.5vw;
+  }
+
+  .demographics {
+    font-size: 1.1vw;
+  }
+}
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
 }
