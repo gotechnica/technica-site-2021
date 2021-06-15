@@ -85,3 +85,26 @@ th {
   .tooltip-inner {
     min-width: 200px;
     max-width: 300px; } }
+
+.contact {
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.info-input {
+  padding: 10px;
+  background-color: #f27aaa; }
+
+.inquiry-box {
+  border: 3px solid #f27aaa; }
+
+.form-control {
+  border-radius: 25px;
+  border: none; }
+
+.inquiry-btn {
+  border-radius: 50px;
+  background-color: #f27aaa; }
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: 0.3s ease; }
