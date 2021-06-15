@@ -20,11 +20,17 @@ th {
 .add-ons td {
   border-bottom: 2px solid #dee2e6; }
 
+.contr-amt {
+  width: 11%; }
+
 .benefit {
   width: 12px;
   height: 12px;
   border-radius: 50px;
   margin: 0 auto; }
+
+.benefit-text {
+  color: #b5a1c4; }
 
 .general-spons {
   background: #f27aaa; }
