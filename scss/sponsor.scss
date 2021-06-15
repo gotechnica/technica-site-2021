@@ -1,13 +1,323 @@
-/*@use 'vars';*/
-//temporary until resolve _vars.scss issue
 $cyan: #82ecec;
 $pink: #f27aaa;
 $lavender: #b5a1c4;
 $light-lavender: #cca8c1;
+$ex-light-lavender: #e9e3ed;
+$hero-blue: #6fcbdc;
+$container-gray: #f3f3f3;
 $light-grey: #e5e5e5;
 $grey: #c4c4c4;
 $spons-blue: #6fcbdc;
+$animation-length: 80s;
 
+.container-fluid {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.stats {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.heading {
+  color: #ff5789;
+}
+
+.contact,
+.stats,
+.prospectus {
+  margin-top: 60px;
+}
+
+.info-input {
+  padding: 10px;
+  background-color: #ff5789;
+}
+
+.inquiry-box {
+  border: 3px solid #ff5789;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+}
+
+.inquiry-btn {
+  border-radius: 0;
+  background-color: #ff5789;
+}
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+}
+
+.overall-stats .heading {
+  font-size: 3.75rem;
+}
+
+.stat-number {
+  font-size: 4.3rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #a88aa8;
+}
+
+.stat-text {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.overall-stats img {
+  height: 75%;
+  width: 95%;
+  object-fit: cover;
+  box-shadow: -2rem 0rem 0 -20px #a88aa8, 0.75rem -0.75rem #ff7bac;
+}
+
+.demographics {
+  margin-top: 30px;
+  font-size: 0.95vw;
+}
+
+.demographics .heading {
+  font-size: 2.5rem;
+  color: #a88aa8;
+  margin-bottom: 10px;
+  margin-left: -15px;
+}
+
+.custom-control {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.custom-control-label {
+  position: relative;
+}
+
+.custom-control-label::before {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1px;
+  margin-right: 5px;
+}
+
+.custom-control-label::after {
+  position: absolute;
+  display: inline-block;
+}
+
+.demo-section {
+  background-color: #f3f3f3;
+  padding: 5%;
+  overflow: hidden; //because of floating stuff
+  height: 90%;
+  line-height: 1.75;
+}
+
+.stretch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.demo-name {
+  text-align: right;
+  padding-right: 5%;
+  float: left;
+  width: 85%;
+}
+
+.demo-stat {
+  text-align: left;
+  float: right;
+  width: 15%;
+}
+
+.edu {
+  line-height: 3.5;
+}
+
+.edu-dot {
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: -0.3vw;
+  margin-right: 10px;
+}
+
+.edu .demo-stat {
+  color: black;
+}
+
+/* Text */
+
+h2 {
+  text-transform: none;
+}
+
+@mixin heading($color) {
+    font-size: 2rem;
+    color: $color;
+
+    font-weight: bold;
+  }
+  
+.heading-pink {
+    @include heading($pink);
+}
+
+.heading-lavender {
+    @include heading($lavender);
+}
+
+/* Mobile Text */
+@media only screen and (max-width: 575px) {
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.4rem;
+    }
+}
+
+// Demo Section
+
+.demo-section {
+    background-color: $container-gray;
+    height: 100%;
+    padding: 1.25rem;
+}
+
+.demo-container {
+  margin-top: 3rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.demo-name {
+    text-align: right;
+}
+
+.demo-legend {
+    line-height: 4rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.demo-stat {
+    text-align: right;
+    float: right;
+}
+
+.edu-dot {
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: -.3vw;
+    margin-right: 10px;
+  }
+  
+  /* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .stat-number {
+    font-size: 6rem;
+  }
+
+  .stat-text {
+    font-size: 2.3rem;
+  }
+
+  .demo-stat {
+    width: 10%;
+  }
+
+  .edu {
+    padding: 5rem;
+  }
+
+  .edu .demo-name {
+    padding-left: 20%;
+  }
+
+  .edu-dot {
+    width: 25px;
+    height: 25px;
+    vertical-align: -6px;
+  }
+
+  .lower .demo-name {
+    width: 60%;
+  }
+
+  .lower .demo-stat {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .stat-number {
+    font-size: 5rem;
+  }
+
+  .stat-text {
+    font-size: 2.25rem;
+  }
+
+  .demo-name {
+    width: 80%;
+  }
+
+  .demo-stat {
+    width: 20%
+  }
+
+  .lower .demo-name {
+    width: 70%;
+  }
+
+  .lower .demo-stat {
+    width: 30%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 575px) {
+  .stat-number {
+    font-size: 3.7rem;
+  }
+
+  .stat-text {
+    font-size: 1.7rem;
+  }
+
+  .demographics {
+    font-size: 3.5vw;
+  }
+
+  .demo-name {
+    width: 85%;
+  }
+
+  .demo-legend {
+    font-size: 1rem;
+  }
+
+  .demo-stat {
+    width: 15%
+  }
+}
+
+// Prospectus Section
 .prospectus {
   margin-top: 60px;
   padding-left: 15%;
@@ -76,6 +386,7 @@ th {
 }
 
 .prospectus a {
+  color: #a88aa8;
   color: $lavender;
 }
 
@@ -96,6 +407,174 @@ th {
   overflow-x: visible !important;
 }
 
+#thank-you {
+  background-color: #ff5789;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1370px) {
+  .main {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .stat-number {
+    font-size: 6.25vw;
+  }
+
+  .stat-text {
+    font-size: 2.5vw;
+  }
+
+  .demographics {
+    font-size: 1.1vw;
+  }
+}
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .demographics .heading {
+    margin-left: 0px;
+    margin-top: 8%;
+    margin-bottom: 20px;
+  }
+
+  canvas {
+    margin-bottom: 20px;
+  }
+
+  .stat-number {
+    font-size: 6rem;
+  }
+
+  .stat-text {
+    font-size: 2.3rem;
+  }
+
+  .stats img,
+  .pink-spark,
+  .purp-spark,
+  .blue-spark {
+    margin-top: 10%;
+  }
+
+  .demographics {
+    font-size: 16px;
+  }
+
+  .demo-section {
+    margin-bottom: 20px;
+  }
+
+  .stretch {
+    position: static;
+  }
+
+  .demo-name {
+    padding-right: 7.5%;
+    width: 70%;
+  }
+
+  .demo-stat {
+    width: 30%;
+  }
+
+  .edu .demo-name {
+    padding-left: 20%;
+  }
+
+  .edu-dot {
+    width: 25px;
+    height: 25px;
+    vertical-align: -6px;
+  }
+
+  .lower .demo-name {
+    width: 60%;
+  }
+
+  .lower .demo-stat {
+    width: 40%;
+  }
+
+  #demo-spark1 {
+    height: 8%;
+    width: 8%;
+    top: 17% !important;
+    left: 6% !important;
+  }
+
+  #demo-spark2 {
+    height: 7%;
+    width: 7%;
+    bottom: 12% !important;
+    left: 2% !important;
+  }
+
+  #demo-spark3 {
+    height: 6%;
+    width: 6%;
+    bottom: 2% !important;
+    left: 20% !important;
+  }
+
+  #demo-spark4 {
+    height: 8%;
+    width: 8%;
+    top: 17% !important;
+    right: 6% !important;
+  }
+
+  #demo-spark5 {
+    height: 6%;
+    width: 6%;
+    top: 28% !important;
+    right: -1% !important;
+  }
+
+  #demo-spark6 {
+    height: 7%;
+    width: 7%;
+    bottom: 10% !important;
+    right: 2% !important;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .stat-number {
+    font-size: 5rem;
+  }
+
+  .stat-text {
+    font-size: 2.25rem;
+  }
+
+  .demo-name {
+    width: 80%;
+  }
+
+  .demo-stat {
+    width: 20%;
+  }
+
+  .lower .demo-name {
+    width: 70%;
+  }
+
+  .lower .demo-stat {
+    width: 30%;
+  }
+}
+
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
   .heading {
@@ -105,6 +584,62 @@ th {
 
 /* mobile */
 @media only screen and (max-width: 575px) {
+  .main {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .overall-stats .heading {
+    font-size: 3.25rem;
+  }
+
+  .overall-stats img {
+    box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac;
+  }
+
+  .stat-number {
+    font-size: 3.7rem;
+  }
+
+  .stat-text {
+    font-size: 1.7rem;
+  }
+
+  .stats img,
+  .pink-spark,
+  .purp-spark,
+  .blue-spark {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .demographics {
+    font-size: 3.5vw;
+  }
+
+  .demo-name {
+    width: 85%;
+  }
+
+  .demo-stat {
+    width: 15%;
+  }
+
+  .edu .demo-name {
+    padding-left: 10%;
+  }
+
+  .prospectus {
+    font-size: 0.9rem;
+  }
+
+  .tooltip-inner {
+    width: 300px;
+  }
   .prospectus {
     font-size: 0.9rem;
   }
