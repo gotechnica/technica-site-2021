@@ -240,26 +240,14 @@ th {
 .add-ons td {
   border-bottom: 2px solid #dee2e6; }
 
+.contr-amt {
+  width: 11%; }
+
 .benefit {
   width: 12px;
   height: 12px;
   border-radius: 50px;
   margin: 0 auto; }
-
-.general {
-  background: #ff7bac; }
-
-.general-text {
-  color: #ff7bac; }
-
-.recruit {
-  background: #a88aa8; }
-
-.brand {
-  background: #8cd8ed; }
-
-.brand-text {
-  color: #8cd8ed; }
 
 .general-spons {
   background: #f27aaa; }
