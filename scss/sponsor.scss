@@ -60,6 +60,8 @@ $animation-length: 80s;
   transition: 0.3s ease;
 }
 
+// Statistics Section
+
 .overall-stats .heading {
   font-size: 3.75rem;
 }
@@ -142,6 +144,7 @@ h2 {
   
   /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
+  // Statistics
   .stat-number {
     font-size: 6rem;
   }
@@ -150,9 +153,11 @@ h2 {
     font-size: 2.3rem;
   }
 
-  .demo-stat {
-    width: 10%;
+  .stat-number {
+    font-size: 6rem;
   }
+
+  // Demographics
 
   .edu {
     padding: 5rem;
@@ -174,6 +179,22 @@ h2 {
 
   .lower .demo-stat {
     width: 40%;
+  }
+
+  .demographics {
+    font-size: 16px;
+  }
+
+  .demo-section {
+    margin-bottom: 20px;
+  }
+
+  .demo-stat {
+    width: 30%;
+  }
+
+  canvas {
+    margin-bottom: 20px;
   }
 }
 
@@ -330,69 +351,6 @@ th {
 
   .stat-text {
     font-size: 2.5vw;
-  }
-
-  .demographics {
-    font-size: 1.1vw;
-  }
-}
-
-/* large breakpoint, switch to mobile-layout */
-@media only screen and (max-width: 991px) {
-  .main {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  canvas {
-    margin-bottom: 20px;
-  }
-
-  .stat-number {
-    font-size: 6rem;
-  }
-
-  .stat-text {
-    font-size: 2.3rem;
-  }
-
-  .demographics {
-    font-size: 16px;
-  }
-
-  .demo-section {
-    margin-bottom: 20px;
-  }
-
-  .stretch {
-    position: static;
-  }
-
-  .demo-name {
-    padding-right: 7.5%;
-    width: 70%;
-  }
-
-  .demo-stat {
-    width: 30%;
-  }
-
-  .edu .demo-name {
-    padding-left: 20%;
-  }
-
-  .edu-dot {
-    width: 25px;
-    height: 25px;
-    vertical-align: -6px;
-  }
-
-  .lower .demo-name {
-    width: 60%;
-  }
-
-  .lower .demo-stat {
-    width: 40%;
   }
 }
 
