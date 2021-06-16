@@ -30,6 +30,7 @@ $animation-length: 80s;
   margin-top: 5rem;
 }
 
+.demographics
 .contact,
 .stats,
 .prospectus {
@@ -66,12 +67,22 @@ $animation-length: 80s;
   font-size: 3.75rem;
 }
 
-
 .overall-stats img {
   height: 75%;
   width: 95%;
   object-fit: cover;
   box-shadow: -2rem 0rem 0 -20px #a88aa8, 0.75rem -0.75rem #ff7bac;
+}
+
+.overall-stats .stat-number {
+  font-size: 4rem;
+  color: $lavender;
+  font-weight: bold;
+}
+
+.overall-stats .stat-text {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* Text */
