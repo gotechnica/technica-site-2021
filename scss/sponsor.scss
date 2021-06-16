@@ -199,6 +199,7 @@ h2 {
 }
 
 @media only screen and (max-width: 675px) {
+  // Statistics
   .stat-number {
     font-size: 5rem;
   }
@@ -207,6 +208,7 @@ h2 {
     font-size: 2.25rem;
   }
 
+  // Demographics
   .demo-name {
     width: 80%;
   }
@@ -248,6 +250,51 @@ h2 {
 
   .demo-stat {
     width: 15%
+  }
+
+  .main {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .overall-stats .heading {
+    font-size: 3.25rem;
+  }
+
+  .overall-stats img {
+    box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac;
+  }
+
+  .edu .demo-name {
+    padding-left: 10%;
+  }
+
+  .prospectus {
+    font-size: 0.9rem;
+  }
+
+  .tooltip-inner {
+    width: 300px;
+  }
+  .prospectus {
+    font-size: 0.9rem;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading h2 {
+    font-size: 31px;
+  }
+
+  .tooltip-inner {
+    min-width: 200px;
+    max-width: 300px;
   }
 }
 
@@ -351,100 +398,6 @@ th {
 
   .stat-text {
     font-size: 2.5vw;
-  }
-}
-
-@media only screen and (max-width: 675px) {
-  .stat-number {
-    font-size: 5rem;
-  }
-
-  .stat-text {
-    font-size: 2.25rem;
-  }
-
-  .demo-name {
-    width: 80%;
-  }
-
-  .demo-stat {
-    width: 20%;
-  }
-
-  .lower .demo-name {
-    width: 70%;
-  }
-
-  .lower .demo-stat {
-    width: 30%;
-  }
-}
-
-/* mobile */
-@media only screen and (max-width: 575px) {
-  .main {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
-  h1 {
-    font-size: 1.9rem;
-  }
-
-  .overall-stats .heading {
-    font-size: 3.25rem;
-  }
-
-  .overall-stats img {
-    box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac;
-  }
-
-  .stat-number {
-    font-size: 3.7rem;
-  }
-
-  .stat-text {
-    font-size: 1.7rem;
-  }
-
-  .demographics {
-    font-size: 3.5vw;
-  }
-
-  .demo-name {
-    width: 85%;
-  }
-
-  .demo-stat {
-    width: 15%;
-  }
-
-  .edu .demo-name {
-    padding-left: 10%;
-  }
-
-  .prospectus {
-    font-size: 0.9rem;
-  }
-
-  .tooltip-inner {
-    width: 300px;
-  }
-  .prospectus {
-    font-size: 0.9rem;
-  }
-
-  .heading {
-    text-align: center;
-  }
-
-  .heading h2 {
-    font-size: 31px;
-  }
-
-  .tooltip-inner {
-    min-width: 200px;
-    max-width: 300px;
   }
 }
 
