@@ -30,7 +30,6 @@ $animation-length: 80s;
   margin-top: 5rem;
 }
 
-.demographics,
 .contact,
 .stats,
 .prospectus {
@@ -113,7 +112,7 @@ h2 {
 .demo-stat {
     text-align: left;
     float: right;
-    width: 15%;
+    width: 30%;
 }
 
 .demo-legend {
@@ -125,6 +124,10 @@ h2 {
 .demo-stat {
     text-align: right;
     float: right;
+}
+
+.demo-ethnicities {
+  line-height: 5vh;
 }
 
 .edu-dot {
