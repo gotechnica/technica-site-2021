@@ -1,13 +1,12 @@
 /* Text */
 .container-fluid {
-  padding-left: 10%;
-  padding-right: 10%; }
+  padding-left: 7%;
+  padding-right: 7%; }
 
 .header {
   margin-top: 5rem; }
 
-.demographics
-.contact,
+.demographics .contact,
 .stats,
 .prospectus {
   margin-top: 60px; }
@@ -96,7 +95,7 @@ h2 {
   height: 1.5vw;
   border-radius: 50px;
   display: inline-block;
-  vertical-align: -.3vw;
+  vertical-align: -0.3vw;
   margin-right: 10px; }
 
 /* large breakpoint, switch to mobile-layout */
