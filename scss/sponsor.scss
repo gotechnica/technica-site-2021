@@ -414,6 +414,17 @@ th {
   }
 }
 
+@media only screen and (min-width: 1422px) {
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
+
 .info-input {
   padding: 10px;
   background-color: $pink;

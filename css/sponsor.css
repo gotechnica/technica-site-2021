@@ -262,6 +262,15 @@ th {
   .stat-text {
     font-size: 2.5vw; } }
 
+@media only screen and (min-width: 1422px) {
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 10% !important;
+    padding-right: 10% !important; } }
+
 .info-input {
   padding: 10px;
   background-color: #f27aaa; }
