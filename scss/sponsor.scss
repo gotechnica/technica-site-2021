@@ -21,11 +21,6 @@ $grey: #c4c4c4;
 $spons-blue: #6fcbdc;
 $animation-length: 80s;
 
-.container-fluid {
-  padding-left: 7%;
-  padding-right: 7%;
-}
-
 .header {
   margin-top: 5rem;
 }
@@ -81,7 +76,6 @@ $animation-length: 80s;
 
 .overall-stats .stat-text {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 /* Text */
@@ -261,9 +255,18 @@ h2 {
     width: 15%;
   }
 
-  .main {
+  .main,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
     padding-left: 3%;
     padding-right: 3%;
+  }
+
+  .footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   h1 {
@@ -288,9 +291,6 @@ h2 {
 
   .tooltip-inner {
     width: 300px;
-  }
-  .prospectus {
-    font-size: 0.9rem;
   }
 
   .heading {
@@ -396,9 +396,13 @@ th {
 }
 
 @media only screen and (max-width: 1370px) {
-  .main {
-    padding-left: 7%;
-    padding-right: 7%;
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
   }
 
   .stat-number {

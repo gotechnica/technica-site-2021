@@ -1,8 +1,4 @@
 /* Text */
-.container-fluid {
-  padding-left: 7%;
-  padding-right: 7%; }
-
 .header {
   margin-top: 5rem; }
 
@@ -45,8 +41,7 @@
   font-weight: bold; }
 
 .overall-stats .stat-text {
-  font-size: 1.5rem;
-  font-weight: bold; }
+  font-size: 1.5rem; }
 
 /* Text */
 h2 {
@@ -155,9 +150,16 @@ h2 {
     font-size: 1rem; }
   .demo-stat {
     width: 15%; }
-  .main {
+  .main,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
     padding-left: 3%;
     padding-right: 3%; }
+  .footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
   h1 {
     font-size: 1.9rem; }
   .overall-stats .heading {
@@ -170,8 +172,6 @@ h2 {
     font-size: 0.9rem; }
   .tooltip-inner {
     width: 300px; }
-  .prospectus {
-    font-size: 0.9rem; }
   .heading {
     text-align: center; }
   .heading h2 {
@@ -250,9 +250,13 @@ th {
   padding: 10px; }
 
 @media only screen and (max-width: 1370px) {
-  .main {
-    padding-left: 7%;
-    padding-right: 7%; }
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 7% !important;
+    padding-right: 7% !important; }
   .stat-number {
     font-size: 6.25vw; }
   .stat-text {
