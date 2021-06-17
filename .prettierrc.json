@@ -1,1 +1,4 @@
-{}
+{
+  "singleQuote": true,
+  "prettier.disableLanguages": ["html"]
+}

@@ -18,18 +18,6 @@
 .disabled-btn {
   pointer-events: none !important; }
 
-@media only screen and (min-width: 2000px) {
-  #about {
-    padding-top: 10%; } }
-
-@media only screen and (min-width: 2560px) {
-  #about {
-    padding-top: 12%; } }
-
-@media only screen and (min-width: 3000px) {
-  #about {
-    padding-top: 15%; } }
-
 .section {
   padding: 3%; }
   @media (max-width: 767px) {
@@ -96,20 +84,10 @@ body {
     .navbar-nav > li {
       margin: 0vw 1vw; } }
 
-.hero {
-  margin-top: 17%; }
-  @media only screen and (min-width: 767px) and (max-width: 1000px) {
-    .hero {
-      margin-top: 2%; } }
-  @media only screen and (min-width: 1000px) {
-    .hero {
-      margin-top: 0; } }
-
 .hero-clouds {
   position: absolute;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100vh;
   z-index: 1; }
   @media only screen and (max-width: 767px) {
     .hero-clouds {
@@ -179,9 +157,6 @@ body {
   @media only screen and (min-width: 1400px) {
     .hero-action {
       padding-top: 350px; } }
-  @media only screen and (min-width: 2000px) {
-    .hero-action {
-      font-size: 150%; } }
   .hero-action .register-btn {
     font-family: DINPro;
     font-size: 175%;
@@ -391,7 +366,7 @@ body {
   /* vertical line */
   /* horizontal line */ }
   .faq-toggle-icon:before, .faq-toggle-icon:after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: black;
     transition: transform 0.25s ease-out; }

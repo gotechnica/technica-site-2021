@@ -35,23 +35,6 @@ $animation-length: 80s;
   pointer-events: none !important;
 }
 
-@media only screen and (min-width: 2000px) {
-  #about {
-    padding-top: 10%;
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  #about {
-    padding-top: 12%;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  #about {
-    padding-top: 15%;
-  }
-}
-
 .section {
   padding: 3%;
   @media (max-width: 767px) {
@@ -135,22 +118,10 @@ body {
 }
 
 // *** hero section ***
-.hero {
-  margin-top: 17%;
-
-  @media only screen and (min-width: 767px) and (max-width: 1000px) {
-    margin-top: 2%;
-  }
-  @media only screen and (min-width: 1000px) {
-    margin-top: 0;
-  }
-}
-
 .hero-clouds {
   position: absolute;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100vh;
   z-index: 1;
   @media only screen and (max-width: 767px) {
     width: 834px;
@@ -239,10 +210,6 @@ body {
 
   @media only screen and (min-width: 1400px) {
     padding-top: 350px;
-  }
-
-  @media only screen and (min-width: 2000px) {
-    font-size: 150%;
   }
 
   .register-btn {
@@ -515,7 +482,7 @@ body {
 
   &:before,
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: black;
     transition: transform 0.25s ease-out;
