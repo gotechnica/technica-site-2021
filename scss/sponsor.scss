@@ -8,6 +8,13 @@ $container-gray: #f3f3f3;
 
 $animation-length: 80s;
 
+@mixin dinpro-text($size, $weight, $color) {
+  font-family: DINPro;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
 /* Text */
 @mixin heading($color) {
   font-size: 2rem;
