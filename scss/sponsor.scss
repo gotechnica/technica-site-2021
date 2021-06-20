@@ -76,13 +76,17 @@ $animation-length: 80s;
 }
 
 .overall-stats .stat-number {
-  font-size: 4rem;
+  font-size: 3rem;
   color: $lavender;
   font-weight: bold;
 }
 
 .overall-stats .stat-text {
   font-size: 1.5rem;
+}
+
+#stat-photo {
+  margin-left: 3%;
 }
 
 /* Text */

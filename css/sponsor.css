@@ -36,12 +36,15 @@
   box-shadow: -2rem 0rem 0 -20px #a88aa8, 0.75rem -0.75rem #ff7bac; }
 
 .overall-stats .stat-number {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b5a1c4;
   font-weight: bold; }
 
 .overall-stats .stat-text {
   font-size: 1.5rem; }
+
+#stat-photo {
+  margin-left: 3%; }
 
 /* Text */
 h2 {

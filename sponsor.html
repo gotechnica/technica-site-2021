@@ -144,37 +144,35 @@
       </div>
       <div class="row">
         <div class="col-lg-5">
-          <div class="row" style="margin-bottom: 30px">
-            <div class="col-6">
+          <div class="row" style="margin-bottom: 15px">
+            <div class="col-4">
               <span class="stat-number">1868</span>
               <br>
               <span class="stat-text">Attendees</span>
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <span class="stat-number">150+</span>
               <br>
               <span class="stat-text">Schools</span>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
+            <div class="col-4">
               <span class="stat-number">215</span>
               <br>
               <span class="stat-text">Projects submitted</span>
+          </div>
+          <div class="row">
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <span class="stat-number">35</span>
               <br>
               <span class="stat-text">Sponsors</span>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
+            <div class="col-4">
               <span class="stat-number">36</span>
               <br>
               <span class="stat-text">Countries</span>
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <span class="stat-number">6</span>
               <br>
               <span class="stat-text">Continents</span>
@@ -182,7 +180,7 @@
           </div>
         </div>
         <div class="col-lg-7 pl-0">
-          <img src="./img/winning-hackers.jpg" alt="A group photo of 5 winning-hackers smiling and standing on stage at the awards ceremony." height="400">
+          <img id="stat-photo" src="./img/winning-hackers.jpg" alt="A group photo of 5 winning-hackers smiling and standing on stage at the awards ceremony." height="400">
         </div>
       </div>
     </div>
@@ -191,30 +189,32 @@
   <!-- demographics -->
   <div class="demographics">
     <div class="row">
-      <div class="col-lg-4 col-sm-6 col-10 mx-auto p-5">
-        <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img"></canvas>
-      </div>
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         <div class="heading-lavender p-0 d-lg-block d-none"">
           <h2 style="padding-top: 5%;">Demographics</h2>
         </div>
         <div class="row mb-lg">
-          <div class="col-lg-5 p-0">
-            <div class="demo-legend demo-section stretch m-sm-0 m-lg-2">
-              <span class="demo-name text-left edu-text"><span class="edu-dot" style="background: #00FFFF"></span>Undergraduate</span>
-              <span class="demo-stat">61%</span>
-              <br>
-              <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High School</span>
-              <span class="demo-stat">23%</span>
-              <br>
-              <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate School</span>
-              <span class="demo-stat">0.6%</span>
-              <br>
-              <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle School</span>
-              <span class="demo-stat">1.7%</span>
+          <div class="col-lg-7 p-0">
+            <div class="row demo-legend demo-section stretch m-sm-0 m-lg-2">
+              <div class="col-lg-6">
+                <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img"></canvas>
+              </div>
+              <div class="col-lg-6">
+                <span class="demo-name text-left edu-text"><span class="edu-dot" style="background: #00FFFF"></span>Undergraduate</span>
+                <span class="demo-stat">61%</span>
+                <br>
+                <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High School</span>
+                <span class="demo-stat">23%</span>
+                <br>
+                <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate School</span>
+                <span class="demo-stat">0.6%</span>
+                <br>
+                <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle School</span>
+                <span class="demo-stat">1.7%</span>
+              </div>
             </div>
           </div>
-          <div class="col-lg-7 p-0">
+          <div class="col-lg-5 p-0">
             <div class="demo-section demo-ethnicities my-lg-2 mr-lg-2 mt-xl-2">
               <span class="demo-name">American Indian or Alaska Native</span>
               <span class="demo-stat">0.5%</span>
@@ -269,7 +269,6 @@
               <span class="demo-name">Non-Binary</span>
               <span class="demo-stat">2.9%</span>
             </div>
-
           </div>
         </div>
       </div>
@@ -390,6 +389,20 @@
             </td>
             <td class="align-middle">
               <div class="general-text text-center">90+ min</div>
+            </td>
+          </tr>
+          <tr>
+            <td> Community Events <span data-toggle="tooltip" title="There will be a variety of events held throughout 2021 outside of Technica weekend to allow our hackers more opportunities to learn and interact with companies. This is an opportunity for sponsors to talk to members of the Technica community by hosting a workshop, talk, or any other event during one of our 1-2 day sessions this year.">&#9432;</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="align-middle">
+              <div class="general-text text-center">1</div>
+            </td>
+            <td class="align-middle">
+              <div class="general-text text-center">2</div>
             </td>
           </tr>
           <tr>
@@ -636,13 +649,6 @@
               $1,000
             </td>
             <td style="width:33.33%;">
-              Year-round events
-              <span data-toggle="tooltip" title="There will be a variety of events held throughout 2021 outside of Technica weekend to allow our hackers more opportunities to learn and interact with companies. This is an opportunity for sponsors to talk to members of the Technica community by hosting a workshop, talk, or any other event during one of our 1-2 day sessions this year.">&#9432;</span>
-              <br>
-              $1,500
-              <br>
-            </td>
-            <td style="width:33.33%;">
               Co-branded swag package
               <span data-toggle="tooltip" title="This is an opportunity for your company swag to be mailed alongside our Technica swag to all recipients of the Technica mailing package after the conclusion of the event. This is an excellent branding opportunity, and a way to hand out company swag to people who could not come to an in-person event.">&#9432;</span>
               <br>
@@ -760,7 +766,6 @@
   var eduChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Undergraduate', 'High School', 'Graduate School', 'Middle School'],
       datasets: [{
         data: [1140, 429, 11, 31],
         backgroundColor: colors,
