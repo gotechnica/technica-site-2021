@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <title>Sponsor Technica</title>
   <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/sponsor.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://rawgit.com/tobia/Pause/master/jquery.pause.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/sponsor.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://rawgit.com/tobia/Pause/master/jquery.pause.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+  <script src="./js/chartjs_plugin.js"></script>
+  <script src="./js/tooltip.js"></script>
 
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="author" content="Technica Hacks">
-    <meta name="description" content="World’s largest all-women and non-binary hackathon">
-    <meta name="robots" content="NOODP, index, follow">
-    <meta itemprop="name" content="Technica">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@gotechnica">
-    <meta name="twitter:title" content="Technica">
-    <meta name="twitter:description" content="All-women and non-binary hackathon at University of Maryland.">
-    <meta name="twitter:creator" content="@gotechnica">
-    <meta name="twitter:image" content="http://gotechnica.org/img/share-link.png">
-    <meta name="twitter:domain" content="http://gotechnica.org">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="author" content="Technica Hacks">
+  <meta name="description" content="World’s largest hackathon for underrepresented genders">
+  <meta name="robots" content="NOODP, index, follow">
+  <meta itemprop="name" content="Technica">
 
-    <!-- Google site verif -->
-    <meta name="google-site-verification" content="uGQ5sqadq9-6SPyKFrrOm_N5oys-xoJ7sSBKjw6LCI4">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gotechnica">
+  <meta name="twitter:title" content="Technica">
+  <meta name="twitter:description" content="Hackathon for underrepresented genders at University of Maryland.">
+  <meta name="twitter:creator" content="@gotechnica">
+  <meta name="twitter:image" content="http://gotechnica.org/img/share-link.png">
+  <meta name="twitter:domain" content="http://gotechnica.org">
 
-    <!-- Open Graph data (Facebook) -->
-    <meta property="og:title" content="Technica">
-    <meta property="og:description" content="All-women and non-binary hackathon at University of Maryland.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://gotechnica.org">
-    <meta property="og:image" content="http://gotechnica.org/img/share-link.png">
-    <meta property="og:image:url" content="http://gotechnica.org/img/share-link.png">
+  <!-- Google site verif -->
+  <meta name="google-site-verification" content="uGQ5sqadq9-6SPyKFrrOm_N5oys-xoJ7sSBKjw6LCI4">
 
-    <!-- Redirect URLs -->
-    <script>
-      const path = window.location.pathname;
-      const redirectsGETUrl = "https://hugoburbelo-technica-url-shortener.builtwithdark.com/redirects"
+  <!-- Open Graph data (Facebook) -->
+  <meta property="og:title" content="Technica">
+  <meta property="og:description" content="Hackathon for underrepresented genders at University of Maryland.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://gotechnica.org">
+  <meta property="og:image" content="http://gotechnica.org/img/share-link.png">
+  <meta property="og:image:url" content="http://gotechnica.org/img/share-link.png">
 
-      const formattedPath = "/" + path;
-      $.get(redirectsGETUrl, redirects => {
-        redirects.forEach(redirect => {
-          if(path === redirect.host) {
-            window.location = redirect.target;
-          }
-        })
-      });
-    </script>
+  <!-- Redirect URLs -->
+  <script>
+    const path = window.location.pathname;
+    const redirectsGETUrl = "https://hugoburbelo-technica-url-shortener.builtwithdark.com/redirects"
 
-    <!-- Intercom Widget -->
-    <script>
-      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/i0aisamb'
-      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/i0aisamb';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    const formattedPath = "/" + path;
+    $.get(redirectsGETUrl, redirects => {
+      redirects.forEach(redirect => {
+        if (path === redirect.host) {
+          window.location = redirect.target;
+        }
+      })
+    });
+  </script>
 
-      window.Intercom("boot", {
-        app_id: "i0aisamb"
-      });
-    </script>
+  <!-- Intercom Widget -->
+  <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/i0aisamb'
+    (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/i0aisamb'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
 
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:1902775,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    window.Intercom("boot", {
+      app_id: "i0aisamb"
+    });
+  </script>
+
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1902775, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 </head>
+
 <body>
 
   <!-- navbar -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -97,127 +104,174 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#registration">Registration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sponsor.html">Sponsor</a>
+          <a class="nav-link" href="ambassadors.html">Ambassadors</a>
         </li>
       </ul>
     </div>
-   </nav>
+  </nav>
 
-  <div class="demo-container">
-    <!-- Demographics Section -->
-    <div class="demographics">
+  <!-- header -->
+  <div class="header">
+    <div class="intro heading-pink text-center">
+      <h1> Help support Technica 2021! </h1>
+    </div>
+  </div>
+
+  <!--letter-->
+  <div class="main">
+    <div class="letter" style="position: relative;">
+      <p>Hello Potential Sponsors!</p>
+      <p>This coming fall, students from across the United States will organize Technica, our annual hackathon for underrepresented genders in tech, for its <b>seventh year!</b> Technica has been the largest hackathon for underrepresented genders in tech in the world for the past six years, and welcomed over 1868 participants from six different continents last year. In the span of 24 hours, Technica gives our participants the opportunity to create new applications, websites or hardware projects.</p>
+      <p>In 2021, Technica aims to be the first hackathon to implement a hybrid event model—an event that is hosted both in-person and virtually, drawing on the success of our completely virtual event in 2020 and our history of in-person events. <!--In addition to implementing this hybrid model, we are expanding to the west coast, creating a new venue location in San Francisco in order to increase our in-person event capacity and enable west coast hackers to participate.--></p>
+      <p>Technica is not a typical hackathon—it serves as a place for the brightest thinkers in the country to come together to collaborate and share their innovative ideas. Our focus is on providing a welcoming, engaging, and creative environment to support <b>underrepresented genders</b> in tech culture. We pride ourselves in helping both beginners and experienced hackers explore technology and develop their skills.</p>
+      <p>Not only does Technica serve as an incubator for creating and promoting a gender-diverse workforce in the future, but it also provides an optimal opportunity for recruitment and outreach. We would love for you to get involved as a sponsor for Technica 2021!</p>
+      <p>Our available sponsorship tiers are listed below. Additionally, we are happy to state that Technica has <b>501(c)(3) status.</b> Please let us know if you are interested in becoming a part of Technica, or if you have any questions or concerns about the information below. We look forward to hearing from you!</p>
+      <p>Thank you,
+        <br>
+        The Technica Team
+      </p>
+    </div>
+  </div>
+
+  <!-- stats -->
+  <div class="stats">
+    <div class="overall-stats">
+      <div class="heading-pink">
+        <h2>Statistics</h2>
+      </div>
       <div class="row">
-        <div class="col-lg-4 col-sm-6 col-10 mx-auto p-5">
-          <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img"></canvas>
-        </div>
-        <div class="col-lg-8">
-          <div class="heading-lavender p-0 d-lg-block d-none">
-            <h2>Demographics</h2>
+        <div class="col-lg-5">
+          <div class="row" style="margin-bottom: 15px">
+            <div class="col-4">
+              <span class="stat-number">1868</span>
+              <br>
+              <span class="stat-text">Attendees</span>
+            </div>
+            <div class="col-4">
+              <span class="stat-number">150+</span>
+              <br>
+              <span class="stat-text">Schools</span>
+            </div>
+            <div class="col-4">
+              <span class="stat-number">215</span>
+              <br>
+              <span class="stat-text">Projects submitted</span>
           </div>
-          <div class="row mb-lg">
-            <div class="col-lg-5 p-0">
-              <div class="demo-legend demo-section stretch m-sm-0 m-lg-2">
-                <span class="demo-name text-left edu-text"><span class="edu-dot"
-                    style="background: #00FFFF"></span>Undergraduate</span>
+          <div class="row">
+            </div>
+            <div class="col-4">
+              <span class="stat-number">35</span>
+              <br>
+              <span class="stat-text">Sponsors</span>
+            </div>
+            <div class="col-4">
+              <span class="stat-number">36</span>
+              <br>
+              <span class="stat-text">Countries</span>
+            </div>
+            <div class="col-4">
+              <span class="stat-number">6</span>
+              <br>
+              <span class="stat-text">Continents</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 pl-0">
+          <img id="stat-photo" src="./img/winning-hackers.jpg" alt="A group photo of 5 winning-hackers smiling and standing on stage at the awards ceremony." height="400">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- demographics -->
+  <div class="demographics">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="p-0 d-lg-block d-none"">
+          <h2 style="color: #f27aaa;">Demographics</h2>
+        </div>
+        <div class="row mb-lg">
+          <div class="col-lg-7 p-0">
+            <div class="row demo-legend demo-section stretch m-sm-0 m-lg-2">
+              <div class="col-lg-6">
+                <canvas id="edulevels" aria-label="Educational Level Breakdown Chart" role="img"></canvas>
+              </div>
+              <div class="col-lg-6">
+                <span class="demo-name text-left edu-text"><span class="edu-dot" style="background: #00FFFF"></span>Undergraduate</span>
                 <span class="demo-stat">61%</span>
                 <br>
-                <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High
-                  School</span>
+                <span class="demo-name text-left"><span class="edu-dot" style="background: #FF5789"></span>High School</span>
                 <span class="demo-stat">23%</span>
                 <br>
-                <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate
-                  School</span>
+                <span class="demo-name text-left"><span class="edu-dot" style="background: #2D2D2D"></span>Graduate School</span>
                 <span class="demo-stat">0.6%</span>
                 <br>
-                <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle
-                  School</span>
+                <span class="demo-name text-left"><span class="edu-dot" style="background: #A88AA8"></span>Middle School</span>
                 <span class="demo-stat">1.7%</span>
               </div>
             </div>
-            <div class="col-lg-7 p-0">
-              <div class="demo-section my-lg-2 mr-lg-2 mt-xl-2">
-                <span class="demo-name">American Indian or Alaska Native</span>
-                <span class="demo-stat">0.5%</span>
-                <br>
-                <span class="demo-name">Asian / Pacific Islander</span>
-                <span class="demo-stat">56.6%</span>
-                <br>
-                <span class="demo-name">Black or African American</span>
-                <span class="demo-stat">9%</span>
-                <br>
-                <span class="demo-name">Hispanic or Latino</span>
-                <span class="demo-stat">5.9%</span>
-                <br>
-                <span class="demo-name">Middle Eastern or North African</span>
-                <span class="demo-stat">1.9%</span>
-                <br>
-                <span class="demo-name">Native Hawaiian or Pacific Islander</span>
-                <span class="demo-stat">0.7%</span>
-                <br>
-                <span class="demo-name">White / Caucasian</span>
-                <span class="demo-stat">16%</span>
-                <br>
-                <span class="demo-name">Prefer not to answer</span>
-                <span class="demo-stat">4.1%</span>
-              </div>
+          </div>
+          <div class="col-lg-5 p-0">
+            <div class="demo-section demo-ethnicities my-lg-2 mr-lg-2 mt-xl-2">
+              <span class="demo-name">American Indian or Alaska Native</span>
+              <span class="demo-stat">0.5%</span>
+              <br>
+              <span class="demo-name">Asian / Pacific Islander</span>
+              <span class="demo-stat">56.6%</span>
+              <br>
+              <span class="demo-name">Black or African American</span>
+              <span class="demo-stat">9%</span>
+              <br>
+              <span class="demo-name">Hispanic or Latino</span>
+              <span class="demo-stat">5.9%</span>
+              <br>
+              <span class="demo-name">Middle Eastern or North African</span>
+              <span class="demo-stat">1.9%</span>
+              <br>
+              <span class="demo-name">Native Hawaiian or Pacific Islander</span>
+              <span class="demo-stat">0.7%</span>
+              <br>
+              <span class="demo-name">White / Caucasian</span>
+              <span class="demo-stat">16%</span>
+              <br>
+              <span class="demo-name">Prefer not to answer</span>
+              <span class="demo-stat">4.1%</span>
             </div>
           </div>
-          <div class="row lower my-lg-3">
-            <div class="col order-1 p-0">
-              <div class="demo-section stretch order-1 ml-xl-2 ml-lg-2">
-                <span class="demo-name ">Minors</span>
-                <span class="demo-stat">24.9%</span>
-                <br>
-                <span class="demo-name">Non-Minors</span>
-                <span class="demo-stat">75.1%</span>
-              </div>
+        </div>
+        <div class="row lower my-lg-3">
+          <div class="col order-1 p-0">
+            <div class="demo-section stretch order-1 ml-xl-2 ml-lg-2">
+              <span class="demo-name ">Minors</span>
+              <span class="demo-stat">24.9%</span>
+              <br>
+              <span class="demo-name">Non-Minors</span>
+              <span class="demo-stat">75.1%</span>
             </div>
-            <div class="col-lg-6 order-3 order-lg-2 p-0">
-              <div class="demo-section mx-lg-2">
-                <span class="demo-name">First time hackers</span>
-                <span class="demo-stat">49.95%</span>
-                <br>
-                <span class="demo-name">First time at Technica</span>
-                <span class="demo-stat">65.17%</span>
-              </div>
+          </div>
+          <div class="col-lg-6 order-3 order-lg-2 p-0">
+            <div class="demo-section mx-lg-2">
+              <span class="demo-name">First time hackers</span>
+              <span class="demo-stat">49.95%</span>
+              <br>
+              <span class="demo-name">First time at Technica</span>
+              <span class="demo-stat">65.17%</span>
             </div>
-            <div class="col order-2 order-lg-3 p-0">
-              <div class="demo-section stretch mr-lg-2">
-                <span class="demo-name">Female</span>
-                <span class="demo-stat">96.8%</span>
-                <br>
-                <span class="demo-name">Non-Binary</span>
-                <span class="demo-stat">2.9%</span>
-              </div>
-              <div class="med-spark blue-spark d-none d-lg-block" style="bottom: -50px; right: -5px"></div>
+          </div>
+          <div class="col order-2 order-lg-3 p-0">
+            <div class="demo-section stretch mr-lg-2">
+              <span class="demo-name">Female</span>
+              <span class="demo-stat">96.8%</span>
+              <br>
+              <span class="demo-name">Non-Binary</span>
+              <span class="demo-stat">2.9%</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 
-  <div class="container-fluid">
-    <article>
-  
-      <!-- header -->
-      <section class="header">
-  
-        <!-- introduction -->
-        <div class="intro heading text-center">
-          <h1> Help support Technica 2021! </h1>
-        </div>
-      </section>
   <!-- prospectus -->
   <div class="prospectus">
     <div class="heading-pink">
@@ -226,7 +280,7 @@
     <div class="table-responsive">
       <table class="table table-hover">
         <thead>
-          <tr class="text-center">
+          <tr class="text-center" >
             <td class="text-left pl-0 align-bottom">Contribution Amount</td>
             <td scope="col" class="contr-amt">Starter<br>$1,000</td>
             <td scope="col" class="contr-amt">Bronze<br>$4,000</td>
@@ -238,176 +292,340 @@
         </thead>
         <tbody>
           <tr>
-            <th class="pl-0" colspan="7"scope="colgroup">General</th>
+            <th class="pl-0" colspan="7" scope="colgroup">General</th>
           </tr>
           <tr>
-            <td> Mentors at event <span data-toggle="tooltip" title="Mentors are a great way to represent your company or organization at Technica and help our hackers face-to-face—over web conference or in-person—with any questions they might have about their projects. Mentors can be of any gender.">&#9432;</span></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
+            <td> Mentors at event <span data-toggle="tooltip" title="Mentors are a great way to represent your company or organization at Technica and help our hackers face-to-face—over web conference or in-person—with any questions they might have about their projects. Mentors can be of any gender.">&#9432;</span>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
           </tr>
           <tr>
-            <td> Reserved virtual & in-person booth at event <span data-toggle="tooltip" title="Sponsors have their own virtual booth in the virtual Sponsorship hall of our virtual platform during the event, as well as the option to have an in-person booth at the UMD or San Francisco location. The booth is your “home base” for the event, from which you can post or distribute marketing materials, interact with hackers, and make your presence felt at Technica!">&#9432;</span></td>
+            <td> Reserved virtual & in-person booth at event <span data-toggle="tooltip" title="Sponsors have their own virtual booth in the virtual Sponsorship hall of our virtual platform during the event, as well as the option to have an in-person booth at an in-person Technica location. The booth is your “home base” for the event, from which you can post or distribute marketing materials, interact with hackers, and make your presence felt at Technica!">&#9432;</span>
+            </td>
             <td></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
           </tr>
           <tr>
-            <td> Prize category <span data-toggle="tooltip" title="This prize category can be something general, such as “Best Security Hack” or “Best Hack for Diversity and Inclusion”, or something branded, such as “Best Use of [insert company]’s API”. Our hackers will have the option of submitting their hacks/projects to your prize category, and you will be able to judge projects, select winners, and distribute your own prizes accordingly during the closing ceremony. We encourage our sponsors to remember that Technica has hackers that come from diverse backgrounds when choosing their prize categories.">&#9432;</span></td>
+            <td> Prize category <span data-toggle="tooltip" title="This prize category can be something general, such as “Best Security Hack” or “Best Hack for Diversity and Inclusion”, or something branded, such as “Best Use of [insert company]’s API”. Our hackers will have the option of submitting their hacks/projects to your prize category, and you will be able to judge projects, select winners, and distribute your own prizes accordingly during the closing ceremony. We encourage our sponsors to remember that Technica has hackers that come from diverse backgrounds when choosing their prize categories.">&#9432;</span>
+            </td>
             <td></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
           </tr>
           <tr>
-            <td> Techni-chat <span data-toggle="tooltip" title="Techni-chats take place on the main event-long livestream which can feature your representative in a panel moderated by our team. This will include a live Q&A with our attendees. This will be recorded and posted on the Technica Youtube channel.">&#9432;</span></td>
+            <td> Techni-chat <span data-toggle="tooltip" title="Techni-chats take place on the main event-long livestream which can feature your representative in a panel moderated by our team. This will include a live Q&A with our attendees. This will be recorded and posted on the Technica Youtube channel.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
-            <td class="align-middle"><div class="benefit general-spons"></div></td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit general-spons"></div>
+            </td>
           </tr>
           <tr>
-            <td> Tech talk/Workshop <span data-toggle="tooltip" title="A tech talk/workshop is a great way for sponsors to interact with our hackers and can be on any topic of your choice. Past workshops have covered a range of topics from cybersecurity to web development to machine learning. These will be done both in-person and over our web conference platform, with the option to make it as interactive as desired.">&#9432;</span></td>
+            <td> Tech talk/Workshop <span data-toggle="tooltip" title="A tech talk/workshop is a great way for sponsors to interact with our hackers and can be on any topic of your choice. Past workshops have covered a range of topics from cybersecurity to web development to machine learning. These will be done both in-person and over our web conference platform, with the option to make it as interactive as desired.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="general-text text-center">45 min</div></td>
-            <td class="align-middle"><div class="general-text text-center">75 min</div></td>
-            <td class="align-middle"><div class="general-text text-center">90+ min</div></td>
+            <td class="align-middle">
+              <div class="general-text text-center">45 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="general-text text-center">75 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="general-text text-center">90+ min</div>
+            </td>
+          </tr>
+          <tr>
+            <td> Community Events <span data-toggle="tooltip" title="There will be a variety of events held throughout 2021 outside of Technica weekend to allow our hackers more opportunities to learn and interact with companies. This is an opportunity for sponsors to talk to members of the Technica community by hosting a workshop, talk, or any other event during one of our 1-2 day sessions this year.">&#9432;</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="align-middle">
+              <div class="general-text text-center">1</div>
+            </td>
+            <td class="align-middle">
+              <div class="general-text text-center">2</div>
+            </td>
           </tr>
           <tr>
             <th class="pl-0" colspan="7" scope="colgroup">Recruiting</th>
           </tr>
           <tr>
-            <td> Networking portal <span data-toggle="tooltip" title="The speed-dating portal will be integrated into the Technica platform, and will allow recruiters and hackers to be randomly paired with one another for a few minutes at a time to chat. This provides company representatives exposure and an opportunity to recruit with hackers that may not have visited their booth.">&#9432;</span></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
+            <td> Networking portal <span data-toggle="tooltip" title="The speed-dating portal will be integrated into the Technica platform, and will allow recruiters and hackers to be randomly paired with one another for a few minutes at a time to chat. This provides company representatives exposure and an opportunity to recruit with hackers that may not have visited their booth.">&#9432;</span>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
           </tr>
           <tr>
           <tr>
-            <td> Recruiters at booth <span data-toggle="tooltip" title="You are welcome to have recruiters and recruiting materials at your booth at Technica, where you will be able to interact with all of our hackers. You may bring as many representatives as you’d like. There will be a “Sponsorship Fair” during which hackers will be encouraged to visit your open booths, and you can also choose to initiate 1:1s with hackers.">&#9432;</span></td>
+            <td> Recruiters at booth <span data-toggle="tooltip" title="You are welcome to have recruiters and recruiting materials at your booth at Technica, where you will be able to interact with all of our hackers. You may bring as many representatives as you’d like. There will be a Sponsorship Fair during which hackers will be encouraged to visit your open booths, and you can also choose to initiate 1:1s with hackers.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
           </tr>
           <tr>
-            <td> Access to resume database <span data-toggle="tooltip" title="With this perk, we provide a database of all of our registrants’ resumes to our sponsors following the event. Sponsors at or higher than the Gold Tier will receive the database before Technica, while Silver Tier sponsors will receive it after the event. The database will be sortable and searchable for easy usage.">&#9432;</span></td>
+            <td> Access to resume database <span data-toggle="tooltip" title="With this perk, we provide a database of all of our registrants’ resumes to our sponsors following the event. Sponsors at or higher than the Gold Tier will receive the database before Technica, while Silver Tier sponsors will receive it after the event. The database will be sortable and searchable for easy usage.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit-text text-center">Post-Technica</div></td>
-            <td class="align-middle"><div class="benefit-text text-center">Pre-Technica</div></td>
-            <td class="align-middle"><div class="benefit-text text-center">Pre-Technica</div></td>
-            <td class="align-middle"><div class="benefit-text text-center">Pre-Technica</div></td>
+            <td class="align-middle">
+              <div class="benefit-text text-center">Post-Technica</div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit-text text-center">Pre-Technica</div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit-text text-center">Pre-Technica</div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit-text text-center">Pre-Technica</div>
+            </td>
           </tr>
           <tr>
-            <td> Schedule hacker 1:1 <span data-toggle="tooltip" title="With reception of the resume database prior to the event, feel free to note down hackers you’d like to reach out to. At the event, invite individual hackers for a 1:1 conversation with a company recruiter.">&#9432;</span></td>
+            <td> Schedule hacker 1:1 <span data-toggle="tooltip" title="With receipt of the resume database prior to the event, feel free to note down hackers you’d like to reach out to. At the event, invite individual hackers for a 1:1 conversation with a company recruiter.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
           </tr>
           <tr>
-            <td> Pre-event email to participants <span data-toggle="tooltip" title="Around 2-3 days before the event itself, we will allow sponsors with this perk to email all of our registrants up to that point to encourage participants to keep an eye out for your company’s booth and activities during the event. The message would be sent by the Technica Team on behalf of your organization/company, but we will leave the content of the email up to you!">&#9432;</span></td>
+            <td> Pre-event email to participants <span data-toggle="tooltip" title="Around 2-3 days before the event itself, we will allow sponsors with this perk to email all of our registrants up to that point to encourage participants to keep an eye out for your company’s booth and activities during the event. The message would be sent by the Technica Team on behalf of your organization/company, but we will leave the content of the email up to you!">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit recruit"></div></td>
+            <td class="align-middle">
+              <div class="benefit recruit"></div>
+            </td>
           </tr>
           <tr>
             <th class="pl-0" colspan="7" scope="colgroup">Branding</th>
           </tr>
           <tr>
-            <td> Logo on landing page & T-shirt <span data-toggle="tooltip" title="Sponsors will have their logos (ordered and scaled by sponsorship tier) on our website and T-shirt.">&#9432;</span></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
+            <td> Logo on landing page & T-shirt <span data-toggle="tooltip" title="Sponsors will have their logos (ordered and scaled by sponsorship tier) on our website and T-shirt.">&#9432;</span>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
           </tr>
           <tr>
-            <td> Distribution of marketing materials <span data-toggle="tooltip" title="Sponsors are able to distribute marketing materials to our hackers in their virtual and in-person booths. This can include any type of virtual swag (ex: promo codes), informational materials (ex: pamphlets, flyers, or videos), or physical swag (ex: T-shirts, masks).">&#9432;</span></td>
+            <td> Distribution of marketing materials <span data-toggle="tooltip" title="Sponsors are able to distribute marketing materials to our hackers in their virtual and in-person booths. This can include any type of virtual swag (ex: promo codes), informational materials (ex: pamphlets, flyers, or videos), or physical swag (ex: T-shirts, masks).">&#9432;</span>
+            </td>
             <td></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
           </tr>
           <tr>
-            <td> Message on livestream <span data-toggle="tooltip" title="Advertise your booth and opportunities and make your presence known to our participants in a pre-recorded message on our main livestream! The length of the message will be based on the sponsorship tier.">&#9432;</span></td>
+            <td> Message on livestream <span data-toggle="tooltip" title="Advertise your booth and opportunities and make your presence known to our participants in a pre-recorded message on our main livestream! The length of the message will be based on the sponsorship tier.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="brand-text text-center">0.5 min</div></td>
-            <td class="align-middle"><div class="brand-text text-center">1 min</div></td>
-            <td class="align-middle"><div class="brand-text text-center">1.5 min</div></td>
-            <td class="align-middle"><div class="brand-text text-center">2 min</div></td>
+            <td class="align-middle">
+              <div class="brand-text text-center">0.5 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="brand-text text-center">1 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="brand-text text-center">1.5 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="brand-text text-center">2 min</div>
+            </td>
           </tr>
           <tr>
-            <td> Opening speaker <span data-toggle="tooltip" title="Sponsors with this perk will get speaking time at the opening ceremony on our main Livestream to discuss their company, their prize category, and anything else that they would like! Please keep in mind the designated time allotment for your tier when planning your presentation.">&#9432;</span></td>
+            <td> Opening speaker <span data-toggle="tooltip" title="Sponsors with this perk will get speaking time at the opening ceremony on our main Livestream to discuss their company, their prize category, and anything else that they would like! Please keep in mind the designated time allotment for your tier when planning your presentation.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="brand-text text-center">1 min</div></td>
-            <td class="align-middle"><div class="brand-text text-center">3 min</div></td>
-            <td class="align-middle"><div class="brand-text text-center">5-10 min</div></td>
+            <td class="align-middle">
+              <div class="brand-text text-center">1 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="brand-text text-center">3 min</div>
+            </td>
+            <td class="align-middle">
+              <div class="brand-text text-center">5-10 min</div>
+            </td>
           </tr>
           <tr>
-            <td> Social media shout-out <span data-toggle="tooltip" title="Technica social media accounts will promote your company through a customized message of choice at some point leading up to the day of the event. We will post about your company on all forms of social media you select (Twitter, LinkedIn, Instagram, etc).">&#9432;</span></td>
+            <td> Social media shout-out <span data-toggle="tooltip" title="Technica social media accounts will promote your company through a customized message of choice at some point leading up to the day of the event. We will post about your company on all forms of social media you select (Twitter, LinkedIn, Instagram, etc).">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
           </tr>
           <tr>
-            <td> Branded mini-challenge <span data-toggle="tooltip" title="This is a great way to engage with our hackers in a fun, informal way over a virtual or in-person activity of choice. A mini-challenge usually involves an activity like a game or a short event with prizes. We will work with you to arrange the logistics, and will also be sure to advertise and announce this mini-challenge during the event itself.">&#9432;</span></td>
+            <td> Branded mini-challenge <span data-toggle="tooltip" title="This is a great way to engage with our hackers in a fun, informal way over a virtual or in-person activity of choice. A mini-challenge usually involves an activity like a game or a short event with prizes. We will work with you to arrange the logistics, and will also be sure to advertise and announce this mini-challenge during the event itself.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
           </tr>
           <tr>
-            <td> Film feature <span data-toggle="tooltip" title="Technica’s end-of-year film, a recap of the event created by our video team, will feature sponsors with this perk. This will involve clips from a workshop, booth, interview, or other content from the event featuring these company representatives.">&#9432;</span></td>
+            <td> Film feature <span data-toggle="tooltip" title="Technica’s end-of-year film, a recap of the event created by our video team, will feature sponsors with this perk. This will involve clips from a workshop, booth, interview, or other content from the event featuring these company representatives.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
           </tr>
           <tr>
-            <td> "Co-hosted by..." <span data-toggle="tooltip" title="Partner-level sponsors will be given special recognition in our marketing materials as a co-host. We look forward to working with Partner-level sponsors to help coordinate and accommodate their marketing needs.">&#9432;</span></td>
+            <td> "Co-hosted by..." <span data-toggle="tooltip" title="Partner-level sponsors will be given special recognition in our marketing materials as a co-host. We look forward to working with Partner-level sponsors to help coordinate and accommodate their marketing needs.">&#9432;</span>
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="align-middle"><div class="benefit brand"></div></td>
+            <td class="align-middle">
+              <div class="benefit brand"></div>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -415,7 +633,7 @@
     <div class="table-responsive add-ons">
       <table class="table">
         <thead>
-          <tr>
+            <tr>
             <th class="text-center align-bottom pl-0" colspan="3" scope=colgroup>Add-Ons</th>
           </tr>
         </thead>
@@ -426,13 +644,6 @@
               <span data-toggle="tooltip" title="The mission of the Tech+X series, where X is replaced by some other field, is to expose students of all different backgrounds to the various intersections between technology and select “non-tech” fields. We feel that by connecting other fields to technology, we can inspire people to take a greater interest in it. These talks are held prior to Technica on a web conferencing platform followed by a live Q&A. This will be recorded and posted on the Technica youtube channel.">&#9432;</span>
               <br>
               $1,000
-            </td>
-            <td style="width:33.33%;">
-              Year-round events
-              <span data-toggle="tooltip" title="There will be a variety of events held throughout 2021 outside of Technica weekend to allow our hackers more opportunities to learn and interact with companies. This is an opportunity for sponsors to talk to members of the Technica community by hosting a workshop, talk, or any other event during one of our 1-2 day sessions this year.">&#9432;</span>
-              <br>
-              $1,500
-              <br>
             </td>
             <td style="width:33.33%;">
               Co-branded swag package
@@ -450,6 +661,7 @@
   <!-- contact -->
   <div class="contact">
     <div class="heading-pink">
+      <br>
       <h2> Let's Get In Touch </h2>
     </div>
     <p>Contact us at <a id="email-link" href="mailto:sponsorship@gotechnica.org" style="color: #b5a1c4;">sponsorship@gotechnica.org</a> or send an inquiry below!</p>
@@ -484,125 +696,17 @@
       Thank you for your inquiry. Our sponsorship team has received your message and will follow up.
     </div>
   </div>
->>>>>>> 00e073f4b838f6d248eca5edb009deafbce52c49
 
-      <section class = "main">
-        <div class = "letter" style = "position: relative">
-          <p>Hello Potential Sponsers!</p>
-          <p>
-            This coming fall, students from across the United States will organize 
-            Technica, our annual hackathon for underrepresented genders in tech, for 
-            its <b>seventh year!</b> Technica has been the largest hackathon for underrepresented 
-            genders in tech in the world for the past six years, and welcomed over 1868 
-            participants from six different continents last year. In the span of 24 hours, 
-            Technica gives our participants the opportunity to create new applications, 
-            websites or hardware projects.
-          </p>
-          <p>
-            In 2021, Technica aims to be the first hackathon to implement a hybrid 
-            event model—an event that is hosted both in-person and virtually, 
-            drawing on the success of our completely virtual event in 2020 and our 
-            history of in-person events. In addition to implementing this hybrid 
-            model, we are expanding to the west coast, creating a new venue location 
-            in San Francisco in order to increase our in-person event capacity and 
-            enable west coast hackers to participate.
-          </p>
-          <p>
-            Technica is not a typical hackathon—it serves as a place for the brightest 
-            thinkers in the country to come together to collaborate and share their 
-            innovative ideas. Our focus is on providing a welcoming, engaging, 
-            and creative environment to support <b>women and non-binary people</b> in tech 
-            culture. We pride ourselves in helping both beginners and experienced 
-            hackers explore technology and develop their skills. 
-          </p>
-          <p>
-            Not only does Technica serve as an incubator for creating and promoting 
-            a gender-diverse workforce in the future, but it also provides an optimal 
-            opportunity for recruitment and outreach. We would love for you to get 
-            involved as a sponsor for Technica 2021! 
-          </p>
-          <p>
-            Our available sponsorship tiers are listed on the following page. Additionally, 
-            we are happy to state that Technica has <b>501(c)(3) status.</b> Please let 
-            us know if you are interested in becoming a part of Technica, or if 
-            you have any questions or concerns about the information below. We look 
-            forward to hearing from you!
-          </p>
-          <p>
-            Thank you,
-            <br>
-            The Technica Team
-          </p>
-        </div>
-      </section>
-      
-    </article>
-  </div>
-
-  <!-- stats -->
-  <div class = "stats">
-    <div class="overall-stats">
-      <div class="heading">
-        Statistics
-      </div>
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="row" style="margin-bottom: 30px">
-            <div class="col-6">
-              <span class="stat-number">1868</span>
-              <br>
-              <span class="stat-text">Attendees</span>
-            </div>
-            <div class="col-6">
-              <span class="stat-number">150+</span>
-              <br>
-              <span class="stat-text">Schools</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <span class="stat-number">215</span>
-              <br>
-              <span class="stat-text">Projects submitted</span>
-              </div>
-            <div class="col-6">
-              <span class="stat-number">35</span>
-              <br>
-              <span class="stat-text">Sponsors</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <span class="stat-number">36</span>
-              <br>
-              <span class="stat-text">Countries</span>
-              </div>
-            <div class="col-6">
-              <span class="stat-number">6</span>
-              <br>
-              <span class="stat-text">Continents</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7 pl-0">
-          <img src="./img/winning-hackers.jpg" alt="A group photo of 5 winning-hackers
-          smiling and standing on stage at the awards ceremony." height="400">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- --------------------------------------------------------------------------------------------------------- -->
   <div class="contact-footer">
     <div class="contact section text-center">
       <div class="social-buttons">
         <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/" target="_blank">
-          <div class="purple-circle">
+          <div class="blue-circle">
             <img src="./img/w_youtube.svg" alt="YouTube icon">
           </div>
         </a>
         <a href="https://twitter.com/gotechnica?lang=en" target="_blank">
-          <div class="purple-circle">
+          <div class="blue-circle">
             <img src="./img/w_twitter.svg" alt="Twitter icon">
           </div>
         </a>
@@ -617,29 +721,32 @@
           </div>
         </a>
         <a href="https://medium.com/gotechnica" target="_blank" >
-          <div class="purple-circle">
+          <div class="pink-circle">
             <img src="./img/w_medium.svg" alt="Medium icon">
           </div>
         </a>
         <a href="https://linkedin.com/company/gotechnica" target="_blank">
-          <div class="purple-circle">
+          <div class="pink-circle">
             <img src="./img/w_linkedin.svg" alt="LinkedIn icon">
           </div>
         </a>
       </div>
     </div>
   </div>
-      
+
   <div class="footer" style="background-color: #E9E3ED;">
     <div class="container" style="padding: 1%;">
       <div id="footer-links">
-        <a href="https://gotechnica.org/sponsor" target="_blank">Sponsor</a> | <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> <!--| <a href="https://gotechnica.org/resources" target="_blank"> Resources</a> | <a href="https://gotechnica.org/donate" target="_blank"> Donate</a>-->
+        <a href="https://gotechnica.org/sponsor" target="_blank">Sponsor</a> | <a href="./files/terms.pdf"
+          target="_blank">Code of Conduct</a>
+        <!--| <a href="https://gotechnica.org/resources" target="_blank"> Resources</a> | <a href="https://gotechnica.org/donate" target="_blank"> Donate</a>-->
       </div>
       <span style="opacity: .7">Copyright © 2021 Technica</span>
     </div>
   </div>
 
   <!-- mlh badge -->
+<<<<<<< HEAD
   <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -648,6 +755,9 @@
   <script src="./js/sponsor-submit.js"></script>
 >>>>>>> 00e073f4b838f6d248eca5edb009deafbce52c49
 =======
+=======
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+>>>>>>> 6498b3deaa4f4212df55cfbd757f1b137685dea5
 </body>
 </html>
 
@@ -664,7 +774,6 @@
   var eduChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Undergraduate', 'High School', 'Graduate School', 'Middle School'],
       datasets: [{
         data: [1140, 429, 11, 31],
         backgroundColor: colors,
@@ -700,8 +809,14 @@
     eduChart.update();
   });
 </script>
+</script>
 
+<<<<<<< HEAD
   <script src="./js/sponsor-submit.js"></script>
 >>>>>>> cd6efef44a6f0c89d3b5da541e9c0919260d3860
+=======
+<script src="./js/sponsor-submit.js"></script>
+>>>>>>> 6498b3deaa4f4212df55cfbd757f1b137685dea5
 </body>
+
 </html>

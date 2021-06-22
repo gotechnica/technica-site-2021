@@ -1,13 +1,6 @@
-.container-fluid {
-  padding-left: 4%;
-  padding-right: 4%; }
-
-.stats {
-  padding-left: 10%;
-  padding-right: 10%; }
-
-.heading {
-  color: #ff5789; }
+/* Text */
+.header {
+  margin-top: 5rem; }
 
 .contact,
 .stats,
@@ -36,87 +29,22 @@
 .overall-stats .heading {
   font-size: 3.75rem; }
 
-.stat-number {
-  font-size: 4.3rem;
-  font-weight: bold;
-  line-height: 1;
-  color: #a88aa8; }
-
-.stat-text {
-  font-size: 2rem;
-  line-height: 1; }
-
 .overall-stats img {
   height: 75%;
   width: 95%;
   object-fit: cover;
   box-shadow: -2rem 0rem 0 -20px #a88aa8, 0.75rem -0.75rem #ff7bac; }
 
-.demographics {
-  margin-top: 30px;
-  font-size: 0.95vw; }
+.overall-stats .stat-number {
+  font-size: 3rem;
+  color: #b5a1c4;
+  font-weight: bold; }
 
-.demographics .heading {
-  font-size: 2.5rem;
-  color: #a88aa8;
-  margin-bottom: 10px;
-  margin-left: -15px; }
+.overall-stats .stat-text {
+  font-size: 1.5rem; }
 
-.custom-control {
-  margin-top: 5px;
-  margin-bottom: 10px; }
-
-.custom-control-label {
-  position: relative; }
-
-.custom-control-label::before {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 1px;
-  margin-right: 5px; }
-
-.custom-control-label::after {
-  position: absolute;
-  display: inline-block; }
-
-.demo-section {
-  background-color: #f3f3f3;
-  padding: 5%;
-  overflow: hidden;
-  height: 90%;
-  line-height: 1.75; }
-
-.stretch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.demo-name {
-  text-align: right;
-  padding-right: 5%;
-  float: left;
-  width: 85%; }
-
-.demo-stat {
-  text-align: left;
-  float: right;
-  width: 15%; }
-
-.edu {
-  line-height: 3.5; }
-
-.edu-dot {
-  width: 1.5vw;
-  height: 1.5vw;
-  border-radius: 50px;
-  display: inline-block;
-  vertical-align: -0.3vw;
-  margin-right: 10px; }
-
-.edu .demo-stat {
-  color: black; }
+#stat-photo {
+  margin-left: 3%; }
 
 /* Text */
 h2 {
@@ -132,25 +60,21 @@ h2 {
   color: #b5a1c4;
   font-weight: bold; }
 
-/* Mobile Text */
-@media only screen and (max-width: 575px) {
-  h2 {
-    font-size: 2rem; }
-  p {
-    font-size: 0.4rem; } }
-
 .demo-section {
   background-color: #f3f3f3;
   height: 100%;
   padding: 1.25rem; }
 
-.demo-container {
-  margin-top: 3rem;
-  padding-left: 15%;
-  padding-right: 15%; }
-
 .demo-name {
   text-align: right; }
+
+.demo-legend {
+  line-height: 3rem; }
+
+.demo-stat {
+  text-align: left;
+  float: right;
+  width: 30%; }
 
 .demo-legend {
   line-height: 4rem;
@@ -161,12 +85,15 @@ h2 {
   text-align: right;
   float: right; }
 
+.demo-ethnicities {
+  line-height: 5vh; }
+
 .edu-dot {
   width: 1.5vw;
   height: 1.5vw;
   border-radius: 50px;
   display: inline-block;
-  vertical-align: -.3vw;
+  vertical-align: -0.3vw;
   margin-right: 10px; }
 
 /* large breakpoint, switch to mobile-layout */
@@ -175,8 +102,8 @@ h2 {
     font-size: 6rem; }
   .stat-text {
     font-size: 2.3rem; }
-  .demo-stat {
-    width: 10%; }
+  .stat-number {
+    font-size: 6rem; }
   .edu {
     padding: 5rem; }
   .edu .demo-name {
@@ -188,7 +115,17 @@ h2 {
   .lower .demo-name {
     width: 60%; }
   .lower .demo-stat {
-    width: 40%; } }
+    width: 40%; }
+  .demographics {
+    font-size: 16px; }
+  .demo-section {
+    margin-bottom: 20px; }
+  .demo-legend {
+    margin: 0.25%; }
+  .demo-stat {
+    width: 30%; }
+  canvas {
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 675px) {
   .stat-number {
@@ -217,16 +154,39 @@ h2 {
   .demo-legend {
     font-size: 1rem; }
   .demo-stat {
-    width: 15%; } }
+    width: 15%; }
+  .main,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 3%;
+    padding-right: 3%; }
+  .footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  h1 {
+    font-size: 1.9rem; }
+  .overall-stats .heading {
+    font-size: 3.25rem; }
+  .overall-stats img {
+    box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac; }
+  .edu .demo-name {
+    padding-left: 10%; }
+  .prospectus {
+    font-size: 0.9rem; }
+  .tooltip-inner {
+    width: 300px; }
+  .heading {
+    text-align: center; }
+  .heading h2 {
+    font-size: 31px; }
+  .tooltip-inner {
+    min-width: 200px;
+    max-width: 300px; } }
 
 .prospectus {
-  margin-top: 60px;
-  padding-left: 15%;
-  padding-right: 15%; }
-
-.heading h2 {
-  color: #f27aaa;
-  text-transform: none; }
+  margin-top: 60px; }
 
 td {
   border-top: none !important; }
@@ -248,6 +208,9 @@ th {
   height: 12px;
   border-radius: 50px;
   margin: 0 auto; }
+
+.benefit-text {
+  color: #b5a1c4; }
 
 .general-spons {
   background: #f27aaa; }
@@ -292,155 +255,26 @@ th {
   padding: 10px; }
 
 @media only screen and (max-width: 1370px) {
-  .main {
-    padding-left: 7%;
-    padding-right: 7%; }
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 7% !important;
+    padding-right: 7% !important; }
   .stat-number {
     font-size: 6.25vw; }
   .stat-text {
-    font-size: 2.5vw; }
-  .demographics {
-    font-size: 1.1vw; } }
+    font-size: 2.5vw; } }
 
-/* large breakpoint, switch to mobile-layout */
-@media only screen and (max-width: 991px) {
-  .main {
-    padding-left: 10%;
-    padding-right: 10%; }
-  .heading {
-    text-align: center; }
-  .demographics .heading {
-    margin-left: 0px;
-    margin-top: 8%;
-    margin-bottom: 20px; }
-  canvas {
-    margin-bottom: 20px; }
-  .stat-number {
-    font-size: 6rem; }
-  .stat-text {
-    font-size: 2.3rem; }
-  .stats img,
-  .pink-spark,
-  .purp-spark,
-  .blue-spark {
-    margin-top: 10%; }
-  .demographics {
-    font-size: 16px; }
-  .demo-section {
-    margin-bottom: 20px; }
-  .stretch {
-    position: static; }
-  .demo-name {
-    padding-right: 7.5%;
-    width: 70%; }
-  .demo-stat {
-    width: 30%; }
-  .edu .demo-name {
-    padding-left: 20%; }
-  .edu-dot {
-    width: 25px;
-    height: 25px;
-    vertical-align: -6px; }
-  .lower .demo-name {
-    width: 60%; }
-  .lower .demo-stat {
-    width: 40%; }
-  #demo-spark1 {
-    height: 8%;
-    width: 8%;
-    top: 17% !important;
-    left: 6% !important; }
-  #demo-spark2 {
-    height: 7%;
-    width: 7%;
-    bottom: 12% !important;
-    left: 2% !important; }
-  #demo-spark3 {
-    height: 6%;
-    width: 6%;
-    bottom: 2% !important;
-    left: 20% !important; }
-  #demo-spark4 {
-    height: 8%;
-    width: 8%;
-    top: 17% !important;
-    right: 6% !important; }
-  #demo-spark5 {
-    height: 6%;
-    width: 6%;
-    top: 28% !important;
-    right: -1% !important; }
-  #demo-spark6 {
-    height: 7%;
-    width: 7%;
-    bottom: 10% !important;
-    right: 2% !important; } }
-
-@media only screen and (max-width: 675px) {
-  .stat-number {
-    font-size: 5rem; }
-  .stat-text {
-    font-size: 2.25rem; }
-  .demo-name {
-    width: 80%; }
-  .demo-stat {
-    width: 20%; }
-  .lower .demo-name {
-    width: 70%; }
-  .lower .demo-stat {
-    width: 30%; } }
-
-/* large breakpoint, switch to mobile-layout */
-@media only screen and (max-width: 991px) {
-  .heading {
-    text-align: center; } }
-
-/* mobile */
-@media only screen and (max-width: 575px) {
-  .main {
-    padding-left: 3%;
-    padding-right: 3%; }
-  h1 {
-    font-size: 1.9rem; }
-  .overall-stats .heading {
-    font-size: 3.25rem; }
-  .overall-stats img {
-    box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac; }
-  .stat-number {
-    font-size: 3.7rem; }
-  .stat-text {
-    font-size: 1.7rem; }
-  .stats img,
-  .pink-spark,
-  .purp-spark,
-  .blue-spark {
-    margin-left: 10px;
-    margin-right: 10px; }
-  .demographics {
-    font-size: 3.5vw; }
-  .demo-name {
-    width: 85%; }
-  .demo-stat {
-    width: 15%; }
-  .edu .demo-name {
-    padding-left: 10%; }
-  .prospectus {
-    font-size: 0.9rem; }
-  .tooltip-inner {
-    width: 300px; }
-  .prospectus {
-    font-size: 0.9rem; }
-  .heading {
-    text-align: center; }
-  .heading h2 {
-    font-size: 31px; }
-  .tooltip-inner {
-    min-width: 200px;
-    max-width: 300px; } }
-
-.contact {
-  padding-left: 15%;
-  padding-right: 15%; }
+@media only screen and (min-width: 1422px) {
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 10% !important;
+    padding-right: 10% !important; } }
 
 .info-input {
   padding: 10px;
