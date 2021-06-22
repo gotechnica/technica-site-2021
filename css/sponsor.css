@@ -19,7 +19,6 @@ h2 {
 .header {
   margin-top: 5rem; }
 
-.demographics
 .contact,
 .stats,
 .prospectus {
@@ -54,13 +53,15 @@ h2 {
   box-shadow: -2rem 0rem 0 -20px #b5a1c4, 0.75rem -0.75rem #f27aaa; }
 
 .overall-stats .stat-number {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #b5a1c4;
   font-weight: bold; }
 
 .overall-stats .stat-text {
-  font-size: 1.5rem;
-  font-weight: bold; }
+  font-size: 1.5rem; }
+
+#stat-photo {
+  margin-left: 3%; }
 
 .demo-section {
   background-color: #f3f3f3;
@@ -95,7 +96,7 @@ h2 {
   height: 1.5vw;
   border-radius: 50px;
   display: inline-block;
-  vertical-align: -.3vw;
+  vertical-align: -0.3vw;
   margin-right: 10px; }
 
 .prospectus {
@@ -221,13 +222,26 @@ th {
   padding: 10px; }
 
 @media only screen and (max-width: 1370px) {
-  .main {
-    padding-left: 7%;
-    padding-right: 7%; }
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 7% !important;
+    padding-right: 7% !important; }
   .stat-number {
     font-size: 6.25vw; }
   .stat-text {
     font-size: 2.5vw; } }
+
+@media only screen and (min-width: 1422px) {
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 10% !important;
+    padding-right: 10% !important; } }
 
 .info-input {
   padding: 10px;

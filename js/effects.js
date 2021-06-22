@@ -1,16 +1,32 @@
+// faq accordion
+var acc = document.getElementsByClassName('accordion');
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function () {
+    this.classList.toggle('accordion-active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}
+
 // scrolling effect
 $(document).ready(function () {
-  $(".nav-link").click(function (e) {
-    var linkedHref = $(this).attr("href");
-    if (linkedHref == "#about") {
-      $("html, body").animate(
+  $('.nav-link').click(function (e) {
+    var linkedHref = $(this).attr('href');
+    if (linkedHref == '#about') {
+      $('html, body').animate(
         {
           scrollTop: $(linkedHref).offset().top - 45,
         },
         1000
       );
     } else {
-      $("html, body").animate(
+      $('html, body').animate(
         {
           scrollTop: $(linkedHref).offset().top - 85,
         },
@@ -22,14 +38,14 @@ $(document).ready(function () {
 });
 
 // testimonial carousel
-var flky = new Flickity(".gallery", {
+var flky = new Flickity('.gallery', {
   // options, defaults listed
   accessibility: true,
   // enable keyboard navigation, pressing left & right keys
   adaptiveHeight: false,
   // set carousel height to the selected slide
   autoPlay: false,
-  cellAlign: "center",
+  cellAlign: 'center',
   // alignment of cells, 'center', 'left', or 'right'
   // or a decimal 0-1, 0 is beginning (left) of container, 1 is end (right)
   cellSelector: undefined,
@@ -38,7 +54,7 @@ var flky = new Flickity(".gallery", {
   // will contain cells to container
   // so no excess scroll at beginning or end
   // has no effect if wrapAround is enabled
-  draggable: ">1",
+  draggable: '>1',
   // enables dragging & flicking
   // if at least 2 cells
   dragThreshold: 3,
@@ -78,19 +94,3 @@ var flky = new Flickity(".gallery", {
   wrapAround: true,
   // at end of cells, wraps-around to first for infinite scrolling
 });
-
-// faq accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("accordion-active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
