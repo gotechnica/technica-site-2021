@@ -1,4 +1,130 @@
 /*@use 'vars';*/
+
+/*hero*/
+/* .hero-clouds {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; }
+  @media only screen and (max-width: 767px) {
+    .hero-clouds {
+      width: 834px;
+      height: 663px;
+      left: -100px;
+      top: -26px; } }
+  @media only screen and (max-width: 1024px) {
+    .hero-clouds {
+      width: 834px;
+      height: 663px;
+      left: 0px;
+      top: 69px; } }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10%; }
+
+  @keyframes wait {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1;
+      pointer-events: auto; } }
+
+.hero-information {
+  position: relative;
+  z-index: 3;
+  animation: wait 600ms, fade-in 800ms 600ms;
+  animation-duration: 2s; }
+  .hero-information .hero-logo {
+    margin-bottom: 15px; }
+  @media only screen and (max-width: 767px) {
+    .hero-information {
+      margin-top: -225px; } }
+  .hero-information #technica-logo {
+    padding-top: 5%;
+    margin-top: 10%;
+    width: 600px; }
+    @media only screen and (max-width: 767px) {
+      .hero-information #technica-logo {
+        padding-top: 10%; } }
+  .hero-information #hero-tagline {
+    font-size: 150%;
+    width: 55%; }
+    @media only screen and (max-width: 767px) {
+      .hero-information #hero-tagline {
+        font-size: 100%;
+        width: 95%; } }
+    @media only screen and (min-width: 767px) and (max-width: 1042px) {
+      .hero-information #hero-tagline {
+        width: 85%; } }
+  
+  .hero-action {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    animation: fade-in 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards; }
+    @media only screen and (min-width: 996px) {
+      .hero-action {
+        padding-top: 115px; } }
+    @media only screen and (min-width: 1400px) {
+      .hero-action {
+        padding-top: 350px; } }
+    .hero-action .register-btn {
+      font-family: DINPro;
+      font-size: 175%;
+      font-weight: bold;
+      color: #fff;
+      position: relative;
+      z-index: 2; }
+      @media only screen and (max-width: 767px) {
+        .hero-action .register-btn {
+          font-family: DINPro;
+          font-size: 125%;
+          font-weight: bold;
+          color: #fff; } }
+    .hero-action .hero-learn {
+      color: #b6a1c4;
+      font-size: 150%; }
+      @media only screen and (max-width: 767px) {
+        .hero-action .hero-learn {
+          font-size: 115%; } }
+  
+  @media only screen and (max-width: 991px) {
+    .hero-information .hero-logo {
+      margin-top: 150px; }
+    .hero-action {
+      padding-top: 100px; } }
+  
+  @media only screen and (max-width: 767px) {
+    .hero-information .hero-logo {
+      margin-top: 225px; }
+    .hero-information #technica-logo {
+      width: 500px; }
+    .hero-action {
+      padding-top: 100px; } }
+  
+  @media only screen and (max-width: 575px) {
+    .hero {
+      padding-bottom: 75px; }
+    .hero-information {
+      font-size: 5vw; }
+      .hero-information #technica-logo {
+        width: 80vw; }
+      .hero-information #theme-logo {
+        width: 40vw;
+        min-width: 120px; } } */
+
+/******************************************************************************/
+
 .donate-button {
   text-align: center;
   color: #fff;
