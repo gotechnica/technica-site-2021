@@ -1,6 +1,6 @@
 /*@use 'vars';*/
 
-/*hero*/
+/*HERO SECTION BEGINS HERE*/
 
 .container{
   text-align: center;
@@ -26,7 +26,6 @@
 
 .hero {
   position: relative;
-  overflow: hidden;
   padding-bottom: 10%; }
 
   @keyframes wait {
@@ -87,7 +86,7 @@
     @media only screen and (min-width: 1400px) {
       .hero-action {
         padding-top: 350px; } }
-    .hero-action .register-btn {
+    .hero-action .donate-btn {
       font-family: DINPro;
       width: 250px;
       height: 75px;
@@ -97,9 +96,11 @@
       position: relative;
       z-index: 2; }
       @media only screen and (max-width: 767px) {
-        .hero-action .register-btn {
+        .hero-action .donate-btn {
           font-family: DINPro;
           font-size: 125%;
+          width: 175px;
+          height: 60px; 
           font-weight: bold;
           color: #fff; } }
     .hero-action .hero-learn {
@@ -133,6 +134,9 @@
       .hero-information #theme-logo {
         width: 40vw;
         min-width: 120px; } } */
+
+
+  /*HERO SECTION ENDS*/
 
 /******************************************************************************/
 
