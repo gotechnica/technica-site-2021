@@ -1,14 +1,20 @@
 /*@use 'vars';*/
+/* link */
 .donate-button {
   text-align: center;
-  color: #fff;
-  border: none;
-  background-color: #ff5789;
   align-items: center;
-  padding: 7px 35px;
+  color: white;
+  background-color: #b5a1c4;
+  border: none;
+  border-radius: 50px;
   font-size: 35px;
   font-weight: bold;
-  border-radius: 6px; }
+  padding: 7px 35px; }
+
+/* div */
+.donate-btn {
+  margin-top: 5%;
+  margin-bottom: 3%; }
 
 .donate-button:hover {
   opacity: 75%;
@@ -75,57 +81,53 @@ h2 {
   object-fit: contain; }
 
 .donate-impact {
-  background-color: #ece3f2;
+  background-color: rgba(236, 177, 206, 0.26);
   padding-top: 3%;
   padding-bottom: 3%; }
 
 .impact-header {
+  color: black;
   text-align: center;
-  padding-bottom: 1%; }
+  padding-bottom: 2.5%; }
 
-.donate-option1 {
-  background: #ffffff;
-  border: 6px solid #1cd5d5;
-  padding: 3%;
-  padding-top: 5%;
-  text-align: center;
-  width: 100%;
-  height: 100%; }
+.donate-option1-header, .donate-option2-header, .donate-option3-header {
+  display: inline-block;
+  font-size: 300%;
+  margin-bottom: 10%; }
 
 .donate-option1-header {
-  color: #1cd5d5;
-  font-size: 300%; }
-
-.donate-option2 {
-  background: #ffffff;
-  border: 6px solid #a88aa8;
-  padding: 3%;
-  padding-top: 5%;
-  text-align: center;
-  width: 100%;
-  height: 100%; }
+  color: #82ecec; }
 
 .donate-option2-header {
-  color: #a88aa8;
-  font-size: 300%; }
-
-.donate-option3 {
-  background: #ffffff;
-  border: 6px solid #ff5789;
-  padding: 3%;
-  padding-top: 5%;
-  text-align: center;
-  width: 100%;
-  height: 100%; }
+  color: #b5a1c4; }
 
 .donate-option3-header {
-  color: #ff5789;
-  font-size: 300%; }
+  color: #f27aaa; }
+
+.donate-option1, .donate-option2, .donate-option3 {
+  background: white;
+  border-radius: 33px;
+  padding: 11%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 100%;
+  min-height: 315px; }
+
+.donate-option1 {
+  border: 6px solid #82ecec; }
+
+.donate-option2 {
+  border: 6px solid #b5a1c4; }
+
+.donate-option3 {
+  border: 6px solid #f27aaa;
+  max-height: 315px; }
 
 .donate-questions {
-  background-color: #e4d7ed;
+  background-color: white;
   padding-top: 3%;
-  padding-bottom: 0.5%; }
+  padding-bottom: 3%; }
 
 #email-link-donate:hover {
   opacity: 75%;
@@ -146,7 +148,57 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
   .promise-image img {
-    max-height: 260px; } }
+    max-height: 260px; }
+  /* impact section */
+  .donate-btn {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 1200px) {
+  /* impact section */
+  .donate-option1, .donate-option2, .donate-option3 {
+    padding: 8%;
+    width: 80%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 300px; }
+  .donate-btn {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 991px) {
+  /* impact section */
+  .impact-header {
+    font-size: 280%; }
+  .donate-option1, .donate-option2, .donate-option3 {
+    padding: 8%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 97%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 300px; }
+  .donate-button {
+    font-size: 170%; }
+  .donate-questions {
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 767px) {
+  /* impact section */
+  .impact-header {
+    font-size: 250%; }
+  .donate-option1, .donate-option2, .donate-option3 {
+    padding: 8%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    font-size: 85%; }
+  .donate-button {
+    font-size: 150%; }
+  .donate-questions {
+    margin-top: 30px;
+    font-size: 95%; } }
 
 /* mobile */
 @media only screen and (max-width: 575px) {
@@ -155,9 +207,29 @@ h2 {
   .promise-image {
     padding-top: 0%;
     padding-bottom: 0%; }
-  .donate-impact {
-    padding: 7%; }
+  /* impact section */
+  .impact-header {
+    font-size: 7vw; }
+  .donate-option1-header, .donate-option2-header, .donate-option3-header {
+    display: inline-block;
+    font-size: 250%;
+    margin-bottom: 10%; }
+  .donate-option1, .donate-option2, .donate-option3 {
+    padding: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 100%;
+    min-height: 240px;
+    max-height: 240px; }
+  .donate-button {
+    font-size: 130%; }
+  .donate-btn {
+    margin-top: 20px;
+    margin-bottom: 20px; }
   .donate-questions {
-    padding-top: 5%; }
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 81%; }
   .col-sm {
     padding-bottom: 5%; } }
