@@ -8,29 +8,30 @@ $container-gray: #f3f3f3;
 
 $animation-length: 80s;
 
+@mixin dinpro-text($size, $weight, $color) {
+  font-family: DINPro;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
 /* Text */
 @mixin heading($color) {
-    font-size: 2rem;
-    color: $color;
-    margin-bottom: 10px;
-    margin-left: -15px;
-    font-weight: bold;
-  }
+  font-size: 2rem;
+  color: $color;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  font-weight: bold;
+}
 $light-grey: #e5e5e5;
 $grey: #c4c4c4;
 $spons-blue: #6fcbdc;
 $animation-length: 80s;
 
-.container-fluid {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 .header {
   margin-top: 5rem;
 }
 
-.demographics
 .contact,
 .stats,
 .prospectus {
@@ -75,14 +76,17 @@ $animation-length: 80s;
 }
 
 .overall-stats .stat-number {
-  font-size: 4rem;
+  font-size: 3rem;
   color: $lavender;
   font-weight: bold;
 }
 
 .overall-stats .stat-text {
   font-size: 1.5rem;
-  font-weight: bold;
+}
+
+#stat-photo {
+  margin-left: 3%;
 }
 
 /* Text */
@@ -92,51 +96,51 @@ h2 {
 }
 
 @mixin heading($color) {
-    font-size: 2rem;
-    color: $color;
+  font-size: 2rem;
+  color: $color;
 
-    font-weight: bold;
-  }
-  
+  font-weight: bold;
+}
+
 .heading-pink {
-    @include heading($pink);
+  @include heading($pink);
 }
 
 .heading-lavender {
-    @include heading($lavender);
+  @include heading($lavender);
 }
 
 // Demo Section
 
 .demo-section {
-    background-color: $container-gray;
-    height: 100%;
-    padding: 1.25rem;
+  background-color: $container-gray;
+  height: 100%;
+  padding: 1.25rem;
 }
 
 .demo-name {
-    text-align: right;
+  text-align: right;
 }
 
 .demo-legend {
-    line-height: 3rem;
+  line-height: 3rem;
 }
 
 .demo-stat {
-    text-align: left;
-    float: right;
-    width: 30%;
+  text-align: left;
+  float: right;
+  width: 30%;
 }
 
 .demo-legend {
-    line-height: 4rem;
-    text-align: left;
-    font-size: 1.2rem;
+  line-height: 4rem;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .demo-stat {
-    text-align: right;
-    float: right;
+  text-align: right;
+  float: right;
 }
 
 .demo-ethnicities {
@@ -144,16 +148,15 @@ h2 {
 }
 
 .edu-dot {
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 50px;
-    display: inline-block;
-    vertical-align: -.3vw;
-    margin-right: 10px;
-  }
-  
-  
-  /* large breakpoint, switch to mobile-layout */
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: -0.3vw;
+  margin-right: 10px;
+}
+
+/* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
   // Statistics
   .stat-number {
@@ -200,6 +203,10 @@ h2 {
     margin-bottom: 20px;
   }
 
+  .demo-legend {
+    margin: 0.25%;
+  }
+
   .demo-stat {
     width: 30%;
   }
@@ -225,7 +232,7 @@ h2 {
   }
 
   .demo-stat {
-    width: 20%
+    width: 20%;
   }
 
   .lower .demo-name {
@@ -260,12 +267,21 @@ h2 {
   }
 
   .demo-stat {
-    width: 15%
+    width: 15%;
   }
 
-  .main {
+  .main,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
     padding-left: 3%;
     padding-right: 3%;
+  }
+
+  .footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   h1 {
@@ -290,9 +306,6 @@ h2 {
 
   .tooltip-inner {
     width: 300px;
-  }
-  .prospectus {
-    font-size: 0.9rem;
   }
 
   .heading {
@@ -398,9 +411,13 @@ th {
 }
 
 @media only screen and (max-width: 1370px) {
-  .main {
-    padding-left: 7%;
-    padding-right: 7%;
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
   }
 
   .stat-number {
@@ -409,6 +426,17 @@ th {
 
   .stat-text {
     font-size: 2.5vw;
+  }
+}
+
+@media only screen and (min-width: 1422px) {
+  .letter,
+  .stats,
+  .demographics,
+  .prospectus,
+  .contact {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
   }
 }
 

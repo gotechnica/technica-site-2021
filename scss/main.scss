@@ -180,8 +180,12 @@ body {
     margin-top: -225px;
   }
   #technica-logo {
-    padding-top: 10%;
+    padding-top: 5%;
+    margin-top: 10%;
     width: 600px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 10%;
+    }
   }
   #hero-tagline {
     font-size: 150%;
