@@ -7,9 +7,9 @@
   background-color: #b5a1c4;
   border: none;
   border-radius: 50px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
-  padding: 7px 35px; }
+  padding: 5px 45px; }
 
 /* div */
 .donate-btn {
@@ -96,7 +96,7 @@ h2 {
   margin-bottom: 10%; }
 
 .donate-option1-header {
-  color: #82ecec; }
+  color: #6fcbdc; }
 
 .donate-option2-header {
   color: #b5a1c4; }
@@ -107,15 +107,15 @@ h2 {
 .donate-option1, .donate-option2, .donate-option3 {
   background: white;
   border-radius: 33px;
-  padding: 11%;
+  padding: 8%;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
   height: 100%;
-  min-height: 315px; }
+  min-height: 290px; }
 
 .donate-option1 {
-  border: 6px solid #82ecec; }
+  border: 6px solid #6fcbdc; }
 
 .donate-option2 {
   border: 6px solid #b5a1c4; }

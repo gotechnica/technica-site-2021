@@ -15,9 +15,9 @@ $hero-blue: #6fcbdc;
   background-color: $lavender;
   border: none;
   border-radius: 50px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
-  padding: 7px 35px;
+  padding: 5px 45px;
 }
 
 /* div */
@@ -123,7 +123,7 @@ h2 {
 }
 
 .donate-option1-header {
-  color: $cyan;
+  color: $hero-blue;
 }
 
 .donate-option2-header {
@@ -137,16 +137,16 @@ h2 {
 .donate-option1, .donate-option2, .donate-option3 {
   background: white;
   border-radius: 33px;
-  padding: 11%;
+  padding: 8%;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
   height: 100%;
-  min-height: 315px;
+  min-height: 290px;
 }
 
 .donate-option1 {
-  border: 6px solid $cyan;
+  border: 6px solid $hero-blue;
 }
 
 .donate-option2 {
