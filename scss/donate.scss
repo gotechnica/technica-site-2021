@@ -104,7 +104,7 @@ h2 {
 }
 
 .donate-impact {
-  background-color: rgba(236,177,206,0.26);
+  background-color: rgba(236, 177, 206, 0.26);
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -115,7 +115,9 @@ h2 {
   padding-bottom: 2.5%;
 }
 
-.donate-option1-header, .donate-option2-header, .donate-option3-header {
+.donate-option1-header,
+.donate-option2-header,
+.donate-option3-header {
   display: inline-block;
   font-size: 300%;
   margin-bottom: 10%;
@@ -133,7 +135,9 @@ h2 {
   color: $pink;
 }
 
-.donate-option1, .donate-option2, .donate-option3 {
+.donate-option1,
+.donate-option2,
+.donate-option3 {
   background: white;
   border-radius: 33px;
   padding: 8%;
@@ -160,7 +164,6 @@ h2 {
 .donate-questions {
   background-color: white;
   padding-top: 3%;
-  padding-bottom: 3%;
 }
 
 #email-link-donate:hover {
@@ -197,7 +200,9 @@ h2 {
 
 @media only screen and (max-width: 1200px) {
   /* impact section */
-  .donate-option1, .donate-option2, .donate-option3 {
+  .donate-option1,
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     width: 80%;
     height: 100%;
@@ -215,8 +220,10 @@ h2 {
   .impact-header {
     font-size: 280%;
   }
-  
-  .donate-option1, .donate-option2, .donate-option3 {
+
+  .donate-option1,
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     margin-left: 2%;
     margin-right: 2%;
@@ -241,7 +248,9 @@ h2 {
     font-size: 250%;
   }
 
-  .donate-option1, .donate-option2, .donate-option3 {
+  .donate-option1,
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     margin-left: 0;
     margin-right: 0;
@@ -278,13 +287,17 @@ h2 {
     font-size: 7vw;
   }
 
-  .donate-option1-header, .donate-option2-header, .donate-option3-header {
+  .donate-option1-header,
+  .donate-option2-header,
+  .donate-option3-header {
     display: inline-block;
     font-size: 250%;
     margin-bottom: 10%;
   }
 
-  .donate-option1, .donate-option2, .donate-option3 {
+  .donate-option1,
+  .donate-option2,
+  .donate-option3 {
     padding: 6%;
     margin-left: 10%;
     margin-right: 10%;
