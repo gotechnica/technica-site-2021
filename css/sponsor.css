@@ -1,52 +1,4 @@
 /* Text */
-.header {
-  margin-top: 5rem; }
-
-.contact,
-.stats,
-.prospectus {
-  margin-top: 60px; }
-
-.info-input {
-  padding: 10px;
-  background-color: #ff5789; }
-
-.inquiry-box {
-  border: 3px solid #ff5789; }
-
-.form-control {
-  border-radius: 0;
-  border: none; }
-
-.inquiry-btn {
-  border-radius: 0;
-  background-color: #ff5789; }
-
-.inquiry-btn:hover {
-  filter: brightness(1.2);
-  transition: 0.3s ease; }
-
-.overall-stats .heading {
-  font-size: 3.75rem; }
-
-.overall-stats img {
-  height: 75%;
-  width: 95%;
-  object-fit: cover;
-  box-shadow: -2rem 0rem 0 -20px #a88aa8, 0.75rem -0.75rem #ff7bac; }
-
-.overall-stats .stat-number {
-  font-size: 3rem;
-  color: #b5a1c4;
-  font-weight: bold; }
-
-.overall-stats .stat-text {
-  font-size: 1.5rem; }
-
-#stat-photo {
-  margin-left: 3%; }
-
-/* Text */
 h2 {
   text-transform: none; }
 
@@ -59,6 +11,53 @@ h2 {
   font-size: 2rem;
   color: #b5a1c4;
   font-weight: bold; }
+
+.header {
+  margin-top: 5rem; }
+
+.contact,
+.stats,
+.prospectus {
+  margin-top: 60px; }
+
+.info-input {
+  padding: 10px;
+  background-color: #f27aaa; }
+
+.inquiry-box {
+  border: 3px solid #f27aaa; }
+
+.form-control {
+  border-radius: 0;
+  border: none; }
+
+.inquiry-btn {
+  border-radius: 0;
+  background-color: #f27aaa; }
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: 0.3s ease; }
+
+.overall-stats .heading {
+  font-size: 3.75rem; }
+
+.overall-stats img {
+  height: 75%;
+  width: 95%;
+  object-fit: cover;
+  box-shadow: -2rem 0rem 0 -20px #b5a1c4, 0.75rem -0.75rem #f27aaa; }
+
+.overall-stats .stat-number {
+  font-size: 3rem;
+  color: #b5a1c4;
+  font-weight: bold; }
+
+.overall-stats .stat-text {
+  font-size: 1.5rem; }
+
+#stat-photo {
+  margin-left: 3%; }
 
 .demo-section {
   background-color: #f3f3f3;
@@ -93,39 +92,79 @@ h2 {
   height: 1.5vw;
   border-radius: 50px;
   display: inline-block;
-  vertical-align: -0.3vw;
+  vertical-align: -.3vw;
   margin-right: 10px; }
 
-/* large breakpoint, switch to mobile-layout */
-@media only screen and (max-width: 991px) {
-  .stat-number {
-    font-size: 6rem; }
-  .stat-text {
-    font-size: 2.3rem; }
-  .stat-number {
-    font-size: 6rem; }
-  .edu {
-    padding: 5rem; }
-  .edu .demo-name {
-    padding-left: 20%; }
-  .edu-dot {
-    width: 25px;
-    height: 25px;
-    vertical-align: -6px; }
-  .lower .demo-name {
-    width: 60%; }
-  .lower .demo-stat {
-    width: 40%; }
-  .demographics {
-    font-size: 16px; }
-  .demo-section {
-    margin-bottom: 20px; }
-  .demo-legend {
-    margin: 0.25%; }
-  .demo-stat {
-    width: 30%; }
-  canvas {
-    margin-bottom: 20px; } }
+.prospectus {
+  margin-top: 60px; }
+
+td {
+  border-top: none !important; }
+
+th {
+  border-top: none !important;
+  padding-bottom: 5px !important;
+  border-bottom: solid 1px black;
+  background-color: white !important; }
+
+.add-ons td {
+  border-bottom: 2px solid #dee2e6; }
+
+.contr-amt {
+  width: 11%; }
+
+.benefit {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin: 0 auto; }
+
+.benefit-text {
+  color: #b5a1c4; }
+
+.general-spons {
+  background: #f27aaa; }
+
+.general-text {
+  color: #f27aaa; }
+
+.recruit {
+  background: #b5a1c4; }
+
+.brand {
+  background: #6fcbdc; }
+
+.demo-legend {
+  margin: 0.25%; }
+
+.demo-stat {
+  width: 30%; }
+
+.brand-text {
+  color: #6fcbdc; }
+
+.prospectus span {
+  cursor: default;
+  color: #f3f3f3;
+  padding-left: 3px; }
+
+.prospectus a {
+  color: #a88aa8;
+  color: #b5a1c4; }
+
+.prospectus a:hover,
+.prospectus a:active {
+  color: #b5a1c4;
+  filter: brightness(1.2);
+  transition: 0.3s ease;
+  text-decoration: none; }
+
+.tooltip-inner {
+  min-width: 200px;
+  max-width: 350px; }
+
+.add-ons {
+  overflow-x: visible !important; }
 
 @media only screen and (max-width: 675px) {
   .stat-number {
@@ -185,71 +224,6 @@ h2 {
     min-width: 200px;
     max-width: 300px; } }
 
-.prospectus {
-  margin-top: 60px; }
-
-td {
-  border-top: none !important; }
-
-th {
-  border-top: none !important;
-  padding-bottom: 5px !important;
-  border-bottom: solid 1px black;
-  background-color: white !important; }
-
-.add-ons td {
-  border-bottom: 2px solid #dee2e6; }
-
-.contr-amt {
-  width: 11%; }
-
-.benefit {
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-  margin: 0 auto; }
-
-.benefit-text {
-  color: #b5a1c4; }
-
-.general-spons {
-  background: #f27aaa; }
-
-.general-text {
-  color: #f27aaa; }
-
-.recruit {
-  background: #b5a1c4; }
-
-.brand {
-  background: #6fcbdc; }
-
-.brand-text {
-  color: #6fcbdc; }
-
-.prospectus span {
-  cursor: default;
-  color: grey;
-  padding-left: 3px; }
-
-.prospectus a {
-  color: #a88aa8;
-  color: #b5a1c4; }
-
-.prospectus a:hover,
-.prospectus a:active {
-  color: #b5a1c4;
-  filter: brightness(1.2);
-  transition: 0.3s ease;
-  text-decoration: none; }
-
-.tooltip-inner {
-  min-width: 200px;
-  max-width: 350px; }
-
-.add-ons {
-  overflow-x: visible !important; }
-
 #thank-you {
   background-color: #ff5789;
   padding: 10px; }
@@ -294,3 +268,32 @@ th {
 .inquiry-btn:hover {
   filter: brightness(1.2);
   transition: 0.3s ease; }
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .stat-number {
+    font-size: 6rem; }
+  .stat-text {
+    font-size: 2.3rem; }
+  .stat-number {
+    font-size: 6rem; }
+  .edu {
+    padding: 5rem; }
+  .edu .demo-name {
+    padding-left: 20%; }
+  .edu-dot {
+    width: 25px;
+    height: 25px;
+    vertical-align: -6px; }
+  .lower .demo-name {
+    width: 60%; }
+  .lower .demo-stat {
+    width: 40%; }
+  .demographics {
+    font-size: 16px; }
+  .demo-section {
+    margin-bottom: 20px; }
+  .demo-stat {
+    width: 30%; }
+  canvas {
+    margin-bottom: 20px; } }
