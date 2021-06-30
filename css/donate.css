@@ -5,6 +5,9 @@
 .container{
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: -100px; } }
 
 .hero-clouds {
   position: absolute;
@@ -42,25 +45,30 @@
       pointer-events: auto; } }
 
 .hero-information {
-  margin-top: 200px;
+  margin-top: 200px; /*ADDED THIS*/
   position: relative;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
   .hero-information .hero-logo {
-    margin-top: -210px;   /**/
-    margin-bottom: 15px; }
+    margin-top: -210px;   /*ADDED THIS*/ 
+    margin-bottom: 15px; 
+  }
   @media only screen and (max-width: 767px) {
     .hero-information {
-      margin-top: -225px; } }
+      margin-top: 300px; 
+
+    }
+   }
   .hero-information #technica-logo {
-    margin-top: 15%;
-    margin-left: 3%;
+    padding-top: 5%;
+    margin-top: 15%; 
     margin-bottom: -25px;
     width: 600px; }
     @media only screen and (max-width: 767px) {
       .hero-information #technica-logo {
-        padding-top: 10%; } }
+        padding-top: 10%;
+        margin-top: -450px; } } 
   .hero-information #hero-tagline {
     font-size: 150%;
     width: 55%; }
@@ -73,7 +81,7 @@
         width: 85%; } }
   
   .hero-action {
-    margin-top: -50px;
+    margin-top: -30px; 
     position: relative;
     z-index: 2;
     opacity: 0;
@@ -88,8 +96,8 @@
         padding-top: 350px; } }
     .hero-action .donate-btn {
       font-family: DINPro;
-      width: 250px;
-      height: 75px;
+      width: 265px; 
+      height: 70px;
       font-size: 205%;
       font-weight: bold;
       color: #fff;
@@ -99,8 +107,8 @@
         .hero-action .donate-btn {
           font-family: DINPro;
           font-size: 125%;
-          width: 175px;
-          height: 60px; 
+          width: 145px;
+          height: 40px; 
           font-weight: bold;
           color: #fff; } }
     .hero-action .hero-learn {
@@ -118,7 +126,8 @@
   
   @media only screen and (max-width: 767px) {
     .hero-information .hero-logo {
-      margin-top: 225px; }
+      margin-top: 225px; 
+      margin-bottom: -200px;} /*Added this for technica*/
     .hero-information #technica-logo {
       width: 500px; }
     .hero-action {
