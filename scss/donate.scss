@@ -31,7 +31,7 @@ $hero-blue: #6fcbdc;
 
 .hero {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
   padding-bottom: 10%;
 }
 
@@ -105,8 +105,6 @@ $hero-blue: #6fcbdc;
 
   @media only screen and (min-width: 1400px) {
     padding-top: 350px;
-  }
-
   }
 }
 
@@ -454,7 +452,7 @@ h2 {
   }
 
   .donate-button {
-    font-size: 130%;
+    font-size: 100%;
   }
 
   .donate-btn {
