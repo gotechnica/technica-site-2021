@@ -37,12 +37,12 @@ $animation-length: 80s;
     top: -26px;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .hero-clouds {
-    width: 834px;
     height: 663px;
     left: 0px;
-    top: 69px;
+    top: -5px;
   }
 }
 
@@ -81,9 +81,10 @@ $animation-length: 80s;
   margin-top: -210px; /*ADDED THIS*/
   margin-bottom: 15px;
 }
+
 @media only screen and (max-width: 767px) {
   .hero-information {
-    margin-top: 300px;
+    margin-top: 260px;
   }
 }
 .hero-information #technica-logo {
@@ -92,10 +93,11 @@ $animation-length: 80s;
   margin-bottom: -25px;
   width: 600px;
 }
+
 @media only screen and (max-width: 767px) {
   .hero-information #technica-logo {
-    padding-top: 10%;
-    margin-top: -450px;
+    padding-top: 15%;
+    margin-top: -650px;
   }
 }
 .hero-information #hero-tagline {
@@ -123,11 +125,13 @@ $animation-length: 80s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
-@media only screen and (min-width: 996px) {
+
+@media only screen and (min-width: 996px) and (min-width: 992px) {
   .hero-action {
-    padding-top: 115px;
+    padding-top: 125px;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .hero-action {
     padding-top: 350px;
@@ -159,11 +163,15 @@ $animation-length: 80s;
 }
 
 @media only screen and (max-width: 991px) {
+  /*.hero-information .hero-logo {
+    margin-top: 10px;
+  }*/
   .hero-information .hero-logo {
-    margin-top: 150px;
-  }
-  .hero-action {
     padding-top: 100px;
+  }
+
+  .hero-action {
+    padding-top: 120px;
   }
 }
 
@@ -212,8 +220,9 @@ $animation-length: 80s;
 
 /* div */
 .donate-btn {
-  margin-top: 5%;
+  margin-top: 3%;
   margin-bottom: 3%;
+  font-size: 120%;
 }
 
 .donate-button:hover {
@@ -302,7 +311,7 @@ h2 {
 .impact-header {
   color: black;
   text-align: center;
-  padding-bottom: 2.5%;
+  padding-bottom: 4%;
 }
 
 .donate-option1-header,
@@ -387,7 +396,12 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 2000px) {
+  /* hero section */
+  .hero-logo {
+    padding-top: 45px;
+  }
+
   /* impact section */
   .donate-option1,
   .donate-option2,
