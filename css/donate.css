@@ -93,7 +93,11 @@
   animation-delay: 1.5s;
   animation-fill-mode: forwards; }
 
-@media only screen and (min-width: 996px) and (min-width: 992px) {
+@media only screen and (min-width: 996px) {
+  .hero-action {
+    padding-top: 125px; } }
+
+@media only screen and (min-width: 992px) {
   .hero-action {
     padding-top: 125px; } }
 
@@ -127,9 +131,6 @@
     font-size: 115%; } }
 
 @media only screen and (max-width: 991px) {
-  /*.hero-information .hero-logo {
-    margin-top: 10px;
-  }*/
   .hero-information .hero-logo {
     padding-top: 100px; }
   .hero-action {
@@ -154,7 +155,10 @@
     width: 80vw; }
   .hero-information #theme-logo {
     width: 40vw;
-    min-width: 120px; } }
+    min-width: 120px; }
+  .promise-text {
+    margin-left: 3%;
+    margin-right: 3%; } }
 
 /*HERO SECTION ENDS*/
 .donate-button {
@@ -217,11 +221,13 @@ h2 {
   padding-bottom: 3%; }
 
 .our-donor {
-  padding-top: 10px; }
+  padding-top: 10px;
+  text-align: left; }
 
 .promise-image {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 10%;
   width: 100%; }
 
 .center-block {
@@ -313,6 +319,15 @@ h2 {
   .donate-btn {
     margin-bottom: 0; } }
 
+@media only screen and (max-width: 1200px) {
+  .our-donor {
+    line-height: 1em;
+    margin-bottom: 5%; }
+  .promise-image {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 3%; } }
+
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
@@ -330,8 +345,8 @@ h2 {
     margin-bottom: 0; } }
 
 @media only screen and (max-width: 991px) {
-  /* impact section */
-  .impact-header {
+  /* impact (+ promise) section */
+  .impact-header, .our-donor {
     font-size: 280%; }
   .donate-option1,
   .donate-option2,
@@ -344,7 +359,9 @@ h2 {
     min-height: 300px;
     max-height: 300px; }
   .donate-button {
-    font-size: 130%; }
+    font-size: 120%; }
+  .donate-btn {
+    font-size: 100%; }
   .donate-questions {
     margin-top: 20px; } }
 
@@ -417,3 +434,7 @@ h2 {
     font-size: 81%; }
   .col-sm {
     padding-bottom: 5%; } }
+
+@media only screen and (max-width: 447px) {
+  .our-donor {
+    text-align: center; } }
