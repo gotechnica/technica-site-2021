@@ -1,12 +1,9 @@
 /*@use 'vars';*/
 /* link */
-
-
 /*HERO SECTION BEGINS HERE*/
+.container {
+  text-align: center; }
 
-.container{
-  text-align: center;
-}
 @media only screen and (max-width: 767px) {
   .container {
     margin-top: -100px; } }
@@ -16,139 +13,151 @@
   width: 100%;
   height: 100vh;
   z-index: 1; }
-  @media only screen and (max-width: 767px) {
-    .hero-clouds {
-      width: 834px;
-      height: 663px;
-      left: -100px;
-      top: -26px; } }
-  @media only screen and (max-width: 1024px) {
-    .hero-clouds {
-      width: 834px;
-      height: 663px;
-      left: 0px;
-      top: 69px; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-clouds {
+    width: 834px;
+    height: 663px;
+    left: -100px;
+    top: -26px; } }
+
+@media only screen and (max-width: 1024px) {
+  .hero-clouds {
+    width: 834px;
+    height: 663px;
+    left: 0px;
+    top: 69px; } }
 
 .hero {
   position: relative;
   padding-bottom: 10%; }
 
-  @keyframes wait {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 0; } }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 1;
-      pointer-events: auto; } }
+@keyframes wait {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    pointer-events: auto; } }
 
 .hero-information {
-  margin-top: 200px; /*ADDED THIS*/
+  margin-top: 200px;
+  /*ADDED THIS*/
   position: relative;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
-  .hero-information .hero-logo {
-    margin-top: -210px;   /*ADDED THIS*/ 
-    margin-bottom: 15px; 
-  }
-  @media only screen and (max-width: 767px) {
-    .hero-information {
-      margin-top: 300px; 
 
-    }
-   }
+.hero-information .hero-logo {
+  margin-top: -210px;
+  /*ADDED THIS*/
+  margin-bottom: 15px; }
+
+@media only screen and (max-width: 767px) {
+  .hero-information {
+    margin-top: 300px; } }
+
+.hero-information #technica-logo {
+  padding-top: 5%;
+  margin-top: 15%;
+  margin-bottom: -25px;
+  width: 600px; }
+
+@media only screen and (max-width: 767px) {
   .hero-information #technica-logo {
-    padding-top: 5%;
-    margin-top: 15%; 
-    margin-bottom: -25px;
-    width: 600px; }
-    @media only screen and (max-width: 767px) {
-      .hero-information #technica-logo {
-        padding-top: 10%;
-        margin-top: -450px; } } 
+    padding-top: 10%;
+    margin-top: -450px; } }
+
+.hero-information #hero-tagline {
+  font-size: 150%;
+  width: 55%; }
+
+@media only screen and (max-width: 767px) {
   .hero-information #hero-tagline {
-    font-size: 150%;
-    width: 55%; }
-    @media only screen and (max-width: 767px) {
-      .hero-information #hero-tagline {
-        font-size: 100%;
-        width: 95%; } }
-    @media only screen and (min-width: 767px) and (max-width: 1042px) {
-      .hero-information #hero-tagline {
-        width: 85%; } }
-  
+    font-size: 100%;
+    width: 95%; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1042px) {
+  .hero-information #hero-tagline {
+    width: 85%; } }
+
+.hero-action {
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: fade-in 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards; }
+
+@media only screen and (min-width: 996px) {
   .hero-action {
-    margin-top: -30px; 
-    position: relative;
-    z-index: 2;
-    opacity: 0;
-    animation: fade-in 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards; }
-    @media only screen and (min-width: 996px) {
-      .hero-action {
-        padding-top: 115px; } }
-    @media only screen and (min-width: 1400px) {
-      .hero-action {
-        padding-top: 350px; } }
-    .hero-action .big-donate-btn {
-      font-family: DINPro;
-      width: 265px; 
-      height: 70px;
-      font-size: 205%;
-      font-weight: bold;
-      color: #fff;
-      position: relative;
-      z-index: 2; }
-      @media only screen and (max-width: 767px) {
-        .hero-action .big-donate-btn {
-          font-family: DINPro;
-          font-size: 125%;
-          width: 145px;
-          height: 40px; 
-          font-weight: bold;
-          color: #fff; } }
-    .hero-action .hero-learn {
-      color: #b6a1c4;
-      font-size: 150%; }
-      @media only screen and (max-width: 767px) {
-        .hero-action .hero-learn {
-          font-size: 115%; } }
-  
-  @media only screen and (max-width: 991px) {
-    .hero-information .hero-logo {
-      margin-top: 150px; }
-    .hero-action {
-      padding-top: 100px; } }
-  
-  @media only screen and (max-width: 767px) {
-    .hero-information .hero-logo {
-      margin-top: 225px; 
-      margin-bottom: -200px;} /*Added this for technica*/
-    .hero-information #technica-logo {
-      width: 500px; }
-    .hero-action {
-      padding-top: 100px; } }
-  
-  @media only screen and (max-width: 575px) {
-    .hero {
-      padding-bottom: 75px; }
-    .hero-information {
-      font-size: 5vw; }
-      .hero-information #technica-logo {
-        width: 80vw; }
-      .hero-information #theme-logo {
-        width: 40vw;
-        min-width: 120px; } } */
+    padding-top: 115px; } }
 
+@media only screen and (min-width: 1400px) {
+  .hero-action {
+    padding-top: 350px; } }
 
-  /*HERO SECTION ENDS*/
+.hero-action .big-donate-btn {
+  font-family: DINPro;
+  width: 200px;
+  height: 60px;
+  font-size: 200%;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  z-index: 2; }
 
+@media only screen and (max-width: 767px) {
+  .hero-action .big-donate-btn {
+    font-family: DINPro;
+    font-size: 125%;
+    width: 145px;
+    height: 40px;
+    font-weight: bold;
+    color: #fff; } }
+
+.hero-action .hero-learn {
+  color: #b6a1c4;
+  font-size: 150%; }
+
+@media only screen and (max-width: 767px) {
+  .hero-action .hero-learn {
+    font-size: 115%; } }
+
+@media only screen and (max-width: 991px) {
+  .hero-information .hero-logo {
+    margin-top: 150px; }
+  .hero-action {
+    padding-top: 100px; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-information .hero-logo {
+    margin-top: 225px;
+    margin-bottom: -200px; }
+  /*Added this for technica*/
+  .hero-information #technica-logo {
+    width: 500px; }
+  .hero-action {
+    padding-top: 100px; } }
+
+@media only screen and (max-width: 575px) {
+  .hero {
+    padding-bottom: 75px; }
+  .hero-information {
+    font-size: 5vw; }
+  .hero-information #technica-logo {
+    width: 80vw; }
+  .hero-information #theme-logo {
+    width: 40vw;
+    min-width: 120px; } }
+
+/*HERO SECTION ENDS*/
 .donate-button {
   text-align: center;
   align-items: center;
@@ -332,7 +341,7 @@ h2 {
     min-height: 300px;
     max-height: 300px; }
   .donate-button {
-    font-size: 170%; }
+    font-size: 130%; }
   .donate-questions {
     margin-top: 20px; } }
 
@@ -352,26 +361,21 @@ h2 {
     max-height: 300px;
     font-size: 85%; }
   .donate-button {
-    font-size: 150%; }
+    font-size: 130%; }
   .donate-questions {
     margin-top: 30px;
-    font-size: 95%; } 
-  .donate-promise{
-    padding-top: 30%;
-  }
-  .donate-questions{
-    padding-top: 20%;
-  }
-  .footer{
+    font-size: 95%; }
+  .donate-promise {
+    padding-top: 30%; }
+  .donate-questions {
+    padding-top: 20%; }
+  .footer {
     padding-top: 25%;
-    padding-bottom: -400px;;
-  }
-  .contact-footer{
-    margin-top: -30px;
-  }
-  .donate-impact{
-    padding-top: 10%;
-  }}
+    padding-bottom: -400px; }
+  .contact-footer {
+    margin-top: -30px; }
+  .donate-impact {
+    padding-top: 10%; } }
 
 /* mobile */
 @media only screen and (max-width: 575px) {

@@ -1,27 +1,33 @@
 /*@use 'vars';*/
-//temporary until resolve _vars.scss issue
+/* link */
 
-$cyan: #82ecec;
-$pink: #f27aaa;
-$lavender: #b5a1c4;
-$light-lavender: #cca8c1;
-$ex-light-lavender: #e9e3ed;
-$hero-blue: #6fcbdc;
+/*HERO SECTION BEGINS HERE*/
 
-//HERO SECTION BEGINS HERE
+.container {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: -100px;
+  }
+}
+
 .hero-clouds {
   position: absolute;
   width: 100%;
   height: 100vh;
   z-index: 1;
-  @media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 767px) {
+  .hero-clouds {
     width: 834px;
     height: 663px;
     left: -100px;
     top: -26px;
   }
-
-  @media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 1024px) {
+  .hero-clouds {
     width: 834px;
     height: 663px;
     left: 0px;
@@ -31,7 +37,6 @@ $hero-blue: #6fcbdc;
 
 .hero {
   position: relative;
-  //overflow: hidden;
   padding-bottom: 10%;
 }
 
@@ -54,65 +59,98 @@ $hero-blue: #6fcbdc;
   }
 }
 
-@mixin fade-in($waitTime) {
-  animation: wait $waitTime, fade-in 800ms $waitTime;
-  animation-duration: 2s;
-}
-
 .hero-information {
+  margin-top: 200px; /*ADDED THIS*/
   position: relative;
   z-index: 3;
-  @include fade-in(600ms);
-  .hero-logo {
-    margin-bottom: 15px;
+  animation: wait 600ms, fade-in 800ms 600ms;
+  animation-duration: 2s;
+}
+.hero-information .hero-logo {
+  margin-top: -210px; /*ADDED THIS*/
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .hero-information {
+    margin-top: 300px;
   }
-
-  @media only screen and (max-width: 767px) {
-    margin-top: -225px;
+}
+.hero-information #technica-logo {
+  padding-top: 5%;
+  margin-top: 15%;
+  margin-bottom: -25px;
+  width: 600px;
+}
+@media only screen and (max-width: 767px) {
+  .hero-information #technica-logo {
+    padding-top: 10%;
+    margin-top: -450px;
   }
-  #technica-logo {
-    padding-top: 5%;
-    margin-top: 10%;
-    width: 600px;
-    @media only screen and (max-width: 767px) {
-      padding-top: 10%;
-    }
+}
+.hero-information #hero-tagline {
+  font-size: 150%;
+  width: 55%;
+}
+@media only screen and (max-width: 767px) {
+  .hero-information #hero-tagline {
+    font-size: 100%;
+    width: 95%;
   }
-  #hero-tagline {
-    font-size: 150%;
-    width: 55%;
-    @media only screen and (max-width: 767px) {
-      font-size: 100%;
-      width: 95%;
-    }
-    @media only screen and (min-width: 767px) and (max-width: 1042px) {
-      width: 85%;
-    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1042px) {
+  .hero-information #hero-tagline {
+    width: 85%;
   }
 }
 
 .hero-action {
+  margin-top: -30px;
   position: relative;
   z-index: 2;
   opacity: 0;
   animation: fade-in 2s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
-
-  @media only screen and (min-width: 996px) {
+}
+@media only screen and (min-width: 996px) {
+  .hero-action {
     padding-top: 115px;
   }
-
-  @media only screen and (min-width: 1400px) {
+}
+@media only screen and (min-width: 1400px) {
+  .hero-action {
     padding-top: 350px;
+  }
+}
+.hero-action .big-donate-btn {
+  @include dinpro-text(175%, bold, #fff);
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 767px) {
+  .hero-action .big-donate-btn {
+    font-family: DINPro;
+    font-size: 125%;
+    width: 145px;
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+.hero-action .hero-learn {
+  color: #b6a1c4;
+  font-size: 150%;
+}
+@media only screen and (max-width: 767px) {
+  .hero-action .hero-learn {
+    font-size: 115%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .hero-information {
-    .hero-logo {
-      margin-top: 150px;
-    }
+  .hero-information .hero-logo {
+    margin-top: 150px;
   }
   .hero-action {
     padding-top: 100px;
@@ -120,13 +158,12 @@ $hero-blue: #6fcbdc;
 }
 
 @media only screen and (max-width: 767px) {
-  .hero-information {
-    .hero-logo {
-      margin-top: 225px;
-    }
-    #technica-logo {
-      width: 500px;
-    }
+  .hero-information .hero-logo {
+    margin-top: 225px;
+    margin-bottom: -200px;
+  } /*Added this for technica*/
+  .hero-information #technica-logo {
+    width: 500px;
   }
   .hero-action {
     padding-top: 100px;
@@ -139,24 +176,23 @@ $hero-blue: #6fcbdc;
   }
   .hero-information {
     font-size: 5vw;
-    #technica-logo {
-      width: 80vw;
-    }
-    #theme-logo {
-      width: 40vw;
-      min-width: 120px;
-    }
+  }
+  .hero-information #technica-logo {
+    width: 80vw;
+  }
+  .hero-information #theme-logo {
+    width: 40vw;
+    min-width: 120px;
   }
 }
 
 /*HERO SECTION ENDS*/
 
-/* link */
 .donate-button {
   text-align: center;
   align-items: center;
   color: white;
-  background-color: $lavender;
+  background-color: #b5a1c4;
   border: none;
   border-radius: 50px;
   font-size: 30px;
@@ -183,7 +219,7 @@ $hero-blue: #6fcbdc;
 }
 
 h1 {
-  color: rgb(255, 107, 152);
+  color: #ff6b98;
 }
 
 h2 {
@@ -224,10 +260,6 @@ h2 {
 
 .our-donor {
   padding-top: 10px;
-}
-
-.promise-body {
-  text-align: center;
 }
 
 .promise-image {
@@ -272,15 +304,15 @@ h2 {
 }
 
 .donate-option1-header {
-  color: $hero-blue;
+  color: #6fcbdc;
 }
 
 .donate-option2-header {
-  color: $lavender;
+  color: #b5a1c4;
 }
 
 .donate-option3-header {
-  color: $pink;
+  color: #f27aaa;
 }
 
 .donate-option1,
@@ -297,15 +329,15 @@ h2 {
 }
 
 .donate-option1 {
-  border: 6px solid $hero-blue;
+  border: 6px solid #6fcbdc;
 }
 
 .donate-option2 {
-  border: 6px solid $lavender;
+  border: 6px solid #b5a1c4;
 }
 
 .donate-option3 {
-  border: 6px solid $pink;
+  border: 6px solid #f27aaa;
   max-height: 315px;
 }
 
@@ -339,7 +371,6 @@ h2 {
   .promise-image img {
     max-height: 260px;
   }
-
   /* impact section */
   .donate-btn {
     margin-bottom: 0;
@@ -357,7 +388,6 @@ h2 {
     min-height: 300px;
     max-height: 300px;
   }
-
   .donate-btn {
     margin-bottom: 0;
   }
@@ -368,7 +398,6 @@ h2 {
   .impact-header {
     font-size: 280%;
   }
-
   .donate-option1,
   .donate-option2,
   .donate-option3 {
@@ -380,11 +409,9 @@ h2 {
     min-height: 300px;
     max-height: 300px;
   }
-
   .donate-button {
-    font-size: 170%;
+    font-size: 130%;
   }
-
   .donate-questions {
     margin-top: 20px;
   }
@@ -395,7 +422,6 @@ h2 {
   .impact-header {
     font-size: 250%;
   }
-
   .donate-option1,
   .donate-option2,
   .donate-option3 {
@@ -408,14 +434,28 @@ h2 {
     max-height: 300px;
     font-size: 85%;
   }
-
   .donate-button {
-    font-size: 150%;
+    font-size: 130%;
   }
-
   .donate-questions {
     margin-top: 30px;
     font-size: 95%;
+  }
+  .donate-promise {
+    padding-top: 30%;
+  }
+  .donate-questions {
+    padding-top: 20%;
+  }
+  .footer {
+    padding-top: 25%;
+    padding-bottom: -400px;
+  }
+  .contact-footer {
+    margin-top: -30px;
+  }
+  .donate-impact {
+    padding-top: 10%;
   }
 }
 
@@ -424,17 +464,14 @@ h2 {
   .story-header {
     text-align: center;
   }
-
   .promise-image {
     padding-top: 0%;
     padding-bottom: 0%;
   }
-
   /* impact section */
   .impact-header {
     font-size: 7vw;
   }
-
   .donate-option1-header,
   .donate-option2-header,
   .donate-option3-header {
@@ -442,7 +479,6 @@ h2 {
     font-size: 250%;
     margin-bottom: 10%;
   }
-
   .donate-option1,
   .donate-option2,
   .donate-option3 {
@@ -454,22 +490,18 @@ h2 {
     min-height: 240px;
     max-height: 240px;
   }
-
   .donate-button {
-    font-size: 100%;
+    font-size: 130%;
   }
-
   .donate-btn {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
   .donate-questions {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 81%;
   }
-
   .col-sm {
     padding-bottom: 5%;
   }
