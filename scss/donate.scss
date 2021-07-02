@@ -1,5 +1,16 @@
 /*@use 'vars';*/
-/* link */
+$pink: #f27aaa;
+$lavender: #b5a1c4;
+$blue: #6fcbdc;
+
+$animation-length: 80s;
+
+@mixin dinpro-text($size, $weight, $color) {
+  font-family: DINPro;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
 
 /*HERO SECTION BEGINS HERE*/
 
@@ -124,7 +135,6 @@
 }
 .hero-action .big-donate-btn {
   @include dinpro-text(175%, bold, #fff);
-  color: #fff;
   position: relative;
   z-index: 2;
 }
@@ -192,7 +202,7 @@
   text-align: center;
   align-items: center;
   color: white;
-  background-color: #b5a1c4;
+  background-color: $lavender;
   border: none;
   border-radius: 50px;
   font-size: 30px;
@@ -304,15 +314,15 @@ h2 {
 }
 
 .donate-option1-header {
-  color: #6fcbdc;
+  color: $blue;
 }
 
 .donate-option2-header {
-  color: #b5a1c4;
+  color: $lavender;
 }
 
 .donate-option3-header {
-  color: #f27aaa;
+  color: $pink;
 }
 
 .donate-option1,
@@ -329,15 +339,15 @@ h2 {
 }
 
 .donate-option1 {
-  border: 6px solid #6fcbdc;
+  border: 6px solid $blue;
 }
 
 .donate-option2 {
-  border: 6px solid #b5a1c4;
+  border: 6px solid $lavender;
 }
 
 .donate-option3 {
-  border: 6px solid #f27aaa;
+  border: 6px solid $pink;
   max-height: 315px;
 }
 

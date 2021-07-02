@@ -1,5 +1,4 @@
 /*@use 'vars';*/
-/* link */
 /*HERO SECTION BEGINS HERE*/
 .container {
   text-align: center; }
@@ -105,9 +104,7 @@
 
 .hero-action .big-donate-btn {
   font-family: DINPro;
-  width: 200px;
-  height: 60px;
-  font-size: 200%;
+  font-size: 175%;
   font-weight: bold;
   color: #fff;
   position: relative;
