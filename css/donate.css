@@ -45,15 +45,22 @@
 
 .hero-information {
   margin-top: 200px;
+<<<<<<< HEAD
   /*ADDED THIS*/
+=======
+>>>>>>> f921f16dac4822b8f635bab36544e8ff1c553b77
   position: relative;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
 
 .hero-information .hero-logo {
+<<<<<<< HEAD
   margin-top: -240px;
   /*ADDED THIS*/
+=======
+  margin-top: -200px;
+>>>>>>> f921f16dac4822b8f635bab36544e8ff1c553b77
   margin-bottom: 15px; }
 
 @media only screen and (max-width: 767px) {
@@ -98,6 +105,7 @@
     padding-top: 125px; } }
 
 @media only screen and (min-width: 1400px) {
+<<<<<<< HEAD
   .hero-action {
     padding-top: 350px; } }
 
@@ -135,6 +143,45 @@
   .hero-action {
     padding-top: 120px; } }
 
+=======
+  .hero-action {
+    padding-top: 350px; } }
+
+.hero-action .big-donate-btn {
+  font-family: DINPro;
+  font-size: 175%;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  z-index: 2; }
+
+@media only screen and (max-width: 767px) {
+  .hero-action .big-donate-btn {
+    font-family: DINPro;
+    font-size: 125%;
+    width: 145px;
+    height: 40px;
+    font-weight: bold;
+    color: #fff; } }
+
+.hero-action .hero-learn {
+  color: #b6a1c4;
+  font-size: 150%; }
+
+@media only screen and (max-width: 767px) {
+  .hero-action .hero-learn {
+    font-size: 115%; } }
+
+@media only screen and (max-width: 991px) {
+  /*.hero-information .hero-logo {
+    margin-top: 10px;
+  }*/
+  .hero-information .hero-logo {
+    padding-top: 100px; }
+  .hero-action {
+    padding-top: 120px; } }
+
+>>>>>>> f921f16dac4822b8f635bab36544e8ff1c553b77
 @media only screen and (max-width: 767px) {
   .hero-information .hero-logo {
     margin-top: 225px;
@@ -154,10 +201,14 @@
     width: 80vw; }
   .hero-information #theme-logo {
     width: 40vw;
+<<<<<<< HEAD
     min-width: 120px; } 
   .hero-action{
     margin-top: -300px;
   }}
+=======
+    min-width: 120px; } }
+>>>>>>> f921f16dac4822b8f635bab36544e8ff1c553b77
 
 /*HERO SECTION ENDS*/
 .donate-button {
@@ -384,7 +435,11 @@ h2 {
   .contact-footer {
     margin-top: -30px; }
   .donate-impact {
+<<<<<<< HEAD
     padding-top: 10%; } }
+=======
+    padding-top: 15%; } }
+>>>>>>> f921f16dac4822b8f635bab36544e8ff1c553b77
 
 /* mobile */
 @media only screen and (max-width: 575px) {
@@ -428,6 +483,9 @@ h2 {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 81%; }
+  .donate-impact {
+    margin-top: 15%;
+    padding-top: 25%; }
   .col-sm {
     padding-bottom: 5%; }
   .footer{
