@@ -45,15 +45,13 @@
 
 .hero-information {
   margin-top: 200px;
-  /*ADDED THIS*/
   position: relative;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
 
 .hero-information .hero-logo {
-  margin-top: -210px;
-  /*ADDED THIS*/
+  margin-top: -200px;
   margin-bottom: 15px; }
 
 @media only screen and (max-width: 767px) {
@@ -378,7 +376,7 @@ h2 {
   .contact-footer {
     margin-top: -30px; }
   .donate-impact {
-    padding-top: 10%; } }
+    padding-top: 15%; } }
 
 /* mobile */
 @media only screen and (max-width: 575px) {
@@ -415,5 +413,8 @@ h2 {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 81%; }
+  .donate-impact {
+    margin-top: 15%;
+    padding-top: 25%; }
   .col-sm {
     padding-bottom: 5%; } }
