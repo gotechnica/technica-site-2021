@@ -226,7 +226,7 @@ h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 10%;
-  width: 100%; }
+  width: 95%; }
 
 .center-block {
   display: block;
@@ -324,7 +324,9 @@ h2 {
   .promise-image {
     padding-top: 0;
     margin-top: 0;
-    margin-left: 3%; } }
+    margin-left: 3%; }
+  .donate-impact {
+    margin-top: 3%; } }
 
 @media only screen and (max-width: 2000px) {
   /* hero section */
@@ -365,8 +367,10 @@ h2 {
 
 @media only screen and (max-width: 767px) {
   /* impact section */
+  .donate-impact {
+    margin-top: 3%; }
   .impact-header {
-    font-size: 250%; }
+    font-size: 280%; }
   .donate-option1,
   .donate-option2,
   .donate-option3 {
@@ -404,7 +408,7 @@ h2 {
     padding-bottom: 0%; }
   /* impact section */
   .impact-header {
-    font-size: 7vw; }
+    font-size: 280%; }
   .donate-option1-header,
   .donate-option2-header,
   .donate-option3-header {
@@ -438,4 +442,25 @@ h2 {
 
 @media only screen and (max-width: 447px) {
   .our-donor {
-    text-align: center; } }
+    text-align: center;
+    font-size: 260%; }
+  .impact-header {
+    margin-top: 10%;
+    font-size: 260%; }
+  .donate-questions {
+    margin-top: 10%; }
+  .spons-code {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 375px) {
+  .our-donor {
+    font-size: 200%; }
+  .impact-header {
+    padding-top: 10%;
+    font-size: 200%;
+    line-height: 1.2em;
+    padding-bottom: 7%; }
+  .donate-questions {
+    padding-top: 30%; }
+  .spons-code {
+    margin-top: 0; } }
