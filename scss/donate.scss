@@ -96,7 +96,7 @@ $animation-length: 80s;
 
 @media only screen and (max-width: 767px) {
   .hero-information #technica-logo {
-    padding-top: 15%;
+    padding-top: 22%;
     margin-top: -650px;
   }
 }
@@ -170,7 +170,7 @@ $animation-length: 80s;
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
-    padding-top: 100px;
+    padding-top: 55px;
   }
 
   .hero-action {
@@ -196,10 +196,11 @@ $animation-length: 80s;
     padding-bottom: 75px;
   }
   .hero-information {
-    font-size: 5vw;
+    font-size: 150%;
   }
   .hero-information #technica-logo {
     width: 80vw;
+    padding-top: 15%;
   }
   .hero-information #theme-logo {
     width: 40vw;
@@ -396,6 +397,13 @@ h2 {
 }
 
 @media only screen and (min-width: 1200px) {
+  /* hero section */
+  .hero-logo {
+    padding-top: 5px;
+  }
+  .hero-title {
+    padding-top: 20px;
+  }
   .promise-image img {
     max-height: 260px;
   }
@@ -406,17 +414,20 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
+  /* hero section */
+  .hero-title {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
   .our-donor {
     line-height: 1em;
     margin-bottom: 5%;
   }
-
   .promise-image {
     padding-top: 0;
     margin-top: 0;
     margin-left: 3%;
   }
-
   .donate-impact {
     margin-top: 3%;
   } 
@@ -425,7 +436,10 @@ h2 {
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
-    padding-top: 45px;
+    padding-top: 5px;
+  }
+  .hero-title {
+    padding-top: 20px;
   }
 
   /* impact section */
@@ -600,5 +614,14 @@ h2 {
   }
   .spons-code {
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .hero-title {
+    font-size: 125%;
+  }
+  .hero-information #technica-logo {
+    padding-top: 8%;
   }
 }

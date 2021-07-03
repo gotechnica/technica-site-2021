@@ -66,7 +66,7 @@
 
 @media only screen and (max-width: 767px) {
   .hero-information #technica-logo {
-    padding-top: 15%;
+    padding-top: 22%;
     margin-top: -650px; } }
 
 .hero-information #hero-tagline {
@@ -130,7 +130,7 @@
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
-    padding-top: 100px; }
+    padding-top: 55px; }
   .hero-action {
     padding-top: 120px; } }
 
@@ -148,9 +148,10 @@
   .hero {
     padding-bottom: 75px; }
   .hero-information {
-    font-size: 5vw; }
+    font-size: 150%; }
   .hero-information #technica-logo {
-    width: 80vw; }
+    width: 80vw;
+    padding-top: 15%; }
   .hero-information #theme-logo {
     width: 40vw;
     min-width: 120px; }
@@ -311,6 +312,11 @@ h2 {
   transition: 0.3s ease; }
 
 @media only screen and (min-width: 1200px) {
+  /* hero section */
+  .hero-logo {
+    padding-top: 5px; }
+  .hero-title {
+    padding-top: 20px; }
   .promise-image img {
     max-height: 260px; }
   /* impact section */
@@ -318,6 +324,10 @@ h2 {
     margin-bottom: 0; } }
 
 @media only screen and (max-width: 1200px) {
+  /* hero section */
+  .hero-title {
+    padding-top: 20px;
+    padding-bottom: 35px; }
   .our-donor {
     line-height: 1em;
     margin-bottom: 5%; }
@@ -331,7 +341,9 @@ h2 {
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
-    padding-top: 45px; }
+    padding-top: 5px; }
+  .hero-title {
+    padding-top: 20px; }
   /* impact section */
   .donate-option1,
   .donate-option2,
@@ -464,3 +476,9 @@ h2 {
     padding-top: 30%; }
   .spons-code {
     margin-top: 0; } }
+
+@media only screen and (max-width: 280px) {
+  .hero-title {
+    font-size: 125%; }
+  .hero-information #technica-logo {
+    padding-top: 8%; } }
