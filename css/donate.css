@@ -85,7 +85,7 @@
 .hero-action {
   margin-top: -30px;
   position: relative;
-  z-index: 4;
+  z-index: 5;
   opacity: 0;
   animation: fade-in 2s;
   animation-delay: 1.5s;
@@ -109,7 +109,7 @@
   font-weight: bold;
   color: #fff;
   position: relative;
-  z-index: 2; }
+}
 
 @media only screen and (max-width: 767px) {
   .hero-action .big-donate-btn {
@@ -161,6 +161,7 @@
 
 /*HERO SECTION ENDS*/
 .donate-button {
+  z-index: 999;
   text-align: center;
   align-items: center;
   color: white;
