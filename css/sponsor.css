@@ -127,17 +127,18 @@ h2 {
   overflow-y: auto;
   table-layout: fixed;
   max-height: 35rem;
+  background-color: white !important;
 }
 
 td {
   border-top: none !important;
+  background-color: white !important;
 }
 
 th {
   border-top: none !important;
   padding-bottom: 5px !important;
   border-bottom: solid 1px black;
-  background-color: white !important;
 }
 
 .add-ons td {
