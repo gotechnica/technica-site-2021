@@ -98,25 +98,11 @@ h2 {
 .prospectus {
   margin-top: 60px; }
 
-table {
-  width: 100%;
-}
-
-thead, tbody tr {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-tbody {
+.prospectus-table {
   display: block;
   overflow-y: auto;
   table-layout: fixed;
   max-height: 35rem;
-}
-
-table {
-  position: relative;
 }
 
 td {
