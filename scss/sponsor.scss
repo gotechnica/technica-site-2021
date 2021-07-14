@@ -144,6 +144,26 @@ h2 {
   margin-top: 60px;
 }
 
+table {
+  width: 100%;
+}
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+tbody {
+  display: block;
+  overflow-y: auto;
+  table-layout: fixed;
+  max-height: 35rem;
+}
+
+table {
+  position: relative;
+}
+
 td {
   border-top: none !important;
 }
