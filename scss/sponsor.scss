@@ -152,6 +152,23 @@ h2 {
   background-color: white !important;
 }
 
+/* width */
+.prospectus-table::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* Track */
+.prospectus-table::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.prospectus-table::-webkit-scrollbar-thumb {
+  background: $lavender; 
+  border-radius: 10px;
+}
+
 td {
   border-top: none !important;
   background-color: white !important;
