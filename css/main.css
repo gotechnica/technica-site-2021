@@ -688,6 +688,36 @@ body {
     padding-bottom: 10%;
   }
   .hero-logo #technica-logo{
+    height: 230px;
+    width: 850px;
+  }
+  .hero-information {
+    margin-top: 50px;
+  }
+  .hero .container {
+    margin-left: -10px;
+    padding-left: 200px;
+  }
+  .hero-information #hero-tagline{
+    font-size: 220%;
+    width: 100%;
+  }
+  .hero-action .register-btn {
+    margin-left: 70%;
+    width: 35%;
+    height: 50%;
+  }
+  .hero-action .hero-learn {
+    margin-left: 38%;
+    width: 100%;
+  }
+} 
+
+@media only screen and (min-width: 2560px){
+  .hero{
+    padding-bottom: 10%;
+  }
+  .hero-logo #technica-logo{
     height: 280px;
     width: 1050px;
   }

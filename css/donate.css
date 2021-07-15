@@ -646,10 +646,10 @@ h2 {
 
 @media only screen and (min-width: 2000px){
   .hero-clouds #hero-clouds {
-    height: 1200px;
+    height: 1000px;
   }
   .hero .container {
-    margin-left: 25%;
+    margin-left: 18%;
   } 
   .hero-logo #technica-logo {
     margin-top: 18%;
@@ -658,4 +658,10 @@ h2 {
   .hero-action .big-donate-btn{
     width: 20%;
   }
+}
+
+@media only screen and (min-width: 2560px){
+  .hero .container {
+    margin-left: 25%;
+  } 
 }
