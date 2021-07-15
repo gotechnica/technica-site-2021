@@ -123,14 +123,6 @@ body {
     top: -26px;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .hero-clouds {
-    width: 834px;
-    height: 663px;
-    left: 0px;
-    top: 69px;
-  }
-}
 
 .hero {
   position: relative;
