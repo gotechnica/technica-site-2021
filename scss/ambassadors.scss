@@ -78,7 +78,7 @@ h2 {
 
 .faq {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .faq-heading {
@@ -124,6 +124,7 @@ h2 {
   padding-bottom: 5%;
 }
 
+
 /* large breakpoint, lists not aligned with headings */
 @media only screen and (min-width: 1300px) {
   #responsibilities {
@@ -131,6 +132,9 @@ h2 {
   }
   #why-apply {
     margin-left: 5%;
+  }
+  .faq-heading {
+    padding-top: 3%;
   }
 }
 
@@ -158,5 +162,41 @@ h2 {
 
   .card-body {
     text-align: center;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .email {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .faq {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1720px) {
+  #responsibilities {
+    margin-left: 10%;
+  }
+  #why-apply {
+    margin-left: 10%;
+  }
+  .faq-heading {
+    padding-top: 3%;
+  }
+}
+
+
+@media only screen and (min-width: 1875px) {
+  #responsibilities {
+    margin-left: 14%;
+  }
+  #why-apply {
+    margin-left: 14%;
   }
 }

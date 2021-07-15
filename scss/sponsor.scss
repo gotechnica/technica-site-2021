@@ -23,18 +23,18 @@ h2 {
 }
 
 @mixin heading($color) {
-    font-size: 2rem;
-    color: $color;
+  font-size: 2rem;
+  color: $color;
 
-    font-weight: bold;
-  }
-  
+  font-weight: bold;
+}
+
 .heading-pink {
-    @include heading($pink);
+  @include heading($pink);
 }
 
 .heading-lavender {
-    @include heading($lavender);
+  @include heading($lavender);
 }
 
 .header {
@@ -136,13 +136,13 @@ h2 {
 }
 
 .edu-dot {
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 50px;
-    display: inline-block;
-    vertical-align: -.3vw;
-    margin-right: 10px;
-  }
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: -0.3vw;
+  margin-right: 10px;
+}
 
 // Prospectus Section
 .prospectus {
@@ -194,13 +194,13 @@ th {
 .brand {
   background: $hero-blue;
 }
-  .demo-legend {
-    margin: 0.25%;
-  }
+.demo-legend {
+  margin: 0.25%;
+}
 
-  .demo-stat {
-    width: 30%;
-  }
+.demo-stat {
+  width: 30%;
+}
 
 .brand-text {
   color: $dark-hero-blue;
@@ -342,7 +342,6 @@ th {
     max-width: 300px;
   }
 }
-
 
 #thank-you {
   background-color: #ff5789;
