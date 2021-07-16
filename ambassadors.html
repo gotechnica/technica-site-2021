@@ -86,7 +86,7 @@
 <body>
 
   <!-- navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -98,36 +98,39 @@
         <li class="nav-item">
           <a class="nav-link" href="sponsor.html">Sponsor</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donate.html">Donate</a>
+        </li>
        </ul>
      </div>
    </nav>
 
-  <div class="container-fluid">
+  <div class="container-fluid" role="main">
     <article>
       <!-- main -->
       <section class="main">
         <!-- introduction -->
-        <div class="heading text-center">
-          <h1>Technica is calling on students from all around the country to work alongside our 2021 organizing team!</h1>
+        <div class="primary-heading text-center">
+          <h1 class="heading">Technica is calling on students from all around the country to work alongside our 2021 organizing team!</h1>
         </div>
         <!-- ambassador description -->
         <div class="position-desc" style="position: relative">
-          <div class="text-center">
+          <div class="desc">
             <p>As a Technica Campus Ambassador, you’ll have the unique opportunity to help foster our community beyond Technica weekend at UMD. As a representative of your school, you’ll spread the word about Technica 2021 on your campus and promote our message of inclusion in STEM for the largest hackathon for underrepresented genders in the world!</p>
           </div>
           <a target="_blank" href="https://forms.gle/RbisP2XboZgrRHLH8"><img src="./img/ambassadors.jpg"></a>
           <div class="pt-3 row">
-            <div class="col-lg-6 description">
-              <h2 class="heading text-center">What do Campus Ambassadors do?</h2>
-              <ul id-"responsibilities">
+            <div class="col-lg-7 description">
+              <h2 class="heading">What do Campus Ambassadors do?</h2>
+              <ul id="responsibilities">
                 <li>Generate awareness, excitement, and buzz leading up to Technica 2021</li>
                 <li>Coordinate bus pick-up locations from your school to Technica</li>
                 <li>Promote Technica on your campus and social media</li>
                 <li>Communicate with Technica’s Brand team weekly</li>
               </ul>
             </div>
-            <div class="col-lg-6 reasons">
-              <h2 class="heading text-center">Why should you apply?</h2>
+            <div class="col-lg-5 reasons">
+              <h2 class="heading">Why should you apply?</h2>
               <ul id="why-apply">
                 <li>Be a leader at your school!</li>
                 <li>Have your resume shared with our sponsors</li>
@@ -152,13 +155,16 @@
         <button class="btn" type="button">Apply today!</button>
       </a>
       <br>
-      Application Deadline: <b>July 11th</b> @ 11:59PM
+      Application Deadline: <b>July 25th*</b> @ 11:59PM
+      <p style="font-size:70%; margin-top:0.5%;">*the application deadline has been extended</p>
     </div>
   </div>
         
   <!-- FAQ -->
-  <div class="faq" style="text-align: center;">
-    <h2 class="heading mb-0 text-center" style="display: inline-block;">Frequently Asked Questions</h2>
+  <div class="faq">
+      <div class="text-center">
+        <h2 class="faq-heading heading mb-0 text-center" style="display: inline-block;">Frequently Asked Questions</h2>
+      </div>
       <div class="row">
         <div class="col-md">
           <div class="accordion">
@@ -217,57 +223,56 @@
     </div>
   </div>  
 
-  <div class="contact-footer">
-      <div class="contact section text-center">
-        <div class="container">
-          <div class="email mt-5 text-center">
-            Still have questions? Reach us at <a id="email-link" class="font-weight-bold" href="mailto:brand@gotechnica.org" style="color: #b5a1c4;">brand@gotechnica.org</a>!</div>
-          </div>
-          <div class="social-buttons">
-              <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/" target="_blank">
-                <div class="blue-circle">
-                    <img src="./img/w_youtube.svg" alt="YouTube icon">
-                  </div>
-              </a>
-              <a href="https://twitter.com/gotechnica?lang=en" target="_blank">
-                <div class="blue-circle">
-                    <img src="./img/w_twitter.svg" alt="Twitter icon">
-                  </div>
-              </a>
-              <a href="https://www.facebook.com/gotechnica/" target="_blank">
-                <div class="purple-circle">
-                    <img src="./img/w_facebook.svg" alt="Facebook icon">
-                </div>
-              </a>
-              <a href="https://www.instagram.com/gotechnica/" target="_blank">
-                <div class="purple-circle">
-                    <img src="./img/w_instagram.svg" alt="Instagram icon">
-                </div>
-              </a>
-              <a href="https://medium.com/gotechnica" target="_blank" >
-                <div class="pink-circle">
-                    <img src="./img/w_medium.svg" alt="Medium icon">
-                </div>
-              </a>
-              <a href="https://linkedin.com/company/gotechnica" target="_blank">
-                <div class="pink-circle">
-                    <img src="./img/w_linkedin.svg" alt="LinkedIn icon">
-                </div>
-              </a>
+  <div role="contentinfo">
+    <div class="contact-footer">
+        <div class="contact section text-center">
+          <div class="container">
+            <div class="email mt-5 text-center">
+              Still have questions? Reach us at <a id="email-link" class="font-weight-bold" href="mailto:brand@gotechnica.org" style="color: #9C8DA5;">brand@gotechnica.org</a>!</div>
             </div>
-          </div>
-      </div>
-
-      <div class="footer" style="background-color: #E9E3ED;">
-        <div class="container" style="padding: 1%;">
-          <div id="footer-links">
-              <a href="https://gotechnica.org/sponsor" target="_blank">Sponsor</a> | <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> <!--| <a href="https://gotechnica.org/resources" target="_blank"> Resources</a> | <a href="https://gotechnica.org/donate" target="_blank"> Donate</a>-->
-          </div>
-          <span style="opacity: .7">Copyright © 2021 Technica</span>
+            <div class="social-buttons">
+                <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/" target="_blank">
+                  <div class="blue-circle">
+                      <img src="./img/w_youtube.svg" alt="YouTube icon">
+                    </div>
+                </a>
+                <a href="https://twitter.com/gotechnica?lang=en" target="_blank">
+                  <div class="blue-circle">
+                      <img src="./img/w_twitter.svg" alt="Twitter icon">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/gotechnica/" target="_blank">
+                  <div class="purple-circle">
+                      <img src="./img/w_facebook.svg" alt="Facebook icon">
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/gotechnica/" target="_blank">
+                  <div class="purple-circle">
+                      <img src="./img/w_instagram.svg" alt="Instagram icon">
+                  </div>
+                </a>
+                <a href="https://medium.com/gotechnica" target="_blank" >
+                  <div class="pink-circle">
+                      <img src="./img/w_medium.svg" alt="Medium icon">
+                  </div>
+                </a>
+                <a href="https://linkedin.com/company/gotechnica" target="_blank">
+                  <div class="pink-circle">
+                      <img src="./img/w_linkedin.svg" alt="LinkedIn icon">
+                  </div>
+                </a>
+              </div>
+            </div>
         </div>
+
+  <div class="footer" style="background-color: #E9E3ED;">
+    <div class="container" style="padding: 1%;">
+      <div id="footer-links">
+        <a href="sponsor.html">Sponsor</a> | <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> | <a href="donate.html">Donate</a>
       </div>
+      <span style="opacity: .7">Copyright © 2021 Technica</span>
     </div>
-    </div>
+  </div>
 
     <!-- mlh badge -->
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
