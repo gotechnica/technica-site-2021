@@ -1,6 +1,7 @@
 /*@use 'vars';*/
 $pink: #f27aaa;
 $lavender: #b5a1c4;
+$dark-lavender: #8d7c98;
 $blue: #6fcbdc;
 
 $animation-length: 80s;
@@ -337,7 +338,7 @@ h2 {
 }
 
 .donate-option2-header {
-  color: $lavender;
+  color: $dark-lavender;
 }
 
 .donate-option3-header {
@@ -362,7 +363,7 @@ h2 {
 }
 
 .donate-option2 {
-  border: 6px solid $lavender;
+  border: 6px solid $dark-lavender;
 }
 
 .donate-option3 {

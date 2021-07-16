@@ -3,8 +3,13 @@
   padding-left: 15%;
   padding-right: 15%; }
 
+.primary-heading {
+  padding-top: 5%;
+  padding-bottom: 1%; }
+
 .heading {
-  color: #ff6b98; }
+  color: #ED648D;
+  line-height: 1.3em; }
 
 h1 {
   font-size: 300%; }
@@ -42,7 +47,7 @@ h2 {
   font-size: 1.75rem; }
 
 .apply .btn {
-  background-color: #ff6b98;
+  background-color: #ED648D;
   font-size: 2rem;
   margin-bottom: 10px; }
 
@@ -52,7 +57,16 @@ h2 {
 
 .faq {
   margin-top: 40px;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
+
+.faq-heading {
+  padding-top: 5%;
+  padding-bottom: 2%; }
+
+.desc {
+  width: 80%;
+  margin: auto;
+  line-height: 1.5em; }
 
 .card {
   border: none; }
@@ -69,6 +83,9 @@ h2 {
   padding-left: 0px;
   padding-bottom: 0px; }
 
+.accordion {
+  border-bottom: 3px solid #b5a1c4; }
+
 .card-body {
   padding-left: 0px;
   color: grey; }
@@ -82,7 +99,9 @@ h2 {
   #responsibilities {
     margin-left: 5%; }
   #why-apply {
-    margin-left: 15%; } }
+    margin-left: 5%; }
+  .faq-heading {
+    padding-top: 3%; } }
 
 /* large breakpoint, position description collapses */
 @media only screen and (max-width: 991px) {
@@ -99,4 +118,26 @@ h2 {
   .accordion .btn {
     text-align: center; }
   .card-body {
-    text-align: center; } }
+    text-align: center; }
+  .heading {
+    font-size: 30px; }
+  .email {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .faq {
+    padding-bottom: 0;
+    margin-bottom: 0; } }
+
+@media only screen and (min-width: 1720px) {
+  #responsibilities {
+    margin-left: 10%; }
+  #why-apply {
+    margin-left: 10%; }
+  .faq-heading {
+    padding-top: 3%; } }
+
+@media only screen and (min-width: 1875px) {
+  #responsibilities {
+    margin-left: 14%; }
+  #why-apply {
+    margin-left: 14%; } }

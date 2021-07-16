@@ -1,6 +1,11 @@
-$pink: #f27aaa;
-$lavender: #b5a1c4;
+$pink: #ed648d; //old: #f27aaa;
+$dark-pink: #CD426B;
+$lavender:#9c8da5; //old color: #b5a1c4;
+$dark-lavender: #8d7c98;
+$darker-lavender: #82708F;
 $hero-blue: #6fcbdc;
+$darker-hero-blue: #2CA0B5;
+$dark-hero-blue: #087F8A;
 $container-gray: #f3f3f3;
 $animation-length: 80s;
 
@@ -156,7 +161,7 @@ th {
 }
 
 .add-ons td {
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 1px solid black;
 }
 
 .contr-amt {
@@ -171,7 +176,7 @@ th {
 }
 
 .benefit-text {
-  color: $lavender;
+  color: $darker-lavender;
 }
 
 .general-spons {
@@ -179,7 +184,7 @@ th {
 }
 
 .general-text {
-  color: $pink;
+  color: $dark-pink;
 }
 
 .recruit {
@@ -198,12 +203,12 @@ th {
 }
 
 .brand-text {
-  color: $hero-blue;
+  color: $dark-hero-blue;
 }
 
 .prospectus span {
   cursor: default;
-  color: $container-gray;
+  color: black;
   padding-left: 3px;
 }
 
