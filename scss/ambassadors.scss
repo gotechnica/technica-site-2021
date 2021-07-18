@@ -1,6 +1,7 @@
 $cyan: #82ecec;
-$pink: #ff6b98;
-$lavender: #b5a1c4;
+$pink: #ED648D; //old color: #ff6b98;
+$lavender: #9C8DA5;
+$dark-lavender: #8d7c98;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
@@ -11,8 +12,14 @@ $hero-blue: #6fcbdc;
   padding-right: 15%;
 }
 
+.primary-heading {
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
 .heading {
   color: $pink;
+  line-height: 1.3em;
 }
 
 h1 {
@@ -71,7 +78,18 @@ h2 {
 
 .faq {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.faq-heading {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.desc {
+  width: 80%;
+  margin: auto;
+  line-height: 1.5em;
 }
 
 .card {
@@ -92,6 +110,10 @@ h2 {
   padding-bottom: 0px;
 }
 
+.accordion {
+  border-bottom: 3px solid #b5a1c4;
+}
+
 .card-body {
   padding-left: 0px;
   color: grey;
@@ -102,13 +124,17 @@ h2 {
   padding-bottom: 5%;
 }
 
+
 /* large breakpoint, lists not aligned with headings */
 @media only screen and (min-width: 1300px) {
   #responsibilities {
     margin-left: 5%;
   }
   #why-apply {
-    margin-left: 15%;
+    margin-left: 5%;
+  }
+  .faq-heading {
+    padding-top: 3%;
   }
 }
 
@@ -136,5 +162,41 @@ h2 {
 
   .card-body {
     text-align: center;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .email {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .faq {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1720px) {
+  #responsibilities {
+    margin-left: 10%;
+  }
+  #why-apply {
+    margin-left: 10%;
+  }
+  .faq-heading {
+    padding-top: 3%;
+  }
+}
+
+
+@media only screen and (min-width: 1875px) {
+  #responsibilities {
+    margin-left: 14%;
+  }
+  #why-apply {
+    margin-left: 14%;
   }
 }

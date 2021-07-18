@@ -4,12 +4,16 @@
   font-size: 140%;
   font-weight: bold;
   color: #fff;
-  background-color: #b5a1c4;
+  background-color: #8d7c98;
   border-radius: 50px;
   text-transform: uppercase;
   margin-top: 3%;
   padding: 3px 25px;
   transition: 0.3s ease;
+}
+
+.dark-btn {
+  background-color: #8d7c98;
 }
 
 .btn:hover {
@@ -57,7 +61,7 @@ body {
   border: none;
 }
 #navbar .navbar-toggler-icon {
-  color: #b5a1c4 !important;
+  color: #9c8da5 !important;
   width: 2em;
   height: 2em;
 }
@@ -65,7 +69,7 @@ body {
   font-family: DINPro;
   font-size: 24px;
   font-weight: bold;
-  color: #b5a1c4;
+  color: #9c8da5;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -88,7 +92,7 @@ body {
   transition: all 0.2s linear;
 }
 .scrolled .nav-link {
-  color: #b5a1c4 !important;
+  color: #9c8da5 !important;
   transition: color 200ms linear;
 }
 .scrolled .navbar-toggler {
@@ -222,7 +226,8 @@ body {
   }
 }
 .hero-action .hero-learn {
-  color: #b6a1c4;
+  color: #8d7c98;
+  margin-top: 5px;
   font-size: 150%;
 }
 @media only screen and (max-width: 767px) {
@@ -462,7 +467,7 @@ body {
 
 .accordion:hover,
 .accordion-active {
-  border-color: #b5a1c4;
+  border-color: #8d7c98;
 }
 
 .faq-toggle-icon {
@@ -515,11 +520,11 @@ body {
 .link,
 .link:visited {
   font-weight: bold;
-  color: #b5a1c4;
+  color: #9c8da5;
 }
 
 .link:hover {
-  color: #b5a1c4;
+  color: #9c8da5;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
@@ -566,7 +571,7 @@ body {
 
 .email-link,
 .email-link:visited {
-  color: #b5a1c4;
+  color: #9c8da5;
   font-weight: 300;
 }
 
@@ -608,11 +613,11 @@ body {
 }
 
 .purple-circle {
-  background-color: #b5a1c4;
+  background-color: #9c8da5;
 }
 
 .pink-circle {
-  background-color: #f27aaa;
+  background-color: #ed648d;
 }
 
 .footer {
