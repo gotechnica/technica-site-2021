@@ -1,11 +1,11 @@
 $pink: #ed648d; //old: #f27aaa;
-$dark-pink: #CD426B;
-$lavender:#9c8da5; //old color: #b5a1c4;
+$dark-pink: #cd426b;
+$lavender: #9c8da5; //old color: #b5a1c4;
 $dark-lavender: #8d7c98;
-$darker-lavender: #82708F;
+$darker-lavender: #82708f;
 $hero-blue: #6fcbdc;
-$darker-hero-blue: #2CA0B5;
-$dark-hero-blue: #087F8A;
+$darker-hero-blue: #2ca0b5;
+$dark-hero-blue: #087f8a;
 $container-gray: #f3f3f3;
 $animation-length: 80s;
 
@@ -15,8 +15,6 @@ $animation-length: 80s;
   font-weight: $weight;
   color: $color;
 }
-
-/* Text */
 
 h2 {
   text-transform: none;
@@ -98,7 +96,7 @@ h2 {
   margin-left: 3%;
 }
 
-// Demo Section
+// demographics section
 
 .demo-section {
   background-color: $container-gray;
@@ -167,17 +165,16 @@ h2 {
 .prospectus-table::-webkit-scrollbar-track {
   border-radius: 10px;
 }
- 
+
 /* Handle */
 .prospectus-table::-webkit-scrollbar-thumb {
-  background: $container-gray; 
+  background: $container-gray;
   border-radius: 10px;
 }
 
 td {
   border-top: none !important;
   background-color: white !important;
-
 }
 
 th {
@@ -259,8 +256,6 @@ th {
 .add-ons {
   overflow-x: visible !important;
 }
-
-// Prospectus End
 
 // Media Queries
 @media only screen and (max-width: 675px) {
