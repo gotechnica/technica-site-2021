@@ -592,6 +592,10 @@ h2 {
   .col-sm {
     padding-bottom: 5%;
   }
+
+  .footer .container {
+    padding-top: 40px;
+  }
 }
 @media only screen and (max-width: 447px) {
   .our-donor {
@@ -643,25 +647,3 @@ h2 {
 }
 
 /*# sourceMappingURL=donate.css.map */
-
-@media only screen and (min-width: 2000px){
-  .hero-clouds #hero-clouds {
-    height: 1000px;
-  }
-  .hero .container {
-    margin-left: 18%;
-  } 
-  .hero-logo #technica-logo {
-    margin-top: 18%;
-    width: 870px;
-  }
-  .hero-action .big-donate-btn{
-    width: 20%;
-  }
-}
-
-@media only screen and (min-width: 2560px){
-  .hero .container {
-    margin-left: 25%;
-  } 
-}

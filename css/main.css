@@ -127,6 +127,14 @@ body {
     top: -26px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .hero-clouds {
+    width: 834px;
+    height: 663px;
+    left: 0px;
+    top: 69px;
+  }
+}
 
 .hero {
   position: relative;
@@ -276,6 +284,78 @@ body {
 .about-image {
   width: 5%;
   height: 5%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.what-can-you-do .nav {
+  display: flex;
+  justify-content: center;
+}
+.what-can-you-do .nav-tabs {
+  border-bottom: none;
+  margin-bottom: 0.5rem;
+  justify-content: space-evenly;
+}
+.what-can-you-do .tab-content {
+  width: 100%;
+  height: 20rem;
+  background-color: #e9e3ed;
+  border-radius: 33px;
+  padding: 2rem;
+}
+.what-can-you-do .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.what-can-you-do .tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+}
+.what-can-you-do .tab .radio {
+  width: 2rem;
+  height: 2rem;
+  background-color: #e9e3ed;
+  border-radius: 50%;
+}
+.what-can-you-do .tab.active .title {
+  border: solid 0.75rem;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+.what-can-you-do .tab.active .title.blue {
+  border-color: #6fcbdc;
+}
+.what-can-you-do .tab.active .title.pink {
+  border-color: #ed648d;
+}
+.what-can-you-do .tab.active .title.orange {
+  border-color: #F9B7AE;
+}
+.what-can-you-do .tab.active .radio {
+  width: 2rem;
+  height: 2rem;
+  background-color: #8d7c98;
+  border-radius: 50%;
+}
+.what-can-you-do .tab.active .radio.pink {
+  background-color: #ed648d;
+}
+.what-can-you-do .tab.active .radio.orange {
+  background-color: #F9B7AE;
+}
+.what-can-you-do .tab.active .radio.blue {
+  background-color: #6fcbdc;
 }
 
 .testimonials {
@@ -648,7 +728,7 @@ body {
 @media (max-width: 575px) {
   .footer {
     font-size: 0.9rem;
-    padding: 0.5rem 0rem;
+    adding: 0.5rem 0rem;
   }
 }
 
@@ -659,83 +739,3 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
-
-@media only screen and (max-width: 400px){
-  .hero{
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 500px){
-  .hero{
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (width: 1024px){
-  .hero-clouds #hero-clouds{
-    position: relative;
-    height: 700px;
-  }
-}
-/*# sourceMappingURL=main.css.map */
-
-@media only screen and (min-width: 2000px){
-  .hero{
-    padding-bottom: 10%;
-  }
-  .hero-logo #technica-logo{
-    height: 230px;
-    width: 850px;
-  }
-  .hero-information {
-    margin-top: 50px;
-  }
-  .hero .container {
-    margin-left: -10px;
-    padding-left: 200px;
-  }
-  .hero-information #hero-tagline{
-    font-size: 220%;
-    width: 100%;
-  }
-  .hero-action .register-btn {
-    margin-left: 70%;
-    width: 35%;
-    height: 50%;
-  }
-  .hero-action .hero-learn {
-    margin-left: 38%;
-    width: 100%;
-  }
-} 
-
-@media only screen and (min-width: 2560px){
-  .hero{
-    padding-bottom: 10%;
-  }
-  .hero-logo #technica-logo{
-    height: 280px;
-    width: 1050px;
-  }
-  .hero-information {
-    margin-top: 50px;
-  }
-  .hero .container {
-    margin-left: -10px;
-    padding-left: 200px;
-  }
-  .hero-information #hero-tagline{
-    font-size: 300%;
-    width: 100%;
-  }
-  .hero-action .register-btn {
-    margin-left: 100%;
-    width: 35%;
-    height: 50%;
-  }
-  .hero-action .hero-learn {
-    margin-left: 68%;
-    width: 100%;
-  }
-} 

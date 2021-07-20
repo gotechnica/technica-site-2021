@@ -7,6 +7,7 @@ $dark-lavender: #8d7c98;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
+$orange: #F9B7AE;
 
 $animation-length: 80s;
 
@@ -287,6 +288,91 @@ body {
   width: 5%;
   height: 5%;
 }
+
+// *** what can you do section ***
+a:hover {
+  text-decoration: none;
+}
+
+.what-can-you-do {
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+    justify-content: space-evenly;
+  }
+  .tab-content {
+    width: 100%;
+    height: 20rem;
+    background-color: $ex-light-lavender;
+    border-radius: 33px;
+    padding: 2rem;
+  }
+  .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+
+    .radio {
+      width: 2rem;
+      height: 2rem;
+      background-color: $ex-light-lavender;
+      border-radius: 50%;
+
+    }
+  }
+  .tab.active {
+    .title {
+      border: solid 0.75rem;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+
+      &.blue {
+        border-color: $hero-blue;
+      }
+
+      &.pink {
+        border-color: $pink;
+      }
+
+      &.orange {
+        border-color: $orange;
+      }
+    }
+
+    .radio {
+      width: 2rem;
+      height: 2rem;
+      background-color: $dark-lavender;
+      border-radius: 50%;
+    }
+    .radio.pink {
+      background-color: $pink;
+    }
+    .radio.orange {
+      background-color: $orange;
+    }
+    .radio.blue {
+      background-color: $hero-blue;
+    }
+  }
+
+}
+
 
 // *** testimonials section ***
 .testimonials {
