@@ -11,6 +11,11 @@ $orange: #F9B7AE;
 
 $animation-length: 80s;
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @mixin dinpro-text($size, $weight, $color) {
   font-family: DINPro;
   font-size: $size;
@@ -299,11 +304,28 @@ a:hover {
     display: flex;
     justify-content: center;
   }
+
+  .tab-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab-container:first-child>span {
+    margin-right: auto;
+  }
+  
+  .tab-container:last-child>span {
+    margin-left: auto;
+  }
+  
+
+
   .nav-tabs {
     border-bottom: none;
     margin-bottom: 0.5rem;
-    justify-content: space-evenly;
   }
+
   .tab-content {
     width: 100%;
     height: 20rem;
@@ -311,13 +333,16 @@ a:hover {
     border-radius: 33px;
     padding: 2rem;
   }
+
   .title {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: $lavender;
   }
+
   .tab {
     display: flex;
     flex-direction: column;
@@ -327,19 +352,25 @@ a:hover {
     color: black;
 
     .radio {
-      width: 2rem;
-      height: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
       background-color: $ex-light-lavender;
       border-radius: 50%;
-
     }
   }
   .tab.active {
+    animation: fadein 1s;
+
     .title {
-      border: solid 0.75rem;
+      border: solid 0.5rem;
       border-left: none;
       border-top: none;
       border-right: none;
+      color: black;
+
+      .radio {
+        border: solid 0.2rem;
+      }
 
       &.blue {
         border-color: $hero-blue;
@@ -354,20 +385,14 @@ a:hover {
       }
     }
 
-    .radio {
-      width: 2rem;
-      height: 2rem;
-      background-color: $dark-lavender;
-      border-radius: 50%;
-    }
     .radio.pink {
-      background-color: $pink;
+      border-color: $pink;
     }
     .radio.orange {
-      background-color: $orange;
+      border-color: $orange;
     }
     .radio.blue {
-      background-color: $hero-blue;
+      border-color: $hero-blue;
     }
   }
 
@@ -494,6 +519,7 @@ a:hover {
   .gallery {
     height: 640px;
   }
+
 }
 
 // *** registration section ***

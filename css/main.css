@@ -1,4 +1,12 @@
 /*@use 'vars';*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .btn {
   font-family: DINPro;
   font-size: 140%;
@@ -294,10 +302,20 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+.what-can-you-do .tab-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.what-can-you-do .tab-container:first-child > span {
+  margin-right: auto;
+}
+.what-can-you-do .tab-container:last-child > span {
+  margin-left: auto;
+}
 .what-can-you-do .nav-tabs {
   border-bottom: none;
   margin-bottom: 0.5rem;
-  justify-content: space-evenly;
 }
 .what-can-you-do .tab-content {
   width: 100%;
@@ -312,6 +330,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #9c8da5;
 }
 .what-can-you-do .tab {
   display: flex;
@@ -322,16 +341,23 @@ a:hover {
   color: black;
 }
 .what-can-you-do .tab .radio {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #e9e3ed;
   border-radius: 50%;
 }
+.what-can-you-do .tab.active {
+  animation: fadein 1s;
+}
 .what-can-you-do .tab.active .title {
-  border: solid 0.75rem;
+  border: solid 0.5rem;
   border-left: none;
   border-top: none;
   border-right: none;
+  color: black;
+}
+.what-can-you-do .tab.active .title .radio {
+  border: solid 0.2rem;
 }
 .what-can-you-do .tab.active .title.blue {
   border-color: #6fcbdc;
@@ -342,20 +368,14 @@ a:hover {
 .what-can-you-do .tab.active .title.orange {
   border-color: #F9B7AE;
 }
-.what-can-you-do .tab.active .radio {
-  width: 2rem;
-  height: 2rem;
-  background-color: #8d7c98;
-  border-radius: 50%;
-}
 .what-can-you-do .tab.active .radio.pink {
-  background-color: #ed648d;
+  border-color: #ed648d;
 }
 .what-can-you-do .tab.active .radio.orange {
-  background-color: #F9B7AE;
+  border-color: #F9B7AE;
 }
 .what-can-you-do .tab.active .radio.blue {
-  background-color: #6fcbdc;
+  border-color: #6fcbdc;
 }
 
 .testimonials {
