@@ -1,6 +1,11 @@
-$pink: #f27aaa;
-$lavender: #b5a1c4;
+$pink: #ed648d; //old: #f27aaa;
+$dark-pink: #cd426b;
+$lavender: #9c8da5; //old color: #b5a1c4;
+$dark-lavender: #8d7c98;
+$darker-lavender: #82708f;
 $hero-blue: #6fcbdc;
+$darker-hero-blue: #2ca0b5;
+$dark-hero-blue: #087f8a;
 $container-gray: #f3f3f3;
 $animation-length: 80s;
 
@@ -11,25 +16,23 @@ $animation-length: 80s;
   color: $color;
 }
 
-/* Text */
-
 h2 {
   text-transform: none;
 }
 
 @mixin heading($color) {
-    font-size: 2rem;
-    color: $color;
+  font-size: 2rem;
+  color: $color;
 
-    font-weight: bold;
-  }
-  
+  font-weight: bold;
+}
+
 .heading-pink {
-    @include heading($pink);
+  @include heading($pink);
 }
 
 .heading-lavender {
-    @include heading($lavender);
+  @include heading($lavender);
 }
 
 .header {
@@ -93,7 +96,7 @@ h2 {
   margin-left: 3%;
 }
 
-// Demo Section
+// demographics section
 
 .demo-section {
   background-color: $container-gray;
@@ -131,32 +134,57 @@ h2 {
 }
 
 .edu-dot {
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 50px;
-    display: inline-block;
-    vertical-align: -.3vw;
-    margin-right: 10px;
-  }
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: -0.3vw;
+  margin-right: 10px;
+}
 
 // Prospectus Section
 .prospectus {
   margin-top: 60px;
 }
 
+.prospectus-table {
+  display: block;
+  overflow-y: auto;
+  table-layout: fixed;
+  max-height: 35rem;
+  background-color: white !important;
+}
+
+/* width */
+.prospectus-table::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* Track */
+.prospectus-table::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.prospectus-table::-webkit-scrollbar-thumb {
+  background: $container-gray;
+  border-radius: 10px;
+}
+
 td {
   border-top: none !important;
+  background-color: white !important;
 }
 
 th {
   border-top: none !important;
   padding-bottom: 5px !important;
   border-bottom: solid 1px black;
-  background-color: white !important;
 }
 
 .add-ons td {
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 1px solid black;
 }
 
 .contr-amt {
@@ -171,7 +199,7 @@ th {
 }
 
 .benefit-text {
-  color: $lavender;
+  color: $darker-lavender;
 }
 
 .general-spons {
@@ -179,7 +207,7 @@ th {
 }
 
 .general-text {
-  color: $pink;
+  color: $dark-pink;
 }
 
 .recruit {
@@ -189,21 +217,21 @@ th {
 .brand {
   background: $hero-blue;
 }
-  .demo-legend {
-    margin: 0.25%;
-  }
+.demo-legend {
+  margin: 0.25%;
+}
 
-  .demo-stat {
-    width: 30%;
-  }
+.demo-stat {
+  width: 30%;
+}
 
 .brand-text {
-  color: $hero-blue;
+  color: $dark-hero-blue;
 }
 
 .prospectus span {
   cursor: default;
-  color: $container-gray;
+  color: black;
   padding-left: 3px;
 }
 
@@ -228,8 +256,6 @@ th {
 .add-ons {
   overflow-x: visible !important;
 }
-
-// Prospectus End
 
 // Media Queries
 @media only screen and (max-width: 675px) {
@@ -337,7 +363,6 @@ th {
     max-width: 300px;
   }
 }
-
 
 #thank-you {
   background-color: #ff5789;

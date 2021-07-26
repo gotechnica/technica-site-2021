@@ -1,13 +1,20 @@
 /*@use 'vars';*/
 //temporary until resolve _vars.scss issue
 $cyan: #82ecec;
-$pink: #f27aaa;
-$lavender: #b5a1c4;
+$pink: #ed648d; //old: #f27aaa;
+$lavender:#9c8da5; //old color: #b5a1c4;
+$dark-lavender: #8d7c98;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
+$orange: #F9B7AE;
 
 $animation-length: 80s;
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 @mixin dinpro-text($size, $weight, $color) {
   font-family: DINPro;
@@ -18,12 +25,16 @@ $animation-length: 80s;
 
 .btn {
   @include dinpro-text(140%, bold, #fff);
-  background-color: $lavender;
+  background-color: $dark-lavender;
   border-radius: 50px;
   text-transform: uppercase;
   margin-top: 3%;
   padding: 3px 25px;
   transition: 0.3s ease;
+}
+
+.dark-btn {
+  background-color: $dark-lavender;
 }
 
 .btn:hover {
@@ -227,7 +238,8 @@ body {
     }
   }
   .hero-learn {
-    color: #b6a1c4;
+    color: $dark-lavender;
+    margin-top: 5px;
     font-size: 150%;
     @media only screen and (max-width: 767px) {
       font-size: 115%;
@@ -281,6 +293,111 @@ body {
   width: 5%;
   height: 5%;
 }
+
+// *** what can you do section ***
+a:hover {
+  text-decoration: none;
+}
+
+.what-can-you-do {
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab-container:first-child>span {
+    margin-right: auto;
+  }
+  
+  .tab-container:last-child>span {
+    margin-left: auto;
+  }
+  
+
+
+  .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .tab-content {
+    width: 100%;
+    height: 20rem;
+    background-color: $ex-light-lavender;
+    border-radius: 33px;
+    padding: 2rem;
+  }
+
+  .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $lavender;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+
+    .radio {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: $ex-light-lavender;
+      border-radius: 50%;
+    }
+  }
+  .tab.active {
+    animation: fadein 1.25s;
+
+    .title {
+      border: solid 0.5rem;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      color: black;
+
+      .radio {
+        border: solid 0.2rem;
+      }
+
+      &.blue {
+        border-color: $hero-blue;
+      }
+
+      &.pink {
+        border-color: $pink;
+      }
+
+      &.orange {
+        border-color: $orange;
+      }
+    }
+
+    .radio.pink {
+      border-color: $pink;
+    }
+    .radio.orange {
+      border-color: $orange;
+    }
+    .radio.blue {
+      border-color: $hero-blue;
+    }
+  }
+
+}
+
 
 // *** testimonials section ***
 .testimonials {
@@ -402,6 +519,7 @@ body {
   .gallery {
     height: 640px;
   }
+
 }
 
 // *** registration section ***
@@ -475,7 +593,7 @@ body {
 
 .accordion:hover,
 .accordion-active {
-  border-color: $lavender;
+  border-color: $dark-lavender;
 }
 
 .faq-toggle-icon {

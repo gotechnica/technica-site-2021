@@ -104,11 +104,11 @@
 <body>
 
   <div class="hero-clouds">
-    <img src="img/hero-clouds.png" alt="pastel pink and purple sky and clouds" style="width: 100%;">
+    <img id = hero-clouds src="img/hero-clouds.png" alt="pastel pink and purple sky and clouds" style="width: 100%;">
   </div>
   
   <!-- navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -129,7 +129,7 @@
   </nav>
 
   <!-- Hero -->
-  <div class="hero">
+  <div class="hero" role="banner">
     <div class="container">
       <div class="hero-information">
         <h1 class="hero-title" style="color: #000;"> Donating to </h1>
@@ -138,133 +138,138 @@
         </div>
       </div>
       <div class="hero-action text-center">
-        <button class="big-donate-btn btn" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=83S778CAUXCLS'">Donate</button>
+        <a class="big-donate-btn btn" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=83S778CAUXCLS">Donate</a>
       </div>
     </div>
   </div>
 
-   <!-- Donor Promise -->
-  <div class="donate-promise">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 order-1 order-md-1 promise-text">
-          <!-- Header -->
-          <h1 class="our-donor" style="color: #000;">Our Donor Promise</h1>
-            <!-- Body -->
-          <div class="promise-body" style="text-align: left;">
-            <p> <b> We promise to respect your donation by only using donor funds to support our mission of reaching gender equity in tech. </b> The most high cost ways we will spend funds this year are mailing supplies to hackers, providing supplies for mini activities all weekend long, and ensuring the virtual Technica experience is still amazing through our custom virtual platform.</p>
-            <p> <b> Additionally, Technica is a 501(c)(3) public charity, so your donations are tax-deductible.</b></p>
+  <div role="main">
+    <!-- Donor Promise -->
+    <div class="donate-promise">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-1 order-md-1 promise-text">
+            <!-- Header -->
+            <h1 class="our-donor" style="color: #000;">Our Donor Promise</h1>
+              <!-- Body -->
+            <div class="promise-body" style="text-align: left;">
+              <p> <b> We promise to respect your donation by only using donor funds to support our mission of reaching gender equity in tech. </b> The most high cost ways we will spend funds this year are mailing supplies to hackers, providing supplies for mini activities all weekend long, and ensuring the virtual Technica experience is still amazing through our custom virtual platform.</p>
+              <p> <b> Additionally, Technica is a 501(c)(3) public charity, so your donations are tax-deductible.</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 order-2 order-md-2" style="display:flex">
+            <div class="promise-image">
+                <img src="img/donor-promise.jpg" alt="Two happy people looking at a laptop together at Technica." class="center-block" style="margin-top: 5.5%; border-radius: 25px;">
+            </div>
           </div>
         </div>
-        <div class="col-md-6 order-2 order-md-2" style="display:flex">
-          <div class="promise-image">
-              <img src="img/donor-promise.jpg" alt="Two happy people looking at a laptop together at Technica." class="center-block" style="margin-top: 5.5%; border-radius: 25px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- donor impact -->
+    <div class="donate-impact">
+      <div class="container text-center">
+        <div>
+          <h1 class="impact-header">Your Donation's Impact</h1>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm">
+            <div class="donate-option1">
+                <h2 class="donate-option1-header">$50</h2>
+                <p>The cost to provide hardware kits to two hackers participating in our hardware track</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="donate-option2">
+                <h2 class="donate-option2-header">$20</h2>
+                <p>The cost of each meal we provide to hackers at Technica, keeping them fueled and properly fed</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="donate-option3">
+                <h2 class="donate-option3-header">$10</h2>
+                <p>The cost per hacker to keep Emergency Medical Services and Security Personnel on hand throughout Technica weekend, just in case</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- donate button -->
+        <div class="donate-btn">
+          <!-- Took the liberty to make this one change in Emily's section :/ -->
+          <button class="big-donate-btn btn" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=83S778CAUXCLS'">Donate</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- questions -->
+    <div class="donate-questions">
+      <div class="container">
+        <div class="text-center">
+          <p style="margin-bottom: 5px;">Questions about donating? Please email <a id="email-link-donate" class="font-weight-bold" style="color: #000;" href="mailto:finance@gotechnica.org">finance@gotechnica.org</a></p>
+          <p>Are you a company interested in supporting Technica? Please email <a id="email-link-donate" class="font-weight-bold" style="color: #000;" href="mailto:sponsorship@gotechnica.org">sponsorship@gotechnica.org</a></p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div role="contentinfo">
+    <div class="contact-footer">
+      <div class="contact section text-center">
+        <div class="container">
+          <div class="contact-header">
+            <h1 style="font-size: 100%; color: black;">Contact Us</h1>
+          </div>
+          <div class="contact-content">
+            <h4>Reach out to us at <a class="email-link" href="mailto:hello@gotechnica.org">hello@gotechnica.org</a></h4>
+          </div>
+          <div class="social-buttons">
+            <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/" target="_blank">
+              <div class="blue-circle">
+                <img src="./img/w_youtube.svg" alt="YouTube icon">
+              </div>
+            </a>
+            <a href="https://twitter.com/gotechnica?lang=en" target="_blank">
+              <div class="blue-circle">
+                <img src="./img/w_twitter.svg" alt="Twitter icon">
+              </div>
+            </a>
+            <a href="https://www.facebook.com/gotechnica/" target="_blank">
+              <div class="purple-circle">
+                <img src="./img/w_facebook.svg" alt="Facebook icon">
+              </div>
+            </a>
+            <a href="https://www.instagram.com/gotechnica/" target="_blank">
+              <div class="purple-circle">
+                <img src="./img/w_instagram.svg" alt="Instagram icon">
+              </div>
+            </a>
+            <a href="https://medium.com/gotechnica" target="_blank" >
+              <div class="pink-circle">
+                <img src="./img/w_medium.svg" alt="Medium icon">
+              </div>
+            </a>
+            <a href="https://linkedin.com/company/gotechnica" target="_blank">
+              <div class="pink-circle">
+                <img src="./img/w_linkedin.svg" alt="LinkedIn icon">
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      </div>
     </div>
-  </div>
 
-  <!-- donor impact -->
-  <div class="donate-impact">
-    <div class="container text-center">
-      <div>
-        <h1 class="impact-header">Your Donation's Impact</h1>
-      </div>
-      <div class="row align-items-center justify-content-center">
-        <div class="col-sm">
-          <div class="donate-option1">
-              <h2 class="donate-option1-header">$50</h2>
-              <p>The cost to provide hardware kits to two hackers participating in our hardware track</p>
-          </div>
+    <div class="footer" style="background-color: #E9E3ED;">
+      <div class="container" style="padding: 1%;">
+        <div id="footer-links">
+           <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> | <a href="sponsor.html">Sponsor</a>
         </div>
-        <div class="col-sm">
-          <div class="donate-option2">
-              <h2 class="donate-option2-header">$20</h2>
-              <p>The cost of each meal we provide to hackers at Technica, keeping them fueled and properly fed</p>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="donate-option3">
-              <h2 class="donate-option3-header">$10</h2>
-              <p>The cost per hacker to keep Emergency Medical Services and Security Personnel on hand throughout Technica weekend, just in case</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- donate button -->
-      <div class="donate-btn">
-        <!-- Took the liberty to make this one change in Emily's section :/ -->
-        <button class="big-donate-btn btn" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=83S778CAUXCLS'">Donate</button>
+        <span style="opacity: .7">Copyright © 2021 Technica</span>
       </div>
     </div>
-  </div>
 
-  <!-- questions -->
-  <div class="donate-questions">
-    <div class="container">
-      <div class="text-center">
-        <p style="margin-bottom: 5px;">Questions about donating? Please email <a id="email-link-donate" class="font-weight-bold" style="color: #000;" href="mailto:finance@gotechnica.org">finance@gotechnica.org</a></p>
-        <p>Are you a company interested in supporting Technica? Please email <a id="email-link-donate" class="font-weight-bold" style="color: #000;" href="mailto:sponsorship@gotechnica.org">sponsorship@gotechnica.org</a></p>
-        <br>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-footer">
-    <div class="contact section text-center">
-      <div class="social-buttons">
-        <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/" target="_blank">
-          <div class="blue-circle">
-            <img src="./img/w_youtube.svg" alt="YouTube icon">
-          </div>
-        </a>
-        <a href="https://twitter.com/gotechnica?lang=en" target="_blank">
-          <div class="blue-circle">
-            <img src="./img/w_twitter.svg" alt="Twitter icon">
-          </div>
-        </a>
-        <a href="https://www.facebook.com/gotechnica/" target="_blank">
-          <div class="purple-circle">
-            <img src="./img/w_facebook.svg" alt="Facebook icon">
-          </div>
-        </a>
-        <a href="https://www.instagram.com/gotechnica/" target="_blank">
-          <div class="purple-circle">
-            <img src="./img/w_instagram.svg" alt="Instagram icon">
-          </div>
-        </a>
-        <a href="https://medium.com/gotechnica" target="_blank" >
-          <div class="pink-circle">
-            <img src="./img/w_medium.svg" alt="Medium icon">
-          </div>
-        </a>
-        <a href="https://linkedin.com/company/gotechnica" target="_blank">
-          <div class="pink-circle">
-            <img src="./img/w_linkedin.svg" alt="LinkedIn icon">
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="footer" style="background-color: #E9E3ED;">
-    <div class="spons-code" style="padding: 1%;">
-      <div id="footer-links">
-        <a href="https://gotechnica.org/sponsor" target="_blank">Sponsor</a> | <a href="./files/terms.pdf"
-          target="_blank">Code of Conduct</a>
-        <!--| <a href="https://gotechnica.org/resources" target="_blank"> Resources</a> | <a href="https://gotechnica.org/donate" target="_blank"> Donate</a>-->
-      </div>
-      <span style="opacity: .7">Copyright © 2021 Technica</span>
-    </div>
-  </div>
-
-  <!-- mlh badge -->
-  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
-</body>
-</html>
-
-
-</body>
+    <!-- mlh badge -->
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="hhttps://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+  </body>
 </html>

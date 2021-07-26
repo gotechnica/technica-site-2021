@@ -1,17 +1,16 @@
-/* Text */
 h2 {
   text-transform: none;
 }
 
 .heading-pink {
   font-size: 2rem;
-  color: #f27aaa;
+  color: #ed648d;
   font-weight: bold;
 }
 
 .heading-lavender {
   font-size: 2rem;
-  color: #b5a1c4;
+  color: #9c8da5;
   font-weight: bold;
 }
 
@@ -27,11 +26,11 @@ h2 {
 
 .info-input {
   padding: 10px;
-  background-color: #f27aaa;
+  background-color: #ed648d;
 }
 
 .inquiry-box {
-  border: 3px solid #f27aaa;
+  border: 3px solid #ed648d;
 }
 
 .form-control {
@@ -41,7 +40,7 @@ h2 {
 
 .inquiry-btn {
   border-radius: 0;
-  background-color: #f27aaa;
+  background-color: #ed648d;
 }
 
 .inquiry-btn:hover {
@@ -57,12 +56,12 @@ h2 {
   height: 75%;
   width: 95%;
   object-fit: cover;
-  box-shadow: -2rem 0rem 0 -20px #b5a1c4, 0.75rem -0.75rem #f27aaa;
+  box-shadow: -2rem 0rem 0 -20px #9c8da5, 0.75rem -0.75rem #ed648d;
 }
 
 .overall-stats .stat-number {
   font-size: 3rem;
-  color: #b5a1c4;
+  color: #9c8da5;
   font-weight: bold;
 }
 
@@ -122,19 +121,44 @@ h2 {
   margin-top: 60px;
 }
 
+.prospectus-table {
+  display: block;
+  overflow-y: auto;
+  table-layout: fixed;
+  max-height: 35rem;
+  background-color: white !important;
+}
+
+/* width */
+.prospectus-table::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* Track */
+.prospectus-table::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.prospectus-table::-webkit-scrollbar-thumb {
+  background: #f3f3f3;
+  border-radius: 10px;
+}
+
 td {
   border-top: none !important;
+  background-color: white !important;
 }
 
 th {
   border-top: none !important;
   padding-bottom: 5px !important;
   border-bottom: solid 1px black;
-  background-color: white !important;
 }
 
 .add-ons td {
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 1px solid black;
 }
 
 .contr-amt {
@@ -149,19 +173,19 @@ th {
 }
 
 .benefit-text {
-  color: #b5a1c4;
+  color: #82708f;
 }
 
 .general-spons {
-  background: #f27aaa;
+  background: #ed648d;
 }
 
 .general-text {
-  color: #f27aaa;
+  color: #cd426b;
 }
 
 .recruit {
-  background: #b5a1c4;
+  background: #9c8da5;
 }
 
 .brand {
@@ -177,23 +201,23 @@ th {
 }
 
 .brand-text {
-  color: #6fcbdc;
+  color: #087f8a;
 }
 
 .prospectus span {
   cursor: default;
-  color: #f3f3f3;
+  color: black;
   padding-left: 3px;
 }
 
 .prospectus a {
   color: #a88aa8;
-  color: #b5a1c4;
+  color: #9c8da5;
 }
 
 .prospectus a:hover,
 .prospectus a:active {
-  color: #b5a1c4;
+  color: #9c8da5;
   filter: brightness(1.2);
   transition: 0.3s ease;
   text-decoration: none;
@@ -345,11 +369,11 @@ th {
 }
 .info-input {
   padding: 10px;
-  background-color: #f27aaa;
+  background-color: #ed648d;
 }
 
 .inquiry-box {
-  border: 3px solid #f27aaa;
+  border: 3px solid #ed648d;
 }
 
 .form-control {
@@ -359,7 +383,7 @@ th {
 
 .inquiry-btn {
   border-radius: 50px;
-  background-color: #f27aaa;
+  background-color: #ed648d;
 }
 
 .inquiry-btn:hover {
