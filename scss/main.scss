@@ -4,9 +4,11 @@ $cyan: #82ecec;
 $pink: #ed648d; //old: #f27aaa;
 $lavender:#9c8da5; //old color: #b5a1c4;
 $dark-lavender: #8d7c98;
+$darker-lavender: #72607B;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
+$dark-grey: #606060;
 
 $animation-length: 80s;
 
@@ -541,11 +543,11 @@ body {
 .link,
 .link:visited {
   font-weight: bold;
-  color: $lavender;
+  color: $darker-lavender;
 }
 
 .link:hover {
-  color: $lavender;
+  color: $darker-lavender;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
