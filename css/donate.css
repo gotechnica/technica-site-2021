@@ -9,6 +9,7 @@
     margin-top: -100px;
   }
 }
+
 .hero-clouds {
   position: absolute;
   width: 100%;
@@ -24,6 +25,7 @@
     top: -26px;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .hero-clouds {
     height: 663px;
@@ -31,6 +33,7 @@
     top: -5px;
   }
 }
+
 .hero {
   position: relative;
   padding-bottom: 10%;
@@ -44,6 +47,7 @@
     opacity: 0;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -53,6 +57,7 @@
     pointer-events: auto;
   }
 }
+
 .hero-information {
   margin-top: 200px;
   position: relative;
@@ -71,6 +76,7 @@
     margin-top: 260px;
   }
 }
+
 .hero-information #technica-logo {
   padding-top: 5%;
   margin-top: 15%;
@@ -84,6 +90,7 @@
     margin-top: -650px;
   }
 }
+
 .hero-information #hero-tagline {
   font-size: 150%;
   width: 55%;
@@ -95,11 +102,13 @@
     width: 95%;
   }
 }
+
 @media only screen and (min-width: 767px) and (max-width: 1042px) {
   .hero-information #hero-tagline {
     width: 85%;
   }
 }
+
 .hero-action {
   margin-top: -30px;
   position: relative;
@@ -115,16 +124,19 @@
     padding-top: 125px;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .hero-action {
     padding-top: 125px;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .hero-action {
     padding-top: 350px;
   }
 }
+
 .hero-action .big-donate-btn {
   font-family: DINPro;
   font-size: 175%;
@@ -143,6 +155,7 @@
     color: #fff;
   }
 }
+
 .hero-action .hero-learn {
   color: #b6a1c4;
   font-size: 150%;
@@ -153,54 +166,51 @@
     font-size: 115%;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
     padding-top: 55px;
   }
-
   .hero-action {
     padding-top: 120px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .hero-information .hero-logo {
     margin-top: 225px;
     margin-bottom: -200px;
   }
-
   /*Added this for technica*/
   .hero-information #technica-logo {
     width: 500px;
   }
-
   .hero-action {
     padding-top: 100px;
   }
 }
+
 @media only screen and (max-width: 575px) {
   .hero {
     padding-bottom: 75px;
   }
-
   .hero-information {
     font-size: 150%;
   }
-
   .hero-information #technica-logo {
     width: 80vw;
     padding-top: 15%;
   }
-
   .hero-information #theme-logo {
     width: 40vw;
     min-width: 120px;
   }
-
   .promise-text {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
+
 /*HERO SECTION ENDS*/
 .donate-button {
   z-index: 999;
@@ -245,7 +255,7 @@ h2 {
 
 .curved {
   background-color: #ece3f2;
-  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   padding-top: 50px;
 }
 
@@ -390,76 +400,70 @@ h2 {
   .hero-logo {
     padding-top: 5px;
   }
-
   .hero-title {
     padding-top: 20px;
   }
-
   .promise-image img {
     max-height: 260px;
   }
-
   /* impact section */
   .donate-btn {
     margin-bottom: 0;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   /* hero section */
   .hero-title {
     padding-top: 20px;
     padding-bottom: 35px;
   }
-
   .our-donor {
     line-height: 1em;
     margin-bottom: 5%;
   }
-
   .promise-image {
     padding-top: 0;
     margin-top: 0;
     margin-left: 3%;
   }
-
   .donate-impact {
     margin-top: 3%;
   }
 }
+
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
     padding-top: 5px;
   }
-
   .hero-title {
     padding-top: 20px;
   }
-
   /* impact section */
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     width: 80%;
     height: 100%;
     min-height: 300px;
     max-height: 300px;
   }
-
   .donate-btn {
     margin-bottom: 0;
   }
 }
+
 @media only screen and (max-width: 991px) {
   /* impact (+ promise) section */
-  .impact-header, .our-donor {
+  .impact-header,
+  .our-donor {
     font-size: 280%;
   }
-
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     margin-left: 2%;
     margin-right: 2%;
@@ -468,32 +472,28 @@ h2 {
     min-height: 300px;
     max-height: 300px;
   }
-
   .donate-button {
     font-size: 120%;
   }
-
   .donate-btn {
     font-size: 100%;
   }
-
   .donate-questions {
     margin-top: 20px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   /* impact section */
   .donate-impact {
     margin-top: 3%;
   }
-
   .impact-header {
     font-size: 280%;
   }
-
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     margin-left: 0;
     margin-right: 0;
@@ -503,63 +503,53 @@ h2 {
     max-height: 300px;
     font-size: 85%;
   }
-
   .donate-button {
     font-size: 130%;
   }
-
   .donate-questions {
     margin-top: 30px;
     font-size: 95%;
   }
-
   .donate-promise {
     padding-top: 30%;
   }
-
   .donate-questions {
     padding-top: 20%;
   }
-
   .footer {
     padding-bottom: -400px;
   }
-
   .contact-footer {
     margin-top: -30px;
   }
-
   .donate-impact {
     padding-top: 15%;
   }
 }
+
 /* mobile */
 @media only screen and (max-width: 575px) {
   .story-header {
     text-align: center;
   }
-
   .promise-image {
     padding-top: 0%;
     padding-bottom: 0%;
   }
-
   /* impact section */
   .impact-header {
     font-size: 280%;
   }
-
   .donate-option1-header,
-.donate-option2-header,
-.donate-option3-header {
+  .donate-option2-header,
+  .donate-option3-header {
     display: inline-block;
     font-size: 250%;
     margin-bottom: 10%;
   }
-
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 6%;
     margin-left: 10%;
     margin-right: 10%;
@@ -568,31 +558,25 @@ h2 {
     min-height: 240px;
     max-height: 240px;
   }
-
   .donate-button {
     font-size: 130%;
   }
-
   .donate-btn {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
   .donate-questions {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 81%;
   }
-
   .donate-impact {
     margin-top: 15%;
     padding-top: 25%;
   }
-
   .col-sm {
     padding-bottom: 5%;
   }
-
   .footer .container {
     padding-top: 40px;
   }
@@ -602,48 +586,41 @@ h2 {
     text-align: center;
     font-size: 260%;
   }
-
   .impact-header {
     margin-top: 10%;
     font-size: 260%;
   }
-
   .donate-questions {
     margin-top: 10%;
   }
-
   .spons-code {
     margin-top: 0;
   }
 }
+
 @media only screen and (max-width: 375px) {
   .our-donor {
     font-size: 200%;
   }
-
   .impact-header {
     padding-top: 10%;
     font-size: 200%;
     line-height: 1.2em;
     padding-bottom: 7%;
   }
-
   .donate-questions {
     padding-top: 30%;
   }
-
   .spons-code {
     margin-top: 0;
   }
 }
+
 @media only screen and (max-width: 280px) {
   .hero-title {
     font-size: 125%;
   }
-
   .hero-information #technica-logo {
     padding-top: 8%;
   }
 }
-
-/*# sourceMappingURL=donate.css.map */

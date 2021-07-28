@@ -2,18 +2,23 @@
 //temporary until resolve _vars.scss issue
 $cyan: #82ecec;
 $pink: #ed648d; //old: #f27aaa;
-$lavender:#9c8da5; //old color: #b5a1c4;
+$lavender: #9c8da5; //old color: #b5a1c4;
 $dark-lavender: #8d7c98;
+$darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
-$orange: #F9B7AE;
+$dark-grey: #606060;
 
 $animation-length: 80s;
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @mixin dinpro-text($size, $weight, $color) {
@@ -310,16 +315,14 @@ a:hover {
     display: flex;
     justify-content: center;
   }
-  
-  .tab-container:first-child>span {
+
+  .tab-container:first-child > span {
     margin-right: auto;
   }
-  
-  .tab-container:last-child>span {
+
+  .tab-container:last-child > span {
     margin-left: auto;
   }
-  
-
 
   .nav-tabs {
     border-bottom: none;
@@ -395,9 +398,7 @@ a:hover {
       border-color: $hero-blue;
     }
   }
-
 }
-
 
 // *** testimonials section ***
 .testimonials {
@@ -519,7 +520,6 @@ a:hover {
   .gallery {
     height: 640px;
   }
-
 }
 
 // *** registration section ***
@@ -653,11 +653,11 @@ a:hover {
 .link,
 .link:visited {
   font-weight: bold;
-  color: $lavender;
+  color: $darker-lavender;
 }
 
 .link:hover {
-  color: $lavender;
+  color: $darker-lavender;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
