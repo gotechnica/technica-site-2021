@@ -9,6 +9,7 @@ $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
 $dark-grey: #606060;
+$orange: #F9B7AE;
 
 $animation-length: 80s;
 
@@ -435,7 +436,7 @@ a:hover {
   position: relative;
   z-index: 5;
   margin-top: -1vw;
-  height: 100%;
+  /*height: 100%;*/
   margin-bottom: 4%;
 }
 
@@ -475,7 +476,7 @@ a:hover {
 .hardware,
 .general,
 .research {
-  padding: 25px 10px;
+  /*padding: 25px 10px;*/
   height: 100%;
   margin: 0px 5px;
   width: 675px;

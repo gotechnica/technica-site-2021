@@ -121,18 +121,14 @@ body {
   0% {
     opacity: 0; }
   100% {
-    opacity: 0;
-  }
-}
+    opacity: 0; } }
 
 @keyframes fade-in {
   0% {
     opacity: 0; }
   100% {
     opacity: 1;
-    pointer-events: auto;
-  }
-}
+    pointer-events: auto; } }
 
 .hero-information {
   position: relative;
@@ -198,39 +194,28 @@ body {
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
-    margin-top: 150px;
-  }
+    margin-top: 150px; }
   .hero-action {
-    padding-top: 100px;
-  }
-}
+    padding-top: 100px; } }
 
 @media only screen and (max-width: 767px) {
   .hero-information .hero-logo {
     margin-top: 225px; }
   .hero-information #technica-logo {
-    width: 500px;
-  }
+    width: 500px; }
   .hero-action {
-    padding-top: 100px;
-  }
-}
+    padding-top: 100px; } }
 
 @media only screen and (max-width: 575px) {
   .hero {
-    padding-bottom: 75px;
-  }
+    padding-bottom: 75px; }
   .hero-information {
-    font-size: 5vw;
-  }
-  .hero-information #technica-logo {
-    width: 80vw;
-  }
-  .hero-information #theme-logo {
-    width: 40vw;
-    min-width: 120px;
-  }
-}
+    font-size: 5vw; }
+    .hero-information #technica-logo {
+      width: 80vw; }
+    .hero-information #theme-logo {
+      width: 40vw;
+      min-width: 120px; } }
 
 .about-image {
   width: 5%;
@@ -287,36 +272,27 @@ a:hover {
     border-radius: 50%; }
 
 .what-can-you-do .tab.active {
-  animation: fadein 1s;
-}
-.what-can-you-do .tab.active .title {
-  border: solid 0.5rem;
-  border-left: none;
-  border-top: none;
-  border-right: none;
-  color: black;
-}
-.what-can-you-do .tab.active .title .radio {
-  border: solid 0.2rem;
-}
-.what-can-you-do .tab.active .title.blue {
-  border-color: #6fcbdc;
-}
-.what-can-you-do .tab.active .title.pink {
-  border-color: #ed648d;
-}
-.what-can-you-do .tab.active .title.orange {
-  border-color: #f9b7ae;
-}
-.what-can-you-do .tab.active .radio.pink {
-  border-color: #ed648d;
-}
-.what-can-you-do .tab.active .radio.orange {
-  border-color: #f9b7ae;
-}
-.what-can-you-do .tab.active .radio.blue {
-  border-color: #6fcbdc;
-}
+  animation: fadein 1.25s; }
+  .what-can-you-do .tab.active .title {
+    border: solid 0.5rem;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: black; }
+    .what-can-you-do .tab.active .title .radio {
+      border: solid 0.2rem; }
+    .what-can-you-do .tab.active .title.blue {
+      border-color: #6fcbdc; }
+    .what-can-you-do .tab.active .title.pink {
+      border-color: #ed648d; }
+    .what-can-you-do .tab.active .title.orange {
+      border-color: #F9B7AE; }
+  .what-can-you-do .tab.active .radio.pink {
+    border-color: #ed648d; }
+  .what-can-you-do .tab.active .radio.orange {
+    border-color: #F9B7AE; }
+  .what-can-you-do .tab.active .radio.blue {
+    border-color: #6fcbdc; }
 
 .testimonials {
   position: relative;
@@ -345,7 +321,7 @@ a:hover {
   position: relative;
   z-index: 5;
   margin-top: -1vw;
-  height: 100%;
+  /*height: 100%;*/
   margin-bottom: 4%; }
 
 .track-title {
@@ -377,7 +353,7 @@ a:hover {
 .hardware,
 .general,
 .research {
-  padding: 25px 10px;
+  /*padding: 25px 10px;*/
   height: 100%;
   margin: 0px 5px;
   width: 675px;
@@ -413,8 +389,7 @@ a:hover {
   .tracks {
     margin-bottom: 2%; }
   .gallery {
-    height: 500px;
-  }
+    height: 500px; }
   .beginner,
   .hardware,
   .general,
@@ -428,8 +403,7 @@ a:hover {
   .gallery {
     height: 500px;
     width: 100%;
-    position: relative;
-  }
+    position: relative; }
   .beginner,
   .hardware,
   .general,
@@ -502,9 +476,7 @@ a:hover {
 
 @media only screen and (max-width: 991px) {
   .registration .btn {
-    font-size: 17px;
-  }
-}
+    font-size: 17px; } }
 
 @media only screen and (max-width: 767px) {
   .hacker,
@@ -590,8 +562,7 @@ a:hover {
 .link,
 .link:visited {
   font-weight: bold;
-  color: #72607b;
-}
+  color: #72607b; }
 
 .link:hover {
   color: #72607b;
@@ -643,9 +614,7 @@ a:hover {
 .social-buttons > a:hover {
   text-decoration: none; }
 
-.blue-circle,
-.purple-circle,
-.pink-circle {
+.blue-circle, .purple-circle, .pink-circle {
   padding: 8px;
   margin: 0px 10px;
   transition: ease 0.2s;
@@ -653,23 +622,15 @@ a:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  display: inline-block;
-}
-.blue-circle:hover,
-.purple-circle:hover,
-.pink-circle:hover {
-  transform: scale(1.06);
-}
-@media (max-width: 575px) {
-  .blue-circle,
-  .purple-circle,
-  .pink-circle {
-    margin: 0px 3px;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-  }
-}
+  display: inline-block; }
+  .blue-circle:hover, .purple-circle:hover, .pink-circle:hover {
+    transform: scale(1.06); }
+  @media (max-width: 575px) {
+    .blue-circle, .purple-circle, .pink-circle {
+      margin: 0px 3px;
+      padding: 5px;
+      width: 40px;
+      height: 40px; } }
 
 .blue-circle {
   background-color: #6fcbdc; }
@@ -705,6 +666,4 @@ a:hover {
 
 @media (max-width: 991px) {
   #mlh-trust-badge {
-    right: 15px !important;
-  }
-}
+    right: 15px !important; } }

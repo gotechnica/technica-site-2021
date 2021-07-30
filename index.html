@@ -274,26 +274,26 @@
       <div class="container">
         <h1 class="header">Tracks</h1>
         <p>We are offering four different tracks for Technica this year! Each track is designed to best accommodate a hacker's interests and skill level with track-specific mentors. Hackers may express interest in multiple tracks during registration but will only be able to participate in one.</p>
-        <div class="text-center gallery" data-flickity='{ "contain": true, "wrapAround": true }'>
+        <div class="text-center gallery"> 
           <div class="general track-flick-item">
             <img class="track-image" src="./img/cottage-icon.svg" alt="simple cottage home sketch">
             <h3 class="track-title">GENERAL</h3>
-            <p class="track-text">For any and all hackers! Come build to your heart's content using hardware, software, or anything you want with other hackers! Hackers can be students, designers, or just any tech-lover out there. Hackers of all skill levels are welcomed and supported!</p>
+            <p class="track-text">For any and all hackers! Come build to your heart's content using hardware, software, or anything you want with other hackers. Hackers can be students, designers, or just any tech-lover out there. Hackers of all skill levels are welcomed and supported!</p>
           </div>
           <div class="research track-flick-item">
             <img class="track-image" src="./img/lemonade-icon.svg" alt="simple lemonade in pitcher and two glasses sketch">
             <h3 class="track-title">RESEARCH</h3>
-            <p class="track-text">Calling all undergraduates interested in research! Come explore the fields of research within computer science. This track is a separate 3-day event taking place during Technica weekend where you’ll get to work hands-on with faculty researchers and peers to address social issues using technology and research!</p>
+            <p class="track-text">Calling all undergraduates interested in research! Come explore the fields of research within computer science. This track is a separate 3-day event taking place during Technica weekend where you’ll get to work hands-on with faculty researchers and peers to address social issues using technology and research.</p>
           </div>
           <div class="beginner track-flick-item">
             <img class="track-image" src="./img/bike-icon.svg" alt="simple bike with flower basket sketch">
             <h3 class="track-title">BEGINNERS</h3>
-            <p class="track-text">New to hackathons? Don't know how to code? No worries! You'll be provided with dedicated resources to help you be successful at Technica and beyond! This track begins with some exclusive workshops a few weeks before Technica and includes everything from an introduction to hackathons to universal coding and logic concepts!</p>
+            <p class="track-text">New to hackathons? Don't know how to code? No worries! You'll be provided with dedicated resources to help you be successful at Technica and beyond. This track begins with some exclusive workshops a few weeks before Technica and includes everything from an introduction to hackathons to universal coding and logic concepts.</p>
           </div>
           <div class="hardware track-flick-item">
             <img class="track-image" src="./img/flower-basket-icon.svg" alt="simple flower basket sketch">
             <h3 class="track-title">HARDWARE</h3>
-            <p class="track-text">Spark up your project with some hardware! We’ll provide you with the resources needed to kickstart your own hardware projects and master the fundamentals from the ground up. This includes a kit with instructional materials and personalized sessions to help you code and build your own hacks!</p>
+            <p class="track-text">Spark up your project with some hardware! We’ll provide you with the resources needed to kickstart your own hardware projects and master the fundamentals from the ground up. This includes a kit with instructional materials and personalized sessions to help you code and build your own hacks.</p>
           </div>
         </div>
       </div>
@@ -478,5 +478,26 @@
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="hhttps://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 
     <script src="js/effects.js"></script>
+    
+    <!--multiple carousels on one page -->
+    <script>
+      var carouselContainers = document.querySelectorAll('.container');
+
+      for ( var i=0; i < carouselContainers.length; i++ ) {
+        var container = carouselContainers[i];
+        initCarouselContainer( container );
+      }
+
+      function initCarouselContainer( container ) {
+        var carousel = container.querySelector('.gallery');
+        var flkty = new Flickity( carousel, {
+          contain: true,
+          wrapAround: true,
+          resize: true,
+          pageDots: true,
+          adaptiveHeight: true
+        } );
+      }
+    </script>
   </body>
 </html>
