@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gotechnica/technica-site-2021#readme",
   "dependencies": {
+    "flickity": "^2.2.2",
     "hoek": "^5.0.4",
     "minify": "^5.1.1",
     "node-sass": "^6.0.1",

@@ -9,6 +9,7 @@ $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
 $dark-grey: #606060;
+$orange: #F9B7AE;
 
 $animation-length: 80s;
 
@@ -405,11 +406,13 @@ a:hover {
   position: relative;
   z-index: 5;
   margin-top: -1vw; //white line was appearing between sections
+  margin-bottom: 4%;
 }
 
 .testimonial-quote {
   font-size: 125%;
   @media only screen and (max-width: 767px) {
+    padding-top: 100px;
     font-size: 100%;
   }
 }
@@ -427,18 +430,67 @@ a:hover {
   border-radius: 50%;
 }
 
+// *** tracks section ***
 //can't rename from tracks without js breaking - figure out later
+.tracks {
+  position: relative;
+  z-index: 5;
+  margin-top: -1vw;
+  /*height: 100%;*/
+  margin-bottom: 4%;
+}
+
+.track-title {
+  padding: 1% 0 0 0;
+}
+
+.track-image {
+  width: 200px;
+  padding-top: 10px;
+
+  @media (max-width: 991px) {
+    width: 190px;
+  } 
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 30px;
+    width: 170px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding-top: 30px;
+    width: 150px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding-top: 60px;
+  }
+
+  @media only screen and (max-width: 385px) {
+    padding-top: 40px;
+    width: 130px;
+  }
+}
+
 .beginner,
 .hardware,
 .general,
 .research {
-  padding: 25px 10px;
+  /*padding: 25px 10px;*/
   height: 100%;
   margin: 0px 5px;
   width: 675px;
   background-color: $ex-light-lavender;
   border-radius: 33px;
-  //padding: 5%;
+  padding: 2%;
+
+  h3 {
+    margin: 15px 0;
+  }
+}
+
+.track-text {
+  margin: 0 10px;
 }
 
 .flickity-page-dots {
@@ -462,6 +514,10 @@ a:hover {
 }
 //need to clean this up later
 @media (max-width: 991px) {
+  .tracks {
+    margin-bottom: 2%;
+  }
+
   .gallery {
     height: 500px;
   }
@@ -471,6 +527,11 @@ a:hover {
   .general,
   .research {
     width: 500px;
+  }
+
+  .track-text {
+    padding: 0px 20px;
+    font-size: 99%;
   }
 }
 
@@ -487,6 +548,14 @@ a:hover {
   .research {
     margin: 0px 3px;
   }
+
+  .track-text {
+    padding: 0px 20px;
+  }
+
+  .container p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -499,26 +568,61 @@ a:hover {
   .general,
   .research {
     width: 85%;
+    margin: 0px 3px;
+  }
+
+  .track-text {
+    padding: 0px 20px;
   }
 }
 
 @media (max-width: 500px) {
+  .tracks {
+    margin-bottom: 0;
+  }
+
   .gallery {
     height: 540px;
   }
+
+  .track-text {
+    padding: 0px 20px;
+    font-size: 95%;
+  }
 }
 @media (max-width: 425px) {
+  .tracks {
+    margin-bottom: 0;
+  }
+  
   .gallery {
     height: 580px;
   }
-  .general-text,
-  .beginner-text {
-    padding: 0px;
+
+  .track-text {
+    padding: 0px 20px;
+    font-size: 95%;
   }
 }
 @media (max-width: 385px) {
   .gallery {
     height: 640px;
+  }
+
+  .track-text {
+    padding: 0px 20px;
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 280px) {
+  .gallery {
+    height: 640px;
+  }
+
+  .track-text {
+    padding: 0px 23px;
+    font-size: 85%;
   }
 }
 
@@ -564,6 +668,8 @@ a:hover {
 
 // *** FAQ section ***
 .faq {
+  margin-top: 50px;
+
   @media (max-width: 575px) {
     padding-left: 3%;
     padding-right: 3%;
