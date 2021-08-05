@@ -3,10 +3,6 @@
 .container {
   text-align: center; }
 
-@media only screen and (max-width: 767px) {
-  .container {
-    margin-top: -100px; } }
-
 .hero-clouds {
   position: absolute;
   width: 100%;
@@ -137,7 +133,6 @@
   .hero-information .hero-logo {
     margin-top: 225px;
     margin-bottom: -200px; }
-  /*Added this for technica*/
   .hero-information #technica-logo {
     width: 500px; }
   .hero-action {
@@ -358,7 +353,8 @@ h2 {
 
 @media only screen and (max-width: 991px) {
   /* impact (+ promise) section */
-  .impact-header, .our-donor {
+  .impact-header,
+  .our-donor {
     font-size: 280%; }
   .donate-option1,
   .donate-option2,
@@ -373,9 +369,7 @@ h2 {
   .donate-button {
     font-size: 120%; }
   .donate-btn {
-    font-size: 100%; }
-  .donate-questions {
-    margin-top: 20px; } }
+    font-size: 100%; } }
 
 @media only screen and (max-width: 767px) {
   /* impact section */
@@ -396,19 +390,16 @@ h2 {
     font-size: 85%; }
   .donate-button {
     font-size: 130%; }
-  .donate-questions {
-    margin-top: 30px;
-    font-size: 95%; }
-  .donate-promise {
-    padding-top: 30%; }
-  .donate-questions {
-    padding-top: 20%; }
-  .footer {
-    padding-bottom: -400px; }
-  .contact-footer {
-    margin-top: -30px; }
   .donate-impact {
-    padding-top: 15%; } }
+    padding-top: 15%; }
+  .donate-questions,
+  .contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%; }
+  .donate-questions {
+    margin-top: 15%; }
+  .footer {
+    margin-top: 5%; } }
 
 /* mobile */
 @media only screen and (max-width: 575px) {
@@ -441,17 +432,12 @@ h2 {
   .donate-btn {
     margin-top: 20px;
     margin-bottom: 20px; }
+  .donate-questions,
+  .contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%; }
   .donate-questions {
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 81%; }
-  .donate-impact {
-    margin-top: 15%;
-    padding-top: 25%; }
-  .col-sm {
-    padding-bottom: 5%; }
-  .footer .container {
-    padding-top: 40px; } }
+    margin-top: 15%; } }
 
 @media only screen and (max-width: 447px) {
   .our-donor {
@@ -460,10 +446,14 @@ h2 {
   .impact-header {
     margin-top: 10%;
     font-size: 260%; }
-  .donate-questions {
-    margin-top: 10%; }
   .spons-code {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .donate-questions,
+  .contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%; }
+  .donate-questions {
+    margin-top: 15%; } }
 
 @media only screen and (max-width: 375px) {
   .our-donor {
@@ -473,13 +463,23 @@ h2 {
     font-size: 200%;
     line-height: 1.2em;
     padding-bottom: 7%; }
-  .donate-questions {
-    padding-top: 30%; }
   .spons-code {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .donate-questions,
+  .contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%; }
+  .donate-questions {
+    margin-top: 15%; } }
 
 @media only screen and (max-width: 280px) {
   .hero-title {
     font-size: 125%; }
   .hero-information #technica-logo {
-    padding-top: 8%; } }
+    padding-top: 8%; }
+  .donate-questions,
+  .contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%; }
+  .donate-questions {
+    margin-top: 15%; } }
