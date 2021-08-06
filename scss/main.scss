@@ -1,13 +1,11 @@
 /*@use 'vars';*/
 //temporary until resolve _vars.scss issue
-$cyan: #82ecec;
 $pink: #ed648d; //old: #f27aaa;
 $lavender: #9c8da5; //old color: #b5a1c4;
 $dark-lavender: #8d7c98;
 $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
-$hero-blue: #6fcbdc;
 $dark-grey: #606060;
 $orange: #F9B7AE;
 
@@ -832,7 +830,7 @@ a:hover {
   padding: 8px;
   margin: 0px 10px;
   transition: ease 0.2s;
-  @include circle($cyan, 50px);
+  @include circle($lavender, 50px);
   &:hover {
     transform: scale(1.06);
   }
@@ -844,19 +842,39 @@ a:hover {
   }
 }
 
-.blue-circle {
+.blue-circle1 {
   @extend %contact-circle;
-  background-color: $hero-blue;
+  background-color: #6fcbdc;
 }
 
-.purple-circle {
+.blue-circle2 {
   @extend %contact-circle;
-  background-color: $lavender;
+  background-color: #85bdd4;
 }
 
-.pink-circle {
+.blue-circle3 {
   @extend %contact-circle;
-  background-color: $pink;
+  background-color: #9bb0cb;
+}
+
+.purple-circle1 {
+  @extend %contact-circle;
+  background-color: #b1a3c3;
+}
+
+.purple-circle2 {
+  @extend %contact-circle;
+  background-color: #c695bb;
+}
+
+.pink-circle1 {
+  @extend %contact-circle;
+  background-color: #dc88b2;
+}
+
+.pink-circle2 {
+  @extend %contact-circle;
+  background-color: #f27aaa;
 }
 
 .footer {
