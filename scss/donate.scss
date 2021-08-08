@@ -18,6 +18,11 @@ $animation-length: 80s;
 .container {
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: -100px;
+  }
+}
 
 .hero-clouds {
   position: absolute;
@@ -475,6 +480,9 @@ h2 {
   }
   .donate-btn {
     font-size: 100%;
+  }
+  .donate-questions {
+    margin-top: 20px;
   }
 }
 
