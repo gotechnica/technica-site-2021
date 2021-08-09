@@ -10,6 +10,8 @@ $ex-light-lavender: #e9e3ed;
 $hero-blue: #6fcbdc;
 $dark-grey: #606060;
 $orange: #F9B7AE;
+$hero-blue: #8cd8ed;
+$polaroid-border: #F7F3ED;
 
 $animation-length: 80s;
 
@@ -295,9 +297,45 @@ body {
 }
 
 // *** intro section ***
-.about-image {
-  width: 5%;
-  height: 5%;
+.about-text {
+  padding-bottom: 2.5rem;
+}
+
+.polaroid-wrapper {
+  text-align: center;
+}
+
+.polaroid {
+  width: 15rem;
+  height: auto;
+  position: absolute;
+  background-color: $polaroid-border;
+  padding: 1rem 1rem 3.25rem 1rem;
+
+  &.polaroid1{
+    right: 4rem;
+    top: -7rem;
+    transform: rotate(-3deg)
+  }
+
+  &.polaroid2{
+    right: -4rem;
+    bottom: -5rem;
+    transform: rotate(10deg)
+  }
+
+  @media (max-width: 991px) {
+    position: static;
+  } 
+
+  @media only screen and (max-width: 767px) {
+    padding: 1rem 1rem 3.25rem 1rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 10rem;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+  }
 }
 
 // *** what can you do section ***
