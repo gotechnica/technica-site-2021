@@ -105,7 +105,13 @@ body {
       height: 663px;
       left: -100px;
       top: -26px; } }
- 
+  @media only screen and (max-width: 1024px) {
+    .hero-clouds {
+      width: 834px;
+      height: 663px;
+      left: 0px;
+      top: 69px; } }
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -276,7 +282,7 @@ a:hover {
     .what-can-you-do .tab.active .title .radio {
       border: solid 0.2rem; }
     .what-can-you-do .tab.active .title.blue {
-      border-color: #6fcbdc; }
+      border-color: #8cd8ed; }
     .what-can-you-do .tab.active .title.pink {
       border-color: #ed648d; }
     .what-can-you-do .tab.active .title.orange {
@@ -286,7 +292,7 @@ a:hover {
   .what-can-you-do .tab.active .radio.orange {
     border-color: #F9B7AE; }
   .what-can-you-do .tab.active .radio.blue {
-    border-color: #6fcbdc; }
+    border-color: #8cd8ed; }
 
 .testimonials {
   position: relative;
@@ -315,39 +321,13 @@ a:hover {
   position: relative;
   z-index: 5;
   margin-top: -1vw;
-  /*height: 100%;*/
   margin-bottom: 4%; }
-
-.track-title {
-  padding: 1% 0 0 0; }
-
-.track-image {
-  width: 200px;
-  padding-top: 10px; }
-  @media (max-width: 991px) {
-    .track-image {
-      width: 190px; } }
-  @media only screen and (max-width: 767px) {
-    .track-image {
-      padding-top: 30px;
-      width: 170px; } }
-  @media only screen and (max-width: 500px) {
-    .track-image {
-      padding-top: 30px;
-      width: 150px; } }
-  @media only screen and (max-width: 425px) {
-    .track-image {
-      padding-top: 60px; } }
-  @media only screen and (max-width: 385px) {
-    .track-image {
-      padding-top: 40px;
-      width: 130px; } }
 
 .beginner,
 .hardware,
 .general,
 .research {
-  /*padding: 25px 10px;*/
+  padding: 25px 10px;
   height: 100%;
   margin: 0px 5px;
   width: 675px;
@@ -359,9 +339,6 @@ a:hover {
   .general h3,
   .research h3 {
     margin: 15px 0; }
-
-.track-text {
-  margin: 0 10px; }
 
 .flickity-page-dots {
   top: 105%; }
@@ -388,10 +365,7 @@ a:hover {
   .hardware,
   .general,
   .research {
-    width: 500px; }
-  .track-text {
-    padding: 0px 20px;
-    font-size: 99%; } }
+    width: 500px; } }
 
 @media (max-width: 767px) {
   .gallery {
@@ -403,8 +377,6 @@ a:hover {
   .general,
   .research {
     margin: 0px 3px; }
-  .track-text {
-    padding: 0px 20px; }
   .container p {
     text-align: center; } }
 
@@ -416,41 +388,98 @@ a:hover {
   .general,
   .research {
     width: 85%;
-    margin: 0px 3px; }
-  .track-text {
-    padding: 0px 20px; } }
+    margin: 0px 3px; } }
 
 @media (max-width: 500px) {
   .tracks {
     margin-bottom: 0; }
   .gallery {
-    height: 540px; }
-  .track-text {
-    padding: 0px 20px;
-    font-size: 95%; } }
+    height: 540px; } }
 
 @media (max-width: 425px) {
   .tracks {
     margin-bottom: 0; }
   .gallery {
-    height: 580px; }
-  .track-text {
-    padding: 0px 20px;
-    font-size: 95%; } }
+    height: 580px; } }
 
 @media (max-width: 385px) {
   .gallery {
-    height: 640px; }
-  .track-text {
-    padding: 0px 20px;
-    font-size: 95%; } }
+    height: 640px; } }
 
 @media (max-width: 280px) {
   .gallery {
-    height: 640px; }
-  .track-text {
-    padding: 0px 23px;
-    font-size: 85%; } }
+    height: 640px; } }
+
+.tracks-card {
+  font-size: 1rem;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  box-shadow: 7px 7px 10px #DCDCDC;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1; }
+
+.general-border {
+  border: 6px solid #8cd8ed; }
+
+.research-border {
+  border: 6px solid #9c8da5; }
+
+.beginner-border {
+  border: 6px solid #ed648d; }
+
+.hardware-border {
+  border: 6px solid #a0d6b4; }
+
+.img-holder {
+  position: relative;
+  top: -3rem;
+  align-self: center;
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.img-holder img {
+  width: 9rem; }
+
+.tracks-title {
+  font-size: 195%;
+  text-transform: none;
+  font-weight: bold;
+  margin: 1.5rem 0; }
+
+.heading {
+  margin-bottom: 6rem; }
+
+/* tablet */
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .img-holder {
+    height: 2rem; }
+  .img-holder img {
+    width: 7.5rem; }
+  .tracks-title {
+    font-size: 190%; } }
+
+@media only screen and (max-width: 991px) {
+  .tracks-panel {
+    margin-bottom: 5rem; }
+  .tracks-card {
+    padding: 1rem;
+    box-shadow: none; } }
+
+/* smaller mobile */
+@media only screen and (max-width: 300px) {
+  .tracks-card {
+    padding: 0.3rem; }
+  .tracks-title {
+    font-size: 180%; } }
 
 @media (max-width: 575px) {
   .registration {
@@ -673,85 +702,3 @@ a:hover {
 @media (max-width: 991px) {
   #mlh-trust-badge {
     right: 15px !important; } }
-
-    /*# sourceMappingURL=main.css.map */
-
-@media only screen and (max-width: 400px){
-  .hero{
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 500px){
-  .hero{
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (width: 1024px){
-  .hero-clouds #hero-clouds{
-    position: relative;
-    height: 700px;
-  }
-}
-/*# sourceMappingURL=main.css.map */
-
-@media only screen and (min-width: 2000px){
-  .hero{
-    padding-bottom: 10%;
-  }
-  .hero-logo #technica-logo{
-    height: 230px;
-    width: 850px;
-  }
-  .hero-information {
-    margin-top: 50px;
-  }
-  .hero .container {
-    margin-left: -10px;
-    padding-left: 200px;
-  }
-  .hero-information #hero-tagline{
-    font-size: 220%;
-    width: 100%;
-  }
-  .hero-action .register-btn {
-    margin-left: 70%;
-    width: 35%;
-    height: 50%;
-  }
-  .hero-action .hero-learn {
-    margin-left: 38%;
-    width: 100%;
-  }
-} 
-
-@media only screen and (min-width: 2560px){
-  .hero{
-    padding-bottom: 10%;
-  }
-  .hero-logo #technica-logo{
-    height: 280px;
-    width: 1050px;
-  }
-  .hero-information {
-    margin-top: 50px;
-  }
-  .hero .container {
-    margin-left: -10px;
-    padding-left: 200px;
-  }
-  .hero-information #hero-tagline{
-    font-size: 300%;
-    width: 100%;
-  }
-  .hero-action .register-btn {
-    margin-left: 100%;
-    width: 35%;
-    height: 50%;
-  }
-  .hero-action .hero-learn {
-    margin-left: 68%;
-    width: 100%;
-  }
-} 
