@@ -8,6 +8,8 @@ $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $dark-grey: #606060;
 $orange: #F9B7AE;
+$hero-blue: #8cd8ed;
+$pastel-green: #a0d6b4;
 
 $animation-length: 80s;
 
@@ -424,57 +426,23 @@ a:hover {
 
 .testimonial-image {
   width: 200px;
-  //border: 5px solid $pink;
   border-radius: 50%;
 }
 
-// *** tracks section ***
+// *** tracks section + first carousel ***
 //can't rename from tracks without js breaking - figure out later
 .tracks {
   position: relative;
   z-index: 5;
   margin-top: -1vw;
-  /*height: 100%;*/
   margin-bottom: 4%;
-}
-
-.track-title {
-  padding: 1% 0 0 0;
-}
-
-.track-image {
-  width: 200px;
-  padding-top: 10px;
-
-  @media (max-width: 991px) {
-    width: 190px;
-  } 
-
-  @media only screen and (max-width: 767px) {
-    padding-top: 30px;
-    width: 170px;
-  }
-
-  @media only screen and (max-width: 500px) {
-    padding-top: 30px;
-    width: 150px;
-  }
-
-  @media only screen and (max-width: 425px) {
-    padding-top: 60px;
-  }
-
-  @media only screen and (max-width: 385px) {
-    padding-top: 40px;
-    width: 130px;
-  }
 }
 
 .beginner,
 .hardware,
 .general,
 .research {
-  /*padding: 25px 10px;*/
+  padding: 25px 10px;
   height: 100%;
   margin: 0px 5px;
   width: 675px;
@@ -485,11 +453,7 @@ a:hover {
   h3 {
     margin: 15px 0;
   }
-}
-
-.track-text {
-  margin: 0 10px;
-}
+} 
 
 .flickity-page-dots {
   top: 105%;
@@ -526,11 +490,6 @@ a:hover {
   .research {
     width: 500px;
   }
-
-  .track-text {
-    padding: 0px 20px;
-    font-size: 99%;
-  }
 }
 
 @media (max-width: 767px) {
@@ -545,10 +504,6 @@ a:hover {
   .general,
   .research {
     margin: 0px 3px;
-  }
-
-  .track-text {
-    padding: 0px 20px;
   }
 
   .container p {
@@ -568,48 +523,29 @@ a:hover {
     width: 85%;
     margin: 0px 3px;
   }
-
-  .track-text {
-    padding: 0px 20px;
-  }
 }
 
 @media (max-width: 500px) {
   .tracks {
     margin-bottom: 0;
   }
-
   .gallery {
     height: 540px;
   }
-
-  .track-text {
-    padding: 0px 20px;
-    font-size: 95%;
-  }
 }
+
 @media (max-width: 425px) {
   .tracks {
     margin-bottom: 0;
   }
-  
   .gallery {
     height: 580px;
   }
-
-  .track-text {
-    padding: 0px 20px;
-    font-size: 95%;
-  }
 }
+
 @media (max-width: 385px) {
   .gallery {
     height: 640px;
-  }
-
-  .track-text {
-    padding: 0px 20px;
-    font-size: 95%;
   }
 }
 
@@ -617,10 +553,95 @@ a:hover {
   .gallery {
     height: 640px;
   }
+}
 
-  .track-text {
-    padding: 0px 23px;
-    font-size: 85%;
+// tracks section - static cards
+.tracks-card {
+  font-size: 1rem;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+}
+
+.general-border {
+  border: 6px solid $hero-blue; 
+}
+
+.research-border {
+  border: 6px solid $lavender; 
+}
+
+.beginner-border {
+  border: 6px solid $pink; 
+}
+
+.hardware-border {
+  border: 6px solid $pastel-green; 
+}
+
+.img-holder {
+  position: relative;
+  top: -3rem;
+  align-self: center;
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+    
+.img-holder img {
+  width: 9rem; 
+}
+
+.tracks-title {
+  font-size: 195%;
+  text-transform: none;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.heading {
+  margin-bottom: 6rem;
+}
+
+/* tablet */
+@media only screen and (min-width: 991px) and (max-width: 1200px) { 
+  .img-holder {
+    height: 2rem;
+  }
+  .img-holder img {
+    width: 7.5rem; 
+  }
+  .tracks-title {
+    font-size: 190%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .tracks-panel {
+    margin-bottom: 5rem;
+  }
+  .tracks-card {
+    padding: 1rem;
+    box-shadow: none;
+  }
+}
+
+/* smaller mobile */
+@media only screen and (max-width: 300px) {
+  .tracks-card {
+    padding: 0.3rem;
+  }
+  .tracks-title {
+    font-size: 180%;
   }
 }
 
