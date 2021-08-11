@@ -105,12 +105,6 @@ body {
       height: 663px;
       left: -100px;
       top: -26px; } }
-  @media only screen and (max-width: 1024px) {
-    .hero-clouds {
-      width: 834px;
-      height: 663px;
-      left: 0px;
-      top: 69px; } }
 
 .hero {
   position: relative;
@@ -701,3 +695,15 @@ a:hover {
 @media (max-width: 991px) {
   #mlh-trust-badge {
     right: 15px !important; } }
+
+@media only screen and (min-width: 2100px) and (max-width: 3000px){
+  .hero-clouds #hero-clouds{
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container{
+    padding: 10%;
+  }
+}
