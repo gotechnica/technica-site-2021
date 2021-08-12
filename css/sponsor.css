@@ -121,7 +121,7 @@ h2 {
   margin-top: 60px;
 }
 
-.prospectus-table {
+/*.prospectus-table {
   display: block;
   overflow-y: auto;
   table-layout: fixed;
@@ -129,32 +129,28 @@ h2 {
   background-color: white !important;
 }
 
-/* width */
 .prospectus-table::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
 }
 
-/* Track */
 .prospectus-table::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-/* Handle */
 .prospectus-table::-webkit-scrollbar-thumb {
-  background: #f3f3f3;
+  background: $container-gray;
   border-radius: 10px;
-}
-
+}*/
 td {
   border-top: none !important;
-  background-color: white !important;
 }
 
 th {
   border-top: none !important;
   padding-bottom: 5px !important;
   border-bottom: solid 1px black;
+  background-color: white !important;
 }
 
 .add-ons td {
