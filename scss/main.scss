@@ -9,7 +9,7 @@ $ex-light-lavender: #e9e3ed;
 $dark-grey: #606060;
 $orange: #F9B7AE;
 $hero-blue: #8cd8ed;
-$polaroid-tan: #f7f3ed;
+$tan: #f7f3ed;
 $pastel-green: #a0d6b4;
 
 $animation-length: 80s;
@@ -308,7 +308,7 @@ body {
   width: 15rem;
   height: auto;
   position: absolute;
-  background-color: $polaroid-tan;
+  background-color: $tan;
   padding: 1rem 1rem 3.25rem 1rem;
 
   &.polaroid1{
