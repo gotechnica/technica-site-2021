@@ -307,12 +307,12 @@ body {
       height: 25rem;
   }
   100% {
-      height: 40rem;
+      height: 80rem;
   }
 }
 @keyframes unexpand {
   0% {
-      height: 40rem;
+      height: 80rem;
   }
   100% {
       height: 25rem;
@@ -342,12 +342,20 @@ a:hover {
 
     &.expanded {
       animation: expand 0.5s ease;
-      height: 40rem;
+      height: 80rem;
+
+      .tab-pane > .expanded-content {
+        animation: fadein 0.5s ease;
+      }
     }
 
     &.unexpanded {
       animation: unexpand 0.5s ease;
       height: 25rem;
+
+      .tab-pane > .expanded-content {
+        opacity: 0;
+      }
     }
   }
 

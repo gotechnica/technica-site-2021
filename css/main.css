@@ -299,12 +299,12 @@ body {
     height: 25rem;
   }
   100% {
-    height: 40rem;
+    height: 80rem;
   }
 }
 @keyframes unexpand {
   0% {
-    height: 40rem;
+    height: 80rem;
   }
   100% {
     height: 25rem;
@@ -332,11 +332,17 @@ a:hover {
 }
 .what-can-you-do .tab-content.expanded {
   animation: expand 0.5s ease;
-  height: 40rem;
+  height: 80rem;
+}
+.what-can-you-do .tab-content.expanded .tab-pane > .expanded-content {
+  animation: fadein 0.5s ease;
 }
 .what-can-you-do .tab-content.unexpanded {
   animation: unexpand 0.5s ease;
   height: 25rem;
+}
+.what-can-you-do .tab-content.unexpanded .tab-pane > .expanded-content {
+  opacity: 0;
 }
 .what-can-you-do .content-wrapper {
   display: flex;
