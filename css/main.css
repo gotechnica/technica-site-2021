@@ -331,6 +331,25 @@ a:hover {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+.what-can-you-do .arrow-img {
+  margin-left: 0.5rem;
+}
+.what-can-you-do .expand-btn {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.what-can-you-do .expand-btn:hover {
+  cursor: pointer;
+}
+.what-can-you-do .collapse-btn {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.what-can-you-do .collapse-btn:hover {
+  cursor: pointer;
+}
 .what-can-you-do .tab-content {
   width: 100%;
   height: auto;
@@ -345,9 +364,31 @@ a:hover {
 .what-can-you-do .tab-content.expanded .tab-pane > .expanded-content {
   animation: fadein 0.5s ease;
 }
+.what-can-you-do .tab-content.expanded .expand-btn {
+  animation: fadeout 0.5s ease;
+  opacity: 0;
+}
+.what-can-you-do .tab-content.expanded .collapse-btn {
+  animation: fadein 0.5s ease;
+  opacity: 1;
+}
 .what-can-you-do .tab-content.unexpanded {
   animation: unexpand 0.5s ease;
-  height: 18rem;
+  height: 23.5rem;
+}
+.what-can-you-do .tab-content.unexpanded .collapse-btn {
+  animation: fadeout 0.5s ease;
+  opacity: 0;
+}
+@media only screen and (max-width: 991px) {
+  .what-can-you-do .tab-content.unexpanded {
+    height: 30rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .what-can-you-do .tab-content.unexpanded {
+    height: 33rem;
+  }
 }
 .what-can-you-do .tab-content.unexpanded .tab-pane > .expanded-content {
   animation: fadeout 0.5s ease;
@@ -356,12 +397,10 @@ a:hover {
 .what-can-you-do .content-wrapper {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1rem;
 }
 .what-can-you-do .content-img {
-  padding: 1rem;
-}
-.what-can-you-do .content-text {
-  padding-bottom: 2rem;
+  margin: 2rem;
 }
 @media only screen and (max-width: 767px) {
   .what-can-you-do .content-heading {
