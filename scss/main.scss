@@ -22,6 +22,15 @@ $animation-length: 80s;
   }
 }
 
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @mixin dinpro-text($size, $weight, $color) {
   font-family: DINPro;
   font-size: $size;
@@ -304,18 +313,18 @@ body {
 
 @keyframes expand {
   0% {
-      height: 25rem;
+      height: auto;
   }
   100% {
-      height: 80rem;
+      height: auto;
   }
 }
 @keyframes unexpand {
   0% {
-      height: 80rem;
+      height: auto;
   }
   100% {
-      height: 25rem;
+      height: auto;
   }
 }
 
@@ -326,6 +335,13 @@ a:hover {
 .what-can-you-do {
 /* text box */
 
+  // @media only screen and (max-width: 991px) {
+  //   height: 52rem;
+  // }
+
+  // @media only screen and (max-width: 335px) {
+  //   height: 55rem;
+  // }
 
   .content-heading {
     font-size: 2.5rem;
@@ -335,14 +351,14 @@ a:hover {
 
   .tab-content {
     width: 100%;
-    height: 25rem;
-    background-color: $ex-light-lavender;
+    height: auto;
+    background-color: white;
     border-radius: 33px;
     padding: 2rem;
 
     &.expanded {
       animation: expand 0.5s ease;
-      height: 80rem;
+      height: auto;
 
       .tab-pane > .expanded-content {
         animation: fadein 0.5s ease;
@@ -351,9 +367,10 @@ a:hover {
 
     &.unexpanded {
       animation: unexpand 0.5s ease;
-      height: 25rem;
+      height: 18rem;
 
       .tab-pane > .expanded-content {
+        animation: fadeout 0.5s ease;
         opacity: 0;
       }
     }
@@ -363,10 +380,14 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
   }
+
   .content-img {
     padding: 1rem;
   }
 
+  .content-text {
+    padding-bottom: 2rem;
+  }
 
   @media only screen and (max-width: 767px) {
     .content-heading {
@@ -375,7 +396,7 @@ a:hover {
     }
 
     .tab-content {
-      height: 30rem;
+      height: auto;
     }
   }
 
@@ -383,6 +404,10 @@ a:hover {
     .content-heading {
       font-size: 2rem;
       font-weight: bold;
+    }
+
+    .what-can-you-do {
+      height: 50rem;
     }
 
     .tab-content {

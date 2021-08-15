@@ -7,6 +7,14 @@
     opacity: 1;
   }
 }
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .btn {
   font-family: DINPro;
   font-size: 140%;
@@ -296,18 +304,18 @@ body {
 
 @keyframes expand {
   0% {
-    height: 25rem;
+    height: auto;
   }
   100% {
-    height: 80rem;
+    height: auto;
   }
 }
 @keyframes unexpand {
   0% {
-    height: 80rem;
+    height: auto;
   }
   100% {
-    height: 25rem;
+    height: auto;
   }
 }
 a:hover {
@@ -325,23 +333,24 @@ a:hover {
 }
 .what-can-you-do .tab-content {
   width: 100%;
-  height: 25rem;
-  background-color: #e9e3ed;
+  height: auto;
+  background-color: white;
   border-radius: 33px;
   padding: 2rem;
 }
 .what-can-you-do .tab-content.expanded {
   animation: expand 0.5s ease;
-  height: 80rem;
+  height: auto;
 }
 .what-can-you-do .tab-content.expanded .tab-pane > .expanded-content {
   animation: fadein 0.5s ease;
 }
 .what-can-you-do .tab-content.unexpanded {
   animation: unexpand 0.5s ease;
-  height: 25rem;
+  height: 18rem;
 }
 .what-can-you-do .tab-content.unexpanded .tab-pane > .expanded-content {
+  animation: fadeout 0.5s ease;
   opacity: 0;
 }
 .what-can-you-do .content-wrapper {
@@ -351,19 +360,25 @@ a:hover {
 .what-can-you-do .content-img {
   padding: 1rem;
 }
+.what-can-you-do .content-text {
+  padding-bottom: 2rem;
+}
 @media only screen and (max-width: 767px) {
   .what-can-you-do .content-heading {
     font-size: 2rem;
     font-weight: bold;
   }
   .what-can-you-do .tab-content {
-    height: 30rem;
+    height: auto;
   }
 }
 @media only screen and (max-width: 335px) {
   .what-can-you-do .content-heading {
     font-size: 2rem;
     font-weight: bold;
+  }
+  .what-can-you-do .what-can-you-do {
+    height: 50rem;
   }
   .what-can-you-do .tab-content {
     height: 35rem;
