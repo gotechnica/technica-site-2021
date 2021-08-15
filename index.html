@@ -202,7 +202,7 @@
           </li>
         </ul>
       
-        <div class="tab-content">
+        <div class="tab-content" onclick="expand(this)">
           <div id="friends" class="tab-pane fade in active show">
             <div class="content-wrapper row">
               <div class="col-lg-6">
@@ -565,6 +565,15 @@
           adaptiveHeight: true
         } );
       }
+      // toggle card expansions
+      function expand(card) {
+            card.classList.toggle('expanded');
+
+            // If card is not expanded after toggle, add 'unexpanded' class
+            if (!card.classList.contains('expanded')) card.classList.toggle('unexpanded');
+            // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
+            else if (card.classList.contains('expanded') && card.classList.contains('unexpanded')) card.classList.toggle('unexpanded');
+        }
     </script>
   </body>
 </html>

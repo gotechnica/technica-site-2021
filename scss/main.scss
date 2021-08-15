@@ -301,12 +301,32 @@ body {
 }
 
 // *** what can you do section ***
+
+@keyframes expand {
+  0% {
+      height: 25rem;
+  }
+  100% {
+      height: 40rem;
+  }
+}
+@keyframes unexpand {
+  0% {
+      height: 40rem;
+  }
+  100% {
+      height: 25rem;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
 
 .what-can-you-do {
 /* text box */
+
+
   .content-heading {
     font-size: 2.5rem;
     font-weight: bold;
@@ -319,6 +339,16 @@ a:hover {
     background-color: $ex-light-lavender;
     border-radius: 33px;
     padding: 2rem;
+
+    &.expanded {
+      animation: expand 0.5s ease;
+      height: 40rem;
+    }
+
+    &.unexpanded {
+      animation: unexpand 0.5s ease;
+      height: 25rem;
+    }
   }
 
   .content-wrapper {
