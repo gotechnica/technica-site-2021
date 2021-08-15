@@ -9,6 +9,7 @@ $ex-light-lavender: #e9e3ed;
 $dark-grey: #606060;
 $orange: #F9B7AE;
 $hero-blue: #8cd8ed;
+$tan: #f7f3ed;
 $pastel-green: #a0d6b4;
 
 $animation-length: 80s;
@@ -304,9 +305,8 @@ body {
 }
 
 // *** intro section ***
-.about-image {
-  width: 5%;
-  height: 5%;
+.about-text {
+  padding-bottom: 2.5rem;
 }
 
 // *** what can you do section ***
@@ -802,6 +802,42 @@ a:hover {
   }
 }
 
+.polaroid-wrapper {
+  padding: 2.5rem 2.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.polaroid {
+  width: 14rem;
+  height: auto;
+  background-color: $tan;
+  padding: 1rem 1rem 3.25rem 1rem;
+
+  &.polaroid1{
+    right: 5rem;
+    top: -9rem;
+    transform: rotate(-3deg)
+  }
+
+  &.polaroid2{
+    right: -4rem;
+    bottom: -5rem;
+    transform: rotate(10deg)
+  }
+
+  @media (max-width: 991px) {
+    width: 10rem;
+  } 
+
+  @media only screen and (max-width: 500px) {
+    width: 10rem;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+  }
+}
+
+
 @media only screen and (max-width: 991px) {
   .registration .btn {
     font-size: 17px;
@@ -810,6 +846,11 @@ a:hover {
 
 //mobile
 @media only screen and (max-width: 767px) {
+  .polaroid-wrapper {
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    justify-content: center;
+  }
+
   .hacker,
   .mentor,
   .volunteer {
