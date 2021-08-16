@@ -94,6 +94,22 @@ body {
     .navbar-nav > li {
       margin: 0vw 1vw; } }
 
+.scroll-what-can-you-do {
+  background-color: #b5d5b2 !important;
+  transition: background-color 200ms linear; }
+
+.scroll-tracks {
+  background-color: #cde9fb !important;
+  transition: background-color 200ms linear; }
+
+.scroll-registration {
+  background-color: #e9e3ed !important;
+  transition: background-color 200ms linear; }
+
+.scroll-faq {
+  background-color: #f7f3ed !important;
+  transition: background-color 200ms linear; }
+
 .hero-cottage,
 .hero-clouds {
   position: absolute;
@@ -425,6 +441,7 @@ a:hover {
     height: 640px; } }
 
 .tracks-card {
+  background-color: white;
   font-size: 1rem;
   padding: 1.3rem;
   border-radius: 2rem;
@@ -634,8 +651,23 @@ a:hover {
   opacity: 0.7;
   text-decoration: none; }
 
-.contact-footer {
+.footer-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; }
+
+.contact-footer,
+.footer {
+  z-index: 5;
+  position: absolute;
   color: black; }
+
+.contact-footer {
+  margin-top: 65%; }
+
+.footer {
+  margin-top: 80%; }
 
 @media (min-width: 1750px) {
   .contact {
@@ -659,10 +691,6 @@ a:hover {
   @media (max-width: 575px) {
     .contact-header {
       padding-bottom: 3%; } }
-
-.contact-content {
-  margin-top: -10px;
-  margin-bottom: 20px; }
 
 .email-link,
 .email-link:visited {

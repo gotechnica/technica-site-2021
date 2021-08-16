@@ -12,8 +12,8 @@ $hero-blue: #8cd8ed;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
 
+$bg-green: #b5d5b2;
 $bg-blue: #cde9fb;
-$bg-purple: #976da1;
 $bg-pink: #f5d6e1;
 
 $animation-length: 80s;
@@ -138,6 +138,27 @@ body {
   @media (max-width: 767px) {
     margin: 0vw 1vw;
   }
+}
+
+// *** background color transitions on scroll ***
+.scroll-what-can-you-do {
+  background-color: $bg-green !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-tracks {
+  background-color: $bg-blue !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-registration {
+  background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-faq {
+  background-color: $tan !important; //change to $bg-pink when have another section underneath section
+  transition: background-color 200ms linear;
 }
 
 // *** hero section ***
@@ -575,6 +596,7 @@ a:hover {
 
 // tracks section - static cards
 .tracks-card {
+  background-color: white;
   font-size: 1rem;
   padding: 1.3rem;
   border-radius: 2rem;
@@ -846,8 +868,26 @@ a:hover {
 }
 
 // *** footer section ***
-.contact-footer {
+.footer-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.contact-footer,
+.footer {
+  z-index: 5;
+  position: absolute;
   color: black;
+}
+
+.contact-footer {
+  margin-top: 65%;
+}
+
+.footer {
+  margin-top: 80%;
 }
 
 .contact {
@@ -870,11 +910,6 @@ a:hover {
   @media (max-width: 575px) {
     padding-bottom: 3%;
   }
-}
-
-.contact-content {
-  margin-top: -10px;
-  margin-bottom: 20px;
 }
 
 .email-link,
