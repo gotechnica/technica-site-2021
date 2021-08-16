@@ -12,6 +12,10 @@ $hero-blue: #8cd8ed;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
 
+$bg-blue: #cde9fb;
+$bg-purple: #976da1;
+$bg-pink: #f5d6e1;
+
 $animation-length: 80s;
 
 @keyframes fadein {
@@ -137,6 +141,7 @@ body {
 }
 
 // *** hero section ***
+.hero-cottage,
 .hero-clouds {
   position: absolute;
   width: 100%;
@@ -191,17 +196,20 @@ body {
   position: relative;
   z-index: 3;
   @include fade-in(600ms);
-  .hero-logo {
-    margin-bottom: 15px;
+  #theme-logo {
+    width: 300px;
+    display: block;
+  }
+  #technica-logo {
+    width: 500px;
   }
 
   @media only screen and (max-width: 767px) {
     margin-top: -225px;
   }
-  #technica-logo {
+  #theme-logo {
     padding-top: 5%;
     margin-top: 10%;
-    width: 600px;
     @media only screen and (max-width: 767px) {
       padding-top: 10%;
     }
@@ -296,6 +304,16 @@ body {
 }
 
 // *** intro section ***
+#about {
+  position: relative;
+  z-index: 5;
+  margin-top: 40%;
+}
+.intro-container {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3%;
+  border-radius: 33px;
+}
 .about-text {
   padding-bottom: 2.5rem;
 }
@@ -333,7 +351,7 @@ a:hover {
   .tab-content {
     width: 100%;
     height: 20rem;
-    background-color: $ex-light-lavender;
+    background-color: white;
     border-radius: 33px;
     padding: 2rem;
   }
@@ -358,7 +376,7 @@ a:hover {
     .radio {
       width: 2.5rem;
       height: 2.5rem;
-      background-color: $ex-light-lavender;
+      background-color: white;
       border-radius: 50%;
     }
   }
@@ -446,7 +464,7 @@ a:hover {
   height: 100%;
   margin: 0px 5px;
   width: 675px;
-  background-color: $ex-light-lavender;
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 33px;
   padding: 2%;
 
@@ -464,11 +482,11 @@ a:hover {
   height: 20px;
   opacity: 1;
   background: transparent;
-  border: 2px solid $ex-light-lavender;
+  border: 2px solid white;
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: $ex-light-lavender;
+  background: white;
 }
 
 .gallery {
@@ -655,7 +673,7 @@ a:hover {
 .hacker,
 .mentor,
 .volunteer {
-  background-color: $ex-light-lavender;
+  background-color: white;
   border-radius: 33px;
   text-align: center;
   padding: 5%;
@@ -735,7 +753,7 @@ a:hover {
 }
 
 .faq-container {
-  background-color: $ex-light-lavender;
+  background-color: white;
   padding: 3%;
   border-radius: 33px;
 }
@@ -747,7 +765,7 @@ a:hover {
   padding-bottom: 2%;
   padding-top: 2%;
   margin-bottom: 2%;
-  border-bottom: 3px solid $ex-light-lavender;
+  border-bottom: 3px solid $bg-pink;
   transition: ease all 0.3s;
   cursor: pointer;
   h4 {
@@ -757,7 +775,7 @@ a:hover {
 
 .accordion:hover,
 .accordion-active {
-  border-color: $dark-lavender;
+  border-color: $pink;
 }
 
 .faq-toggle-icon {
