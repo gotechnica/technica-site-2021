@@ -645,3 +645,15 @@ h2 {
     margin-top: 15%;
   }
 }
+
+@media (max-width: 426px) {
+  .footer .container {
+    margin-top: 5%;
+  }
+  .donate-promise .container {
+    margin-top: 20%;
+  }
+  .donate-questions .container {
+    margin-top: 3%;
+  }
+}

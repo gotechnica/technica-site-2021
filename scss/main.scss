@@ -7,9 +7,8 @@ $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $dark-grey: #606060;
-$orange: #F9B7AE;
+$orange: #f9b7ae;
 $hero-blue: #8cd8ed;
-$tan: #f7f3ed;
 $pastel-green: #a0d6b4;
 
 $animation-length: 80s;
@@ -147,13 +146,6 @@ body {
     height: 663px;
     left: -100px;
     top: -26px;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    width: 834px;
-    height: 663px;
-    left: 0px;
-    top: 69px;
   }
 }
 
@@ -296,8 +288,9 @@ body {
 }
 
 // *** intro section ***
-.about-text {
-  padding-bottom: 2.5rem;
+.about-image {
+  width: 5%;
+  height: 5%;
 }
 
 // *** what can you do section ***
@@ -453,7 +446,7 @@ a:hover {
   h3 {
     margin: 15px 0;
   }
-} 
+}
 
 .flickity-page-dots {
   top: 105%;
@@ -534,12 +527,15 @@ a:hover {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .tracks {
     margin-bottom: 0;
   }
   .gallery {
     height: 580px;
+  }
+  .hero {
+    margin-top: 10%;
   }
 }
 
@@ -571,19 +567,19 @@ a:hover {
 }
 
 .general-border {
-  border: 6px solid $hero-blue; 
+  border: 6px solid $hero-blue;
 }
 
 .research-border {
-  border: 6px solid $lavender; 
+  border: 6px solid $lavender;
 }
 
 .beginner-border {
-  border: 6px solid $pink; 
+  border: 6px solid $pink;
 }
 
 .hardware-border {
-  border: 6px solid $pastel-green; 
+  border: 6px solid $pastel-green;
 }
 
 .img-holder {
@@ -594,11 +590,11 @@ a:hover {
   height: 3rem;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-    
+
 .img-holder img {
-  width: 9rem; 
+  width: 9rem;
 }
 
 .tracks-title {
@@ -613,12 +609,12 @@ a:hover {
 }
 
 /* tablet */
-@media only screen and (min-width: 991px) and (max-width: 1200px) { 
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   .img-holder {
     height: 2rem;
   }
   .img-holder img {
-    width: 7.5rem; 
+    width: 7.5rem;
   }
   .tracks-title {
     font-size: 190%;
@@ -664,42 +660,6 @@ a:hover {
   }
 }
 
-.polaroid-wrapper {
-  padding: 2.5rem 2.5rem 0.5rem 0.5rem;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.polaroid {
-  width: 14rem;
-  height: auto;
-  background-color: $tan;
-  padding: 1rem 1rem 3.25rem 1rem;
-
-  &.polaroid1{
-    right: 5rem;
-    top: -9rem;
-    transform: rotate(-3deg)
-  }
-
-  &.polaroid2{
-    right: -4rem;
-    bottom: -5rem;
-    transform: rotate(10deg)
-  }
-
-  @media (max-width: 991px) {
-    width: 10rem;
-  } 
-
-  @media only screen and (max-width: 500px) {
-    width: 10rem;
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
-  }
-}
-
-
 @media only screen and (max-width: 991px) {
   .registration .btn {
     font-size: 17px;
@@ -708,11 +668,6 @@ a:hover {
 
 //mobile
 @media only screen and (max-width: 767px) {
-  .polaroid-wrapper {
-    padding: 1.5rem 0rem 1.5rem 0rem;
-    justify-content: center;
-  }
-
   .hacker,
   .mentor,
   .volunteer {
@@ -972,5 +927,11 @@ a:hover {
 @media (max-width: 991px) {
   #mlh-trust-badge {
     right: 15px !important;
+  }
+}
+
+@media (min-width: 2100px) {
+  #hero-clouds {
+    height: 70%;
   }
 }
