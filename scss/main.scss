@@ -669,10 +669,6 @@ a:hover {
   .tracks-panel {
     margin-bottom: 5rem;
   }
-  .tracks-card {
-    padding: 1rem;
-    box-shadow: none;
-  }
 }
 
 /* smaller mobile */
@@ -724,8 +720,9 @@ a:hover {
   }
 
   &.polaroid2 {
-    margin-right: 10rem !important;
+    //margin-right: 10rem !important;
     transform: rotate(7deg);
+    margin-left: 10rem !important;
   }
 
   @media (max-width: 991px) {
@@ -871,23 +868,20 @@ a:hover {
 .footer-background {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: auto;
   z-index: 1;
 }
 
-.contact-footer,
-.footer {
+.contact-footer{
   z-index: 5;
   position: absolute;
+  width: 100%;
   color: black;
+  background-color: #d8c0a0;
 }
 
 .contact-footer {
-  margin-top: 65%;
-}
-
-.footer {
-  margin-top: 80%;
+  margin-top: 70%;
 }
 
 .contact {
@@ -923,6 +917,10 @@ a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
+}
+
+.social-buttons {
+  margin-bottom: 15px;
 }
 
 .social-buttons > a:hover {
@@ -990,29 +988,15 @@ a:hover {
   background-color: #f27aaa;
 }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-
-  #footer-links {
-    a:link,
-    a:visited {
-      color: black;
-    }
-    a:hover {
-      transition: ease 0.3s;
-      opacity: 0.7;
-      text-decoration: none;
-    }
+#footer-links {
+  a:link,
+  a:visited {
+    color: black;
   }
-
-  @media (min-width: 1850px) {
-    padding-top: 0px;
-    padding-bottom: 4%;
-  }
-  @media (min-width: 2300px) {
-    padding-bottom: 6%;
+  a:hover {
+    transition: ease 0.3s;
+    opacity: 0.7;
+    text-decoration: none;
   }
   @media (max-width: 575px) {
     font-size: 0.9rem;
