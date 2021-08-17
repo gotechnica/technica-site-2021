@@ -499,10 +499,7 @@ a:hover {
 
 @media only screen and (max-width: 991px) {
   .tracks-panel {
-    margin-bottom: 5rem; }
-  .tracks-card {
-    padding: 1rem;
-    box-shadow: none; } }
+    margin-bottom: 5rem; } }
 
 /* smaller mobile */
 @media only screen and (max-width: 300px) {
@@ -542,8 +539,8 @@ a:hover {
   .polaroid.polaroid1 {
     transform: rotate(-3deg); }
   .polaroid.polaroid2 {
-    margin-right: 10rem !important;
-    transform: rotate(7deg); }
+    transform: rotate(7deg);
+    margin-left: 10rem !important; }
   @media (max-width: 991px) {
     .polaroid {
       width: 25rem; } }
@@ -654,20 +651,18 @@ a:hover {
 .footer-background {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: auto;
   z-index: 1; }
 
-.contact-footer,
-.footer {
+.contact-footer {
   z-index: 5;
   position: absolute;
-  color: black; }
+  width: 100%;
+  color: black;
+  background-color: #d8c0a0; }
 
 .contact-footer {
-  margin-top: 65%; }
-
-.footer {
-  margin-top: 80%; }
+  margin-top: 70%; }
 
 @media (min-width: 1750px) {
   .contact {
@@ -702,6 +697,9 @@ a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
+
+.social-buttons {
+  margin-bottom: 15px; }
 
 .social-buttons > a:hover {
   text-decoration: none; }
@@ -745,28 +743,19 @@ a:hover {
 .pink-circle2 {
   background-color: #f27aaa; }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center; }
-  .footer #footer-links a:link,
-  .footer #footer-links a:visited {
-    color: black; }
-  .footer #footer-links a:hover {
-    transition: ease 0.3s;
-    opacity: 0.7;
-    text-decoration: none; }
-  @media (min-width: 1850px) {
-    .footer {
-      padding-top: 0px;
-      padding-bottom: 4%; } }
-  @media (min-width: 2300px) {
-    .footer {
-      padding-bottom: 6%; } }
-  @media (max-width: 575px) {
-    .footer {
-      font-size: 0.9rem;
-      adding: 0.5rem 0rem; } }
+#footer-links a:link,
+#footer-links a:visited {
+  color: black; }
+
+#footer-links a:hover {
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none; }
+
+@media (max-width: 575px) {
+  #footer-links {
+    font-size: 0.9rem;
+    adding: 0.5rem 0rem; } }
 
 @media (max-width: 991px) {
   #mlh-trust-badge {
