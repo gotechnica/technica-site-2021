@@ -226,8 +226,9 @@ body {
   }
 
   @media only screen and (max-width: 767px) {
-    margin-top: -225px;
+    margin-top: -200px;
   }
+
   #theme-logo {
     padding-top: 5%;
     margin-top: 10%;
@@ -244,6 +245,13 @@ body {
     }
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
       width: 85%;
+    }
+    @media only screen and (max-width: 950px) {
+      font-size: 100%;
+      text-align: left;
+    }
+    @media only screen and (max-width: 715px) {
+      font-size: 70%;
     }
   }
 }
@@ -329,7 +337,12 @@ body {
   position: relative;
   z-index: 5;
   margin-top: 40%;
+
+  @media only screen and (min-width: 1810px) {
+    margin-top: 1000px;
+  }
 }
+
 .intro-container {
   background: rgba(255, 255, 255, 0.5);
   padding: 3%;
@@ -709,6 +722,12 @@ a:hover {
   @media only screen and (max-width: 500px) {
     flex-direction: row;
   }
+
+  @media only screen and (max-width: 950px) {
+    flex-direction: row;
+    text-align: center;
+    padding: 0rem 0rem 0rem 0rem;
+  }
 }
 
 .polaroid {
@@ -720,19 +739,25 @@ a:hover {
   }
 
   &.polaroid2 {
-    //margin-right: 10rem !important;
     transform: rotate(7deg);
     margin-left: 10rem !important;
   }
 
-  @media (max-width: 991px) {
-    width: 25rem;
+  @media only screen and (max-width: 1225px) {
+    width: 10rem !important;
   }
 
-  @media only screen and (max-width: 500px) {
-    width: 15rem;
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
-  }
+  /*@media only screen and (max-width: 950px) {
+    width: 15rem !important;
+
+    &.polaroid1 {
+      margin-left: 15rem !important;
+    }
+
+    &.polaroid2 {
+      margin-right: 15rem !important;
+    }
+  }*/
 }
 
 @media only screen and (max-width: 991px) {
@@ -854,11 +879,11 @@ a:hover {
 .link,
 .link:visited {
   font-weight: bold;
-  color: $darker-lavender;
+  color: $pink;
 }
 
 .link:hover {
-  color: $darker-lavender;
+  color: $pink;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
@@ -872,7 +897,7 @@ a:hover {
   z-index: 1;
 }
 
-.contact-footer{
+.contact-footer {
   z-index: 5;
   position: absolute;
   width: 100%;

@@ -161,7 +161,7 @@ body {
     width: 500px; }
   @media only screen and (max-width: 767px) {
     .hero-information {
-      margin-top: -225px; } }
+      margin-top: -200px; } }
   .hero-information #theme-logo {
     padding-top: 5%;
     margin-top: 10%; }
@@ -178,6 +178,13 @@ body {
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
       .hero-information #hero-tagline {
         width: 85%; } }
+    @media only screen and (max-width: 950px) {
+      .hero-information #hero-tagline {
+        font-size: 100%;
+        text-align: left; } }
+    @media only screen and (max-width: 715px) {
+      .hero-information #hero-tagline {
+        font-size: 70%; } }
 
 .hero-action {
   position: relative;
@@ -242,6 +249,9 @@ body {
   position: relative;
   z-index: 5;
   margin-top: 40%; }
+  @media only screen and (min-width: 1810px) {
+    #about {
+      margin-top: 1000px; } }
 
 .intro-container {
   background: rgba(255, 255, 255, 0.5);
@@ -532,22 +542,34 @@ a:hover {
   @media only screen and (max-width: 500px) {
     .polaroid-wrapper {
       flex-direction: row; } }
+  @media only screen and (max-width: 950px) {
+    .polaroid-wrapper {
+      flex-direction: row;
+      text-align: center;
+      padding: 0rem 0rem 0rem 0rem; } }
 
 .polaroid {
   width: 15rem;
-  height: auto; }
+  height: auto;
+  /*@media only screen and (max-width: 950px) {
+    width: 15rem !important;
+
+    &.polaroid1 {
+      margin-left: 15rem !important;
+    }
+
+    &.polaroid2 {
+      margin-right: 15rem !important;
+    }
+  }*/ }
   .polaroid.polaroid1 {
     transform: rotate(-3deg); }
   .polaroid.polaroid2 {
     transform: rotate(7deg);
     margin-left: 10rem !important; }
-  @media (max-width: 991px) {
+  @media only screen and (max-width: 1225px) {
     .polaroid {
-      width: 25rem; } }
-  @media only screen and (max-width: 500px) {
-    .polaroid {
-      width: 15rem;
-      padding: 0.5rem 0.5rem 2rem 0.5rem; } }
+      width: 10rem !important; } }
 
 @media only screen and (max-width: 991px) {
   .registration .btn {
@@ -640,10 +662,10 @@ a:hover {
 .link,
 .link:visited {
   font-weight: bold;
-  color: #72607b; }
+  color: #ed648d; }
 
 .link:hover {
-  color: #72607b;
+  color: #ed648d;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
