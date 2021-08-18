@@ -293,8 +293,9 @@ a:hover {
     margin-left: 0.5rem; }
   .what-can-you-do .expand-btn {
     display: flex;
-    text-align: center !important;
-    justify-content: center !important; }
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto; }
     .what-can-you-do .expand-btn.btn {
       background-color: #b5d5b2;
       width: 20%;
@@ -304,7 +305,8 @@ a:hover {
   .what-can-you-do .collapse-btn {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0 auto; }
     .what-can-you-do .collapse-btn a {
       color: #000; }
     .what-can-you-do .collapse-btn.btn {
