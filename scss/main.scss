@@ -348,7 +348,11 @@ a:hover {
   .expand-btn {
     display: flex;
     justify-content: center;
-    font-weight: bold;
+
+    &.btn {
+      background-color: transparent;
+      color: #000;
+    }
   }
 
   .expand-btn:hover {
@@ -358,7 +362,15 @@ a:hover {
   .collapse-btn {
     display: flex;
     justify-content: center;
-    font-weight: bold;
+
+    a {
+      color: #000;
+    }
+    
+    &.btn {
+      background-color: transparent;
+      color: #000;
+    }
   }
 
   .collapse-btn:hover {
@@ -373,7 +385,7 @@ a:hover {
     padding: 2rem;
 
     &.expanded {
-      animation: expand 0.5s ease;
+      animation: expand 0.5s;
       height: auto;
 
       .tab-pane > .expanded-content {
@@ -381,7 +393,6 @@ a:hover {
       }
 
       .expand-btn {
-        animation: fadeout 0.5s ease;
         opacity: 0;
       }
 
@@ -392,7 +403,7 @@ a:hover {
     }
 
     &.unexpanded {
-      animation: unexpand 0.5s ease;
+      animation: unexpand 0.5s;
       height: 23.5rem;
 
       .collapse-btn {
@@ -409,7 +420,6 @@ a:hover {
       }
 
       .tab-pane > .expanded-content {
-        animation: fadeout 0.5s ease;
         opacity: 0;
       }
     }
@@ -494,24 +504,21 @@ a:hover {
     color: black;
 
     .radio {
-      width: 2.5rem;
-      height: 2.5rem;
-      background-color: $ex-light-lavender;
+      width: 3rem;
+      height: 3rem;
+      background-color: #fff;
       border-radius: 50%;
     }
   }
+
   .tab.active {
     animation: fadein 1.25s;
 
     .title {
-      border: solid 0.5rem;
-      border-left: none;
-      border-top: none;
-      border-right: none;
       color: black;
 
       .radio {
-        border: solid 0.2rem;
+        border: solid 0.3rem;
       }
 
       &.blue {
@@ -522,20 +529,40 @@ a:hover {
         border-color: $pink;
       }
 
-      &.orange {
-        border-color: $orange;
+      &.purple {
+        border-color: $dark-lavender;
       }
     }
 
     .radio.pink {
       border-color: $pink;
     }
-    .radio.orange {
-      border-color: $orange;
+    .radio.purple {
+      border-color: $dark-lavender;
     }
     .radio.blue {
       border-color: $hero-blue;
     }
+
+    .tab-container & {
+      border: solid 0.5rem;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+  
+      &.blue {
+        border-color: $hero-blue;
+      }
+  
+      &.pink {
+        border-color: $pink;
+      }
+  
+      &.purple {
+        border-color: $dark-lavender;
+      }
+  }
+  
   }
 }
 
