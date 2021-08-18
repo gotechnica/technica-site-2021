@@ -473,6 +473,13 @@ a:hover {
     justify-content: center;
   }
 
+  .tab-container.blue {
+    border: solid 0.5rem $hero-blue;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+
   .tab-container:first-child > span {
     margin-right: auto;
   }
@@ -543,28 +550,9 @@ a:hover {
     .radio.blue {
       border-color: $hero-blue;
     }
-
-    .tab-container & {
-      border: solid 0.5rem;
-      border-left: none;
-      border-top: none;
-      border-right: none;
-  
-      &.blue {
-        border-color: $hero-blue;
-      }
-  
-      &.pink {
-        border-color: $pink;
-      }
-  
-      &.purple {
-        border-color: $dark-lavender;
-      }
-  }
-  
   }
 }
+
 
 // *** testimonials section ***
 .testimonials {

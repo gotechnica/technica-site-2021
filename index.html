@@ -178,20 +178,20 @@
         <h1 class="header">What You Can Do at Technica</h1>
         <div class="slide"></div>
         <ul class="nav nav-tabs">
-          <li class="tab-container blue">
+          <li class="tab-container blue" id="blue" onclick="toggleTab('blue', '#8cd8ed')">
             <a data-toggle="tab" class="tab active blue" href="#friends">
               <div class="title blue"><div class="tab radio blue"></div>
                 <span>Make new friends</span>
             </div>
           </a>
           </li>
-          <li class="tab-container purple">
+          <li class="tab-container purple" id="purple" onclick="toggleTab('purple', '#72607b')">
             <a data-toggle="tab" class="tab purple" href="#skills"><div class="title purple">
               <div class="tab radio purple"></div>
                 <span>Learn new skills</span>
             </div></a>
           </li>
-          <li class="tab-container pink">
+          <li class="tab-container pink" id="pink" onclick="toggleTab('pink', '#ed648d')">
             <a data-toggle="tab" class="tab pink" href="#network"><div class="title pink">
               <div class="tab radio pink"></div>
                 <span>Network</span>
@@ -665,6 +665,18 @@
             if (!card.classList.contains('expanded')) card.classList.toggle('unexpanded');
             // Else if card is expanded after toggle and still contains 'unexpanded' class, remove 'unexpanded'
             else if (card.classList.contains('expanded') && card.classList.contains('unexpanded')) card.classList.toggle('unexpanded');
+      }
+
+      function toggleTab(id, hex) {
+        var i;
+        var x = document.getElementsByClassName("tab-container");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.border = "none";
+        }
+        document.getElementById(id).style.border = `solid 0.5rem ${hex}`;
+        document.getElementById(id).style.borderLeft = "none";
+        document.getElementById(id).style.borderRight = "none";
+        document.getElementById(id).style.borderTop = "none";
       }
     </script>
   </body>

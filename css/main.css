@@ -586,6 +586,13 @@ a:hover {
           justify-content: center;
 }
 
+.what-can-you-do .tab-container.blue {
+  border: solid 0.5rem #8cd8ed;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
 .what-can-you-do .tab-container:first-child > span {
   margin-right: auto;
 }
@@ -677,25 +684,6 @@ a:hover {
 
 .what-can-you-do .tab.active .radio.blue {
   border-color: #8cd8ed;
-}
-
-.tab-container .what-can-you-do .tab.active {
-  border: solid 0.5rem;
-  border-left: none;
-  border-top: none;
-  border-right: none;
-}
-
-.tab-container .what-can-you-do .tab.active.blue {
-  border-color: #8cd8ed;
-}
-
-.tab-container .what-can-you-do .tab.active.pink {
-  border-color: #ed648d;
-}
-
-.tab-container .what-can-you-do .tab.active.purple {
-  border-color: #8d7c98;
 }
 
 .testimonials {
