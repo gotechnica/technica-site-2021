@@ -7,10 +7,14 @@ $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $dark-grey: #606060;
-$orange: #F9B7AE;
+$orange: #f9b7ae;
 $hero-blue: #8cd8ed;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
+
+$bg-green: #b5d5b2;
+$bg-blue: #cde9fb;
+$bg-pink: #f5d6e1;
 
 $animation-length: 80s;
 
@@ -145,7 +149,29 @@ body {
   }
 }
 
+// *** background color transitions on scroll ***
+.scroll-what-can-you-do {
+  background-color: $bg-green !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-tracks {
+  background-color: $bg-blue !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-registration {
+  background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-faq {
+  background-color: $tan !important; //change to $bg-pink when have another section underneath section
+  transition: background-color 200ms linear;
+}
+
 // *** hero section ***
+.hero-cottage,
 .hero-clouds {
   position: absolute;
   width: 100%;
@@ -200,17 +226,21 @@ body {
   position: relative;
   z-index: 3;
   @include fade-in(600ms);
-  .hero-logo {
-    margin-bottom: 15px;
+  #theme-logo {
+    width: 300px;
+    display: block;
+  }
+  #technica-logo {
+    width: 500px;
   }
 
   @media only screen and (max-width: 767px) {
-    margin-top: -225px;
+    margin-top: -200px;
   }
-  #technica-logo {
+
+  #theme-logo {
     padding-top: 5%;
     margin-top: 10%;
-    width: 600px;
     @media only screen and (max-width: 767px) {
       padding-top: 10%;
     }
@@ -224,6 +254,13 @@ body {
     }
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
       width: 85%;
+    }
+    @media only screen and (max-width: 950px) {
+      font-size: 100%;
+      text-align: left;
+    }
+    @media only screen and (max-width: 715px) {
+      font-size: 70%;
     }
   }
 }
@@ -305,6 +342,21 @@ body {
 }
 
 // *** intro section ***
+#about {
+  position: relative;
+  z-index: 5;
+  margin-top: 40%;
+
+  @media only screen and (min-width: 1810px) {
+    margin-top: 1000px;
+  }
+}
+
+.intro-container {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3%;
+  border-radius: 33px;
+}
 .about-text {
   padding-bottom: 2.5rem;
 }
@@ -404,7 +456,7 @@ a:hover {
 
     &.unexpanded {
       animation: unexpand 0.5s;
-      height: 23.5rem;
+      height: 30rem;
 
       .collapse-btn {
         animation: fadeout 0.5s ease;
@@ -412,11 +464,11 @@ a:hover {
       }
 
       @media only screen and (max-width: 991px) {
-        height: 30rem;
+        height: 37rem;
       }
 
       @media only screen and (max-width: 767px) {
-        height: 33rem;
+        height: 43rem;
       }
 
       .tab-pane > .expanded-content {
@@ -493,13 +545,20 @@ a:hover {
     margin-bottom: 0.5rem;
   }
 
+  .tab-content {
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    border-radius: 33px;
+    padding: 2rem;
+  }
+
   .title {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $lavender;
   }
 
   .tab {
@@ -517,7 +576,6 @@ a:hover {
       border-radius: 50%;
     }
   }
-
   .tab.active {
     animation: fadein 1.25s;
 
@@ -599,14 +657,14 @@ a:hover {
   height: 100%;
   margin: 0px 5px;
   width: 675px;
-  background-color: $ex-light-lavender;
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 33px;
   padding: 2%;
 
   h3 {
     margin: 15px 0;
   }
-} 
+}
 
 .flickity-page-dots {
   top: 105%;
@@ -617,11 +675,11 @@ a:hover {
   height: 20px;
   opacity: 1;
   background: transparent;
-  border: 2px solid $ex-light-lavender;
+  border: 2px solid white;
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: $ex-light-lavender;
+  background: white;
 }
 
 .gallery {
@@ -710,6 +768,7 @@ a:hover {
 
 // tracks section - static cards
 .tracks-card {
+  background-color: white;
   font-size: 1rem;
   padding: 1.3rem;
   border-radius: 2rem;
@@ -724,19 +783,19 @@ a:hover {
 }
 
 .general-border {
-  border: 6px solid $hero-blue; 
+  border: 6px solid $hero-blue;
 }
 
 .research-border {
-  border: 6px solid $lavender; 
+  border: 6px solid $lavender;
 }
 
 .beginner-border {
-  border: 6px solid $pink; 
+  border: 6px solid $pink;
 }
 
 .hardware-border {
-  border: 6px solid $pastel-green; 
+  border: 6px solid $pastel-green;
 }
 
 .img-holder {
@@ -747,11 +806,11 @@ a:hover {
   height: 3rem;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-    
+
 .img-holder img {
-  width: 9rem; 
+  width: 9rem;
 }
 
 .tracks-title {
@@ -766,12 +825,12 @@ a:hover {
 }
 
 /* tablet */
-@media only screen and (min-width: 991px) and (max-width: 1200px) { 
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   .img-holder {
     height: 2rem;
   }
   .img-holder img {
-    width: 7.5rem; 
+    width: 7.5rem;
   }
   .tracks-title {
     font-size: 190%;
@@ -781,10 +840,6 @@ a:hover {
 @media only screen and (max-width: 991px) {
   .tracks-panel {
     margin-bottom: 5rem;
-  }
-  .tracks-card {
-    padding: 1rem;
-    box-shadow: none;
   }
 }
 
@@ -808,7 +863,7 @@ a:hover {
 .hacker,
 .mentor,
 .volunteer {
-  background-color: $ex-light-lavender;
+  background-color: white;
   border-radius: 33px;
   text-align: center;
   padding: 5%;
@@ -820,38 +875,49 @@ a:hover {
 .polaroid-wrapper {
   padding: 2.5rem 2.5rem 0.5rem 0.5rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 950px) {
+    flex-direction: row;
+    text-align: center;
+    padding: 0rem 0rem 0rem 0rem;
+  }
 }
 
 .polaroid {
-  width: 14rem;
+  width: 15rem;
   height: auto;
-  background-color: $tan;
-  padding: 1rem 1rem 3.25rem 1rem;
 
-  &.polaroid1{
-    right: 5rem;
-    top: -9rem;
-    transform: rotate(-3deg)
+  &.polaroid1 {
+    transform: rotate(-3deg);
   }
 
-  &.polaroid2{
-    right: -4rem;
-    bottom: -5rem;
-    transform: rotate(10deg)
+  &.polaroid2 {
+    transform: rotate(7deg);
+    margin-left: 10rem !important;
   }
 
-  @media (max-width: 991px) {
-    width: 10rem;
-  } 
-
-  @media only screen and (max-width: 500px) {
-    width: 10rem;
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
+  @media only screen and (max-width: 1225px) {
+    width: 10rem !important;
   }
+
+  /*@media only screen and (max-width: 950px) {
+    width: 15rem !important;
+
+    &.polaroid1 {
+      margin-left: 15rem !important;
+    }
+
+    &.polaroid2 {
+      margin-right: 15rem !important;
+    }
+  }*/
 }
-
 
 @media only screen and (max-width: 991px) {
   .registration .btn {
@@ -890,7 +956,7 @@ a:hover {
 }
 
 .faq-container {
-  background-color: $ex-light-lavender;
+  background-color: white;
   padding: 3%;
   border-radius: 33px;
 }
@@ -902,7 +968,7 @@ a:hover {
   padding-bottom: 2%;
   padding-top: 2%;
   margin-bottom: 2%;
-  border-bottom: 3px solid $ex-light-lavender;
+  border-bottom: 3px solid $bg-pink;
   transition: ease all 0.3s;
   cursor: pointer;
   h4 {
@@ -912,7 +978,7 @@ a:hover {
 
 .accordion:hover,
 .accordion-active {
-  border-color: $dark-lavender;
+  border-color: $pink;
 }
 
 .faq-toggle-icon {
@@ -972,19 +1038,34 @@ a:hover {
 .link,
 .link:visited {
   font-weight: bold;
-  color: $darker-lavender;
+  color: $pink;
 }
 
 .link:hover {
-  color: $darker-lavender;
+  color: $pink;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
 }
 
 // *** footer section ***
+.footer-background {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
 .contact-footer {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
   color: black;
+  background-color: #d8c0a0;
+}
+
+.contact-footer {
+  margin-top: 70%;
 }
 
 .contact {
@@ -1009,11 +1090,6 @@ a:hover {
   }
 }
 
-.contact-content {
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-
 .email-link,
 .email-link:visited {
   color: $lavender;
@@ -1025,6 +1101,10 @@ a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
+}
+
+.social-buttons {
+  margin-bottom: 15px;
 }
 
 .social-buttons > a:hover {
@@ -1092,29 +1172,15 @@ a:hover {
   background-color: #f27aaa;
 }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-
-  #footer-links {
-    a:link,
-    a:visited {
-      color: black;
-    }
-    a:hover {
-      transition: ease 0.3s;
-      opacity: 0.7;
-      text-decoration: none;
-    }
+#footer-links {
+  a:link,
+  a:visited {
+    color: black;
   }
-
-  @media (min-width: 1850px) {
-    padding-top: 0px;
-    padding-bottom: 4%;
-  }
-  @media (min-width: 2300px) {
-    padding-bottom: 6%;
+  a:hover {
+    transition: ease 0.3s;
+    opacity: 0.7;
+    text-decoration: none;
   }
   @media (max-width: 575px) {
     font-size: 0.9rem;

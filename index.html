@@ -116,8 +116,8 @@
     </script>
   </head>
   <body>
-    <div class="hero-clouds">
-      <img id = hero-clouds src="img/hero-clouds.png" alt="pastel pink and purple sky and clouds" style="width: 100%;">
+    <div class="hero-cottage bg-image" >
+      <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%;">
     </div>
 
     <!-- navbar -->
@@ -136,9 +136,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#faq">FAQ</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sponsor.html">Sponsor</a>
-        </li>
        </ul>
      </div>
    </nav>
@@ -147,18 +144,15 @@
       <div class="container">
         <div class="hero-information">
           <div class="hero-logo">
-            <img id="technica-logo" src="img/technica-logo.png" alt="Technica logo">
+            <img id="theme-logo" src="img/hero/welcome-home.png" alt="Welcome Home" style="z-index: -1;">
+            <img id="technica-logo" src="img/hero/technica-logo.png" alt="Technica logo">
           </div>
-          <p id="hero-tagline">Join hackers from around the globe at the world's largest hybrid hackathon for underrepresented genders on November 13-14, 2021</p>
-        </div>
-        <div class="hero-action text-center">
-          <button class="register-btn btn" onclick="location.href='https://register.gotechnica.org'">Register Now</button>
-          <p class="hero-learn">or learn more below!</p>
+          <p id="hero-tagline"><b>Nov 13-14, 2021 + Hybrid Environment</b></p>
         </div>
       </div>
     </div>
 
-    <div class="main" role="main">
+    <div class="main" role="main" style="background-color: #b5d5b2;">
     <div class="section">
       <div class="container intro-container" id="about">
         <h1 class="header">What is Technica?</h1>
@@ -167,7 +161,30 @@
             <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
             <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
             <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
-            <p>At Technica, we want to challenge our hackers to step out of their comfort zone and try something new, whether that's exploring a new technology, tinkering with hardware, or coding for the very first time! At Technica, we want our hackers to learn, grow, and meet new people, so join us at Technica 2021!</p>
+            <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonials section" id="testimonials">
+      <div class="container">
+        <h1 class="header">Hear From Our Hackers!</h1>
+        <div class="text-center gallery">
+          <div class="general track-flick-item">
+            <p class="testimonial-quote">“Technica was very impactful because of the relationships I made and the significance of building VR software for the next generation of students that like hands-on work.”</p>
+            <img class="testimonial-image" src="img/testimonials/testimonial-anna.jpg" alt="woman with long brown hair smiling in front of brick wall">
+            <p class="testimonial-name"><br>- Anna Blendermann, 2019 hacker</p>
+          </div>
+          <div class="research track-flick-item">
+            <p class="testimonial-quote">"I wish I knew how fast the time was going to go. I felt empowered that I was surrounded by so many intelligent women."</p> 
+            <img class="testimonial-image" src="img/testimonials/testimonial-sophia.jpg" alt="women in suit smiling">
+            <p class="testimonial-name"><br>- Sophia Michael, 2019 hacker</p>
+          </div>
+          <div class="beginner track-flick-item">
+            <p class="testimonial-quote">"My favorite part was working closely with a select group of extremely kind women who were just as passionate for STEM and gender inclusion as I am."</p>
+            <img class="testimonial-image" src="img/testimonials/testimonial-priya.jpg" alt="woman smiling in front of pink ombre flowers">
+            <p class="testimonial-name"><br>- Priya Kalra, 2020 ambassador</p>
           </div>
         </div>
       </div>
@@ -335,25 +352,49 @@
         </div>
       </div>
     </div>
-    
-    <div class="testimonials section" id="testimonials">
+
+    <div class="tracks section" id="tracks">
       <div class="container">
-        <h1 class="header">Hear From Our Hackers!</h1>
-        <div class="text-center gallery">
-          <div class="general track-flick-item">
-            <p class="testimonial-quote">“Technica was very impactful because of the relationships I made and the significance of building VR software for the next generation of students that like hands-on work.”</p>
-            <img class="testimonial-image" src="img/testimonial-anna.jpg" alt="woman with long brown hair smiling in front of brick wall">
-            <p class="testimonial-name"><br>- Anna Blendermann, 2019 hacker</p>
+        <div class="heading">
+          <h1 class="header">Tracks</h1>
+          <p>We are offering four different tracks for Technica this year! Each track is designed to best accommodate a hacker's interests and skill level with track-specific mentors. Hackers may express interest in multiple tracks during registration but will only be able to participate in one.</p>
+        </div>
+        <div class="row row-eq-height">
+          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
+            <div class="tracks-card general-border h-100">
+              <div class="img-holder">
+                <img src="./img/tracks/bike-icon.svg" alt="simple bike with flower basket sketch">
+              </div>
+              <h3 class="tracks-title">General</h3>
+              <p class="track-text">For any and all hackers! Come build to your heart's content using hardware, software, or anything you want with other hackers. Hackers can be students, designers, or just any tech-lovers out there. Hackers of all skill levels are welcomed and supported!</p>
+            </div>
           </div>
-          <div class="research track-flick-item">
-            <p class="testimonial-quote">"I wish I knew how fast the time was going to go. I felt empowered that I was surrounded by so many intelligent women."</p> 
-            <img class="testimonial-image" src="img/testimonial-sophia.jpg" alt="women in suit smiling">
-            <p class="testimonial-name"><br>- Sophia Michael, 2019 hacker</p>
+          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
+            <div class="tracks-card research-border h-100">
+              <div class="img-holder">
+                <img src="./img/tracks/lemonade-icon.svg" alt="simple lemonade in pitcher and two glasses sketch">
+              </div>
+              <h3 class="tracks-title">Research</h3>
+              <p class="track-text">Calling all undergraduates interested in research! Come explore the fields of research within computer science. You will get to work hands-on with faculty researchers and peers to address social issues using technology and research! This track is a separate 3-day event taking place during Technica weekend.</p>
+            </div>
           </div>
-          <div class="beginner track-flick-item">
-            <p class="testimonial-quote">"My favorite part was working closely with a select group of extremely kind women who were just as passionate for STEM and gender inclusion as I am."</p>
-            <img class="testimonial-image" src="img/testimonial-priya.jpg" alt="woman smiling in front of pink ombre flowers">
-            <p class="testimonial-name"><br>- Priya Kalra, 2020 ambassador</p>
+          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
+            <div class="tracks-card beginner-border h-100">
+              <div class="img-holder">
+                <img src="./img/tracks/flower-basket-icon.svg" alt="simple flower basket sketch">
+              </div>
+              <h3 class="tracks-title">Beginner</h3>
+              <p class="track-text">New to hackathons? Don't know how to code? No worries! You'll be provided with dedicated resources to help you be successful at Technica and beyond. This track begins with exclusive workshops a few weeks before Technica, and includes everything from an introduction to hackathons to universal coding and logic concepts.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
+            <div class="tracks-card hardware-border h-100">
+              <div class="img-holder">
+                <img src="./img/tracks/cottage-icon.svg" alt="simple cottage home sketch">
+              </div>
+              <h3 class="tracks-title">Hardware</h3>
+              <p class="track-text">Spark up your project with some hardware! We’ll provide you with the resources needed to kickstart your own hardware projects and master the fundamentals from the ground up. This includes a kit with instructional materials and personalized sessions to help you code and build your own hacks!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -361,26 +402,24 @@
 
     <div class="registration section">
       <div class="container">
-        <h1 class="header" id="registration">Join the Family as a...</h1>
+        <h1 class="header" id="registration">Join our Family as a...</h1>
         <div class="text-center">
           <div class="row">
-            <div class="col-md-6 col-xl-7 order-md-2">
-              <!--hacker illustration to come-->
-              <img class="registration-image" src="./img/hacker.png" alt="">
+            <div class="col-md-8 order-md-2">
+              <img class="hacker-image" src="./img/registration/hacker-bird.svg" width="85%" height="100%" alt="bird holding lavender in front of grenery">
             </div>
-            <div class="col-md order-md-1 align-self-center">
+            <div class="col-md-4 order-md-1 align-self-center">
               <div class="hacker">
-                <p><br>Come build using hardware, software, or anything you want with other hackers! You don't have to know how to code to be a hacker. Hackers can be students, designers, or just any tech-lover out there!<br><br></p>
+                <p>Come build using hardware, software, or anything you want with other hackers! You don't have to know how to code to be a hacker. Hackers can be students, designers, or just any tech-lover out there!</p>
                 <button class="btn dark-btn" onclick="location.href='https://register.gotechnica.org'" type="button">Hacker</button>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-xl-7 order-md-1">
-              <!--mentor illustration to come-->
+            <div class="col-md-6 col-xl-8 order-md-1">
               <div class="polaroid-wrapper col-lg-4">
-                <img class="polaroid polaroid1 registration-image" id="about-image" src="img/hackers-illustration.png" alt="hackers posing in four squares of a polaroid" width="100%" height="100%">
-                <img class="polaroid polaroid2 registration-image" id="about-image" src="img/hackers-illustration.png" alt="hackers posing in four squares of a polaroid" width="100%" height="100%">
+                <img class="polaroid polaroid1 registration-image" src="img/registration/mentor-animal-polaroid.svg" alt="duck and frog posing in a polaroid" width="100%" height="100%">
+                <img class="polaroid polaroid2 registration-image" src="img/registration/mentor-scenery-polaroid.svg" alt="polaroid of a grassy hill and cloudy sky" width="100%" height="100%">
               </div>
             </div>
             <div class="col-md order-md-2 align-self-center">
@@ -391,13 +430,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-xl-7 order-md-2">
-              <!--volunteer illustration to come-->
-              <img class="registration-image" src="./img/volunteer.png" alt="">
+            <div class="col-md-6 col-xl-8 order-md-2">
+              <img class="registration-image" src="./img/registration/volunteer-frog.svg" height="95%" width="60%" alt="frog holding mushrooms">
             </div>
             <div class="col-md order-md-1 align-self-center">
               <div class="volunteer">
-                <p><br>Come help with the operations! Volunteers are a huge helping hand and help make sure the hackathon runs smoothly. Anyone 18 years or older and of any gender can volunteer and help make Technica a success! There will be in-person and virtual opportunities.</p>
+                <p>Come help with the operations! Volunteers are a huge helping hand and help make sure the hackathon runs smoothly. Anyone 18 years or older and of any gender can volunteer and help make Technica a success! There will be in-person and virtual opportunities.</p>
                 <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/rmGg9cCj'" type="button">Volunteer</button>
               </div>
             </div>
@@ -406,173 +444,130 @@
       </div>
     </div>
 
-    <div class="tracks section">
-      <div class="container">
-        <div class="heading">
-          <h1 class="header">Tracks</h1>
-          <p>We are offering four different tracks for Technica this year! Each track is designed to best accommodate a hacker's interests and skill level with track-specific mentors. Hackers may express interest in multiple tracks during registration but will only be able to participate in one.</p>
-        </div>
-        <div class="row row-eq-height">
-          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
-            <div class="tracks-card general-border h-100">
-              <div class="img-holder">
-                <img src="./img/bike-icon.svg" alt="simple bike with flower basket sketch">
-              </div>
-              <h3 class="tracks-title">General</h3>
-              <p class="track-text">For any and all hackers! Come build to your heart's content using hardware, software, or anything you want with other hackers. Hackers can be students, designers, or just any tech-lovers out there. Hackers of all skill levels are welcomed and supported!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
-            <div class="tracks-card research-border h-100">
-              <div class="img-holder">
-                <img src="./img/lemonade-icon.svg" alt="simple lemonade in pitcher and two glasses sketch">
-              </div>
-              <h3 class="tracks-title">Research</h3>
-              <p class="track-text">Calling all undergraduates interested in research! Come explore the fields of research within computer science. You will get to work hands-on with faculty researchers and peers to address social issues using technology and research! This track is a separate 3-day event taking place during Technica weekend.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
-            <div class="tracks-card beginner-border h-100">
-              <div class="img-holder">
-                <img src="./img/flower-basket-icon.svg" alt="simple flower basket sketch">
-              </div>
-              <h3 class="tracks-title">Beginner</h3>
-              <p class="track-text">New to hackathons? Don't know how to code? No worries! You'll be provided with dedicated resources to help you be successful at Technica and beyond. This track begins with exclusive workshops a few weeks before Technica, and includes everything from an introduction to hackathons to universal coding and logic concepts.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
-            <div class="tracks-card hardware-border h-100">
-              <div class="img-holder">
-                <img src="./img/cottage-icon.svg" alt="simple cottage home sketch">
-              </div>
-              <h3 class="tracks-title">Hardware</h3>
-              <p class="track-text">Spark up your project with some hardware! We’ll provide you with the resources needed to kickstart your own hardware projects and master the fundamentals from the ground up. This includes a kit with instructional materials and personalized sessions to help you code and build your own hacks!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="faq section">
-      <div class="container faq-container" id="faq">
-        <h1 class="header">FAQ</h1>
-        <div class="row">
-          <div class="col-md">
-            <div class="accordion">
-              <h4>What is a "hackathon"?</h4>
-              <div class="faq-toggle-icon"></div>
-            </div>
-            <div class="panel">
-              <p>A hackathon is a technology-focused event where individuals and teams work on new projects in a short period of time. You can build anything you want. An app, a robot, a website. The only limit is your imagination!</p>
-            </div>
-            <div class="accordion">
-              <h4>Why a hackathon for underrepresented genders?</h4>
-              <div class="faq-toggle-icon"></div>
-            </div>
-            <div class="panel">
-              <p>People of a variety of genders are underrepresented in the tech world, and it’s up to everyone to change that! Technica’s goal is to create a welcoming environment where people from underrepresented genders can build cool projects and share their stories! You can learn more about gender diversity <a target="_blank" class="link" href="https://genderrights.org.au/information-hub/what-is-gender-diversity/"><b>here</b></a>.</p>
-            </div>
-            <div class="accordion">
-                <h4>Do I need to know how to code?</h4>
-                <div class="faq-toggle-icon"></div>
-            </div>
-            <div class="panel">
-              <p>
-                <b>No</b>, you don’t need ANY coding experience to participate! If you do, that’s great! If you don’t, that’s also great!
-                <b>Students of all skill levels are encouraged to attend</b>, even if you’ve never written a line of code.
-                We’re very beginner friendly and are prepared to teach you everything you need to learn right here. We also have a beginners track to further help beginner coders start their tech journey!
-              </p>
-            </div>
-            <div class="accordion">
-              <h4>When is Technica?</h4>
-              <div class="faq-toggle-icon"></div>
-            </div>
-            <div class="panel">
-              <p>Technica will be held from <b>November 13-14th 2021</b> over a 24 hour period.</p>
-            </div>
-            <div class="accordion">
-              <h4>What will Technica be like this year?</h4>
-            <div class="faq-toggle-icon"></div>
-            </div>
-            <div class="panel">
-              <p>This year Technica will be integrating a hybrid model as we continue adapting through the pandemic. This means <b>Technica will be held both online and in person - not just at UMD</b>! More information on our hybrid model will be available on this website and on social media in June, so stay tuned and get excited!</p>
-            </div>
-            <div class="accordion">
-              <h4>What is a hybrid hackathon?</h4>
-              <div class="faq-toggle-icon"></div>
-            </div>
-            <div class="panel">
-              <p>A hybrid hackathon is a hackathon that provides <b>the ability to attend both in-person and virtually</b>. This year, Technica is pioneering the concept of a hybrid hackathon in order to maintain the electric atmosphere of an in-person hackathon that our community knows and loves, but also expand the ability to participate to hackers regardless of location.<p>
-            </div>
-            </div>
+      <div class="container">
+        <h1 class="header">Frequently Asked Questions</h1>
+        <div class="container faq-container" id="faq">
+          <div class="row">
             <div class="col-md">
               <div class="accordion">
-                <h4>Who can attend Technica?</h4>
+                <h4>What is a "hackathon"?</h4>
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>Anyone who identifies as a marginalized gender including, but not limited to, cisgender women, transgender women, transgender men, non-binary individuals, gender neutral individuals, genderqueer individuals, agender individuals, pangender individuals, or a gender who are otherwise underrepresented in tech may register as a hacker! All ages are welcome. Additionally, all participants must follow the <a target="_blank" class="link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"><b>MLH code of conduct</b></a> and <a target="_blank" class="link" href="./files/terms.pdf"><b>Technica code of conduct</b></a>.</p>
+                <p>A hackathon is a technology-focused event where individuals and teams work on new projects in a short period of time. You can build anything you want. An app, a robot, a website. The only limit is your imagination!</p>
               </div>
               <div class="accordion">
-                <h4>How much does it cost to attend Technica?</h4>
+                <h4>Why a hackathon for underrepresented genders?</h4>
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>Technica is <b>FREE</b> for all participants, thanks to our amazing sponsors! Participation includes a lot of <b>free gear and swag</b>!</p>
+                <p>People of a variety of genders are underrepresented in the tech world, and it’s up to everyone to change that! Technica’s goal is to create a welcoming environment where people from underrepresented genders can build cool projects and share their stories! You can learn more about gender diversity <a target="_blank" class="link" href="https://genderrights.org.au/information-hub/what-is-gender-diversity/"><b>here</b></a>.</p>
               </div>
               <div class="accordion">
-                <h4>What if I'm under 18?</h4>
-                <div class="faq-toggle-icon"></div>
-              </div>
-              <div class="panel">
-                <p>Under 18 and still want to code with us? Don’t worry! <b>Technica is very minor friendly</b>; we have accommodations for participants under 18!</p>
-              </div>
-              <!--<div class="accordion">
-                <h4>What will I need?</h4>
-                <div class="faq-toggle-icon"></div>
-              </div>
-              <div class="panel">
-                <p>To complete the pre-registration process you will need a <b>valid student or government-issued ID card and your resume</b>. Since this year Technica will be hosted virtually, all you will need is your <b>hacking device (laptop, desktop, tablet, etc.) and Wi-Fi</b>!</p>
-                </div>-->
-              <div class="accordion">
-                <h4>How do teams work?</h4>
-                <div class="faq-toggle-icon"></div>
+                  <h4>Do I need to know how to code?</h4>
+                  <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
                 <p>
-                You can work on a project on your own, or you can work with a team.
-                Teams can be formed prior to the day of the hackathon with other participants, or at the team formation event before official hacking begins. <b>You can meet other hackers in the <a class="link" href="https://www.facebook.com/groups/technicahackers/" target="_blank">Technica Hacker Facebook group</a> and Slack workspace.</b>
-                Team size must not exceed four members, per MLH rules.
+                  <b>No</b>, you don’t need ANY coding experience to participate! If you do, that’s great! If you don’t, that’s also great!
+                  <b>Students of all skill levels are encouraged to attend</b>, even if you’ve never written a line of code.
+                  We’re very beginner friendly and are prepared to teach you everything you need to learn right here. We also have a beginners track to further help beginner coders start their tech journey!
                 </p>
               </div>
-              <!--<div class="accordion">
-                <h4>How do I get swag?</h4>
-                <div class="faq-toggle-icon"></div>
-              </div>
-              <div class="panel">
-                <p>To get swag, submit a hack during Technica or attend at least 3 events, meetups, and/or workshops during Technica!</p>
-              </div>-->
               <div class="accordion">
-                <h4>Who can I reach out to with questions or concerns?</h4>
+                <h4>When is Technica?</h4>
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>If you have any special needs you feel our organizers should be aware of or other questions or concerns, please <b>chat</b> with us in the bottom right-hand corner or email <a class="link" href="mailto:hello@gotechnica.org"><b>hello@gotechnica.org</b></a>.</p>
+                <p>Technica will be held from <b>November 13-14th 2021</b> over a 24 hour period.</p>
               </div>
               <div class="accordion">
-                <h4>How can I register?</h4>
+                <h4>What will Technica be like this year?</h4>
+              <div class="faq-toggle-icon"></div>
+              </div>
+              <div class="panel">
+                <p>This year Technica will be integrating a hybrid model as we continue adapting through the pandemic. This means <b>Technica will be held both online and in person - not just at UMD</b>! More information on our hybrid model will be available on this website and on social media in June, so stay tuned and get excited!</p>
+              </div>
+              <div class="accordion">
+                <h4>What is a hybrid hackathon?</h4>
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>Registration for Technica 2021 is open as of June 1st, 2021! You can register <a class="link" href="https://register.gotechnica.org"><b>here</b></a>.</p>
+                <p>A hybrid hackathon is a hackathon that provides <b>the ability to attend both in-person and virtually</b>. This year, Technica is pioneering the concept of a hybrid hackathon in order to maintain the electric atmosphere of an in-person hackathon that our community knows and loves, but also expand the ability to participate to hackers regardless of location.<p>
+              </div>
+              </div>
+              <div class="col-md">
+                <div class="accordion">
+                  <h4>Who can attend Technica?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>Anyone who identifies as a marginalized gender including, but not limited to, cisgender women, transgender women, transgender men, non-binary individuals, gender neutral individuals, genderqueer individuals, agender individuals, pangender individuals, or a gender who are otherwise underrepresented in tech may register as a hacker! All ages are welcome. Additionally, all participants must follow the <a target="_blank" class="link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"><b>MLH code of conduct</b></a> and <a target="_blank" class="link" href="./files/terms.pdf"><b>Technica code of conduct</b></a>.</p>
+                </div>
+                <div class="accordion">
+                  <h4>How much does it cost to attend Technica?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>Technica is <b>FREE</b> for all participants, thanks to our amazing sponsors! Participation includes a lot of <b>free gear and swag</b>!</p>
+                </div>
+                <div class="accordion">
+                  <h4>What if I'm under 18?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>Under 18 and still want to code with us? Don’t worry! <b>Technica is very minor friendly</b>; we have accommodations for participants under 18!</p>
+                </div>
+                <!--<div class="accordion">
+                  <h4>What will I need?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>To complete the pre-registration process you will need a <b>valid student or government-issued ID card and your resume</b>. Since this year Technica will be hosted virtually, all you will need is your <b>hacking device (laptop, desktop, tablet, etc.) and Wi-Fi</b>!</p>
+                  </div>-->
+                <div class="accordion">
+                  <h4>How do teams work?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>
+                  You can work on a project on your own, or you can work with a team.
+                  Teams can be formed prior to the day of the hackathon with other participants, or at the team formation event before official hacking begins. <b>You can meet other hackers in the <a class="link" href="https://www.facebook.com/groups/technicahackers/" target="_blank">Technica Hacker Facebook group</a> and Slack workspace.</b>
+                  Team size must not exceed four members, per MLH rules.
+                  </p>
+                </div>
+                <!--<div class="accordion">
+                  <h4>How do I get swag?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>To get swag, submit a hack during Technica or attend at least 3 events, meetups, and/or workshops during Technica!</p>
+                </div>-->
+                <div class="accordion">
+                  <h4>Who can I reach out to with questions or concerns?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>If you have any special needs you feel our organizers should be aware of or other questions or concerns, please <b>chat</b> with us in the bottom right-hand corner or email <a class="link" href="mailto:hello@gotechnica.org"><b>hello@gotechnica.org</b></a>.</p>
+                </div>
+                <div class="accordion">
+                  <h4>How can I register?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p>Registration for Technica 2021 is open as of June 1st, 2021! You can register <a class="link" href="https://register.gotechnica.org"><b>here</b></a>.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
     <div role="contentinfo">
+      <div class="footer-background">
+        <img src="img/footer-home.svg" alt="living room with a couch and picture frames of happy characters and a window showing the cloudy sky" style="width: 100%;">
+      </div>
       <div class="contact-footer">
         <div class="contact section text-center">
           <div class="container">
@@ -585,51 +580,48 @@
             <div class="social-buttons">
               <a href="https://www.youtube.com/channel/UC-Wo4UqhGUKQEp4o-51VMIw/" target="_blank">
                 <div class="blue-circle1">
-                  <img src="./img/w_youtube.svg" alt="YouTube icon">
+                  <img src="./img/socials/w_youtube.svg" alt="YouTube icon">
                 </div>
               </a>
               <a href="https://twitter.com/gotechnica?lang=en" target="_blank">
                 <div class="blue-circle2">
-                  <img src="./img/w_twitter.svg" alt="Twitter icon">
+                  <img src="./img/socials/w_twitter.svg" alt="Twitter icon">
                 </div>
               </a>
               <a href="https://www.facebook.com/gotechnica/" target="_blank">
                 <div class="blue-circle3">
-                  <img src="./img/w_facebook.svg" alt="Facebook icon">
+                  <img src="./img/socials/w_facebook.svg" alt="Facebook icon">
                 </div>
               </a>
               <a href="https://www.instagram.com/gotechnica/" target="_blank">
                 <div class="purple-circle1">
-                  <img src="./img/w_instagram.svg" alt="Instagram icon">
+                  <img src="./img/socials/w_instagram.svg" alt="Instagram icon">
                 </div>
               </a>
               <a href="https://www.tiktok.com/@gotechnica?" target="_blank">
                 <div class="purple-circle2">
-                  <img src="./img/w_tiktok.svg" alt="TikTok icon">
+                  <img src="./img/socials/w_tiktok.svg" alt="TikTok icon">
                 </div>
               </a>
               <a href="https://medium.com/gotechnica" target="_blank" >
                 <div class="pink-circle1">
-                  <img src="./img/w_medium.svg" alt="Medium icon">
+                  <img src="./img/socials/w_medium.svg" alt="Medium icon">
                 </div>
               </a>
               <a href="https://linkedin.com/company/gotechnica" target="_blank">
                 <div class="pink-circle2">
-                  <img src="./img/w_linkedin.svg" alt="LinkedIn icon">
+                  <img src="./img/socials/w_linkedin.svg" alt="LinkedIn icon">
                 </div>
               </a>
             </div>
           </div>
+          <div class="container" style="padding: 1%;">
+            <div id="footer-links">
+              <a href="sponsor.html">Sponsor</a> | <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> | <a href="donate.html">Donate</a>
+            </div>
+            <span style="opacity: .7">Copyright © 2021 Technica</span>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="footer" style="background-color: #E9E3ED;">
-      <div class="container" style="padding: 1%;">
-        <div id="footer-links">
-          <a href="sponsor.html">Sponsor</a> | <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> | <a href="donate.html">Donate</a>
-        </div>
-        <span style="opacity: .7">Copyright © 2021 Technica</span>
       </div>
     </div>
 
