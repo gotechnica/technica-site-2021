@@ -87,6 +87,8 @@ body {
   position: relative;
 }
 
+
+
 // *** navbar ***
 #navbar {
   background-color: white;
@@ -171,6 +173,16 @@ body {
 }
 
 // *** hero section ***
+
+.hero {
+  background-image: url("../img/hero/hero-cottage.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 130rem;
+  background-color: $bg-green;
+
+}
+
 .hero-cottage,
 .hero-clouds {
   position: absolute;
@@ -345,11 +357,7 @@ body {
 #about {
   position: relative;
   z-index: 5;
-  margin-top: 40%;
 
-  @media only screen and (min-width: 1810px) {
-    margin-top: 1000px;
-  }
 }
 
 .intro-container {
