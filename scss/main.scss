@@ -27,6 +27,15 @@ $animation-length: 80s;
   }
 }
 
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @mixin dinpro-text($size, $weight, $color) {
   font-family: DINPro;
   font-size: $size;
@@ -162,6 +171,7 @@ body {
 }
 
 // *** hero section ***
+
 .hero-cottage,
 .hero-clouds {
   position: absolute;
@@ -353,11 +363,162 @@ body {
 }
 
 // *** what can you do section ***
+
+@keyframes expand {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: auto;
+  }
+}
+@keyframes unexpand {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: auto;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
 
 .what-can-you-do {
+  /* text box */
+
+  .content-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .arrow-img {
+    margin-left: 0.5rem;
+  }
+
+  .expand-btn {
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important;
+
+    &.btn {
+      background-color: $bg-green;
+      width: 20%;
+      color: #000;
+    }
+  }
+
+  .expand-btn:hover {
+    cursor: pointer;
+  }
+
+  .collapse-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: #000;
+    }
+
+    &.btn {
+      background-color: $bg-green;
+      width: 20%;
+      color: #000;
+    }
+  }
+
+  .collapse-btn:hover {
+    cursor: pointer;
+  }
+
+  .tab-content {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 33px;
+    padding: 2rem;
+
+    &.expanded {
+      animation: expand 0.5s;
+      height: auto;
+
+      .tab-pane > .expanded-content {
+        animation: fadein 0.5s ease;
+      }
+
+      .expand-btn {
+        opacity: 0;
+      }
+
+      .collapse-btn {
+        animation: fadein 0.5s ease;
+        opacity: 1;
+      }
+    }
+
+    &.unexpanded {
+      animation: unexpand 0.5s;
+      height: 30rem;
+
+      .collapse-btn {
+        animation: fadeout 0.5s ease;
+        opacity: 0;
+      }
+
+      @media only screen and (max-width: 991px) {
+        height: 37rem;
+      }
+
+      @media only screen and (max-width: 767px) {
+        height: 43rem;
+      }
+
+      .tab-pane > .expanded-content {
+        opacity: 0;
+      }
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  .content-img {
+    margin: 2rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .content-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .content-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .what-can-you-do {
+      height: 50rem;
+    }
+
+    .tab-content {
+      height: 35rem;
+    }
+  }
+
+  /* tabs */
   .nav {
     display: flex;
     justify-content: center;
@@ -367,6 +528,13 @@ a:hover {
     flex: 1;
     display: flex;
     justify-content: center;
+  }
+
+  .tab-container.blue {
+    border: solid 0.5rem $hero-blue;
+    border-left: none;
+    border-right: none;
+    border-top: none;
   }
 
   .tab-container:first-child > span {
@@ -384,7 +552,7 @@ a:hover {
 
   .tab-content {
     width: 100%;
-    height: 20rem;
+    height: 10rem;
     background-color: white;
     border-radius: 33px;
     padding: 2rem;
@@ -396,7 +564,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $lavender;
   }
 
   .tab {
@@ -408,24 +575,20 @@ a:hover {
     color: black;
 
     .radio {
-      width: 2.5rem;
-      height: 2.5rem;
-      background-color: white;
+      width: 4rem;
+      height: 4rem;
+      background-color: #fff;
       border-radius: 50%;
     }
   }
   .tab.active {
-    animation: fadein 1.25s;
+    animation: fadein 1.5s;
 
     .title {
-      border: solid 0.5rem;
-      border-left: none;
-      border-top: none;
-      border-right: none;
       color: black;
 
       .radio {
-        border: solid 0.2rem;
+        border: solid 0.3rem;
       }
 
       &.blue {
@@ -436,21 +599,34 @@ a:hover {
         border-color: $pink;
       }
 
-      &.orange {
-        border-color: $orange;
+      &.purple {
+        border-color: $lavender;
       }
     }
 
     .radio.pink {
       border-color: $pink;
     }
-    .radio.orange {
-      border-color: $orange;
+    .radio.purple {
+      border-color: $lavender;
     }
     .radio.blue {
       border-color: $hero-blue;
     }
   }
+}
+
+.link-green,
+.link-green:visited {
+  font-weight: bold;
+  color: $bg-green;
+}
+
+.link-green:hover {
+  color: $bg-green;
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 // *** testimonials section ***

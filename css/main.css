@@ -5,6 +5,12 @@
   to {
     opacity: 1; } }
 
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
 .btn {
   font-family: DINPro;
   font-size: 140%;
@@ -261,78 +267,174 @@ body {
 .about-text {
   padding-bottom: 2.5rem; }
 
+@keyframes expand {
+  0% {
+    height: auto; }
+  100% {
+    height: auto; } }
+
+@keyframes unexpand {
+  0% {
+    height: auto; }
+  100% {
+    height: auto; } }
+
 a:hover {
   text-decoration: none; }
 
-.what-can-you-do .nav {
-  display: flex;
-  justify-content: center; }
-
-.what-can-you-do .tab-container {
-  flex: 1;
-  display: flex;
-  justify-content: center; }
-
-.what-can-you-do .tab-container:first-child > span {
-  margin-right: auto; }
-
-.what-can-you-do .tab-container:last-child > span {
-  margin-left: auto; }
-
-.what-can-you-do .nav-tabs {
-  border-bottom: none;
-  margin-bottom: 0.5rem; }
-
-.what-can-you-do .tab-content {
-  width: 100%;
-  height: 20rem;
-  background-color: white;
-  border-radius: 33px;
-  padding: 2rem; }
-
-.what-can-you-do .title {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #9c8da5; }
-
-.what-can-you-do .tab {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color: black; }
-  .what-can-you-do .tab .radio {
-    width: 2.5rem;
-    height: 2.5rem;
+.what-can-you-do {
+  /* text box */
+  /* tabs */ }
+  .what-can-you-do .content-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem; }
+  .what-can-you-do .arrow-img {
+    margin-left: 0.5rem; }
+  .what-can-you-do .expand-btn {
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important; }
+    .what-can-you-do .expand-btn.btn {
+      background-color: #b5d5b2;
+      width: 20%;
+      color: #000; }
+  .what-can-you-do .expand-btn:hover {
+    cursor: pointer; }
+  .what-can-you-do .collapse-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .what-can-you-do .collapse-btn a {
+      color: #000; }
+    .what-can-you-do .collapse-btn.btn {
+      background-color: #b5d5b2;
+      width: 20%;
+      color: #000; }
+  .what-can-you-do .collapse-btn:hover {
+    cursor: pointer; }
+  .what-can-you-do .tab-content {
+    width: 100%;
+    height: auto;
     background-color: white;
-    border-radius: 50%; }
-
-.what-can-you-do .tab.active {
-  animation: fadein 1.25s; }
-  .what-can-you-do .tab.active .title {
-    border: solid 0.5rem;
+    border-radius: 33px;
+    padding: 2rem; }
+    .what-can-you-do .tab-content.expanded {
+      animation: expand 0.5s;
+      height: auto; }
+      .what-can-you-do .tab-content.expanded .tab-pane > .expanded-content {
+        animation: fadein 0.5s ease; }
+      .what-can-you-do .tab-content.expanded .expand-btn {
+        opacity: 0; }
+      .what-can-you-do .tab-content.expanded .collapse-btn {
+        animation: fadein 0.5s ease;
+        opacity: 1; }
+    .what-can-you-do .tab-content.unexpanded {
+      animation: unexpand 0.5s;
+      height: 30rem; }
+      .what-can-you-do .tab-content.unexpanded .collapse-btn {
+        animation: fadeout 0.5s ease;
+        opacity: 0; }
+      @media only screen and (max-width: 991px) {
+        .what-can-you-do .tab-content.unexpanded {
+          height: 37rem; } }
+      @media only screen and (max-width: 767px) {
+        .what-can-you-do .tab-content.unexpanded {
+          height: 43rem; } }
+      .what-can-you-do .tab-content.unexpanded .tab-pane > .expanded-content {
+        opacity: 0; }
+  .what-can-you-do .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem; }
+  .what-can-you-do .content-img {
+    margin: 2rem; }
+  @media only screen and (max-width: 767px) {
+    .what-can-you-do .content-heading {
+      font-size: 2rem;
+      font-weight: bold; }
+    .what-can-you-do .tab-content {
+      height: auto; } }
+  @media only screen and (max-width: 335px) {
+    .what-can-you-do .content-heading {
+      font-size: 2rem;
+      font-weight: bold; }
+    .what-can-you-do .what-can-you-do {
+      height: 50rem; }
+    .what-can-you-do .tab-content {
+      height: 35rem; } }
+  .what-can-you-do .nav {
+    display: flex;
+    justify-content: center; }
+  .what-can-you-do .tab-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+  .what-can-you-do .tab-container.blue {
+    border: solid 0.5rem #8cd8ed;
     border-left: none;
-    border-top: none;
     border-right: none;
+    border-top: none; }
+  .what-can-you-do .tab-container:first-child > span {
+    margin-right: auto; }
+  .what-can-you-do .tab-container:last-child > span {
+    margin-left: auto; }
+  .what-can-you-do .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 0.5rem; }
+  .what-can-you-do .tab-content {
+    width: 100%;
+    height: 10rem;
+    background-color: white;
+    border-radius: 33px;
+    padding: 2rem; }
+  .what-can-you-do .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .what-can-you-do .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
     color: black; }
-    .what-can-you-do .tab.active .title .radio {
-      border: solid 0.2rem; }
-    .what-can-you-do .tab.active .title.blue {
-      border-color: #8cd8ed; }
-    .what-can-you-do .tab.active .title.pink {
+    .what-can-you-do .tab .radio {
+      width: 4rem;
+      height: 4rem;
+      background-color: #fff;
+      border-radius: 50%; }
+  .what-can-you-do .tab.active {
+    animation: fadein 1.5s; }
+    .what-can-you-do .tab.active .title {
+      color: black; }
+      .what-can-you-do .tab.active .title .radio {
+        border: solid 0.3rem; }
+      .what-can-you-do .tab.active .title.blue {
+        border-color: #8cd8ed; }
+      .what-can-you-do .tab.active .title.pink {
+        border-color: #ed648d; }
+      .what-can-you-do .tab.active .title.purple {
+        border-color: #9c8da5; }
+    .what-can-you-do .tab.active .radio.pink {
       border-color: #ed648d; }
-    .what-can-you-do .tab.active .title.orange {
-      border-color: #f9b7ae; }
-  .what-can-you-do .tab.active .radio.pink {
-    border-color: #ed648d; }
-  .what-can-you-do .tab.active .radio.orange {
-    border-color: #f9b7ae; }
-  .what-can-you-do .tab.active .radio.blue {
-    border-color: #8cd8ed; }
+    .what-can-you-do .tab.active .radio.purple {
+      border-color: #9c8da5; }
+    .what-can-you-do .tab.active .radio.blue {
+      border-color: #8cd8ed; }
+
+.link-green,
+.link-green:visited {
+  font-weight: bold;
+  color: #b5d5b2; }
+
+.link-green:hover {
+  color: #b5d5b2;
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none; }
 
 .testimonials {
   position: relative;
