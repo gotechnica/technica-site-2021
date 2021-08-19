@@ -549,6 +549,18 @@ a:hover {
   color: #000;
 }
 
+@media only screen and (max-width: 982px) {
+  .what-can-you-do .collapse-btn.btn {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .what-can-you-do .collapse-btn.btn {
+    width: 70%;
+  }
+}
+
 .what-can-you-do .collapse-btn:hover {
   cursor: pointer;
 }

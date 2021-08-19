@@ -437,6 +437,14 @@ a:hover {
       background-color: $bg-green;
       width: 20%;
       color: #000;
+
+      @media only screen and (max-width: 982px){
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 395px){
+        width: 70%;
+      }
     }
   }
 
