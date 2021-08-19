@@ -231,6 +231,15 @@ body {
 
   @media only screen and (max-width: 767px) {
     margin-top: -200px;
+    padding-left: 5rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    padding: 3rem 0rem 0rem 2rem;
+  }
+
+  @media only screen and (max-width: 395px) {
+    padding: 3rem 0rem 0rem 2rem;
   }
 
   #theme-logo {
@@ -240,6 +249,7 @@ body {
       padding-top: 10%;
     }
   }
+
   #hero-tagline {
     font-size: 150%;
     width: 55%;
@@ -345,6 +355,7 @@ body {
 .intro-container {
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
+  margin-top: 40rem;
   border-radius: 33px;
 }
 

@@ -274,6 +274,19 @@ body {
 @media only screen and (max-width: 767px) {
   .hero-information {
     margin-top: -200px;
+    padding-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hero-information {
+    padding: 3rem 0rem 0rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .hero-information {
+    padding: 3rem 0rem 0rem 2rem;
   }
 }
 
@@ -418,6 +431,7 @@ body {
 .intro-container {
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
+  margin-top: 40rem;
   border-radius: 33px;
 }
 
