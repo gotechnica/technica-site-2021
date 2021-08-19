@@ -1051,7 +1051,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 960px) {
   .polaroid-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
