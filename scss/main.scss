@@ -181,8 +181,8 @@ body {
 }
 
 .hero {
+  background-color: $bg-green;
   position: relative;
-  overflow: hidden;
   display: grid;
   grid-template-areas: 'overlap-content';
   grid-area: overlap-content;
@@ -347,9 +347,6 @@ body {
   padding: 3%;
   border-radius: 33px;
 }
-.about-text {
-  padding-bottom: 2.5rem;
-}
 
 // *** what can you do section ***
 
@@ -389,8 +386,8 @@ a:hover {
 
   .expand-btn {
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
 
     &.btn {
@@ -414,8 +411,8 @@ a:hover {
 
   .collapse-btn {
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
 
     a {
@@ -560,7 +557,7 @@ a:hover {
 
   .tab-content {
     width: 100%;
-    height: 10rem;
+    height: 20rem;
     background-color: white;
     border-radius: 33px;
     padding: 2rem;
@@ -583,14 +580,14 @@ a:hover {
     color: black;
 
     .radio {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
       background-color: #fff;
       border-radius: 50%;
     }
   }
   .tab.active {
-    animation: fadein 1.5s;
+    animation: fadein 1.25s;
 
     .title {
       color: black;
@@ -907,8 +904,9 @@ a:hover {
     flex-direction: row;
   }
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 960px) {
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     padding: 0rem 0rem 0rem 0rem;
   }
@@ -931,17 +929,11 @@ a:hover {
     width: 10rem !important;
   }
 
-  /*@media only screen and (max-width: 950px) {
-    width: 15rem !important;
-
-    &.polaroid1 {
-      margin-left: 15rem !important;
-    }
-
+  @media only screen and (max-width: 950px) {
     &.polaroid2 {
-      margin-right: 15rem !important;
+      margin-left: -2rem !important;
     }
-  }*/
+  }
 }
 
 @media only screen and (max-width: 991px) {

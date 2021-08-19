@@ -198,8 +198,8 @@ body {
 }
 
 .hero {
+  background-color: #b5d5b2;
   position: relative;
-  overflow: hidden;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'overlap-content';
@@ -421,10 +421,6 @@ body {
   border-radius: 33px;
 }
 
-.about-text {
-  padding-bottom: 2.5rem;
-}
-
 @-webkit-keyframes expand {
   0% {
     height: auto;
@@ -484,10 +480,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -517,12 +513,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -692,7 +686,7 @@ a:hover {
 
 .what-can-you-do .tab-content {
   width: 100%;
-  height: 10rem;
+  height: 20rem;
   background-color: white;
   border-radius: 33px;
   padding: 2rem;
@@ -734,15 +728,15 @@ a:hover {
 }
 
 .what-can-you-do .tab .radio {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background-color: #fff;
   border-radius: 50%;
 }
 
 .what-can-you-do .tab.active {
-  -webkit-animation: fadein 1.5s;
-          animation: fadein 1.5s;
+  -webkit-animation: fadein 1.25s;
+          animation: fadein 1.25s;
 }
 
 .what-can-you-do .tab.active .title {
@@ -1086,12 +1080,15 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 960px) {
   .polaroid-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     padding: 0rem 0rem 0rem 0rem;
   }
@@ -1100,17 +1097,6 @@ a:hover {
 .polaroid {
   width: 15rem;
   height: auto;
-  /*@media only screen and (max-width: 950px) {
-    width: 15rem !important;
-
-    &.polaroid1 {
-      margin-left: 15rem !important;
-    }
-
-    &.polaroid2 {
-      margin-right: 15rem !important;
-    }
-  }*/
 }
 
 .polaroid.polaroid1 {
@@ -1127,6 +1113,12 @@ a:hover {
 @media only screen and (max-width: 1225px) {
   .polaroid {
     width: 10rem !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .polaroid.polaroid2 {
+    margin-left: -2rem !important;
   }
 }
 
