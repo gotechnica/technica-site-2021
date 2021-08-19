@@ -87,6 +87,8 @@ body {
   position: relative;
 }
 
+
+
 // *** navbar ***
 #navbar {
   background-color: white;
@@ -171,6 +173,15 @@ body {
 }
 
 // *** hero section ***
+
+.hero {
+  background-image: url("../img/hero/hero-cottage.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 130rem;
+  background-color: $bg-green;
+
+}
 
 .hero-cottage,
 .hero-clouds {
@@ -346,15 +357,11 @@ body {
 #about {
   position: relative;
   z-index: 5;
-  margin-top: 40%;
 
-  @media only screen and (min-width: 1810px) {
-    margin-top: 1000px;
-  }
 }
 
 .intro-container {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.5);
   padding: 3%;
   border-radius: 33px;
 }
@@ -366,18 +373,18 @@ body {
 
 @keyframes expand {
   0% {
-    height: auto;
+      height: auto;
   }
   100% {
-    height: auto;
+      height: auto;
   }
 }
 @keyframes unexpand {
   0% {
-    height: auto;
+      height: auto;
   }
   100% {
-    height: auto;
+      height: auto;
   }
 }
 
@@ -386,7 +393,7 @@ a:hover {
 }
 
 .what-can-you-do {
-  /* text box */
+/* text box */
 
   .content-heading {
     font-size: 2.5rem;
@@ -400,13 +407,10 @@ a:hover {
 
   .expand-btn {
     display: flex;
-    text-align: center;
     justify-content: center;
-    margin: 0 auto;
 
     &.btn {
-      background-color: $bg-green;
-      width: 20%;
+      background-color: transparent;
       color: #000;
     }
   }
@@ -417,17 +421,14 @@ a:hover {
 
   .collapse-btn {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0 auto;
 
     a {
       color: #000;
     }
-
+    
     &.btn {
-      background-color: $bg-green;
-      width: 20%;
+      background-color: transparent;
       color: #000;
     }
   }
@@ -520,7 +521,7 @@ a:hover {
     }
   }
 
-  /* tabs */
+/* tabs */
   .nav {
     display: flex;
     justify-content: center;
@@ -554,7 +555,7 @@ a:hover {
 
   .tab-content {
     width: 100%;
-    height: 10rem;
+    height: 20rem;
     background-color: white;
     border-radius: 33px;
     padding: 2rem;
@@ -577,14 +578,14 @@ a:hover {
     color: black;
 
     .radio {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
       background-color: #fff;
       border-radius: 50%;
     }
   }
   .tab.active {
-    animation: fadein 1.5s;
+    animation: fadein 1.25s;
 
     .title {
       color: black;
@@ -602,7 +603,7 @@ a:hover {
       }
 
       &.purple {
-        border-color: $lavender;
+        border-color: $dark-lavender;
       }
     }
 
@@ -610,7 +611,7 @@ a:hover {
       border-color: $pink;
     }
     .radio.purple {
-      border-color: $lavender;
+      border-color: $dark-lavender;
     }
     .radio.blue {
       border-color: $hero-blue;
@@ -618,18 +619,6 @@ a:hover {
   }
 }
 
-.link-green,
-.link-green:visited {
-  font-weight: bold;
-  color: $bg-green;
-}
-
-.link-green:hover {
-  color: $bg-green;
-  transition: ease 0.3s;
-  opacity: 0.7;
-  text-decoration: none;
-}
 
 // *** testimonials section ***
 .testimonials {
@@ -903,6 +892,7 @@ a:hover {
 
   @media only screen and (max-width: 950px) {
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     padding: 0rem 0rem 0rem 0rem;
   }
@@ -921,21 +911,16 @@ a:hover {
     margin-left: 10rem !important;
   }
 
+
   @media only screen and (max-width: 1225px) {
     width: 10rem !important;
   }
 
-  /*@media only screen and (max-width: 950px) {
-    width: 15rem !important;
-
-    &.polaroid1 {
-      margin-left: 15rem !important;
-    }
-
+  @media only screen and (max-width: 950px) {
     &.polaroid2 {
-      margin-right: 15rem !important;
+      margin-left: -2rem !important;
     }
-  }*/
+  }
 }
 
 @media only screen and (max-width: 991px) {
