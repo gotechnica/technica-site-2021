@@ -116,6 +116,13 @@ body {
   background-color: #f7f3ed !important;
   transition: background-color 200ms linear; }
 
+.hero {
+  background-image: url("../img/hero/hero-cottage.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 130rem;
+  background-color: #b5d5b2; }
+
 .hero-cottage,
 .hero-clouds {
   position: absolute;
@@ -253,19 +260,12 @@ body {
 
 #about {
   position: relative;
-  z-index: 5;
-  margin-top: 40%; }
-  @media only screen and (min-width: 1810px) {
-    #about {
-      margin-top: 1000px; } }
+  z-index: 5; }
 
 .intro-container {
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
   border-radius: 33px; }
-
-.about-text {
-  padding-bottom: 2.5rem; }
 
 @keyframes expand {
   0% {
@@ -293,8 +293,8 @@ a:hover {
     margin-left: 0.5rem; }
   .what-can-you-do .expand-btn {
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto; }
     .what-can-you-do .expand-btn.btn {
       background-color: #b5d5b2;
@@ -304,8 +304,8 @@ a:hover {
     cursor: pointer; }
   .what-can-you-do .collapse-btn {
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto; }
     .what-can-you-do .collapse-btn a {
       color: #000; }
@@ -386,7 +386,7 @@ a:hover {
     margin-bottom: 0.5rem; }
   .what-can-you-do .tab-content {
     width: 100%;
-    height: 10rem;
+    height: 20rem;
     background-color: white;
     border-radius: 33px;
     padding: 2rem; }
@@ -404,12 +404,12 @@ a:hover {
     font-weight: bold;
     color: black; }
     .what-can-you-do .tab .radio {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
       background-color: #fff;
       border-radius: 50%; }
   .what-can-you-do .tab.active {
-    animation: fadein 1.5s; }
+    animation: fadein 1.25s; }
     .what-can-you-do .tab.active .title {
       color: black; }
       .what-can-you-do .tab.active .title .radio {
@@ -646,26 +646,16 @@ a:hover {
   @media only screen and (max-width: 500px) {
     .polaroid-wrapper {
       flex-direction: row; } }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 960px) {
     .polaroid-wrapper {
       flex-direction: row;
+      justify-content: center;
       text-align: center;
       padding: 0rem 0rem 0rem 0rem; } }
 
 .polaroid {
   width: 15rem;
-  height: auto;
-  /*@media only screen and (max-width: 950px) {
-    width: 15rem !important;
-
-    &.polaroid1 {
-      margin-left: 15rem !important;
-    }
-
-    &.polaroid2 {
-      margin-right: 15rem !important;
-    }
-  }*/ }
+  height: auto; }
   .polaroid.polaroid1 {
     transform: rotate(-3deg); }
   .polaroid.polaroid2 {
@@ -674,6 +664,9 @@ a:hover {
   @media only screen and (max-width: 1225px) {
     .polaroid {
       width: 10rem !important; } }
+  @media only screen and (max-width: 950px) {
+    .polaroid.polaroid2 {
+      margin-left: -2rem !important; } }
 
 @media only screen and (max-width: 991px) {
   .registration .btn {
