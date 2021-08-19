@@ -87,8 +87,6 @@ body {
   position: relative;
 }
 
-
-
 // *** navbar ***
 #navbar {
   background-color: white;
@@ -175,12 +173,11 @@ body {
 // *** hero section ***
 
 .hero {
-  background-image: url("../img/hero/hero-cottage.png");
+  background-image: url('../img/hero/hero-cottage.png');
   background-size: 100%;
   background-repeat: no-repeat;
   height: 130rem;
   background-color: $bg-green;
-
 }
 
 .hero-cottage,
@@ -357,11 +354,10 @@ body {
 #about {
   position: relative;
   z-index: 5;
-
 }
 
 .intro-container {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.75);
   padding: 3%;
   border-radius: 33px;
 }
@@ -373,18 +369,18 @@ body {
 
 @keyframes expand {
   0% {
-      height: auto;
+    height: auto;
   }
   100% {
-      height: auto;
+    height: auto;
   }
 }
 @keyframes unexpand {
   0% {
-      height: auto;
+    height: auto;
   }
   100% {
-      height: auto;
+    height: auto;
   }
 }
 
@@ -393,7 +389,7 @@ a:hover {
 }
 
 .what-can-you-do {
-/* text box */
+  /* text box */
 
   .content-heading {
     font-size: 2.5rem;
@@ -408,9 +404,12 @@ a:hover {
   .expand-btn {
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 
     &.btn {
-      background-color: transparent;
+      background-color: $bg-green;
+      width: 20%;
       color: #000;
     }
   }
@@ -422,13 +421,16 @@ a:hover {
   .collapse-btn {
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 
     a {
       color: #000;
     }
-    
+
     &.btn {
-      background-color: transparent;
+      background-color: $bg-green;
+      width: 20%;
       color: #000;
     }
   }
@@ -521,7 +523,7 @@ a:hover {
     }
   }
 
-/* tabs */
+  /* tabs */
   .nav {
     display: flex;
     justify-content: center;
@@ -603,7 +605,7 @@ a:hover {
       }
 
       &.purple {
-        border-color: $dark-lavender;
+        border-color: $lavender;
       }
     }
 
@@ -611,7 +613,7 @@ a:hover {
       border-color: $pink;
     }
     .radio.purple {
-      border-color: $dark-lavender;
+      border-color: $lavender;
     }
     .radio.blue {
       border-color: $hero-blue;
@@ -619,6 +621,18 @@ a:hover {
   }
 }
 
+.link-green,
+.link-green:visited {
+  font-weight: bold;
+  color: $bg-green;
+}
+
+.link-green:hover {
+  color: $bg-green;
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none;
+}
 
 // *** testimonials section ***
 .testimonials {
@@ -910,7 +924,6 @@ a:hover {
     transform: rotate(7deg);
     margin-left: 10rem !important;
   }
-
 
   @media only screen and (max-width: 1225px) {
     width: 10rem !important;
