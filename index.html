@@ -116,10 +116,7 @@
     </script>
   </head>
   <body>
-    <div class="hero-cottage bg-image" alt="cottage on a countryside hill with full trees and pastel lavender">
-      <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%;">
-    </div>
-
+    
     <!-- navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation">
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,7 +138,10 @@
    </nav>
 
     <div class="hero" role="banner">
-      <div class="container">
+      <div class="hero-cottage bg-image" alt="cottage on a countryside hill with full trees and pastel lavender" style="display: flex; grid-area: overlap-content;">
+        <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%; min-height: 100%; object-fit: cover">
+      </div>
+      <div class="hero-text">
         <div class="hero-information">
           <div class="hero-logo">
             <img id="theme-logo" src="img/hero/welcome-home.png" alt="Welcome Home" style="z-index: -1;">

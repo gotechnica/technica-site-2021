@@ -174,29 +174,22 @@ body {
 
 .hero-cottage,
 .hero-clouds {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100vh;
   z-index: 1;
-  @media only screen and (max-width: 767px) {
-    width: 834px;
-    height: 663px;
-    left: -100px;
-    top: -26px;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    width: 834px;
-    height: 663px;
-    left: 0px;
-    top: 69px;
-  }
+  display: flex;
 }
 
 .hero {
   position: relative;
   overflow: hidden;
-  padding-bottom: 10%;
+  display: grid;
+  grid-template-areas: 'overlap-content';
+  grid-area: overlap-content;
+}
+
+.hero .hero-text {
+  grid-area: overlap-content;
 }
 
 @keyframes wait {
@@ -225,6 +218,7 @@ body {
 
 .hero-information {
   position: relative;
+  padding-left: 10rem;
   z-index: 3;
   @include fade-in(600ms);
   #theme-logo {
@@ -346,11 +340,6 @@ body {
 #about {
   position: relative;
   z-index: 5;
-  margin-top: 40%;
-
-  @media only screen and (min-width: 1810px) {
-    margin-top: 1000px;
-  }
 }
 
 .intro-container {

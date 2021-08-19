@@ -189,36 +189,29 @@ body {
 
 .hero-cottage,
 .hero-clouds {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100vh;
   z-index: 1;
-}
-
-@media only screen and (max-width: 767px) {
-  .hero-cottage,
-  .hero-clouds {
-    width: 834px;
-    height: 663px;
-    left: -100px;
-    top: -26px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .hero-cottage,
-  .hero-clouds {
-    width: 834px;
-    height: 663px;
-    left: 0px;
-    top: 69px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero {
   position: relative;
   overflow: hidden;
-  padding-bottom: 10%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'overlap-content';
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: overlap-content;
+}
+
+.hero .hero-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: overlap-content;
 }
 
 @-webkit-keyframes wait {
@@ -261,6 +254,7 @@ body {
 
 .hero-information {
   position: relative;
+  padding-left: 10rem;
   z-index: 3;
   -webkit-animation: wait 600ms, fade-in 800ms 600ms;
           animation: wait 600ms, fade-in 800ms 600ms;
@@ -419,13 +413,6 @@ body {
 #about {
   position: relative;
   z-index: 5;
-  margin-top: 40%;
-}
-
-@media only screen and (min-width: 1810px) {
-  #about {
-    margin-top: 1000px;
-  }
 }
 
 .intro-container {
