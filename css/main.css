@@ -267,9 +267,6 @@ body {
   padding: 3%;
   border-radius: 33px; }
 
-.about-text {
-  padding-bottom: 2.5rem; }
-
 @keyframes expand {
   0% {
     height: auto; }
