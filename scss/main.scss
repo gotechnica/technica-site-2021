@@ -408,6 +408,14 @@ a:hover {
       background-color: $bg-green;
       width: 20%;
       color: #000;
+
+      @media only screen and (max-width: 982px){
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 395px){
+        width: 70%;
+      }
     }
   }
 
@@ -550,6 +558,7 @@ a:hover {
   .nav-tabs {
     border-bottom: none;
     margin-bottom: 0.5rem;
+    align-items: baseline;
   }
 
   .tab-content {
