@@ -93,8 +93,12 @@
         })
       });
 
-      const visitTrackingURL = "https://hugoburbelo.builtwithdark.com/track_visit"
-      $.post(visitTrackingURL, {"date": (new Date().toLocaleDateString()), "type": "landing_page_visit"});
+      
+      // only send tracking events if we're deployed to prod
+      if (window.location.href === "https://gotechnica.org/") {
+        const visitTrackingURL = "https://hugoburbelo.builtwithdark.com/track_visit"
+        $.post(visitTrackingURL, {"date": (new Date().toLocaleDateString()), "type": "landing_page_visit"});
+      }
     </script>
 
     <!-- Intercom Widget -->
