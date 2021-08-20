@@ -186,6 +186,9 @@ th {
 .add-ons {
   overflow-x: visible !important; }
 
+.footer #footer-links a {
+  color: black; }
+
 @media only screen and (max-width: 675px) {
   .stat-number {
     font-size: 5rem; }

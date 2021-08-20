@@ -144,7 +144,7 @@ body {
       left: 0px;
       top: 69px; } }
 
-.hero {
+.hero, .hero-donate {
   position: relative;
   overflow: hidden;
   padding-bottom: 10%; }
@@ -773,14 +773,12 @@ a:hover {
   height: auto;
   z-index: 1; }
 
-.contact-footer {
+.themed-contact-footer {
   z-index: 5;
   position: absolute;
   width: 100%;
   color: black;
-  background-color: #d8c0a0; }
-
-.contact-footer {
+  background-color: #d8c0a0;
   margin-top: 70%; }
 
 @media (min-width: 1750px) {
@@ -862,17 +860,17 @@ a:hover {
 .pink-circle2 {
   background-color: #f27aaa; }
 
-#footer-links a:link,
-#footer-links a:visited {
+#themed-footer-links a:link,
+#themed-footer-links a:visited {
   color: black; }
 
-#footer-links a:hover {
+#themed-footer-links a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
 
 @media (max-width: 575px) {
-  #footer-links {
+  #themed-footer-links {
     font-size: 0.9rem;
     adding: 0.5rem 0rem; } }
 

@@ -306,6 +306,9 @@ h2 {
 .social {
   padding-bottom: 0.1%; }
 
+.footer #footer-links a {
+  color: black; }
+
 .nav-link:hover {
   opacity: 75%;
   transition: 0.3s ease; }
