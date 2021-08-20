@@ -251,8 +251,9 @@ body {
   }
 
   #hero-tagline {
-    font-size: 150%;
+    font-size: 140%;
     width: 55%;
+    margin-top: 1%;
     @media only screen and (max-width: 767px) {
       font-size: 100%;
       width: 95%;
