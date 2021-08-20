@@ -92,6 +92,9 @@
           }
         })
       });
+
+      const visitTrackingURL = "https://hugoburbelo.builtwithdark.com/track_visit"
+      $.post(visitTrackingURL, {"date": (new Date().toLocaleDateString()), "type": "landing_page_visit"});
     </script>
 
     <!-- Intercom Widget -->
