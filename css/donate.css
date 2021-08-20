@@ -1,87 +1,105 @@
 /*@use 'vars';*/
 /*HERO SECTION BEGINS HERE*/
 .container {
-  text-align: center; }
+  text-align: center;
+}
 
 @media only screen and (max-width: 767px) {
   .container {
-    margin-top: -100px; } }
-
+    margin-top: -100px;
+  }
+}
 .hero-clouds {
   position: absolute;
   width: 100%;
   height: 100vh;
-  z-index: 1; }
+  z-index: 1;
+}
 
 @media only screen and (max-width: 767px) {
   .hero-clouds {
     width: 834px;
     height: 663px;
     left: -100px;
-    top: -26px; } }
-
+    top: -26px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .hero-clouds {
     height: 663px;
     left: 0px;
-    top: -5px; } }
-
+    top: -5px;
+  }
+}
 .hero {
   position: relative;
-  padding-bottom: 10%; }
+  padding-bottom: 10%;
+}
 
 @keyframes wait {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0; } }
-
+    opacity: 0;
+  }
+}
 @keyframes fade-in {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
     opacity: 1;
-    pointer-events: auto; } }
-
+    pointer-events: auto;
+  }
+}
 .hero-information {
   margin-top: 200px;
   position: relative;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+}
 
 .hero-information .hero-logo {
   margin-top: -200px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 @media only screen and (max-width: 767px) {
   .hero-information {
-    margin-top: 260px; } }
-
+    margin-top: 260px;
+  }
+}
 .hero-information #technica-logo {
   padding-top: 5%;
   margin-top: 15%;
   margin-bottom: -25px;
-  width: 600px; }
+  width: 600px;
+}
 
 @media only screen and (max-width: 767px) {
   .hero-information #technica-logo {
     padding-top: 22%;
-    margin-top: -650px; } }
-
+    margin-top: -650px;
+  }
+}
 .hero-information #hero-tagline {
   font-size: 150%;
-  width: 55%; }
+  width: 55%;
+}
 
 @media only screen and (max-width: 767px) {
   .hero-information #hero-tagline {
     font-size: 100%;
-    width: 95%; } }
-
+    width: 95%;
+  }
+}
 @media only screen and (min-width: 767px) and (max-width: 1042px) {
   .hero-information #hero-tagline {
-    width: 85%; } }
-
+    width: 85%;
+  }
+}
 .hero-action {
   margin-top: -30px;
   position: relative;
@@ -89,26 +107,31 @@
   opacity: 0;
   animation: fade-in 2s;
   animation-delay: 1.5s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 @media only screen and (min-width: 996px) {
   .hero-action {
-    padding-top: 125px; } }
-
+    padding-top: 125px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .hero-action {
-    padding-top: 125px; } }
-
+    padding-top: 125px;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .hero-action {
-    padding-top: 350px; } }
-
+    padding-top: 350px;
+  }
+}
 .hero-action .big-donate-btn {
   font-family: DINPro;
   font-size: 175%;
   font-weight: bold;
   color: #fff;
-  position: relative; }
+  position: relative;
+}
 
 @media only screen and (max-width: 767px) {
   .hero-action .big-donate-btn {
@@ -117,46 +140,66 @@
     width: 145px;
     height: 40px;
     font-weight: bold;
-    color: #fff; } }
-
+    color: #fff;
+  }
+}
 .hero-action .hero-learn {
   color: #b6a1c4;
-  font-size: 150%; }
+  font-size: 150%;
+}
 
 @media only screen and (max-width: 767px) {
   .hero-action .hero-learn {
-    font-size: 115%; } }
-
+    font-size: 115%;
+  }
+}
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
-    padding-top: 55px; }
-  .hero-action {
-    padding-top: 120px; } }
+    padding-top: 55px;
+  }
 
+  .hero-action {
+    padding-top: 120px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .hero-information .hero-logo {
     margin-top: 225px;
-    margin-bottom: -200px; }
-  .hero-information #technica-logo {
-    width: 500px; }
-  .hero-action {
-    padding-top: 100px; } }
+    margin-bottom: -200px;
+  }
 
+  .hero-information #technica-logo {
+    width: 500px;
+  }
+
+  .hero-action {
+    padding-top: 100px;
+  }
+}
 @media only screen and (max-width: 575px) {
   .hero {
-    padding-bottom: 75px; }
+    padding-bottom: 75px;
+  }
+
   .hero-information {
-    font-size: 150%; }
+    font-size: 150%;
+  }
+
   .hero-information #technica-logo {
     width: 80vw;
-    padding-top: 15%; }
+    padding-top: 15%;
+  }
+
   .hero-information #theme-logo {
     width: 40vw;
-    min-width: 120px; }
+    min-width: 120px;
+  }
+
   .promise-text {
     margin-left: 3%;
-    margin-right: 3%; } }
-
+    margin-right: 3%;
+  }
+}
 /*HERO SECTION ENDS*/
 .donate-button {
   z-index: 999;
@@ -168,65 +211,79 @@
   border-radius: 50px;
   font-size: 30px;
   font-weight: bold;
-  padding: 5px 45px; }
+  padding: 5px 45px;
+}
 
 /* div */
 .donate-btn {
   margin-top: 3%;
   margin-bottom: 3%;
-  font-size: 120%; }
+  font-size: 120%;
+}
 
 .donate-button:hover {
   opacity: 75%;
   text-decoration: none;
   color: #fff;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+}
 
 .b1 {
   padding-bottom: 40px;
-  padding-top: 20px; }
+  padding-top: 20px;
+}
 
 h1 {
-  color: #ff6b98; }
+  color: #ff6b98;
+}
 
 h2 {
   text-align: center;
-  font-size: 60px; }
+  font-size: 60px;
+}
 
 .curved {
   background-color: #ece3f2;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  padding-top: 50px; }
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  padding-top: 50px;
+}
 
 .donate-header {
   padding-top: 50px;
   padding-bottom: 20px;
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 .donate-story {
   background-color: #ece3f2;
   padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+}
 
 .story-header {
-  display: flex; }
+  display: flex;
+}
 
 .story-image {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .donate-promise {
   padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+}
 
 .our-donor {
   padding-top: 10px;
-  text-align: left; }
+  text-align: left;
+}
 
 .promise-image {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 10%;
-  width: 95%; }
+  width: 95%;
+}
 
 .center-block {
   display: block;
@@ -235,37 +292,45 @@ h2 {
   width: 100%;
   height: 100%;
   left: 783px;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 .top-logo {
   width: 100%;
-  object-fit: contain; }
+  object-fit: contain;
+}
 
 .donate-impact {
   background-color: rgba(236, 177, 206, 0.26);
   padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+}
 
 .impact-header {
   color: black;
   text-align: center;
-  padding-bottom: 4%; }
+  padding-bottom: 4%;
+}
 
 .donate-option1-header,
 .donate-option2-header,
 .donate-option3-header {
   display: inline-block;
   font-size: 300%;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+}
 
 .donate-option1-header {
-  color: #6fcbdc; }
+  color: #6fcbdc;
+}
 
 .donate-option2-header {
-  color: #8d7c98; }
+  color: #8d7c98;
+}
 
 .donate-option3-header {
-  color: #f27aaa; }
+  color: #f27aaa;
+}
 
 .donate-option1,
 .donate-option2,
@@ -277,115 +342,158 @@ h2 {
   margin-right: 10%;
   width: 80%;
   height: 100%;
-  min-height: 290px; }
+  min-height: 290px;
+}
 
 .donate-option1 {
-  border: 6px solid #6fcbdc; }
+  border: 6px solid #6fcbdc;
+}
 
 .donate-option2 {
-  border: 6px solid #8d7c98; }
+  border: 6px solid #8d7c98;
+}
 
 .donate-option3 {
   border: 6px solid #f27aaa;
-  max-height: 315px; }
+  max-height: 315px;
+}
 
 .donate-questions {
   background-color: white;
-  padding-top: 3%; }
+  padding-top: 3%;
+}
 
 #email-link-donate:hover {
   opacity: 75%;
   text-decoration: none;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+}
 
 .social,
 .secondary-links {
   background-color: #e4d7ed;
-  padding-bottom: 0.1%; }
+  padding-bottom: 0.1%;
+}
 
 .social {
-  padding-bottom: 0.1%; }
+  padding-bottom: 0.1%;
+}
 
 .nav-link:hover {
   opacity: 75%;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+}
 
 @media only screen and (min-width: 1200px) {
   /* hero section */
   .hero-logo {
-    padding-top: 5px; }
+    padding-top: 5px;
+  }
+
   .hero-title {
-    padding-top: 20px; }
+    padding-top: 20px;
+  }
+
   .promise-image img {
-    max-height: 260px; }
+    max-height: 260px;
+  }
+
   /* impact section */
   .donate-btn {
-    margin-bottom: 0; } }
-
+    margin-bottom: 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
   /* hero section */
   .hero-title {
     padding-top: 20px;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+  }
+
   .our-donor {
     line-height: 1em;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+  }
+
   .promise-image {
     padding-top: 0;
     margin-top: 0;
-    margin-left: 3%; }
-  .donate-impact {
-    margin-top: 3%; } }
+    margin-left: 3%;
+  }
 
+  .donate-impact {
+    margin-top: 3%;
+  }
+}
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
-    padding-top: 5px; }
+    padding-top: 5px;
+  }
+
   .hero-title {
-    padding-top: 20px; }
+    padding-top: 20px;
+  }
+
   /* impact section */
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 8%;
     width: 80%;
     height: 100%;
     min-height: 300px;
-    max-height: 300px; }
-  .donate-btn {
-    margin-bottom: 0; } }
+    max-height: 300px;
+  }
 
+  .donate-btn {
+    margin-bottom: 0;
+  }
+}
 @media only screen and (max-width: 991px) {
   /* impact (+ promise) section */
   .impact-header,
-  .our-donor {
-    font-size: 280%; }
+.our-donor {
+    font-size: 280%;
+  }
+
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 8%;
     margin-left: 2%;
     margin-right: 2%;
     width: 97%;
     height: 100%;
     min-height: 300px;
-    max-height: 300px; }
-  .donate-button {
-    font-size: 120%; }
-  .donate-btn {
-    font-size: 100%; }
-  .donate-questions {
-    margin-top: 20px; } }
+    max-height: 300px;
+  }
 
+  .donate-button {
+    font-size: 120%;
+  }
+
+  .donate-btn {
+    font-size: 100%;
+  }
+
+  .donate-questions {
+    margin-top: 20px;
+  }
+}
 @media only screen and (max-width: 767px) {
   /* impact section */
   .donate-impact {
-    margin-top: 3%; }
+    margin-top: 3%;
+  }
+
   .impact-header {
-    font-size: 280%; }
+    font-size: 280%;
+  }
+
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 8%;
     margin-left: 0;
     margin-right: 0;
@@ -393,99 +501,155 @@ h2 {
     height: 100%;
     min-height: 300px;
     max-height: 300px;
-    font-size: 85%; }
-  .donate-button {
-    font-size: 130%; }
-  .donate-impact {
-    padding-top: 15%; }
-  .donate-questions,
-  .contact-footer {
-    margin-top: 8%;
-    margin-bottom: 8%; }
-  .donate-questions {
-    margin-top: 15%; }
-  .footer {
-    margin-top: 5%; } }
+    font-size: 85%;
+  }
 
+  .donate-button {
+    font-size: 130%;
+  }
+
+  .donate-impact {
+    padding-top: 15%;
+  }
+
+  .donate-questions,
+.contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .donate-questions {
+    margin-top: 15%;
+  }
+
+  .footer {
+    margin-top: 5%;
+  }
+}
 /* mobile */
 @media only screen and (max-width: 575px) {
   .story-header {
-    text-align: center; }
+    text-align: center;
+  }
+
   .promise-image {
     padding-top: 0%;
-    padding-bottom: 0%; }
+    padding-bottom: 0%;
+  }
+
   /* impact section */
   .impact-header {
-    font-size: 280%; }
+    font-size: 280%;
+  }
+
   .donate-option1-header,
-  .donate-option2-header,
-  .donate-option3-header {
+.donate-option2-header,
+.donate-option3-header {
     display: inline-block;
     font-size: 250%;
-    margin-bottom: 10%; }
+    margin-bottom: 10%;
+  }
+
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 6%;
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
     height: 100%;
     min-height: 240px;
-    max-height: 240px; }
+    max-height: 240px;
+  }
+
   .donate-button {
-    font-size: 130%; }
+    font-size: 130%;
+  }
+
   .donate-btn {
     margin-top: 20px;
-    margin-bottom: 20px; }
-  .donate-questions,
-  .contact-footer {
-    margin-top: 8%;
-    margin-bottom: 8%; }
-  .donate-questions {
-    margin-top: 15%; } }
+    margin-bottom: 20px;
+  }
 
+  .donate-questions,
+.contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .donate-questions {
+    margin-top: 15%;
+  }
+}
 @media only screen and (max-width: 447px) {
   .our-donor {
     text-align: center;
-    font-size: 260%; }
+    font-size: 260%;
+  }
+
   .impact-header {
     margin-top: 10%;
-    font-size: 260%; }
-  .spons-code {
-    margin-top: 0; }
-  .donate-questions,
-  .contact-footer {
-    margin-top: 8%;
-    margin-bottom: 8%; }
-  .donate-questions {
-    margin-top: 15%; } }
+    font-size: 260%;
+  }
 
+  .spons-code {
+    margin-top: 0;
+  }
+
+  .donate-questions,
+.contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .donate-questions {
+    margin-top: 15%;
+  }
+}
 @media only screen and (max-width: 375px) {
   .our-donor {
-    font-size: 200%; }
+    font-size: 200%;
+  }
+
   .impact-header {
     padding-top: 10%;
     font-size: 200%;
     line-height: 1.2em;
-    padding-bottom: 7%; }
-  .spons-code {
-    margin-top: 0; }
-  .donate-questions,
-  .contact-footer {
-    margin-top: 8%;
-    margin-bottom: 8%; }
-  .donate-questions {
-    margin-top: 15%; } }
+    padding-bottom: 7%;
+  }
 
+  .spons-code {
+    margin-top: 0;
+  }
+
+  .donate-questions,
+.contact-footer {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .donate-questions {
+    margin-top: 15%;
+  }
+}
 @media only screen and (max-width: 280px) {
   .hero-title {
-    font-size: 125%; }
+    font-size: 125%;
+  }
+
   .hero-information #technica-logo {
-    padding-top: 8%; }
+    padding-top: 8%;
+  }
+
   .donate-questions,
-  .contact-footer {
+.contact-footer {
     margin-top: 8%;
-    margin-bottom: 8%; }
+    margin-bottom: 8%;
+  }
+
   .donate-questions {
-    margin-top: 15%; } }
+    margin-top: 15%;
+  }
+}
+
+/*# sourceMappingURL=donate.css.map */

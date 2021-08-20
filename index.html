@@ -116,10 +116,7 @@
     </script>
   </head>
   <body>
-    <div class="hero-cottage bg-image" alt="cottage on a countryside hill with full trees and pastel lavender">
-      <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%;">
-    </div>
-
+    
     <!-- navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation">
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,7 +138,10 @@
    </nav>
 
     <div class="hero" role="banner">
-      <div class="container">
+      <div class="hero-cottage bg-image" alt="cottage on a countryside hill with full trees and pastel lavender" style="display: flex; grid-area: overlap-content;">
+        <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%; min-height: 100%; object-fit: cover">
+      </div>
+      <div class="hero-text">
         <div class="hero-information">
           <div class="hero-logo">
             <img id="theme-logo" src="img/hero/welcome-home.png" alt="Welcome Home" style="z-index: -1;">
@@ -149,46 +149,48 @@
           </div>
           <p id="hero-tagline"><b>Nov 13-14, 2021 + Hybrid Environment</b></p>
         </div>
+
+        <div class="section">
+          <div class="container intro-container" id="about">
+            <h1 class="header">What is Technica?</h1>
+            <div class="row">
+              <div class="about-text col">
+                <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
+                <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
+                <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
+                <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonials section" id="testimonials">
+          <div class="container">
+            <h1 class="header">Hear From Our Hackers!</h1>
+            <div class="text-center gallery">
+              <div class="general track-flick-item">
+                <p class="testimonial-quote">“Technica was very impactful because of the relationships I made and the significance of building VR software for the next generation of students that like hands-on work.”</p>
+                <img class="testimonial-image" src="img/testimonials/testimonial-anna.jpg" alt="woman with long brown hair smiling in front of brick wall">
+                <p class="testimonial-name"><br>- Anna Blendermann, 2019 hacker</p>
+              </div>
+              <div class="research track-flick-item">
+                <p class="testimonial-quote">"I wish I knew how fast the time was going to go. I felt empowered that I was surrounded by so many intelligent women."</p> 
+                <img class="testimonial-image" src="img/testimonials/testimonial-sophia.jpg" alt="women in suit smiling">
+                <p class="testimonial-name"><br>- Sophia Michael, 2019 hacker</p>
+              </div>
+              <div class="beginner track-flick-item">
+                <p class="testimonial-quote">"My favorite part was working closely with a select group of extremely kind women who were just as passionate for STEM and gender inclusion as I am."</p>
+                <img class="testimonial-image" src="img/testimonials/testimonial-priya.jpg" alt="woman smiling in front of pink ombre flowers">
+                <p class="testimonial-name"><br>- Priya Kalra, 2020 ambassador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
     <div class="main" role="main" style="background-color: #b5d5b2;">
-    <div class="section">
-      <div class="container intro-container" id="about">
-        <h1 class="header">What is Technica?</h1>
-        <div class="row">
-          <div class="about-text col">
-            <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
-            <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
-            <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
-            <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="testimonials section" id="testimonials">
-      <div class="container">
-        <h1 class="header">Hear From Our Hackers!</h1>
-        <div class="text-center gallery">
-          <div class="general track-flick-item">
-            <p class="testimonial-quote">“Technica was very impactful because of the relationships I made and the significance of building VR software for the next generation of students that like hands-on work.”</p>
-            <img class="testimonial-image" src="img/testimonials/testimonial-anna.jpg" alt="woman with long brown hair smiling in front of brick wall">
-            <p class="testimonial-name"><br>- Anna Blendermann, 2019 hacker</p>
-          </div>
-          <div class="research track-flick-item">
-            <p class="testimonial-quote">"I wish I knew how fast the time was going to go. I felt empowered that I was surrounded by so many intelligent women."</p> 
-            <img class="testimonial-image" src="img/testimonials/testimonial-sophia.jpg" alt="women in suit smiling">
-            <p class="testimonial-name"><br>- Sophia Michael, 2019 hacker</p>
-          </div>
-          <div class="beginner track-flick-item">
-            <p class="testimonial-quote">"My favorite part was working closely with a select group of extremely kind women who were just as passionate for STEM and gender inclusion as I am."</p>
-            <img class="testimonial-image" src="img/testimonials/testimonial-priya.jpg" alt="woman smiling in front of pink ombre flowers">
-            <p class="testimonial-name"><br>- Priya Kalra, 2020 ambassador</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="what-can-you-do section" id="what-can-you-do">
       <div class="container">
