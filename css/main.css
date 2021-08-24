@@ -44,11 +44,19 @@
 
 html,
 body {
-  overflow-x: hidden;
   width: 100%; }
 
 body {
-  position: relative; }
+  position: relative;
+  overflow: scroll !important;
+  scrollbar-width: none;
+  /* hide scrollbar on Firefox */
+  -ms-overflow-style: none;
+  /* hide scrollbar on IE 10+ */ }
+
+body::-webkit-scrollbar {
+  display: none;
+  /* hide scrollbar on Safari & Chrome */ }
 
 #navbar {
   background-color: white;
@@ -256,28 +264,55 @@ body {
 #about {
   position: relative;
   z-index: 5;
-  padding: 3.5%; }
-  @media only screen and (min-width: 767px) {
-    #about {
-      padding: 5%; } }
+  padding: 3.5%;
+  /*@media only screen and (min-width: 767px) {
+    padding: 5%;
+  }
+
   @media only screen and (max-width: 1300px) {
-    #about {
-      margin-top: 60rem; } }
+    margin-top: 60rem;
+  }
+
   @media only screen and (max-width: 1500px) {
-    #about {
-      margin-top: 70rem; } }
+    margin-top: 70rem;
+  }
+
   @media only screen and (max-width: 1700px) {
-    #about {
-      margin-top: 80rem; } }
+    margin-top: 80rem;
+  }
+
   @media only screen and (max-width: 2000px) {
-    #about {
-      margin-top: 100rem; } }
+    margin-top: 100rem;
+  }*/ }
 
 .intro-container {
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
   margin-top: 40rem;
   border-radius: 33px; }
+
+.testimonials {
+  position: relative;
+  z-index: 5;
+  margin-top: -1vw;
+  margin-bottom: 4%; }
+
+.testimonial-quote {
+  font-size: 125%; }
+  @media only screen and (max-width: 767px) {
+    .testimonial-quote {
+      padding-top: 100px;
+      font-size: 100%; } }
+
+.testimonial-name {
+  font-size: 115%; }
+  @media only screen and (max-width: 767px) {
+    .testimonial-name {
+      font-size: 100%; } }
+
+.testimonial-image {
+  width: 200px;
+  border-radius: 50%; }
 
 @keyframes expand {
   0% {
@@ -462,29 +497,6 @@ a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
-
-.testimonials {
-  position: relative;
-  z-index: 5;
-  margin-top: -1vw;
-  margin-bottom: 4%; }
-
-.testimonial-quote {
-  font-size: 125%; }
-  @media only screen and (max-width: 767px) {
-    .testimonial-quote {
-      padding-top: 100px;
-      font-size: 100%; } }
-
-.testimonial-name {
-  font-size: 115%; }
-  @media only screen and (max-width: 767px) {
-    .testimonial-name {
-      font-size: 100%; } }
-
-.testimonial-image {
-  width: 200px;
-  border-radius: 50%; }
 
 .tracks {
   position: relative;
