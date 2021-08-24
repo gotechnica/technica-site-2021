@@ -116,38 +116,24 @@ body {
   background-color: #f7f3ed !important;
   transition: background-color 200ms linear; }
 
-.hero {
-  background-image: url("../img/hero/hero-cottage.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 130rem;
-  background-color: #b5d5b2; }
-
 .hero-cottage,
 .hero-clouds {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 1; }
-  @media only screen and (max-width: 767px) {
-    .hero-cottage,
-    .hero-clouds {
-      width: 834px;
-      height: 663px;
-      left: -100px;
-      top: -26px; } }
-  @media only screen and (max-width: 1024px) {
-    .hero-cottage,
-    .hero-clouds {
-      width: 834px;
-      height: 663px;
-      left: 0px;
-      top: 69px; } }
-
-.hero, .hero-donate {
   position: relative;
-  overflow: hidden;
-  padding-bottom: 10%; }
+  width: 100%;
+  z-index: 1;
+  display: flex; }
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-areas: 'overlap-content';
+  grid-area: overlap-content; }
+
+.hero-index {
+  background-color: #b5d5b2; }
+
+.hero-index .hero-text {
+  grid-area: overlap-content; }
 
 @keyframes wait {
   0% {
@@ -164,6 +150,7 @@ body {
 
 .hero-information {
   position: relative;
+  padding-left: 10rem;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
@@ -174,7 +161,14 @@ body {
     width: 500px; }
   @media only screen and (max-width: 767px) {
     .hero-information {
-      margin-top: -200px; } }
+      margin-top: -200px;
+      padding-left: 5rem; } }
+  @media only screen and (max-width: 575px) {
+    .hero-information {
+      padding: 3rem 0rem 0rem 2rem; } }
+  @media only screen and (max-width: 395px) {
+    .hero-information {
+      padding: 3rem 0rem 0rem 2rem; } }
   .hero-information #theme-logo {
     padding-top: 5%;
     margin-top: 10%; }
@@ -182,8 +176,9 @@ body {
       .hero-information #theme-logo {
         padding-top: 10%; } }
   .hero-information #hero-tagline {
-    font-size: 150%;
-    width: 55%; }
+    font-size: 140%;
+    width: 55%;
+    margin-top: 1%; }
     @media only screen and (max-width: 767px) {
       .hero-information #hero-tagline {
         font-size: 100%;
@@ -261,10 +256,23 @@ body {
 #about {
   position: relative;
   z-index: 5; }
+  @media only screen and (max-width: 1300px) {
+    #about {
+      margin-top: 60rem; } }
+  @media only screen and (max-width: 1500px) {
+    #about {
+      margin-top: 70rem; } }
+  @media only screen and (max-width: 1700px) {
+    #about {
+      margin-top: 80rem; } }
+  @media only screen and (max-width: 2000px) {
+    #about {
+      margin-top: 100rem; } }
 
 .intro-container {
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
+  margin-top: 40rem;
   border-radius: 33px; }
 
 @keyframes expand {
@@ -300,6 +308,12 @@ a:hover {
       background-color: #b5d5b2;
       width: 20%;
       color: #000; }
+      @media only screen and (max-width: 982px) {
+        .what-can-you-do .expand-btn.btn {
+          width: 50%; } }
+      @media only screen and (max-width: 395px) {
+        .what-can-you-do .expand-btn.btn {
+          width: 70%; } }
   .what-can-you-do .expand-btn:hover {
     cursor: pointer; }
   .what-can-you-do .collapse-btn {
@@ -313,6 +327,12 @@ a:hover {
       background-color: #b5d5b2;
       width: 20%;
       color: #000; }
+      @media only screen and (max-width: 982px) {
+        .what-can-you-do .collapse-btn.btn {
+          width: 50%; } }
+      @media only screen and (max-width: 395px) {
+        .what-can-you-do .collapse-btn.btn {
+          width: 70%; } }
   .what-can-you-do .collapse-btn:hover {
     cursor: pointer; }
   .what-can-you-do .tab-content {
@@ -383,7 +403,8 @@ a:hover {
     margin-left: auto; }
   .what-can-you-do .nav-tabs {
     border-bottom: none;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    align-items: baseline; }
   .what-can-you-do .tab-content {
     width: 100%;
     height: 20rem;
