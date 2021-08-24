@@ -336,6 +336,9 @@ a:hover {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem; }
+  .what-can-you-do .content-clarification {
+    color: grey;
+    font-size: 0.9rem; }
   .what-can-you-do .arrow-img {
     margin-left: 0.5rem; }
   .what-can-you-do .expand-btn {
