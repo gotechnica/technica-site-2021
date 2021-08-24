@@ -13,18 +13,30 @@
   height: 100vh;
   z-index: 1; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 1024.1px) {
   .hero-clouds {
-    width: 834px;
     height: 663px;
-    left: -100px;
-    top: -26px; } }
+    left: 0px;
+    top: -5px; } }
+
+@media only screen and (min-width: 1400px) {
+  .hero-clouds {
+    height: 850px;
+    left: 0px;
+    top: -5px; } }
 
 @media only screen and (max-width: 1024px) {
   .hero-clouds {
     height: 663px;
     left: 0px;
     top: -5px; } }
+
+@media only screen and (max-width: 767px) {
+  .hero-clouds {
+    width: 834px;
+    height: 663px;
+    left: -100px;
+    top: -26px; } }
 
 .hero-donate {
   background-color: white;
