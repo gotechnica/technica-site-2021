@@ -74,11 +74,13 @@ $animation-length: 80s;
 
 .hero-information {
   margin-top: 200px;
+  padding-left: 0;
   position: relative;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s;
 }
+
 .hero-information .hero-logo {
   margin-top: -200px;
   margin-bottom: 15px;
@@ -91,7 +93,7 @@ $animation-length: 80s;
 }
 .hero-information #technica-logo {
   padding-top: 5%;
-  margin-top: 15%;
+  margin-top: 16%;
   margin-bottom: -25px;
   width: 600px;
 }
