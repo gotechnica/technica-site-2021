@@ -94,6 +94,15 @@ h2 {
 
 #stat-photo {
   margin-left: 3%;
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 6%;
+  }
+
+  @media only screen and (min-width: 991px) {
+    margin-left: 10%;
+    width: 90%;
+  }
 }
 
 // demographics section
@@ -253,6 +262,10 @@ th {
 
 .add-ons {
   overflow-x: visible !important;
+}
+
+.footer #footer-links a{
+  color: black;
 }
 
 // Media Queries
@@ -421,6 +434,15 @@ th {
   transition: 0.3s ease;
 }
 
+@media only screen and (max-width: 1200px) {
+  .intro {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
   // Statistics
@@ -474,5 +496,21 @@ th {
 
   canvas {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  .stat-title {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .stat-number {
+    font-size: 2em !important;
+    margin-top: 2px;
+  }
+
+  .stat-text {
+    font-size: 1em !important;
   }
 }

@@ -181,14 +181,17 @@ body {
 }
 
 .hero {
-  background-color: $bg-green;
   position: relative;
   display: grid;
   grid-template-areas: 'overlap-content';
   grid-area: overlap-content;
 }
 
-.hero .hero-text {
+.hero-index {
+  background-color: $bg-green;
+}
+
+.hero-index .hero-text {
   grid-area: overlap-content;
 }
 
@@ -351,6 +354,11 @@ body {
 #about {
   position: relative;
   z-index: 5;
+  padding: 3.5%;
+
+  @media only screen and (min-width: 767px) {
+    padding: 5%;
+  }
 
   @media only screen and (max-width: 1300px) {
     margin-top: 60rem;
@@ -1101,15 +1109,12 @@ a:hover {
   z-index: 1;
 }
 
-.contact-footer {
+.themed-contact-footer {
   z-index: 5;
   position: absolute;
   width: 100%;
   color: black;
   background-color: #d8c0a0;
-}
-
-.contact-footer {
   margin-top: 70%;
 }
 
@@ -1217,7 +1222,7 @@ a:hover {
   background-color: #f27aaa;
 }
 
-#footer-links {
+#themed-footer-links {
   a:link,
   a:visited {
     color: black;
