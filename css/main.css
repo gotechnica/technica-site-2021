@@ -408,6 +408,9 @@ a:hover {
       @media only screen and (max-width: 767px) {
         .what-can-you-do .tab-content.unexpanded {
           height: 43rem; } }
+      @media only screen and (max-width: 560px) {
+        .what-can-you-do .tab-content.unexpanded {
+          height: 50rem; } }
       .what-can-you-do .tab-content.unexpanded .tab-pane > .expanded-content {
         opacity: 0; }
   .what-can-you-do .content-wrapper {

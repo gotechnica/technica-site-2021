@@ -558,6 +558,10 @@ a:hover {
         height: 43rem;
       }
 
+      @media only screen and (max-width: 560px) {
+        height: 50rem;
+      }
+
       .tab-pane > .expanded-content {
         opacity: 0;
       }
