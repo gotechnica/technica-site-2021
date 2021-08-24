@@ -232,7 +232,7 @@ body::-webkit-scrollbar {
         font-weight: bold;
         color: #fff; } }
   .hero-action .hero-learn {
-    color: #8d7c98;
+    color: white;
     margin-top: 5px;
     font-size: 150%; }
     @media only screen and (max-width: 767px) {
