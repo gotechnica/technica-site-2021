@@ -48,7 +48,6 @@ body {
 
 body {
   position: relative;
-  overflow: scroll !important;
   scrollbar-width: none;
   /* hide scrollbar on Firefox */
   -ms-overflow-style: none;
@@ -171,11 +170,12 @@ body::-webkit-scrollbar {
     .hero-information {
       margin-top: 0px;
       padding-left: 3rem; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (min-width: 580px) {
     .hero-information {
       margin-top: 100px; } }
   @media only screen and (max-width: 575px) {
     .hero-information {
+      margin-top: -100px !important;
       padding: 3rem 0rem 0rem 2rem; } }
   @media only screen and (max-width: 395px) {
     .hero-information {
