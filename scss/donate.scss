@@ -47,8 +47,9 @@ $animation-length: 80s;
   }
 }
 
-.hero {
-  position: relative;
+.hero-donate {
+  background-color: white;
+  overflow: hidden;
   padding-bottom: 10%;
 }
 
@@ -284,6 +285,10 @@ h2 {
 .donate-promise {
   padding-top: 3%;
   padding-bottom: 3%;
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 30%;
+  }
 }
 
 .our-donor {
@@ -491,6 +496,11 @@ h2 {
 }
 
 @media only screen and (max-width: 767px) {
+  /* donor promise */
+  .our-donor {
+    text-align: center;
+  }
+
   /* impact section */
   .donate-impact {
     margin-top: 3%;
@@ -517,18 +527,21 @@ h2 {
     padding-top: 15%;
   }
 
-  .donate-questions,
-  .contact-footer {
+  .donate-questions{
     margin-top: 8%;
     margin-bottom: 8%;
   }
 
   .donate-questions {
-    margin-top: 15%;
+    margin-top: 20%;
   }
 
   .footer {
     margin-top: 5%;
+  }
+
+  .contact-footer {
+    margin: 8% 0 13% 0;
   }
 }
 
@@ -539,11 +552,12 @@ h2 {
   }
   .promise-image {
     padding-top: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
   }
   /* impact section */
   .impact-header {
     font-size: 280%;
+    padding-top: 10%;
   }
   .donate-option1-header,
   .donate-option2-header,
@@ -556,8 +570,9 @@ h2 {
   .donate-option2,
   .donate-option3 {
     padding: 6%;
-    margin-left: 10%;
-    margin-right: 10%;
+    //margin-left: 10%;
+    //margin-right: 10%;
+    margin: 3% 10%;
     width: 80%;
     height: 100%;
     min-height: 240px;
@@ -578,7 +593,11 @@ h2 {
   }
 
   .donate-questions {
-    margin-top: 15%;
+    margin-top: 20%;
+  }
+
+  .contact-footer {
+    margin: 12% 0 18%;
   }
 }
 
@@ -602,7 +621,11 @@ h2 {
   }
 
   .donate-questions {
-    margin-top: 15%;
+    margin-top: 30%;
+  }
+
+  .contact-footer {
+    margin: 15% 0 25% 0;
   }
 }
 
@@ -611,23 +634,22 @@ h2 {
     font-size: 200%;
   }
   .impact-header {
-    padding-top: 10%;
+    padding-top: 20%;
     font-size: 200%;
     line-height: 1.2em;
     padding-bottom: 7%;
   }
+
   .spons-code {
     margin-top: 0;
   }
 
-  .donate-questions,
-  .contact-footer {
-    margin-top: 8%;
-    margin-bottom: 8%;
+  .donate-questions {
+    margin-top: 35%;
   }
 
-  .donate-questions {
-    margin-top: 15%;
+  .contact-header {
+    font-size: 200%;
   }
 }
 
@@ -639,6 +661,14 @@ h2 {
     padding-top: 8%;
   }
 
+  .our-donor {
+    padding-top: 20%;
+  }
+
+  .impact-header, .contact-header {
+    font-size: 200%;
+  }
+
   .donate-questions,
   .contact-footer {
     margin-top: 8%;
@@ -646,6 +676,10 @@ h2 {
   }
 
   .donate-questions {
-    margin-top: 15%;
+    margin-top: 40%;
+  }
+
+  .contact-footer {
+    margin: 20% 0 30% 0;
   }
 }
