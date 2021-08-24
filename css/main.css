@@ -167,10 +167,13 @@ body::-webkit-scrollbar {
     display: block; }
   .hero-information #technica-logo {
     width: 500px; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1024px) {
     .hero-information {
-      margin-top: -200px;
-      padding-left: 5rem; } }
+      margin-top: 0px;
+      padding-left: 3rem; } }
+  @media only screen and (max-width: 768px) {
+    .hero-information {
+      margin-top: 100px; } }
   @media only screen and (max-width: 575px) {
     .hero-information {
       padding: 3rem 0rem 0rem 2rem; } }
@@ -189,14 +192,14 @@ body::-webkit-scrollbar {
     margin-top: 1%; }
     @media only screen and (max-width: 767px) {
       .hero-information #hero-tagline {
-        font-size: 100%;
         width: 95%; } }
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
       .hero-information #hero-tagline {
+        font-size: 140%;
         width: 85%; } }
     @media only screen and (max-width: 950px) {
       .hero-information #hero-tagline {
-        font-size: 100%;
+        font-size: 140%;
         text-align: left; } }
     @media only screen and (max-width: 715px) {
       .hero-information #hero-tagline {
