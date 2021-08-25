@@ -14,6 +14,41 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+//changing background color
+$(function () {
+  $(document).scroll(function () {
+    var $main = $('.main');
+
+    //what you can do
+    if ($(window).scrollTop() >= $('#what-can-you-do').offset().top - 100) {
+      $main.addClass('scroll-what-can-you-do');
+    } else {
+      $main.removeClass('scroll-what-can-you-do');
+    }
+
+    //tracks
+    if ($(window).scrollTop() >= $('#tracks').offset().top - 100) {
+      $main.addClass('scroll-tracks');
+    } else {
+      $main.removeClass('scroll-tracks');
+    }
+
+    //registration
+    if ($(window).scrollTop() >= $('#registration').offset().top - 100) {
+      $main.addClass('scroll-registration');
+    } else {
+      $main.removeClass('scroll-registration');
+    }
+
+    //faq
+    if ($(window).scrollTop() >= $('#faq').offset().top - 100) {
+      $main.addClass('scroll-faq');
+    } else {
+      $main.removeClass('scroll-faq');
+    }
+  });
+});
+
 // scrolling effect
 $(document).ready(function () {
   $('.nav-link').click(function (e) {

@@ -7,8 +7,34 @@ $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
 $dark-grey: #606060;
+$orange: #f9b7ae;
+$hero-blue: #8cd8ed;
+$tan: #f7f3ed;
+$pastel-green: #a0d6b4;
+
+$bg-green: #b5d5b2;
+$bg-blue: #cde9fb;
+$bg-pink: #f5d6e1;
 
 $animation-length: 80s;
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 @mixin dinpro-text($size, $weight, $color) {
   font-family: DINPro;
@@ -19,7 +45,7 @@ $animation-length: 80s;
 
 .btn {
   @include dinpro-text(140%, bold, #fff);
-  background-color: $dark-lavender;
+  background-color: $pink;
   border-radius: 50px;
   text-transform: uppercase;
   margin-top: 3%;
@@ -53,12 +79,21 @@ $animation-length: 80s;
 
 html,
 body {
-  overflow-x: hidden;
   width: 100%;
 }
 
 body {
-  position: relative;
+  @media (min-width: 986px) {
+    position: relative;
+    scrollbar-width: none; /* hide scrollbar on Firefox */
+    -ms-overflow-style: none; /* hide scrollbar on IE 10+ */
+  }
+}
+
+body::-webkit-scrollbar {
+  @media (min-width: 986px) {
+    display: none; /* hide scrollbar on Safari & Chrome */
+  }
 }
 
 // *** navbar ***
@@ -123,31 +158,50 @@ body {
   }
 }
 
-// *** hero section ***
-.hero-clouds {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  @media only screen and (max-width: 767px) {
-    width: 834px;
-    height: 663px;
-    left: -100px;
-    top: -26px;
-  }
+// *** background color transitions on scroll ***
+.scroll-what-can-you-do {
+  background-color: $bg-green !important;
+  transition: background-color 200ms linear;
+}
 
-  @media only screen and (max-width: 1024px) {
-    width: 834px;
-    height: 663px;
-    left: 0px;
-    top: 69px;
-  }
+.scroll-tracks {
+  background-color: $bg-blue !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-registration {
+  background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-faq {
+  background-color: $tan !important; //change to $bg-pink when have another section underneath section
+  transition: background-color 200ms linear;
+}
+
+// *** hero section ***
+
+.hero-cottage,
+.hero-clouds {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
 }
 
 .hero {
   position: relative;
-  overflow: hidden;
-  padding-bottom: 10%;
+  display: grid;
+  grid-template-areas: 'overlap-content';
+  grid-area: overlap-content;
+}
+
+.hero-index {
+  background-color: $bg-green;
+}
+
+.hero-index .hero-text {
+  grid-area: overlap-content;
 }
 
 @keyframes wait {
@@ -176,32 +230,60 @@ body {
 
 .hero-information {
   position: relative;
+  padding-left: 10rem;
   z-index: 3;
   @include fade-in(600ms);
-  .hero-logo {
-    margin-bottom: 15px;
-  }
-
-  @media only screen and (max-width: 767px) {
-    margin-top: -225px;
+  #theme-logo {
+    width: 300px;
+    display: block;
   }
   #technica-logo {
+    width: 500px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 0px;
+    padding-left: 3rem;
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 580px) {
+    margin-top: 100px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    margin-top: -100px !important;
+    padding: 3rem 0rem 0rem 2rem;
+  }
+
+  @media only screen and (max-width: 395px) {
+    padding: 3rem 0rem 0rem 2rem;
+  }
+
+  #theme-logo {
     padding-top: 5%;
     margin-top: 10%;
-    width: 600px;
     @media only screen and (max-width: 767px) {
       padding-top: 10%;
     }
   }
+
   #hero-tagline {
-    font-size: 150%;
+    font-size: 140%;
     width: 55%;
+    margin-top: 1%;
     @media only screen and (max-width: 767px) {
-      font-size: 100%;
       width: 95%;
     }
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
+      font-size: 140%;
       width: 85%;
+    }
+    @media only screen and (max-width: 950px) {
+      font-size: 140%;
+      text-align: left;
+    }
+    @media only screen and (max-width: 715px) {
+      font-size: 70%;
     }
   }
 }
@@ -219,7 +301,7 @@ body {
   }
 
   @media only screen and (min-width: 1400px) {
-    padding-top: 350px;
+    padding-top: 200px;
   }
 
   .register-btn {
@@ -232,7 +314,7 @@ body {
     }
   }
   .hero-learn {
-    color: $dark-lavender;
+    color: white;
     margin-top: 5px;
     font-size: 150%;
     @media only screen and (max-width: 767px) {
@@ -283,9 +365,29 @@ body {
 }
 
 // *** intro section ***
-.about-image {
-  width: 5%;
-  height: 5%;
+#about {
+  position: relative;
+  z-index: 5;
+  padding: 3.5%;
+
+  /*@media only screen and (min-width: 767px) {
+    padding: 5%;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    margin-top: 60rem;
+  }*/
+
+  @media only screen and (min-width: 1500px) {
+    margin-top: 25rem !important;
+  }
+}
+
+.intro-container {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3%;
+  margin-top: 40rem;
+  border-radius: 33px;
 }
 
 // *** testimonials section ***
@@ -293,11 +395,13 @@ body {
   position: relative;
   z-index: 5;
   margin-top: -1vw; //white line was appearing between sections
+  margin-bottom: 4%;
 }
 
 .testimonial-quote {
   font-size: 125%;
   @media only screen and (max-width: 767px) {
+    padding-top: 100px;
     font-size: 100%;
   }
 }
@@ -311,11 +415,312 @@ body {
 
 .testimonial-image {
   width: 200px;
-  //border: 5px solid $pink;
   border-radius: 50%;
 }
 
+// *** what can you do section ***
+@keyframes expand {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: auto;
+  }
+}
+@keyframes unexpand {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: auto;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.what-can-you-do {
+  /* text box */
+
+  .content-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .content-clarification {
+    color: grey;
+    font-size: 0.9rem;
+  }
+
+  .arrow-img {
+    margin-left: 0.5rem;
+  }
+
+  .expand-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+    &.btn {
+      background-color: $bg-green;
+      width: 20%;
+      color: #000;
+
+      @media only screen and (max-width: 982px) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 395px) {
+        width: 70%;
+      }
+    }
+  }
+
+  .expand-btn:hover {
+    cursor: pointer;
+  }
+
+  .collapse-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+    a {
+      color: #000;
+    }
+
+    &.btn {
+      background-color: $bg-green;
+      width: 20%;
+      color: #000;
+
+      @media only screen and (max-width: 982px) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 395px) {
+        width: 70%;
+      }
+    }
+  }
+
+  .collapse-btn:hover {
+    cursor: pointer;
+  }
+
+  .tab-content {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 33px;
+    padding: 2rem;
+
+    &.expanded {
+      animation: expand 0.5s;
+      height: auto;
+
+      .tab-pane > .expanded-content {
+        animation: fadein 0.5s ease;
+      }
+
+      .expand-btn {
+        opacity: 0;
+      }
+
+      .collapse-btn {
+        animation: fadein 0.5s ease;
+        opacity: 1;
+      }
+    }
+
+    &.unexpanded {
+      animation: unexpand 0.5s;
+      height: 30rem;
+
+      .collapse-btn {
+        animation: fadeout 0.5s ease;
+        opacity: 0;
+      }
+
+      @media only screen and (max-width: 991px) {
+        height: 37rem;
+      }
+
+      @media only screen and (max-width: 767px) {
+        height: 43rem;
+      }
+
+      @media only screen and (max-width: 560px) {
+        height: 50rem;
+      }
+
+      .tab-pane > .expanded-content {
+        opacity: 0;
+      }
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  .content-img {
+    margin: 2rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .content-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .content-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .what-can-you-do {
+      height: 50rem;
+    }
+
+    .tab-content {
+      height: 35rem;
+    }
+  }
+
+  /* tabs */
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab-container.blue {
+    border: solid 0.5rem $hero-blue;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+
+  .tab-container:first-child > span {
+    margin-right: auto;
+  }
+
+  .tab-container:last-child > span {
+    margin-left: auto;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+    align-items: baseline;
+  }
+
+  .tab-content {
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    border-radius: 33px;
+    padding: 2rem;
+  }
+
+  .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+
+    .radio {
+      width: 3rem;
+      height: 3rem;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+  .tab.active {
+    animation: fadein 1.25s;
+
+    .title {
+      color: black;
+
+      .radio {
+        border: solid 0.3rem;
+      }
+
+      &.blue {
+        border-color: $hero-blue;
+      }
+
+      &.pink {
+        border-color: $pink;
+      }
+
+      &.purple {
+        border-color: $lavender;
+      }
+    }
+
+    .radio.pink {
+      border-color: $pink;
+    }
+    .radio.purple {
+      border-color: $lavender;
+    }
+    .radio.blue {
+      border-color: $hero-blue;
+    }
+  }
+}
+
+.link-green,
+.link-green:visited {
+  font-weight: bold;
+  color: $bg-green;
+}
+
+.link-green:hover {
+  color: $bg-green;
+  transition: ease 0.3s;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+// *** tracks section + first carousel ***
 //can't rename from tracks without js breaking - figure out later
+.tracks {
+  position: relative;
+  z-index: 5;
+  margin-top: -1vw;
+  margin-bottom: 4%;
+}
+
 .beginner,
 .hardware,
 .general,
@@ -324,9 +729,13 @@ body {
   height: 100%;
   margin: 0px 5px;
   width: 675px;
-  background-color: $ex-light-lavender;
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 33px;
-  //padding: 5%;
+  padding: 2%;
+
+  h3 {
+    margin: 15px 0;
+  }
 }
 
 .flickity-page-dots {
@@ -338,11 +747,11 @@ body {
   height: 20px;
   opacity: 1;
   background: transparent;
-  border: 2px solid $ex-light-lavender;
+  border: 2px solid white;
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: $ex-light-lavender;
+  background: white;
 }
 
 .gallery {
@@ -350,6 +759,10 @@ body {
 }
 //need to clean this up later
 @media (max-width: 991px) {
+  .tracks {
+    margin-bottom: 2%;
+  }
+
   .gallery {
     height: 500px;
   }
@@ -375,6 +788,10 @@ body {
   .research {
     margin: 0px 3px;
   }
+
+  .container p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -387,26 +804,124 @@ body {
   .general,
   .research {
     width: 85%;
+    margin: 0px 3px;
   }
 }
 
 @media (max-width: 500px) {
+  .tracks {
+    margin-bottom: 0;
+  }
   .gallery {
     height: 540px;
   }
 }
+
 @media (max-width: 425px) {
+  .tracks {
+    margin-bottom: 0;
+  }
   .gallery {
     height: 580px;
   }
-  .general-text,
-  .beginner-text {
-    padding: 0px;
-  }
 }
+
 @media (max-width: 385px) {
   .gallery {
     height: 640px;
+  }
+}
+
+@media (max-width: 280px) {
+  .gallery {
+    height: 640px;
+  }
+}
+
+// tracks section - static cards
+.tracks-card {
+  background-color: white;
+  font-size: 1rem;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+}
+
+.general-border {
+  border: 6px solid $hero-blue;
+}
+
+.research-border {
+  border: 6px solid $lavender;
+}
+
+.beginner-border {
+  border: 6px solid $pink;
+}
+
+.hardware-border {
+  border: 6px solid $pastel-green;
+}
+
+.img-holder {
+  position: relative;
+  top: -3rem;
+  align-self: center;
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-holder img {
+  width: 9rem;
+}
+
+.tracks-title {
+  font-size: 195%;
+  text-transform: none;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.heading {
+  margin-bottom: 6rem;
+}
+
+/* tablet */
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .img-holder {
+    height: 2rem;
+  }
+  .img-holder img {
+    width: 7.5rem;
+  }
+  .tracks-title {
+    font-size: 190%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .tracks-panel {
+    margin-bottom: 5rem;
+  }
+}
+
+/* smaller mobile */
+@media only screen and (max-width: 300px) {
+  .tracks-card {
+    padding: 0.3rem;
+  }
+  .tracks-title {
+    font-size: 180%;
   }
 }
 
@@ -420,12 +935,54 @@ body {
 .hacker,
 .mentor,
 .volunteer {
-  background-color: $ex-light-lavender;
+  background-color: white;
   border-radius: 33px;
   text-align: center;
   padding: 5%;
   .btn {
     margin: 3% 0%;
+  }
+}
+
+.polaroid-wrapper {
+  padding: 2.5rem 2.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 960px) {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+}
+
+.polaroid {
+  width: 15rem;
+  height: auto;
+
+  &.polaroid1 {
+    transform: rotate(-3deg);
+  }
+
+  &.polaroid2 {
+    transform: rotate(7deg);
+    margin-left: 10rem !important;
+  }
+
+  @media only screen and (max-width: 1225px) {
+    width: 10rem !important;
+  }
+
+  @media only screen and (max-width: 950px) {
+    &.polaroid2 {
+      margin-left: -2rem !important;
+    }
   }
 }
 
@@ -437,6 +994,11 @@ body {
 
 //mobile
 @media only screen and (max-width: 767px) {
+  .polaroid-wrapper {
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    justify-content: center;
+  }
+
   .hacker,
   .mentor,
   .volunteer {
@@ -452,6 +1014,8 @@ body {
 
 // *** FAQ section ***
 .faq {
+  margin-top: 50px;
+
   @media (max-width: 575px) {
     padding-left: 3%;
     padding-right: 3%;
@@ -459,7 +1023,7 @@ body {
 }
 
 .faq-container {
-  background-color: $ex-light-lavender;
+  background-color: white;
   padding: 3%;
   border-radius: 33px;
 }
@@ -471,7 +1035,7 @@ body {
   padding-bottom: 2%;
   padding-top: 2%;
   margin-bottom: 2%;
-  border-bottom: 3px solid $ex-light-lavender;
+  border-bottom: 3px solid $bg-pink;
   transition: ease all 0.3s;
   cursor: pointer;
   h4 {
@@ -481,7 +1045,7 @@ body {
 
 .accordion:hover,
 .accordion-active {
-  border-color: $dark-lavender;
+  border-color: $pink;
 }
 
 .faq-toggle-icon {
@@ -541,19 +1105,31 @@ body {
 .link,
 .link:visited {
   font-weight: bold;
-  color: $darker-lavender;
+  color: $pink;
 }
 
 .link:hover {
-  color: $darker-lavender;
+  color: $pink;
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
 }
 
 // *** footer section ***
-.contact-footer {
+.footer-background {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.themed-contact-footer {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
   color: black;
+  background-color: #d8c0a0;
+  margin-top: 70%;
 }
 
 .contact {
@@ -578,11 +1154,6 @@ body {
   }
 }
 
-.contact-content {
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-
 .email-link,
 .email-link:visited {
   color: $lavender;
@@ -594,6 +1165,10 @@ body {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
+}
+
+.social-buttons {
+  margin-bottom: 15px;
 }
 
 .social-buttons > a:hover {
@@ -661,29 +1236,15 @@ body {
   background-color: #f27aaa;
 }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-
-  #footer-links {
-    a:link,
-    a:visited {
-      color: black;
-    }
-    a:hover {
-      transition: ease 0.3s;
-      opacity: 0.7;
-      text-decoration: none;
-    }
+#themed-footer-links {
+  a:link,
+  a:visited {
+    color: black;
   }
-
-  @media (min-width: 1850px) {
-    padding-top: 0px;
-    padding-bottom: 4%;
-  }
-  @media (min-width: 2300px) {
-    padding-bottom: 6%;
+  a:hover {
+    transition: ease 0.3s;
+    opacity: 0.7;
+    text-decoration: none;
   }
   @media (max-width: 575px) {
     font-size: 0.9rem;
