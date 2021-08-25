@@ -16,7 +16,7 @@
   font-size: 140%;
   font-weight: bold;
   color: #fff;
-  background-color: #8d7c98;
+  background-color: #ed648d;
   border-radius: 50px;
   text-transform: uppercase;
   margin-top: 3%;
@@ -46,16 +46,18 @@ html,
 body {
   width: 100%; }
 
-body {
-  position: relative;
-  scrollbar-width: none;
-  /* hide scrollbar on Firefox */
-  -ms-overflow-style: none;
-  /* hide scrollbar on IE 10+ */ }
+@media (min-width: 986px) {
+  body {
+    position: relative;
+    scrollbar-width: none;
+    /* hide scrollbar on Firefox */
+    -ms-overflow-style: none;
+    /* hide scrollbar on IE 10+ */ } }
 
-body::-webkit-scrollbar {
-  display: none;
-  /* hide scrollbar on Safari & Chrome */ }
+@media (min-width: 986px) {
+  body::-webkit-scrollbar {
+    display: none;
+    /* hide scrollbar on Safari & Chrome */ } }
 
 #navbar {
   background-color: white;
@@ -217,7 +219,7 @@ body::-webkit-scrollbar {
       padding-top: 115px; } }
   @media only screen and (min-width: 1400px) {
     .hero-action {
-      padding-top: 350px; } }
+      padding-top: 200px; } }
   .hero-action .register-btn {
     font-family: DINPro;
     font-size: 175%;
