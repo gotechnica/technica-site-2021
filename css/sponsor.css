@@ -255,7 +255,8 @@ th {
     max-width: 300px; } }
 
 #thank-you {
-  background-color: #ff5789;
+  background-color: #ed648d;
+  color: white;
   padding: 10px; }
 
 @media only screen and (max-width: 1370px) {

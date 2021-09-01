@@ -264,7 +264,7 @@ th {
   overflow-x: visible !important;
 }
 
-.footer #footer-links a{
+.footer #footer-links a {
   color: black;
 }
 
@@ -376,7 +376,8 @@ th {
 }
 
 #thank-you {
-  background-color: #ff5789;
+  background-color: #ed648d;
+  color: white;
   padding: 10px;
 }
 
@@ -441,7 +442,6 @@ th {
     width: 70%;
   }
 }
-
 
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
