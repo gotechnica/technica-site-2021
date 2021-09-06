@@ -35,16 +35,6 @@ h2 {
   @include heading($lavender);
 }
 
-.header {
-  margin-top: 5rem;
-}
-
-.contact,
-.stats,
-.prospectus {
-  margin-top: 60px;
-}
-
 .info-input {
   padding: 10px;
   background-color: $pink;
@@ -238,7 +228,7 @@ th {
 
 .prospectus span {
   cursor: default;
-  color: black;
+  color: grey;
   padding-left: 3px;
 }
 

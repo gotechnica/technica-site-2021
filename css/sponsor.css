@@ -11,14 +11,6 @@ h2 {
   color: #9c8da5;
   font-weight: bold; }
 
-.header {
-  margin-top: 5rem; }
-
-.contact,
-.stats,
-.prospectus {
-  margin-top: 60px; }
-
 .info-input {
   padding: 10px;
   background-color: #ed648d; }
@@ -172,7 +164,7 @@ th {
 
 .prospectus span {
   cursor: default;
-  color: black;
+  color: grey;
   padding-left: 3px; }
 
 .prospectus a {
