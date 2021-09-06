@@ -59,6 +59,11 @@ body {
     display: none;
     /* hide scrollbar on Safari & Chrome */ } }
 
+.navbar {
+  -webkit-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.05); }
+
 #navbar {
   background-color: white;
   padding-top: 0.25rem;
@@ -159,7 +164,7 @@ body {
 
 .hero-information {
   position: relative;
-  padding-left: 10rem;
+  padding-left: 3rem;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
