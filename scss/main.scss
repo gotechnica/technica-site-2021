@@ -236,7 +236,7 @@ body::-webkit-scrollbar {
 
 .hero-information {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 4rem;
   z-index: 3;
   @include fade-in(600ms);
   #theme-logo {
@@ -303,7 +303,7 @@ body::-webkit-scrollbar {
   animation-fill-mode: forwards;
 
   @media only screen and (min-width: 996px) {
-    padding-top: 115px;
+    padding-top: 90px;
   }
 
   @media only screen and (min-width: 1400px) {
@@ -407,7 +407,7 @@ body::-webkit-scrollbar {
 .testimonial-quote {
   font-size: 125%;
   @media only screen and (max-width: 767px) {
-    padding-top: 100px;
+    padding-top: 75px;
     font-size: 100%;
   }
 }

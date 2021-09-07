@@ -164,7 +164,7 @@ body {
 
 .hero-information {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 4rem;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
@@ -221,7 +221,7 @@ body {
   animation-fill-mode: forwards; }
   @media only screen and (min-width: 996px) {
     .hero-action {
-      padding-top: 115px; } }
+      padding-top: 90px; } }
   @media only screen and (min-width: 1400px) {
     .hero-action {
       padding-top: 200px; } }
@@ -302,7 +302,7 @@ body {
   font-size: 125%; }
   @media only screen and (max-width: 767px) {
     .testimonial-quote {
-      padding-top: 100px;
+      padding-top: 75px;
       font-size: 100%; } }
 
 .testimonial-name {
