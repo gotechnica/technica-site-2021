@@ -96,11 +96,13 @@ h2 {
 }
 
 // demographics section
-
 .demo-section {
   background-color: $container-gray;
   height: 100%;
   padding: 1.25rem;
+  @media only screen and (max-width: 403px) {
+    font-size: 75%;
+  }
 }
 
 .demo-name {
