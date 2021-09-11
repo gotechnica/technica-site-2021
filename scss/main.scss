@@ -381,6 +381,39 @@ body::-webkit-scrollbar {
   @media only screen and (min-width: 1500px) {
     margin-top: 25rem !important;
   }
+  @media only screen and (min-width: 2000px) and (max-width: 2500px) {
+    margin-top: 75rem !important;
+  }
+  @media only screen and (min-width: 2500px) and (max-width: 3500px) {
+    margin-top: 150rem !important;
+  }
+}
+
+@media only screen and (min-width: 2001px) {
+  .hero-information {
+    #theme-logo {
+      width: 20vw;
+      min-width: 120px;
+    }
+    #technica-logo {
+      width: 32vw;
+      min-width: 120px;
+    }
+    #hero-tagline {
+      font-size: 1.4vw;
+      width: 100%;
+    }
+  }
+  .hero-action {
+    padding-top: 40%;
+    .register-btn {
+      @media only screen and (min-width: 2001px) {
+        width: 15vw;
+        height: 3vw;
+        @include dinpro-text(235%, bold, #fff);
+      }
+    }
+  }
 }
 
 .intro-container {
