@@ -59,6 +59,11 @@ body {
     display: none;
     /* hide scrollbar on Safari & Chrome */ } }
 
+.navbar {
+  -webkit-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.05); }
+
 #navbar {
   background-color: white;
   padding-top: 0.25rem;
@@ -159,7 +164,7 @@ body {
 
 .hero-information {
   position: relative;
-  padding-left: 10rem;
+  padding-left: 4rem;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
@@ -216,7 +221,7 @@ body {
   animation-fill-mode: forwards; }
   @media only screen and (min-width: 996px) {
     .hero-action {
-      padding-top: 115px; } }
+      padding-top: 90px; } }
   @media only screen and (min-width: 1400px) {
     .hero-action {
       padding-top: 200px; } }
@@ -327,7 +332,7 @@ body {
   font-size: 125%; }
   @media only screen and (max-width: 767px) {
     .testimonial-quote {
-      padding-top: 100px;
+      padding-top: 75px;
       font-size: 100%; } }
 
 .testimonial-name {
@@ -694,6 +699,9 @@ a:hover {
 @media (max-width: 575px) {
   .registration {
     font-size: 1rem; } }
+
+.register-heading {
+  color: #8d7c98; }
 
 .hacker,
 .mentor,

@@ -35,16 +35,6 @@ h2 {
   @include heading($lavender);
 }
 
-.header {
-  margin-top: 5rem;
-}
-
-.contact,
-.stats,
-.prospectus {
-  margin-top: 60px;
-}
-
 .info-input {
   padding: 10px;
   background-color: $pink;
@@ -106,11 +96,13 @@ h2 {
 }
 
 // demographics section
-
 .demo-section {
   background-color: $container-gray;
   height: 100%;
   padding: 1.25rem;
+  @media only screen and (max-width: 403px) {
+    font-size: 75%;
+  }
 }
 
 .demo-name {
@@ -238,7 +230,7 @@ th {
 
 .prospectus span {
   cursor: default;
-  color: black;
+  color: grey;
   padding-left: 3px;
 }
 
@@ -264,7 +256,7 @@ th {
   overflow-x: visible !important;
 }
 
-.footer #footer-links a{
+.footer #footer-links a {
   color: black;
 }
 
@@ -376,7 +368,8 @@ th {
 }
 
 #thank-you {
-  background-color: #ff5789;
+  background-color: #ed648d;
+  color: white;
   padding: 10px;
 }
 
@@ -441,7 +434,6 @@ th {
     width: 70%;
   }
 }
-
 
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
