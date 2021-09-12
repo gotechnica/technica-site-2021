@@ -240,6 +240,9 @@ body {
     @media only screen and (max-width: 767px) {
       .hero-action .hero-learn {
         font-size: 115%; } }
+    @media only screen and (min-width: 2400px) {
+      .hero-action .hero-learn {
+        font-size: 200%; } }
 
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
@@ -298,7 +301,7 @@ body {
     font-size: 1.4vw;
     width: 100%; }
   .hero-action {
-    padding-top: 40%; } }
+    padding-top: 10%; } }
   @media only screen and (min-width: 2001px) and (min-width: 2001px) {
     .hero-action .register-btn {
       width: 15vw;

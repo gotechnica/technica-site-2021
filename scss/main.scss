@@ -320,6 +320,9 @@ body::-webkit-scrollbar {
     @media only screen and (max-width: 767px) {
       font-size: 115%;
     }
+    @media only screen and (min-width: 2400px) {
+      font-size: 200%;
+    }
   }
 }
 
@@ -405,7 +408,7 @@ body::-webkit-scrollbar {
     }
   }
   .hero-action {
-    padding-top: 40%;
+    padding-top: 10%;
     .register-btn {
       @media only screen and (min-width: 2001px) {
         width: 15vw;
