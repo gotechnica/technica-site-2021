@@ -11,14 +11,6 @@ h2 {
   color: #9c8da5;
   font-weight: bold; }
 
-.header {
-  margin-top: 5rem; }
-
-.contact,
-.stats,
-.prospectus {
-  margin-top: 60px; }
-
 .info-input {
   padding: 10px;
   background-color: #ed648d; }
@@ -69,6 +61,9 @@ h2 {
   background-color: #f3f3f3;
   height: 100%;
   padding: 1.25rem; }
+  @media only screen and (max-width: 403px) {
+    .demo-section {
+      font-size: 75%; } }
 
 .demo-name {
   text-align: right; }
@@ -172,7 +167,7 @@ th {
 
 .prospectus span {
   cursor: default;
-  color: black;
+  color: grey;
   padding-left: 3px; }
 
 .prospectus a {
@@ -255,7 +250,8 @@ th {
     max-width: 300px; } }
 
 #thank-you {
-  background-color: #ff5789;
+  background-color: #ed648d;
+  color: white;
   padding: 10px; }
 
 @media only screen and (max-width: 1370px) {

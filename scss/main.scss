@@ -97,6 +97,12 @@ body::-webkit-scrollbar {
 }
 
 // *** navbar ***
+.navbar {
+  -webkit-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
 #navbar {
   background-color: white;
   padding-top: 0.25rem;
@@ -230,7 +236,7 @@ body::-webkit-scrollbar {
 
 .hero-information {
   position: relative;
-  padding-left: 10rem;
+  padding-left: 4rem;
   z-index: 3;
   @include fade-in(600ms);
   #theme-logo {
@@ -297,7 +303,7 @@ body::-webkit-scrollbar {
   animation-fill-mode: forwards;
 
   @media only screen and (min-width: 996px) {
-    padding-top: 115px;
+    padding-top: 90px;
   }
 
   @media only screen and (min-width: 1400px) {
@@ -434,7 +440,7 @@ body::-webkit-scrollbar {
 .testimonial-quote {
   font-size: 125%;
   @media only screen and (max-width: 767px) {
-    padding-top: 100px;
+    padding-top: 75px;
     font-size: 100%;
   }
 }
@@ -963,6 +969,10 @@ a:hover {
   @media (max-width: 575px) {
     font-size: 1rem;
   }
+}
+
+.register-heading {
+  color: $dark-lavender;
 }
 
 .hacker,
