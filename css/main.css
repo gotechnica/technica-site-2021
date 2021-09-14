@@ -90,6 +90,8 @@ body {
   #navbar .nav-link:hover {
     transition: 0.3s ease;
     opacity: 0.8; }
+  #navbar .navbar-nav li.active > a {
+    color: #ed648d; }
 
 .scrolled {
   visibility: visible !important;

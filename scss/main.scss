@@ -133,6 +133,10 @@ body::-webkit-scrollbar {
     transition: 0.3s ease;
     opacity: 0.8;
   }
+
+  .navbar-nav li.active > a {
+    color: $pink;
+  }
 }
 
 .scrolled {
