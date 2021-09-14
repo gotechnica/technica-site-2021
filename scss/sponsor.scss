@@ -35,16 +35,6 @@ h2 {
   @include heading($lavender);
 }
 
-.header {
-  margin-top: 5rem;
-}
-
-.contact,
-.stats,
-.prospectus {
-  margin-top: 60px;
-}
-
 .info-input {
   padding: 10px;
   background-color: $pink;
@@ -94,14 +84,25 @@ h2 {
 
 #stat-photo {
   margin-left: 3%;
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 6%;
+  }
+
+  @media only screen and (min-width: 991px) {
+    margin-left: 10%;
+    width: 90%;
+  }
 }
 
 // demographics section
-
 .demo-section {
   background-color: $container-gray;
   height: 100%;
   padding: 1.25rem;
+  @media only screen and (max-width: 403px) {
+    font-size: 75%;
+  }
 }
 
 .demo-name {
@@ -229,7 +230,7 @@ th {
 
 .prospectus span {
   cursor: default;
-  color: black;
+  color: grey;
   padding-left: 3px;
 }
 
@@ -253,6 +254,10 @@ th {
 
 .add-ons {
   overflow-x: visible !important;
+}
+
+.footer #footer-links a {
+  color: black;
 }
 
 // Media Queries
@@ -363,7 +368,8 @@ th {
 }
 
 #thank-you {
-  background-color: #ff5789;
+  background-color: #ed648d;
+  color: white;
   padding: 10px;
 }
 
@@ -421,6 +427,14 @@ th {
   transition: 0.3s ease;
 }
 
+@media only screen and (max-width: 1200px) {
+  .intro {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
   // Statistics
@@ -474,5 +488,21 @@ th {
 
   canvas {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  .stat-title {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .stat-number {
+    font-size: 2em !important;
+    margin-top: 2px;
+  }
+
+  .stat-text {
+    font-size: 1em !important;
   }
 }

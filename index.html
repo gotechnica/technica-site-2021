@@ -92,6 +92,13 @@
           }
         })
       });
+
+      
+      // only send tracking events if we're deployed to prod
+      if (window.location.href === "https://gotechnica.org/") {
+        const visitTrackingURL = "https://hugoburbelo.builtwithdark.com/track_visit"
+        $.post(visitTrackingURL, {"date": (new Date().toLocaleDateString()), "type": "landing_page_visit"});
+      }
     </script>
 
     <!-- Intercom Widget -->
@@ -114,6 +121,16 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 306690382 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-306690382"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-306690382');
+    </script>
   </head>
   <body>
     
@@ -125,7 +142,10 @@
      <div class="collapse navbar-collapse" id="navbarNav">
        <ul class="navbar-nav text-center mx-auto">
          <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href=".intro-container">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tracks">Tracks</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#registration">Registration</a>
@@ -133,11 +153,17 @@
         <li class="nav-item">
           <a class="nav-link" href="#faq">FAQ</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href=".themed-contact-footer">Contact</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="sponsor.html">Sponsor</a>
+        </li>-->
        </ul>
      </div>
    </nav>
 
-    <div class="hero" role="banner">
+    <div class="hero hero-index" role="banner">
       <div class="hero-cottage bg-image" alt="cottage on a countryside hill with full trees and pastel lavender" style="display: flex; grid-area: overlap-content;">
         <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%; min-height: 100%; object-fit: cover">
       </div>
@@ -147,19 +173,20 @@
             <img id="theme-logo" src="img/hero/welcome-home.png" alt="Welcome Home" style="z-index: -1;">
             <img id="technica-logo" src="img/technica-logo.png" alt="Technica logo">
           </div>
-          <p id="hero-tagline"><b>Nov 13-14, 2021 + Hybrid Environment</b></p>
+          <p id="hero-tagline"><b>November 13-14, 2021</b> ⊹ Hybrid Environment</p>
         </div>
-
-        <div class="section">
-          <div class="container intro-container" id="about">
+        <div class="hero-action text-center">
+          <button class="register-btn btn" onclick="location.href='https://register.gotechnica.org'">Register Now</button>
+          <p class="hero-learn">or learn more below!</p>
+        </div>
+        <div class="section" id="about">
+          <div class="container intro-container">
             <h1 class="header">What is Technica?</h1>
-            <div class="row">
-              <div class="about-text col">
-                <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
-                <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
-                <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
-                <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
-              </div>
+            <div class="col">
+              <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
+              <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
+              <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
+              <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
             </div>
           </div>
         </div>
@@ -168,25 +195,24 @@
           <div class="container">
             <h1 class="header">Hear From Our Hackers!</h1>
             <div class="text-center gallery">
+              <div class="beginner track-flick-item">
+                <p class="testimonial-quote">"Technica made me feel more positive about stepping into the tech industry, knowing that so many encouraging peers will surround me in the future."</p>
+                <img class="testimonial-image" src="img/testimonials/testimonial-alyshba.png" alt="woman smiling in front of pink ombre flowers">
+                <p class="testimonial-name"><br>- Alyshba Ahmed, 2020 hacker</p>
+              </div>
               <div class="general track-flick-item">
                 <p class="testimonial-quote">“Technica was very impactful because of the relationships I made and the significance of building VR software for the next generation of students that like hands-on work.”</p>
                 <img class="testimonial-image" src="img/testimonials/testimonial-anna.jpg" alt="woman with long brown hair smiling in front of brick wall">
                 <p class="testimonial-name"><br>- Anna Blendermann, 2019 hacker</p>
               </div>
-              <div class="research track-flick-item">
-                <p class="testimonial-quote">"I wish I knew how fast the time was going to go. I felt empowered that I was surrounded by so many intelligent women."</p> 
-                <img class="testimonial-image" src="img/testimonials/testimonial-sophia.jpg" alt="women in suit smiling">
-                <p class="testimonial-name"><br>- Sophia Michael, 2019 hacker</p>
-              </div>
               <div class="beginner track-flick-item">
-                <p class="testimonial-quote">"My favorite part was working closely with a select group of extremely kind women who were just as passionate for STEM and gender inclusion as I am."</p>
-                <img class="testimonial-image" src="img/testimonials/testimonial-priya.jpg" alt="woman smiling in front of pink ombre flowers">
-                <p class="testimonial-name"><br>- Priya Kalra, 2020 ambassador</p>
+                <p class="testimonial-quote">"Technica has introduced me to a community I naturally would have never had access to! I found everyone super inspiring and it was generally such a positive, welcoming environment."</p>
+                <img class="testimonial-image" src="img/testimonials/testimonial-sophie.jpeg" alt="woman smiling in front of pink ombre flowers">
+                <p class="testimonial-name"><br>- Sophie Lübeck, 2020 hacker</p>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
 
@@ -223,39 +249,32 @@
             <div class="content-wrapper row">
               <div class="col-lg-6">
                 <div class="content-heading">Mini Events</div>
-                <div class="content-text">Want to take a break from coding and have some fun? Mini Events are for you!
-                  Mini-Events are a fun way to take a brain break during the weekend, and allow you to meet new friends, get
-                  creative,
-                  and even make something you can take home! A few Mini Events we already have planned for this year include
-                  Open Mic
-                  Night,
-                  Family Feud, DIY Your Own Technica Swag, and Board Game Corner.</div>
+                <div class="content-clarification">In-person & Virtual</div>
+                <div class="content-text">Want to take a break from coding and have some fun? Mini Events are for you! Mini-Events allow you to meet new friends, get creative, and even make something you can take home! The Mini Events we have planned for this year are Open Mic Night, Family Feud, DIY Your Own Technica Swag, and Board Game Corner.</div>
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/minievents.svg" />
             </div>
-            <div class="row expand-btn btn" onclick="expand('tab-content')">Read More
+            <div class="row expand-btn btn" onclick="expand('tab-content')">View More
               <img class="arrow-img" src="./img/arrow_down.svg" />
             </div>
 
             <div class="content-wrapper row expanded-content">
               <div class="col-lg-6">
                 <div class="content-heading">Watercooler</div>
-                <div class="content-text">Here’s to a weekend of making new friends! A major part of the magic of Technica are the serendipitous 
-                  encounters hackers have in the hallways at 3am. Whether that’s bumping into someone or wandering over to the snack table 
-                  and striking up a conversation, hackers will often exit the weekend having made a friend. The virtual part of our hybrid 
-                  format this year means that it will be harder for these informal encounters to occur, and we’d like to help facilitate this 
-                  process via a virtual water cooler feature. Hackers will be able to join the virtual water cooler via the navigation bar in the 
-                  platform, and be instructed to join a shared Zoom call. From there, they can mingle with other attendees and be assigned to a 
-                  timed breakout room by the water cooler manager (a designated organizer) in order to chat informally with 3-5 other hackers and 
-                  a volunteer chaperone.
+                <div class="content-clarification">Virtual, both in-person and virtual hackers will be able to participate!</div>
+                <div class="content-text">Here’s to a weekend of making new friends! A major part of the magic of Technica is the serendipitous encounters hackers have in the hallways at 3am. Whether that’s bumping into someone or wandering over to the snack table  and striking up a conversation, hackers will often exit the weekend having made a friend.
+                <br><br>
+                Hackers will be able to join our water cooler via the navigation bar in the 
+                platform, and be instructed to join a shared Zoom call. From there, they can be assigned to a 
+                timed breakout room by the water cooler manager in order to mingle casually with 3-5 other hackers and a volunteer chaperone.
                 </div>
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/watercooler.svg" />
             </div>
-
             <div class="content-wrapper row expanded-content">
               <div class="col-lg-6">
                 <div class="content-heading">Form A Team</div>
+                <div class="content-clarification">Virtual, both in-person and virtual hackers can participate!</div>
                 <div class="content-text">During Technica, you have the option to work alone or in teams of up to 4 
                   people for your hack! Didn’t come with a team but don't want to work alone? Come to Form a Team and 
                   we will help you find other team members based on your interests, technical specializations, prize categories, 
@@ -268,11 +287,11 @@
               <img class="arrow-img" src="./img/arrow_up.svg" />
             </div>
           </div>
-       
             <div id="skills" class="tab-pane fade">
               <div class="content-wrapper row">
                 <div class="col-lg-6">
                   <div class="content-heading">Workshops</div>
+                  <div class="content-clarification">In-person or Virtual - TBD</div>
                   <div class="content-text">Technica aims to be a learning experience for everyone by 
                     providing fun and informative workshops. Hackers have the option to attend workshops 
                     in order to learn more general tech skills, practice tech skills relevant to their hack, 
@@ -284,19 +303,13 @@
               <div class="row expand-btn btn">Read More
                 <img class="arrow-img" src="./img/arrow_down.svg" />
               </div>
-  
               <div class="content-wrapper row expanded-content">
                 <div class="col-lg-6">
                   <div class="content-heading">Research</div>
-                  <div class="content-text">Tech + Research is a three day research track geared towards engaging undergraduate 
-                    underrepresented gender students in computing. During these three days, student teams work together and use 
-                    technology to solve pressing issues. Students will participate in this research track at Technica co-hosted 
-                    by the Iribe Initiative for Inclusion & Diversity in Computing. The weekend event will bring together computing 
-                    faculty from institutions across the state of Maryland to serve as mentors on projects in their research areas. 
-                    Along with providing hands-on research experience in a dynamic hackathon setting, the weekend research track will 
-                    include sessions introducing attendees to the basics of computer science research (CSR) and highlight the exciting 
-                    opportunities that come with pursuing a graduate degree in computer science. 
-                    <a href="https://medium.com/gotechnica/what-you-could-learn-from-a-weekend-of-research-581156e0e4bc" target="_blank" class="link-green">Learn more here!</a>
+                  <div class="content-clarification">Virtual with an optional in-person meet-up</div>
+                  <div class="content-text">Tech + Research is a three day research track geared towards engaging undergraduate underrepresented gender students in computing. During these three days, student teams work together and use technology to solve pressing issues. Students will participate in this research track at Technica co-hosted by the Iribe Initiative for Inclusion & Diversity in Computing.
+                  <br><br>
+                  The weekend event will bring together computing  faculty from institutions across the state of Maryland to serve as mentors on projects in their research areas. Along with providing hands-on research experience in a dynamic hackathon setting, the weekend research track will include sessions introducing attendees to the basics of computer science research (CSR) and highlight the exciting opportunities that come with pursuing a graduate degree in computer science.<a href="https://medium.com/gotechnica/what-you-could-learn-from-a-weekend-of-research-581156e0e4bc" target="_blank" class="link-green">Learn more here!</a>
                   </div>
                 </div>
                 <img class="content-img col-10 col-md-5 img-fluid" src="./img/research.svg" />
@@ -305,11 +318,10 @@
               <div class="content-wrapper row expanded-content">
                 <div class="col-lg-6">
                   <div class="content-heading">Technichats</div>
-                  <div class="content-text">Technichats are spaces for people in different communities to come together and discuss their 
-                    experiences and challenges in tech. The goal of these meetups is to build community among underrepresented groups, 
-                    hear from diverse perspectives, and work to make tech a more inclusive space for all people. Technichats take place on 
-                    the main event-long livestream which can feature company representatives in a panel moderated by the Technica team. 
-                    This will include a live Q&A with our attendees and will be recorded and posted on the Technica youtube channel.
+                  <div class="content-clarification">In-person & Virtual</div>
+                  <div class="content-text">Technichats are spaces for people in different communities to come together and discuss their experiences and challenges in tech. The goal of these meetups is to build community among underrepresented groups, hear from diverse perspectives, and work to make tech a more inclusive space for all people. 
+                  <br><br>
+                  Technichats take place on the main event-long livestream which can feature company representatives in a panel moderated by the Technica team. This will include a live Q&A with our attendees and will be recorded and posted on the Technica youtube channel.
                   </div>
                 </div>
                 <img class="content-img col-10 col-md-5 img-fluid" src="./img/technichats.svg" />
@@ -322,10 +334,8 @@
             <div class="content-wrapper row">
               <div class="col-lg-6">
                 <div class="content-heading">Sponsorship Fair</div>
-                <div class="content-text">Looking to network? Companies are welcome to have recruiters and recruiting
-                   materials at their booth at Technica, where they will be able to interact with hackers. There will 
-                   be a Sponsorship Fair in which hackers are encouraged to visit open booths and network with recruiters, 
-                   potentially gaining an invitation to apply for openings or even an internship or job offer. 
+                <div class="content-clarification">In-person & Virtual</div>
+                <div class="content-text">Looking to network? Companies are welcome to have recruiters and recruiting materials at their booth at Technica, where they will be able to interact with hackers. There will be a Sponsorship Fair in which hackers are encouraged to visit open booths and network with recruiters, potentially gaining an invitation to apply for openings or even an internship or job offer. 
                 </div>
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/sponsorfair.svg" />
@@ -333,15 +343,11 @@
             <div class="row expand-btn btn">Read More
               <img class="arrow-img" src="./img/arrow_down.svg" />
             </div>
-
             <div class="content-wrapper row expanded-content">
               <div class="col-lg-6">
                 <div class="content-heading">Chat With Mentors</div>
-                <div class="content-text">Need some advice? Mentors work closely with hackers throughout the weekend. 
-                  They assist with questions that arise, as well as problem-solve with hackers on their projects. 
-                  Mentors will connect with hackers across the country and make a significant impact in students’ introduction 
-                  into the world of technology. They are there to provide guidance and insights to participants, who choose to 
-                  create a software or hardware project during the hackathon.
+                <div class="content-clarification">In-person & Virtual</div>
+                <div class="content-text">Need some advice? Mentors work closely with hackers throughout the weekend. They assist with questions that arise, as well as problem-solve with hackers on their projects. Mentors are there to provide guidance and insights to participants, who choose to create a software or hardware project during the hackathon.
                 </div>
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/chatwmentor.svg" />
@@ -359,7 +365,7 @@
       <div class="container">
         <div class="heading">
           <h1 class="header">Tracks</h1>
-          <p>We are offering four different tracks for Technica this year! Each track is designed to best accommodate a hacker's interests and skill level with track-specific mentors. Hackers may express interest in multiple tracks during registration but will only be able to participate in one.</p>
+          <p>We are offering four different tracks for Technica this year! Each track is designed to best accommodate a hacker's interests and skill level with track-specific mentors. Hackers select the track they wish to participate in during registration.</p>
         </div>
         <div class="row row-eq-height">
           <div class="col-lg-3 tracks-panel" style="padding: 0.7rem;">
@@ -407,38 +413,41 @@
         <h1 class="header" id="registration">Join our Family as a...</h1>
         <div class="text-center">
           <div class="row">
-            <div class="col-md-8 order-md-2">
-              <img class="hacker-image" src="./img/registration/hacker-bird.svg" width="85%" height="100%" alt="bird holding lavender in front of grenery">
+            <div class="col-md-6 col-xl-7 order-md-2">
+              <img class="hacker-image" src="./img/registration/hacker-bird.svg" width="65%" height="100%" alt="bird holding lavender in front of grenery">
             </div>
-            <div class="col-md-4 order-md-1 align-self-center">
+            <div class="col-md order-md-1 align-self-center">
               <div class="hacker">
+                <h3 class="register-heading">Hacker</h3>
                 <p>Come build using hardware, software, or anything you want with other hackers! You don't have to know how to code to be a hacker. Hackers can be students, designers, or just any tech-lover out there!</p>
-                <button class="btn dark-btn" onclick="location.href='https://register.gotechnica.org'" type="button">Hacker</button>
+                <button class="btn dark-btn" onclick="location.href='https://register.gotechnica.org'" type="button">Register</button>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-xl-8 order-md-1 align-self-center">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-xl-6">
               <div class="polaroid-wrapper col-lg-3">
                 <img class="polaroid polaroid1 registration-image" src="img/registration/mentor-animal-polaroid.svg" alt="duck and frog posing in a polaroid" width="100%" height="100%">
                 <img class="polaroid polaroid2 registration-image" src="img/registration/mentor-scenery-polaroid.svg" alt="polaroid of a grassy hill and cloudy sky" width="100%" height="100%">
               </div>
             </div>
-            <div class="col-md order-md-2 align-self-center">
+            <div class="col-md-6 col-xl-5 align-self-center">
               <div class="mentor">
+                <h3 class="register-heading">Mentor</h3>
                 <p>Come help hackers with their ideas by being a resource for hackers who may have questions about their projects. Mentors can be anyone 18 years or older and of any gender willing to share their knowledge! There will be in-person and virtual opportunities. Learn more about mentor expectations <a class="link" target="_blank" href="./files/MentorTrackExpectations.pdf" style="color: #000;"><b>here</b></a>.</p>
-                <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/YonmilZa'" type="button">Mentor</button>
+                <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/YonmilZa'" type="button">Register</button>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-xl-8 order-md-2">
-              <img class="registration-image" src="./img/registration/volunteer-frog.svg" height="95%" width="60%" alt="frog holding mushrooms">
+            <div class="col-md-6 col-xl-7 order-md-6">
+              <img class="registration-image" src="./img/registration/volunteer-frog.svg" height="100%" width="50%" alt="frog holding mushrooms">
             </div>
-            <div class="col-md order-md-1 align-self-center">
+            <div class="col-md order-md-5 align-self-center">
               <div class="volunteer">
+                <h3 class="register-heading">Volunteer</h3>
                 <p>Come help with the operations! Volunteers are a huge helping hand and help make sure the hackathon runs smoothly. Anyone 18 years or older and of any gender can volunteer and help make Technica a success! There will be in-person and virtual opportunities.</p>
-                <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/rmGg9cCj'" type="button">Volunteer</button>
+                <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/rmGg9cCj'" type="button">Register</button>
               </div>
             </div>
           </div>
@@ -457,21 +466,21 @@
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>A hackathon is a technology-focused event where individuals and teams work on new projects in a short period of time. You can build anything you want. An app, a robot, a website. The only limit is your imagination!</p>
+                <p style="text-align: left;">A hackathon is a technology-focused event where individuals and teams work on new projects in a short period of time. You can build anything you want. An app, a robot, a website. The only limit is your imagination!</p>
               </div>
               <div class="accordion">
                 <h4>Why a hackathon for underrepresented genders?</h4>
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>People of a variety of genders are underrepresented in the tech world, and it’s up to everyone to change that! Technica’s goal is to create a welcoming environment where people from underrepresented genders can build cool projects and share their stories! You can learn more about gender diversity <a target="_blank" class="link" href="https://genderrights.org.au/information-hub/what-is-gender-diversity/"><b>here</b></a>.</p>
+                <p style="text-align: left;">People of a variety of genders are underrepresented in the tech world, and it’s up to everyone to change that! Technica’s goal is to create a welcoming environment where people from underrepresented genders can build cool projects and share their stories! You can learn more about gender diversity <a target="_blank" class="link" href="https://genderrights.org.au/information-hub/what-is-gender-diversity/"><b>here</b></a>.</p>
               </div>
               <div class="accordion">
                   <h4>Do I need to know how to code?</h4>
                   <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>
+                <p style="text-align: left;">
                   <b>No</b>, you don’t need ANY coding experience to participate! If you do, that’s great! If you don’t, that’s also great!
                   <b>Students of all skill levels are encouraged to attend</b>, even if you’ve never written a line of code.
                   We’re very beginner friendly and are prepared to teach you everything you need to learn right here. We also have a beginners track to further help beginner coders start their tech journey!
@@ -482,83 +491,90 @@
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>Technica will be held from <b>November 13-14th 2021</b> over a 24 hour period.</p>
+                <p style="text-align: left;">Technica will be held from <b>November 13-14th 2021</b> over a 24 hour period.</p>
               </div>
               <div class="accordion">
                 <h4>What will Technica be like this year?</h4>
               <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>This year Technica will be integrating a hybrid model as we continue adapting through the pandemic. This means <b>Technica will be held both online and in person - not just at UMD</b>! More information on our hybrid model will be available on this website and on social media in June, so stay tuned and get excited!</p>
+                <p style="text-align: left;">This year Technica will be integrating a hybrid model as we continue adapting through the pandemic. This means <b>Technica will be held both online and in person - not just at UMD</b>! More information on our hybrid model will be available on this website and on social media in June, so stay tuned and get excited!</p>
               </div>
               <div class="accordion">
                 <h4>What is a hybrid hackathon?</h4>
                 <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p>A hybrid hackathon is a hackathon that provides <b>the ability to attend both in-person and virtually</b>. This year, Technica is pioneering the concept of a hybrid hackathon in order to maintain the electric atmosphere of an in-person hackathon that our community knows and loves, but also expand the ability to participate to hackers regardless of location.<p>
+                <p style="text-align: left;">A hybrid hackathon is a hackathon that provides <b>the ability to attend both in-person and virtually</b>. This year, Technica is pioneering the concept of a hybrid hackathon in order to maintain the electric atmosphere of an in-person hackathon that our community knows and loves, but also expand the ability to participate to hackers regardless of location.<p>
               </div>
-              </div>
-              <div class="col-md">
-                <div class="accordion">
+              <div class="accordion">
                   <h4>Who can attend Technica?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>Anyone who identifies as a marginalized gender including, but not limited to, cisgender women, transgender women, transgender men, non-binary individuals, gender neutral individuals, genderqueer individuals, agender individuals, pangender individuals, or a gender who are otherwise underrepresented in tech may register as a hacker! All ages are welcome. Additionally, all participants must follow the <a target="_blank" class="link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"><b>MLH code of conduct</b></a> and <a target="_blank" class="link" href="./files/terms.pdf"><b>Technica code of conduct</b></a>.</p>
+                  <p style="text-align: left;">Anyone who identifies as a marginalized gender including, but not limited to, cisgender women, transgender women, transgender men, non-binary individuals, gender neutral individuals, genderqueer individuals, agender individuals, pangender individuals, or a gender who are otherwise underrepresented in tech may register as a hacker! All ages are welcome. Additionally, all participants must follow the <a target="_blank" class="link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"><b>MLH code of conduct</b></a> and <a target="_blank" class="link" href="./files/terms.pdf"><b>Technica code of conduct</b></a>.</p>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="accordion">
+                  <h4>Are there any COVID-19 policies?</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p style="text-align: left;">All in-person attendees must be vaccinated without exception. The event will be following University of Maryland and Maryland state social distancing and mask mandates active at the time of the event.</p>
                 </div>
                 <div class="accordion">
                   <h4>How much does it cost to attend Technica?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>Technica is <b>FREE</b> for all participants, thanks to our amazing sponsors! Participation includes a lot of <b>free gear and swag</b>!</p>
+                  <p style="text-align: left;">Technica is <b>FREE</b> for all participants, thanks to our amazing sponsors! Participation includes a lot of <b>free gear and swag</b>!</p>
                 </div>
                 <div class="accordion">
                   <h4>What if I'm under 18?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>Under 18 and still want to code with us? Don’t worry! <b>Technica is very minor friendly</b>; we have accommodations for participants under 18!</p>
+                  <p style="text-align: left;">Under 18 and still want to code with us? Don’t worry! <b>Technica is very minor friendly</b>; we have accommodations for participants under 18!</p>
                 </div>
-                <!--<div class="accordion">
-                  <h4>What will I need?</h4>
-                  <div class="faq-toggle-icon"></div>
-                </div>
-                <div class="panel">
-                  <p>To complete the pre-registration process you will need a <b>valid student or government-issued ID card and your resume</b>. Since this year Technica will be hosted virtually, all you will need is your <b>hacking device (laptop, desktop, tablet, etc.) and Wi-Fi</b>!</p>
-                  </div>-->
                 <div class="accordion">
                   <h4>How do teams work?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>
+                  <p style="text-align: left;">
                   You can work on a project on your own, or you can work with a team.
                   Teams can be formed prior to the day of the hackathon with other participants, or at the team formation event before official hacking begins. <b>You can meet other hackers in the <a class="link" href="https://www.facebook.com/groups/technicahackers/" target="_blank">Technica Hacker Facebook group</a> and Slack workspace.</b>
                   Team size must not exceed four members, per MLH rules.
                   </p>
                 </div>
-                <!--<div class="accordion">
+                <div class="accordion">
                   <h4>How do I get swag?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>To get swag, submit a hack during Technica or attend at least 3 events, meetups, and/or workshops during Technica!</p>
-                </div>-->
+                  <p style="text-align: left;">All US-based virtual hackers will be sent a swag package on Technica weekend and in-person hackers will receive swag at UMD. You can earn additional items by attending workshops.</p>
+                </div>
                 <div class="accordion">
                   <h4>Who can I reach out to with questions or concerns?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>If you have any special needs you feel our organizers should be aware of or other questions or concerns, please <b>chat</b> with us in the bottom right-hand corner or email <a class="link" href="mailto:hello@gotechnica.org"><b>hello@gotechnica.org</b></a>.</p>
+                  <p style="text-align: left;">If you have any special needs you feel our organizers should be aware of or other questions or concerns, please <b>chat</b> with us in the bottom right-hand corner or email <a class="link" href="mailto:hello@gotechnica.org"><b>hello@gotechnica.org</b></a>.</p>
                 </div>
+                <!--<div class="accordion">
+                  <h4>How can I stay involved before and after Technica??</h4>
+                  <div class="faq-toggle-icon"></div>
+                </div>
+                <div class="panel">
+                  <p style="text-align: left;">Subscribe to our community newsletter <a class="link" href=""><b>here</b></a> to be the first to hear about Technica community events and programs!</p>
+                </div>-->
                 <div class="accordion">
                   <h4>How can I register?</h4>
                   <div class="faq-toggle-icon"></div>
                 </div>
                 <div class="panel">
-                  <p>Registration for Technica 2021 is open as of June 1st, 2021! You can register <a class="link" href="https://register.gotechnica.org"><b>here</b></a>.</p>
+                  <p style="text-align: left;">Registration for Technica 2021 is open as of June 1st, 2021! You can register <a class="link" href="https://register.gotechnica.org"><b>here</b></a>.</p>
                 </div>
               </div>
             </div>
@@ -570,7 +586,7 @@
       <div class="footer-background">
         <img src="img/footer-home.svg" alt="living room with a couch and picture frames of happy characters and a window showing the cloudy sky" style="width: 100%;">
       </div>
-      <div class="contact-footer">
+      <div class="themed-contact-footer">
         <div class="contact section text-center">
           <div class="container">
             <div class="contact-header">
@@ -618,7 +634,7 @@
             </div>
           </div>
           <div class="container" style="padding: 1%;">
-            <div id="footer-links">
+            <div id="themed-footer-links">
               <a href="sponsor.html">Sponsor</a> | <a href="./files/terms.pdf" target="_blank">Code of Conduct</a> | <a href="donate.html">Donate</a>
             </div>
             <span style="opacity: .7">Copyright © 2021 Technica</span>
@@ -628,7 +644,7 @@
     </div>
 
     <!-- mlh badge -->
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="hhttps://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 
     <script src="js/effects.js"></script>
     
