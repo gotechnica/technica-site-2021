@@ -218,7 +218,7 @@
           </li>
         </ul>
       
-        <div class="tab-content unexpanded" onclick="expand(this)">
+        <div id="tab-content" class="tab-content unexpanded">
           <div id="friends" class="tab-pane fade in active show">
             <div class="content-wrapper row">
               <div class="col-lg-6">
@@ -233,7 +233,7 @@
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/minievents.svg" />
             </div>
-            <div class="row expand-btn btn">Read More
+            <div class="row expand-btn btn" onclick="expand('tab-content')">Read More
               <img class="arrow-img" src="./img/arrow_down.svg" />
             </div>
 
@@ -264,7 +264,7 @@
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/formateam.svg" />
             </div>
-            <div class="row collapse-btn btn"><a href="#what-can-you-do">View Less</a>
+            <div class="row collapse-btn btn" onclick="expand('tab-content')"><a href="#what-can-you-do">View Less</a>
               <img class="arrow-img" src="./img/arrow_up.svg" />
             </div>
           </div>
@@ -652,7 +652,8 @@
         } );
       }
       // toggle card expansions
-      function expand(card) {
+      function expand(id) {
+            var card = document.getElementById(`${id}`);
             card.classList.toggle('expanded');
 
             // If card is not expanded after toggle, add 'unexpanded' class
