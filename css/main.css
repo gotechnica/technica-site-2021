@@ -634,7 +634,7 @@ a:hover {
   color: #000;
 }
 
-@media only screen and (max-width: 982px) {
+@media only screen and (max-width: 988px) {
   .what-can-you-do .expand-btn.btn {
     width: 50%;
   }
@@ -671,7 +671,7 @@ a:hover {
   color: #000;
 }
 
-@media only screen and (max-width: 982px) {
+@media only screen and (max-width: 988px) {
   .what-can-you-do .collapse-btn.btn {
     width: 50%;
   }
@@ -729,9 +729,15 @@ a:hover {
   opacity: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .what-can-you-do .tab-content.unexpanded {
+    height: 28rem;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .what-can-you-do .tab-content.unexpanded {
-    height: 37rem;
+    height: 36rem;
   }
 }
 
@@ -743,7 +749,7 @@ a:hover {
 
 @media only screen and (max-width: 560px) {
   .what-can-you-do .tab-content.unexpanded {
-    height: 50rem;
+    height: 41rem;
   }
 }
 

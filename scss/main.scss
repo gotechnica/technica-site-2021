@@ -511,7 +511,7 @@ a:hover {
       width: 20%;
       color: #000;
 
-      @media only screen and (max-width: 982px) {
+      @media only screen and (max-width: 988px) {
         width: 50%;
       }
 
@@ -540,7 +540,7 @@ a:hover {
       width: 20%;
       color: #000;
 
-      @media only screen and (max-width: 982px) {
+      @media only screen and (max-width: 988px) {
         width: 50%;
       }
 
@@ -589,8 +589,12 @@ a:hover {
         opacity: 0;
       }
 
+      @media only screen and (max-width: 1200px) {
+        height: 28rem;
+      }
+
       @media only screen and (max-width: 991px) {
-        height: 37rem;
+        height: 36rem;
       }
 
       @media only screen and (max-width: 767px) {
@@ -598,7 +602,7 @@ a:hover {
       }
 
       @media only screen and (max-width: 560px) {
-        height: 50rem;
+        height: 41rem;
       }
 
       .tab-pane > .expanded-content {
