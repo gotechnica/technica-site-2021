@@ -1,79 +1,108 @@
 .main {
   margin-top: 50px;
   padding-left: 15%;
-  padding-right: 15%; }
+  padding-right: 15%;
+}
 
 .primary-heading {
   padding-top: 5%;
-  padding-bottom: 1%; }
+  padding-bottom: 1%;
+}
 
 .heading {
   color: #ED648D;
-  line-height: 1.3em; }
+  line-height: 1.3em;
+}
 
 h1 {
-  font-size: 300%; }
+  font-size: 300%;
+}
 
 h2 {
-  font-size: 200%; }
+  font-size: 200%;
+}
 
 .position-desc img {
   height: 20vw;
   min-height: 250px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 20px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .position-desc img:hover {
-  filter: brightness(1.15);
-  transition: 0.3s ease; }
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 
 .position-desc h2 {
   height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+}
 
 .position-desc li {
-  padding: 5px 0px; }
+  padding: 5px 0px;
+}
 
 .perk-list li {
-  padding: 2px; }
+  padding: 2px;
+}
 
 .apply {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+}
 
 .apply .btn {
   background-color: #ED648D;
   font-size: 2rem;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 .apply .btn:hover {
-  filter: brightness(1.2);
-  transition: 0.3s ease; }
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 
 .faq {
   margin-top: 40px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 .faq-heading {
   padding-top: 5%;
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+}
 
 .desc {
   width: 80%;
   margin: auto;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
 .card {
-  border: none; }
+  border: none;
+}
 
 .card-header {
   background-color: white;
-  padding-left: 0px; }
+  padding-left: 0px;
+}
 
 .accordion .btn {
   color: black;
@@ -81,63 +110,89 @@ h2 {
   text-align: left;
   width: 100%;
   padding-left: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+}
 
 .accordion {
-  border-bottom: 3px solid #b5a1c4; }
+  border-bottom: 3px solid #b5a1c4;
+}
 
 .card-body {
   padding-left: 0px;
-  color: grey; }
+  color: grey;
+}
 
 .email {
   font-size: 1.75rem;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+}
 
 /* large breakpoint, lists not aligned with headings */
 @media only screen and (min-width: 1300px) {
   #responsibilities {
-    margin-left: 5%; }
+    margin-left: 5%;
+  }
   #why-apply {
-    margin-left: 5%; }
+    margin-left: 5%;
+  }
   .faq-heading {
-    padding-top: 3%; } }
+    padding-top: 3%;
+  }
+}
 
 /* large breakpoint, position description collapses */
 @media only screen and (max-width: 991px) {
   .position-desc h2 {
-    height: auto; }
+    height: auto;
+  }
   .apply {
-    padding-top: 20px; } }
+    padding-top: 20px;
+  }
+}
 
 /* mobile */
 @media only screen and (max-width: 575px) {
   .position-desc img {
     padding-left: 0px;
-    padding-right: 0px; }
+    padding-right: 0px;
+  }
   .accordion .btn {
-    text-align: center; }
+    text-align: center;
+  }
   .card-body {
-    text-align: center; }
+    text-align: center;
+  }
   .heading {
-    font-size: 30px; }
+    font-size: 30px;
+  }
   .email {
     font-size: 20px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+  }
   .faq {
     padding-bottom: 0;
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+  }
+}
 
 @media only screen and (min-width: 1720px) {
   #responsibilities {
-    margin-left: 10%; }
+    margin-left: 10%;
+  }
   #why-apply {
-    margin-left: 10%; }
+    margin-left: 10%;
+  }
   .faq-heading {
-    padding-top: 3%; } }
+    padding-top: 3%;
+  }
+}
 
 @media only screen and (min-width: 1875px) {
   #responsibilities {
-    margin-left: 14%; }
+    margin-left: 14%;
+  }
   #why-apply {
-    margin-left: 14%; } }
+    margin-left: 14%;
+  }
+}
+/*# sourceMappingURL=ambassadors.css.map */
