@@ -802,6 +802,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 2rem;
 }
 
 .what-can-you-do .tab-container {

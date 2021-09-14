@@ -9,7 +9,6 @@
     margin-top: -100px;
   }
 }
-
 .hero-clouds {
   position: absolute;
   width: 100%;
@@ -24,7 +23,6 @@
     top: -5px;
   }
 }
-
 @media only screen and (min-width: 1400px) {
   .hero-clouds {
     height: 850px;
@@ -32,7 +30,6 @@
     top: -5px;
   }
 }
-
 @media only screen and (max-width: 1024px) {
   .hero-clouds {
     height: 663px;
@@ -40,7 +37,6 @@
     top: -5px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .hero-clouds {
     width: 834px;
@@ -49,20 +45,10 @@
     top: -26px;
   }
 }
-
 .hero-donate {
   background-color: white;
   overflow: hidden;
   padding-bottom: 10%;
-}
-
-@-webkit-keyframes wait {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes wait {
@@ -73,17 +59,6 @@
     opacity: 0;
   }
 }
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -93,16 +68,13 @@
     pointer-events: auto;
   }
 }
-
 .hero-information {
   margin-top: 200px;
   padding-left: 0;
   position: relative;
   z-index: 3;
-  -webkit-animation: wait 600ms, fade-in 800ms 600ms;
-          animation: wait 600ms, fade-in 800ms 600ms;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: wait 600ms, fade-in 800ms 600ms;
+  animation-duration: 2s;
 }
 
 .hero-information .hero-logo {
@@ -115,7 +87,6 @@
     margin-top: 260px;
   }
 }
-
 .hero-information #technica-logo {
   padding-top: 5%;
   margin-top: 16%;
@@ -129,7 +100,6 @@
     margin-top: -650px;
   }
 }
-
 .hero-information #hero-tagline {
   font-size: 150%;
   width: 55%;
@@ -141,24 +111,19 @@
     width: 95%;
   }
 }
-
 @media only screen and (min-width: 767px) and (max-width: 1042px) {
   .hero-information #hero-tagline {
     width: 85%;
   }
 }
-
 .hero-action {
   margin-top: -30px;
   position: relative;
   z-index: 5;
   opacity: 0;
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fade-in 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 @media only screen and (min-width: 996px) {
@@ -166,19 +131,16 @@
     padding-top: 125px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .hero-action {
     padding-top: 125px;
   }
 }
-
 @media only screen and (min-width: 1400px) {
   .hero-action {
     padding-top: 350px;
   }
 }
-
 .hero-action .big-donate-btn {
   font-family: DINPro;
   font-size: 175%;
@@ -197,7 +159,6 @@
     color: #fff;
   }
 }
-
 .hero-action .hero-learn {
   color: #b6a1c4;
   font-size: 150%;
@@ -208,57 +169,58 @@
     font-size: 115%;
   }
 }
-
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
     padding-top: 55px;
   }
+
   .hero-action {
     padding-top: 120px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .hero-information .hero-logo {
     margin-top: 225px;
     margin-bottom: -200px;
   }
+
   .hero-information #technica-logo {
     width: 500px;
   }
+
   .hero-action {
     padding-top: 100px;
   }
 }
-
 @media only screen and (max-width: 575px) {
   .hero {
     padding-bottom: 75px;
   }
+
   .hero-information {
     font-size: 150%;
   }
+
   .hero-information #technica-logo {
     width: 80vw;
     padding-top: 15%;
   }
+
   .hero-information #theme-logo {
     width: 40vw;
     min-width: 120px;
   }
+
   .promise-text {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
-
 /*HERO SECTION ENDS*/
 .donate-button {
   z-index: 999;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: white;
   background-color: #b5a1c4;
   border: none;
@@ -279,7 +241,6 @@
   opacity: 75%;
   text-decoration: none;
   color: #fff;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
@@ -299,7 +260,7 @@ h2 {
 
 .curved {
   background-color: #ece3f2;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
   padding-top: 50px;
 }
 
@@ -316,8 +277,6 @@ h2 {
 }
 
 .story-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -329,7 +288,6 @@ h2 {
   padding-top: 3%;
   padding-bottom: 3%;
 }
-
 @media only screen and (max-width: 767px) {
   .donate-promise {
     padding-top: 30%;
@@ -355,14 +313,12 @@ h2 {
   width: 100%;
   height: 100%;
   left: 783px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .top-logo {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .donate-impact {
@@ -431,7 +387,6 @@ h2 {
 #email-link-donate:hover {
   opacity: 75%;
   text-decoration: none;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
@@ -451,7 +406,6 @@ h2 {
 
 .nav-link:hover {
   opacity: 75%;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
@@ -460,70 +414,77 @@ h2 {
   .hero-logo {
     padding-top: 5px;
   }
+
   .hero-title {
     padding-top: 20px;
   }
+
   .promise-image img {
     max-height: 260px;
   }
+
   /* impact section */
   .donate-btn {
     margin-bottom: 0;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   /* hero section */
   .hero-title {
     padding-top: 20px;
     padding-bottom: 35px;
   }
+
   .our-donor {
     line-height: 1em;
     margin-bottom: 5%;
   }
+
   .promise-image {
     padding-top: 0;
     margin-top: 0;
     margin-left: 3%;
   }
+
   .donate-impact {
     margin-top: 3%;
   }
 }
-
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
     padding-top: 5px;
   }
+
   .hero-title {
     padding-top: 20px;
   }
+
   /* impact section */
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 8%;
     width: 80%;
     height: 100%;
     min-height: 300px;
     max-height: 300px;
   }
+
   .donate-btn {
     margin-bottom: 0;
   }
 }
-
 @media only screen and (max-width: 991px) {
   /* impact (+ promise) section */
   .impact-header,
-  .our-donor {
+.our-donor {
     font-size: 280%;
   }
+
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 8%;
     margin-left: 2%;
     margin-right: 2%;
@@ -532,32 +493,37 @@ h2 {
     min-height: 300px;
     max-height: 300px;
   }
+
   .donate-button {
     font-size: 120%;
   }
+
   .donate-btn {
     font-size: 100%;
   }
+
   .donate-questions {
     margin-top: 20px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   /* donor promise */
   .our-donor {
     text-align: center;
   }
+
   /* impact section */
   .donate-impact {
     margin-top: 3%;
   }
+
   .impact-header {
     font-size: 280%;
   }
+
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 8%;
     margin-left: 0;
     margin-right: 0;
@@ -567,51 +533,60 @@ h2 {
     max-height: 300px;
     font-size: 85%;
   }
+
   .donate-button {
     font-size: 130%;
   }
+
   .donate-impact {
     padding-top: 15%;
   }
+
   .donate-questions {
     margin-top: 8%;
     margin-bottom: 8%;
   }
+
   .donate-questions {
     margin-top: 20%;
   }
+
   .footer {
     margin-top: 5%;
   }
+
   .contact-footer {
     margin: 8% 0 13% 0;
   }
 }
-
 /* mobile */
 @media only screen and (max-width: 575px) {
   .story-header {
     text-align: center;
   }
+
   .promise-image {
     padding-top: 0%;
     padding-bottom: 5%;
   }
+
   /* impact section */
   .impact-header {
     font-size: 280%;
     padding-top: 10%;
   }
+
   .donate-option1-header,
-  .donate-option2-header,
-  .donate-option3-header {
+.donate-option2-header,
+.donate-option3-header {
     display: inline-block;
     font-size: 250%;
     margin-bottom: 10%;
   }
+
   .donate-option1,
-  .donate-option2,
-  .donate-option3 {
+.donate-option2,
+.donate-option3 {
     padding: 6%;
     margin: 3% 10%;
     width: 80%;
@@ -619,95 +594,113 @@ h2 {
     min-height: 240px;
     max-height: 240px;
   }
+
   .donate-button {
     font-size: 130%;
   }
+
   .donate-btn {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   .donate-questions,
-  .contact-footer {
+.contact-footer {
     margin-top: 8%;
     margin-bottom: 8%;
   }
+
   .donate-questions {
     margin-top: 20%;
   }
+
   .contact-footer {
     margin: 12% 0 18%;
   }
 }
-
 @media only screen and (max-width: 447px) {
   .our-donor {
     text-align: center;
     font-size: 260%;
   }
+
   .impact-header {
     margin-top: 10%;
     font-size: 260%;
   }
+
   .spons-code {
     margin-top: 0;
   }
+
   .donate-questions,
-  .contact-footer {
+.contact-footer {
     margin-top: 8%;
     margin-bottom: 8%;
   }
+
   .donate-questions {
     margin-top: 30%;
   }
+
   .contact-footer {
     margin: 15% 0 25% 0;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .our-donor {
     font-size: 200%;
   }
+
   .impact-header {
     padding-top: 20%;
     font-size: 200%;
     line-height: 1.2em;
     padding-bottom: 7%;
   }
+
   .spons-code {
     margin-top: 0;
   }
+
   .donate-questions {
     margin-top: 35%;
   }
+
   .contact-header {
     font-size: 200%;
   }
 }
-
 @media only screen and (max-width: 280px) {
   .hero-title {
     font-size: 125%;
   }
+
   .hero-information #technica-logo {
     padding-top: 8%;
   }
+
   .our-donor {
     padding-top: 20%;
   }
+
   .impact-header, .contact-header {
     font-size: 200%;
   }
+
   .donate-questions,
-  .contact-footer {
+.contact-footer {
     margin-top: 8%;
     margin-bottom: 8%;
   }
+
   .donate-questions {
     margin-top: 40%;
   }
+
   .contact-footer {
     margin: 20% 0 30% 0;
   }
 }
+
 /*# sourceMappingURL=donate.css.map */
