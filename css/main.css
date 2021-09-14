@@ -642,7 +642,7 @@ a:hover {
 
 @media only screen and (max-width: 395px) {
   .what-can-you-do .expand-btn.btn {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -679,7 +679,7 @@ a:hover {
 
 @media only screen and (max-width: 395px) {
   .what-can-you-do .collapse-btn.btn {
-    width: 70%;
+    width: 100%;
   }
 }
 
