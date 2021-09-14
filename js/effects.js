@@ -14,10 +14,21 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//changing background color
+//changing background color + navbar items on scroll
 $(function () {
   $(document).scroll(function () {
     var $main = $('.main');
+
+    //hero
+    if ($(window).scrollTop() >= $('#hero-nav').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+    }
+
+    //about
+    if ($(window).scrollTop() >= $('#about').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+      $('.navbar-nav li.about-nav').addClass("active");
+    }
 
     //what you can do
     if ($(window).scrollTop() >= $('#what-can-you-do').offset().top - 100) {
@@ -28,23 +39,35 @@ $(function () {
 
     //tracks
     if ($(window).scrollTop() >= $('#tracks').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-tracks');
+      $('.navbar-nav li.tracks-nav').addClass("active");
     } else {
       $main.removeClass('scroll-tracks');
     }
 
     //registration
     if ($(window).scrollTop() >= $('#registration').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-registration');
+      $('.navbar-nav li.reg-nav').addClass("active");
     } else {
       $main.removeClass('scroll-registration');
     }
 
     //faq
     if ($(window).scrollTop() >= $('#faq').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-faq');
+      $('.navbar-nav li.faq-nav').addClass("active");
     } else {
       $main.removeClass('scroll-faq');
+    }
+
+    //contact
+    if ($(window).scrollTop() >= $('#contact').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+      $('.navbar-nav li.contact-nav').addClass("active");
     }
   });
 });
