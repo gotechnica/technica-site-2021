@@ -240,7 +240,7 @@ body::-webkit-scrollbar {
 
 .hero-information {
   position: relative;
-  margin-left: 7%;
+  padding-left: 4rem;
   z-index: 3;
   @include fade-in(600ms);
   #theme-logo {

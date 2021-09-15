@@ -166,7 +166,7 @@ body {
 
 .hero-information {
   position: relative;
-  margin-left: 7%;
+  padding-left: 4rem;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
   animation-duration: 2s; }
