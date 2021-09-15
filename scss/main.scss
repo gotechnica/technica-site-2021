@@ -240,7 +240,7 @@ body::-webkit-scrollbar {
 
 .hero-information {
   position: relative;
-  padding-left: 4rem;
+  margin-left: 7%;
   z-index: 3;
   @include fade-in(600ms);
   #theme-logo {
@@ -249,6 +249,10 @@ body::-webkit-scrollbar {
   }
   #technica-logo {
     width: 500px;
+  }
+
+  @media only screen and (min-width: 1422px) {
+    margin-left: 12%;
   }
 
   @media only screen and (max-width: 1024px) {
