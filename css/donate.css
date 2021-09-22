@@ -511,7 +511,8 @@ h2 {
     padding-top: 8%; }
   .our-donor {
     padding-top: 20%; }
-  .impact-header, .contact-header {
+  .impact-header,
+  .contact-header {
     font-size: 200%; }
   .donate-questions,
   .contact-footer {
