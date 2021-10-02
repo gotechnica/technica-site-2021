@@ -1,16 +1,70 @@
-.container {
-  align-content: center;
+@mixin dinpro-text($size, $weight, $color) {
+  font-family: DINPro;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }
 
-.logo {
-  margin-left: 32%;
-  margin-right: 50%;
-  #technica-logo {
-    width: 30vw;
-    height: 8vw;
+.container {
+  align-content: center;
+  padding-top: 5%;
+  @media (min-width: 1600px) {
+    padding-top: 10%;
   }
 }
 
 .error-information {
   text-align: center;
+  padding-top: 5%;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3%;
+  border-radius: 33px;
+}
+
+.logo {
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-bottom: 10%;
+  #technica-logo {
+    display: block;
+    width: 30vw;
+    height: 8vw;
+    @media (max-width: 1500px) {
+      width: 60vw;
+      height: 15vw;
+      margin-left: -65%;
+    }
+    @media (min-width: 2000px) {
+      margin-left: -50%;
+    }
+    @media (min-width: 2400px) {
+      margin-left: -80%;
+    }
+  }
+}
+
+.hero-action {
+  padding-top: 10%;
+  .back-to-home-btn {
+    @media (min-width: 700px) {
+      width: 45vw;
+      height: 11vw;
+      @include dinpro-text(235%, bold, #fff);
+    }
+    @media (min-width: 900px) {
+      width: 35vw;
+      height: 8vw;
+      @include dinpro-text(235%, bold, #fff);
+    }
+    @media only screen and (min-width: 1400px) {
+      width: 25vw;
+      height: 5vw;
+      @include dinpro-text(235%, bold, #fff);
+    }
+    @media only screen and (min-width: 2001px) {
+      width: 15vw;
+      height: 3vw;
+      @include dinpro-text(235%, bold, #fff);
+    }
+  }
 }
