@@ -1,0 +1,12 @@
+.container {
+  align-content: center; }
+
+.logo {
+  margin-left: 32%;
+  margin-right: 50%; }
+  .logo #technica-logo {
+    width: 30vw;
+    height: 8vw; }
+
+.error-information {
+  text-align: center; }
