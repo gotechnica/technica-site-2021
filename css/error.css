@@ -1,12 +1,68 @@
 .container {
-  align-content: center; }
-
-.logo {
-  margin-left: 32%;
-  margin-right: 50%; }
-  .logo #technica-logo {
-    width: 30vw;
-    height: 8vw; }
+  align-content: center;
+  padding-top: 5%; }
+  @media (min-width: 1600px) {
+    .container {
+      padding-top: 10%; } }
 
 .error-information {
-  text-align: center; }
+  text-align: center;
+  padding-top: 5%;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3%;
+  border-radius: 33px; }
+
+.logo {
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-bottom: 10%; }
+  .logo #technica-logo {
+    display: block;
+    width: 30vw;
+    height: 8vw; }
+    @media (max-width: 1500px) {
+      .logo #technica-logo {
+        width: 60vw;
+        height: 15vw;
+        margin-left: -65%; } }
+    @media (min-width: 2000px) {
+      .logo #technica-logo {
+        margin-left: -50%; } }
+    @media (min-width: 2400px) {
+      .logo #technica-logo {
+        margin-left: -80%; } }
+
+.hero-action {
+  padding-top: 10%; }
+  @media (min-width: 700px) {
+    .hero-action .back-to-home-btn {
+      width: 45vw;
+      height: 11vw;
+      font-family: DINPro;
+      font-size: 235%;
+      font-weight: bold;
+      color: #fff; } }
+  @media (min-width: 900px) {
+    .hero-action .back-to-home-btn {
+      width: 35vw;
+      height: 8vw;
+      font-family: DINPro;
+      font-size: 235%;
+      font-weight: bold;
+      color: #fff; } }
+  @media only screen and (min-width: 1400px) {
+    .hero-action .back-to-home-btn {
+      width: 25vw;
+      height: 5vw;
+      font-family: DINPro;
+      font-size: 235%;
+      font-weight: bold;
+      color: #fff; } }
+  @media only screen and (min-width: 2001px) {
+    .hero-action .back-to-home-btn {
+      width: 15vw;
+      height: 3vw;
+      font-family: DINPro;
+      font-size: 235%;
+      font-weight: bold;
+      color: #fff; } }
