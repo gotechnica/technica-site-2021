@@ -169,7 +169,12 @@ body {
   padding-left: 4rem;
   z-index: 3;
   animation: wait 600ms, fade-in 800ms 600ms;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  /*#hero-value {
+    @media only screen and (max-width: 644px) {
+      font-size: 50%;
+    }
+  }*/ }
   .hero-information #theme-logo {
     width: 300px;
     display: block; }
@@ -198,24 +203,33 @@ body {
     @media only screen and (max-width: 767px) {
       .hero-information #theme-logo {
         padding-top: 10%; } }
-  .hero-information #hero-tagline {
+  .hero-information #hero-tagline,
+  .hero-information #hero-value {
     font-size: 140%;
     width: 55%;
     margin-top: 1%; }
     @media only screen and (max-width: 767px) {
-      .hero-information #hero-tagline {
+      .hero-information #hero-tagline,
+      .hero-information #hero-value {
         width: 95%; } }
     @media only screen and (min-width: 767px) and (max-width: 1042px) {
-      .hero-information #hero-tagline {
+      .hero-information #hero-tagline,
+      .hero-information #hero-value {
         font-size: 140%;
         width: 85%; } }
     @media only screen and (max-width: 950px) {
-      .hero-information #hero-tagline {
+      .hero-information #hero-tagline,
+      .hero-information #hero-value {
         font-size: 140%;
         text-align: left; } }
     @media only screen and (max-width: 715px) {
-      .hero-information #hero-tagline {
+      .hero-information #hero-tagline,
+      .hero-information #hero-value {
         font-size: 70%; } }
+    @media only screen and (min-width: 638px) and (max-width: 792px) {
+      .hero-information #hero-tagline,
+      .hero-information #hero-value {
+        font-size: 125% !important; } }
 
 .hero-action {
   position: relative;

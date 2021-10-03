@@ -281,7 +281,8 @@ body::-webkit-scrollbar {
     }
   }
 
-  #hero-tagline {
+  #hero-tagline,
+  #hero-value {
     font-size: 140%;
     width: 55%;
     margin-top: 1%;
@@ -299,7 +300,16 @@ body::-webkit-scrollbar {
     @media only screen and (max-width: 715px) {
       font-size: 70%;
     }
+    @media only screen and (min-width: 638px) and (max-width: 792px) {
+      font-size: 125% !important;
+    }
   }
+
+  /*#hero-value {
+    @media only screen and (max-width: 644px) {
+      font-size: 50%;
+    }
+  }*/
 }
 
 .hero-action {
