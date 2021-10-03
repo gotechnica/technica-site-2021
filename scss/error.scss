@@ -8,6 +8,7 @@
 .container {
   align-content: center;
   padding-top: 5%;
+  width: 75%;
   @media (min-width: 1600px) {
     padding-top: 10%;
   }
@@ -19,16 +20,20 @@
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
   border-radius: 33px;
+
+  #error-number {
+    font-size: 300%;
+  }
 }
 
 .logo {
   margin-left: 30%;
   margin-right: 50%;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   #technica-logo {
     display: block;
-    width: 30vw;
-    height: 8vw;
+    width: 15vw;
+    height: 4vw;
     @media (max-width: 1500px) {
       width: 60vw;
       height: 15vw;
@@ -42,29 +47,25 @@
     }
   }
 }
+.back-to-home-btn {
+  margin-top: -5%;
+  @include dinpro-text(125%, bold, #fff);
 
-.hero-action {
-  padding-top: 10%;
-  .back-to-home-btn {
-    @media (min-width: 700px) {
-      width: 45vw;
-      height: 11vw;
-      @include dinpro-text(235%, bold, #fff);
-    }
-    @media (min-width: 900px) {
-      width: 35vw;
-      height: 8vw;
-      @include dinpro-text(235%, bold, #fff);
-    }
-    @media only screen and (min-width: 1400px) {
-      width: 25vw;
-      height: 5vw;
-      @include dinpro-text(235%, bold, #fff);
-    }
-    @media only screen and (min-width: 2001px) {
-      width: 15vw;
-      height: 3vw;
-      @include dinpro-text(235%, bold, #fff);
-    }
+  @media only screen and (min-width: 2001px) {
+    width: 15vw;
+    height: 3vw;
+    //@include dinpro-text(235%, bold, #fff);
+  }
+  @media (min-width: 550px) and (max-width: 750px) {
+    width: 45vw;
+    height: 5vw;
+  }
+  @media (min-width: 610px) and (max-width: 766px) {
+    width: 20vw;
+    height: 5vw;
+  }
+  @media (min-width: 767px) and (max-width: 830px) {
+    width: 30vw;
+    height: 5vw;
   }
 }

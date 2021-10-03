@@ -1,6 +1,7 @@
 .container {
   align-content: center;
-  padding-top: 5%; }
+  padding-top: 5%;
+  width: 75%; }
   @media (min-width: 1600px) {
     .container {
       padding-top: 10%; } }
@@ -11,15 +12,17 @@
   background: rgba(255, 255, 255, 0.75);
   padding: 3%;
   border-radius: 33px; }
+  .error-information #error-number {
+    font-size: 300%; }
 
 .logo {
   margin-left: 30%;
   margin-right: 50%;
-  margin-bottom: 10%; }
+  margin-bottom: 7%; }
   .logo #technica-logo {
     display: block;
-    width: 30vw;
-    height: 8vw; }
+    width: 15vw;
+    height: 4vw; }
     @media (max-width: 1500px) {
       .logo #technica-logo {
         width: 60vw;
@@ -32,37 +35,25 @@
       .logo #technica-logo {
         margin-left: -80%; } }
 
-.hero-action {
-  padding-top: 10%; }
-  @media (min-width: 700px) {
-    .hero-action .back-to-home-btn {
-      width: 45vw;
-      height: 11vw;
-      font-family: DINPro;
-      font-size: 235%;
-      font-weight: bold;
-      color: #fff; } }
-  @media (min-width: 900px) {
-    .hero-action .back-to-home-btn {
-      width: 35vw;
-      height: 8vw;
-      font-family: DINPro;
-      font-size: 235%;
-      font-weight: bold;
-      color: #fff; } }
-  @media only screen and (min-width: 1400px) {
-    .hero-action .back-to-home-btn {
-      width: 25vw;
-      height: 5vw;
-      font-family: DINPro;
-      font-size: 235%;
-      font-weight: bold;
-      color: #fff; } }
+.back-to-home-btn {
+  margin-top: -5%;
+  font-family: DINPro;
+  font-size: 125%;
+  font-weight: bold;
+  color: #fff; }
   @media only screen and (min-width: 2001px) {
-    .hero-action .back-to-home-btn {
+    .back-to-home-btn {
       width: 15vw;
-      height: 3vw;
-      font-family: DINPro;
-      font-size: 235%;
-      font-weight: bold;
-      color: #fff; } }
+      height: 3vw; } }
+  @media (min-width: 550px) and (max-width: 750px) {
+    .back-to-home-btn {
+      width: 45vw;
+      height: 5vw; } }
+  @media (min-width: 610px) and (max-width: 766px) {
+    .back-to-home-btn {
+      width: 20vw;
+      height: 5vw; } }
+  @media (min-width: 767px) and (max-width: 830px) {
+    .back-to-home-btn {
+      width: 30vw;
+      height: 5vw; } }
