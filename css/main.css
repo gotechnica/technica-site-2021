@@ -128,6 +128,10 @@ body {
   background-color: #e9e3ed !important;
   transition: background-color 200ms linear; }
 
+.scroll-schedule {
+  background-color: #f5d6e1 !important;
+  transition: background-color 200ms linear; }
+
 .scroll-faq {
   background-color: #f7f3ed !important;
   transition: background-color 200ms linear; }
@@ -789,6 +793,123 @@ a:hover {
     .mentor .btn,
     .volunteer .btn {
       margin: 0; } }
+
+.schedule-container {
+  background-color: white;
+  border-radius: 8px; }
+  @media (max-width: 767px) {
+    .schedule-container {
+      font-size: 14px; } }
+  @media (max-width: 575px) {
+    .schedule-container {
+      font-size: 13px; } }
+
+.schedule-toggler {
+  font-family: DINPro;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ed648d;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px #9c8da5 solid; }
+  @media (max-width: 575px) {
+    .schedule-toggler {
+      font-size: 17px; } }
+
+.active-day {
+  border-bottom: 5px #ed648d solid; }
+
+.tab-content {
+  height: 500px;
+  overflow-y: auto; }
+
+.schedule-event-nodesc, .schedule-event {
+  padding: 15px 30px;
+  font-weight: bold;
+  border-bottom: 1px #9c8da5 solid; }
+  @media (max-width: 575px) {
+    .schedule-event-nodesc, .schedule-event {
+      padding: 15px; } }
+
+.schedule-event {
+  cursor: pointer; }
+  .schedule-event:hover {
+    background-color: #E5E5E5; }
+
+.event-modal-title {
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: bold;
+  color: black; }
+  @media (max-width: 767px) {
+    .event-modal-title {
+      font-size: 16px; } }
+
+.event-time, .event-name, .event-type {
+  display: inline-block;
+  vertical-align: middle; }
+
+.event-time {
+  width: 20%; }
+  @media (max-width: 420px) {
+    .event-time {
+      width: 25%; } }
+  @media (max-width: 330px) {
+    .event-time {
+      width: 27%; } }
+
+.event-name {
+  width: 60%; }
+  @media (max-width: 767px) {
+    .event-name {
+      width: 55%; } }
+  @media (max-width: 420px) {
+    .event-name {
+      width: 52%; } }
+  @media (max-width: 330px) {
+    .event-name {
+      width: 48%; } }
+
+.event-subname {
+  font-weight: normal;
+  font-size: .9rem; }
+  @media (max-width: 575px) {
+    .event-subname {
+      font-size: 12px; } }
+
+.event-type {
+  width: 15%; }
+  @media (max-width: 767px) {
+    .event-type {
+      width: 20%; } }
+  @media (max-width: 450px) {
+    .event-type {
+      font-size: 12px; } }
+
+.checkin {
+  color: #a0d6b4; }
+
+.workshop {
+  color: #ed648d; }
+
+.panel-meetup {
+  color: #f9b7ae; }
+
+.event {
+  color: #9c8da5; }
+
+.minievent {
+  color: #8cd8ed; }
+
+@media (max-width: 450px) {
+  .horizon-event {
+    font-size: 11px; } }
+
+.horizon-event:after {
+  padding-left: 5px;
+  display: inline-block;
+  width: 1px;
+  content: url("../img/horizon-icon.svg"); }
 
 .faq {
   margin-top: 50px; }

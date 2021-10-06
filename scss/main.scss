@@ -6,6 +6,7 @@ $dark-lavender: #8d7c98;
 $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
+$light-grey: #E5E5E5;
 $dark-grey: #606060;
 $orange: #f9b7ae;
 $hero-blue: #8cd8ed;
@@ -181,6 +182,11 @@ body::-webkit-scrollbar {
 
 .scroll-registration {
   background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-schedule {
+  background-color: $bg-pink !important;
   transition: background-color 200ms linear;
 }
 
@@ -1082,6 +1088,141 @@ a:hover {
     }
   }
 }
+
+// *** Schedule Section ***
+
+.schedule-container {
+  background-color: white;
+  border-radius: 8px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
+}
+
+.schedule-toggler {
+  @include dinpro-text(24px, bold, $pink);
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px $lavender solid;
+  @media (max-width: 575px) {
+    font-size: 17px;
+  }
+}
+
+.active-day {
+  border-bottom: 5px $pink solid;
+}
+
+.tab-content {
+  height: 500px;
+  overflow-y: auto;
+}
+
+.schedule-event-nodesc, .schedule-event {
+  padding: 15px 30px;
+  font-weight: bold;
+  border-bottom: 1px $lavender solid;
+  @media (max-width: 575px) {
+    padding: 15px;
+  }
+}
+
+.schedule-event {
+  cursor: pointer;
+  &:hover {
+    background-color: $light-grey;
+  }
+}
+
+.event-modal-title {
+  @include dinpro-text(20px,bold, black);
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.event-time, .event-name, .event-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.event-time {
+  width: 20%;
+  @media (max-width: 420px) {
+    width: 25%;
+  }
+  @media (max-width: 330px) {
+    width: 27%;
+  }
+}
+
+.event-name {
+  width: 60%;
+  @media (max-width: 767px) {
+    width: 55%;
+  }
+  @media (max-width: 420px) {
+    width: 52%;
+  }
+  @media (max-width: 330px) {
+    width: 48%;
+  }
+}
+
+.event-subname {
+  font-weight: normal;
+  font-size: .9rem;
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
+}
+
+.event-type {
+  width: 15%;
+  @media (max-width: 767px) {
+    width: 20%;
+  }
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+
+.checkin {
+  color: $pastel-green;
+}
+
+.workshop {
+  color: $pink;
+}
+
+.panel-meetup {
+  color: $orange;
+}
+
+.event {
+  color: $lavender;
+}
+
+.minievent {
+  color: $hero-blue;
+}
+
+.horizon-event {
+  @media (max-width: 450px) {
+    font-size: 11px;
+  }
+}
+
+.horizon-event:after {
+  padding-left: 5px;
+  display: inline-block;
+  width: 1px;
+  content: url("../img/horizon-icon.svg");
+}
+
 
 // *** FAQ section ***
 .faq {
