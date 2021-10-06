@@ -55,6 +55,14 @@ $(function () {
       $main.removeClass('scroll-registration');
     }
 
+    //schedule
+    if ($(window).scrollTop() >= $('#schedule').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+      $main.addClass('scroll-schedule');
+    } else {
+      $main.removeClass('scroll-schedule');
+    }
+
     //faq
     if ($(window).scrollTop() >= $('#faq').offset().top - 100) {
       $('.navbar-nav li').removeClass("active");
@@ -151,4 +159,12 @@ var flky = new Flickity('.gallery', {
   // activates if #element:after { content: 'flickity' }
   wrapAround: true,
   // at end of cells, wraps-around to first for infinite scrolling
+});
+
+//schedule
+$(function () {
+  var $sat = $("#sattogglecontainer");
+  var $sun = $("#suntogglecontainer");
+  $("#sattoggle").click(function() { $sat.addClass('active-day'); $sun.removeClass('active-day');});
+  $("#suntoggle").click(function() { $sun.addClass('active-day'); $sat.removeClass('active-day');});
 });
