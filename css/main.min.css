@@ -1084,20 +1084,17 @@ a:hover {
     font-size: 12px;
   }
 }
-.checkin {
-  color: #a0d6b4;
-}
 .workshop {
   color: #ed648d;
 }
 .panel-meetup {
-  color: #f9b7ae;
+  color: #45a567;
 }
 .event {
-  color: #9c8da5;
+  color: #72607b;
 }
 .minievent {
-  color: #8cd8ed;
+  color: #2ca0b5;
 }
 @media (max-width: 450px) {
   .horizon-event {

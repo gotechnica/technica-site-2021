@@ -10,8 +10,10 @@ $light-grey: #E5E5E5;
 $dark-grey: #606060;
 $orange: #f9b7ae;
 $hero-blue: #8cd8ed;
+$darker-hero-blue: #2ca0b5;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
+$darker-pastel-green: #45A567; //#779C85;
 
 $bg-green: #b5d5b2;
 $bg-blue: #cde9fb;
@@ -1190,24 +1192,20 @@ a:hover {
   }
 }
 
-.checkin {
-  color: $pastel-green;
-}
-
 .workshop {
   color: $pink;
 }
 
 .panel-meetup {
-  color: $orange;
+  color: $darker-pastel-green;
 }
 
 .event {
-  color: $lavender;
+  color: $darker-lavender;
 }
 
 .minievent {
-  color: $hero-blue;
+  color: $darker-hero-blue;
 }
 
 .horizon-event {

@@ -39,9 +39,7 @@ $(function () {
 
     //tracks
     if ($(window).scrollTop() >= $('#tracks').offset().top - 100) {
-      $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-tracks');
-      $('.navbar-nav li.tracks-nav').addClass("active");
     } else {
       $main.removeClass('scroll-tracks');
     }
@@ -59,6 +57,7 @@ $(function () {
     if ($(window).scrollTop() >= $('#schedule').offset().top - 100) {
       $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-schedule');
+      $('.navbar-nav li.sched-nav').addClass("active");
     } else {
       $main.removeClass('scroll-schedule');
     }
