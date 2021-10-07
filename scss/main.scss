@@ -6,11 +6,14 @@ $dark-lavender: #8d7c98;
 $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
+$light-grey: #E5E5E5;
 $dark-grey: #606060;
 $orange: #f9b7ae;
 $hero-blue: #8cd8ed;
+$darker-hero-blue: #2ca0b5;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
+$darker-pastel-green: #45A567; //#779C85;
 
 $bg-green: #b5d5b2;
 $bg-blue: #cde9fb;
@@ -133,6 +136,10 @@ body::-webkit-scrollbar {
     transition: 0.3s ease;
     opacity: 0.8;
   }
+
+  .navbar-nav li.active > a {
+    color: $pink;
+  }
 }
 
 .scrolled {
@@ -177,6 +184,11 @@ body::-webkit-scrollbar {
 
 .scroll-registration {
   background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-schedule {
+  background-color: $bg-pink !important;
   transition: background-color 200ms linear;
 }
 
@@ -247,6 +259,10 @@ body::-webkit-scrollbar {
     width: 500px;
   }
 
+  @media only screen and (min-width: 1422px) {
+    margin-left: 12%;
+  }
+
   @media only screen and (max-width: 1024px) {
     margin-top: 0px;
     padding-left: 3rem;
@@ -273,7 +289,8 @@ body::-webkit-scrollbar {
     }
   }
 
-  #hero-tagline {
+  #hero-tagline,
+  #hero-value {
     font-size: 140%;
     width: 55%;
     margin-top: 1%;
@@ -291,7 +308,16 @@ body::-webkit-scrollbar {
     @media only screen and (max-width: 715px) {
       font-size: 70%;
     }
+    @media only screen and (min-width: 638px) and (max-width: 792px) {
+      font-size: 125% !important;
+    }
   }
+
+  /*#hero-value {
+    @media only screen and (max-width: 644px) {
+      font-size: 50%;
+    }
+  }*/
 }
 
 .hero-action {
@@ -511,12 +537,12 @@ a:hover {
       width: 20%;
       color: #000;
 
-      @media only screen and (max-width: 982px) {
+      @media only screen and (max-width: 988px) {
         width: 50%;
       }
 
       @media only screen and (max-width: 395px) {
-        width: 70%;
+        width: 100%;
       }
     }
   }
@@ -530,6 +556,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    margin-top: 1rem;
 
     a {
       color: #000;
@@ -540,12 +567,12 @@ a:hover {
       width: 20%;
       color: #000;
 
-      @media only screen and (max-width: 982px) {
+      @media only screen and (max-width: 988px) {
         width: 50%;
       }
 
       @media only screen and (max-width: 395px) {
-        width: 70%;
+        width: 100%;
       }
     }
   }
@@ -571,6 +598,7 @@ a:hover {
 
       .expand-btn {
         opacity: 0;
+        display: none;
       }
 
       .collapse-btn {
@@ -588,8 +616,12 @@ a:hover {
         opacity: 0;
       }
 
+      @media only screen and (max-width: 1200px) {
+        height: 28rem;
+      }
+
       @media only screen and (max-width: 991px) {
-        height: 37rem;
+        height: 36rem;
       }
 
       @media only screen and (max-width: 767px) {
@@ -597,7 +629,7 @@ a:hover {
       }
 
       @media only screen and (max-width: 560px) {
-        height: 50rem;
+        height: 41rem;
       }
 
       .tab-pane > .expanded-content {
@@ -646,6 +678,7 @@ a:hover {
   .nav {
     display: flex;
     justify-content: center;
+    padding: 0 2rem;
   }
 
   .tab-container {
@@ -1057,6 +1090,137 @@ a:hover {
     }
   }
 }
+
+// *** Schedule Section ***
+
+.schedule-container {
+  background-color: white;
+  border-radius: 8px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
+}
+
+.schedule-toggler {
+  @include dinpro-text(24px, bold, $pink);
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px $lavender solid;
+  @media (max-width: 575px) {
+    font-size: 17px;
+  }
+}
+
+.active-day {
+  border-bottom: 5px $pink solid;
+}
+
+.tab-content {
+  height: 500px;
+  overflow-y: auto;
+}
+
+.schedule-event-nodesc, .schedule-event {
+  padding: 15px 30px;
+  font-weight: bold;
+  border-bottom: 1px $lavender solid;
+  @media (max-width: 575px) {
+    padding: 15px;
+  }
+}
+
+.schedule-event {
+  cursor: pointer;
+  &:hover {
+    background-color: $light-grey;
+  }
+}
+
+.event-modal-title {
+  @include dinpro-text(20px,bold, black);
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.event-time, .event-name, .event-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.event-time {
+  width: 20%;
+  @media (max-width: 420px) {
+    width: 25%;
+  }
+  @media (max-width: 330px) {
+    width: 27%;
+  }
+}
+
+.event-name {
+  width: 60%;
+  @media (max-width: 767px) {
+    width: 55%;
+  }
+  @media (max-width: 420px) {
+    width: 52%;
+  }
+  @media (max-width: 330px) {
+    width: 48%;
+  }
+}
+
+.event-subname {
+  font-weight: normal;
+  font-size: .9rem;
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
+}
+
+.event-type {
+  width: 15%;
+  @media (max-width: 767px) {
+    width: 20%;
+  }
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+
+.workshop {
+  color: $pink;
+}
+
+.panel-meetup {
+  color: $darker-pastel-green;
+}
+
+.event {
+  color: $darker-lavender;
+}
+
+.minievent {
+  color: $darker-hero-blue;
+}
+
+.horizon-event {
+  @media (max-width: 450px) {
+    font-size: 11px;
+  }
+}
+
+.horizon-event:after {
+  padding-left: 5px;
+  display: inline-block;
+  width: 1px;
+  content: url("../img/horizon-icon.svg");
+}
+
 
 // *** FAQ section ***
 .faq {

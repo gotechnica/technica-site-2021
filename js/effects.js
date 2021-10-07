@@ -14,10 +14,21 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//changing background color
+//changing background color + navbar items on scroll
 $(function () {
   $(document).scroll(function () {
     var $main = $('.main');
+
+    //hero
+    if ($(window).scrollTop() >= $('#hero-nav').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+    }
+
+    //about
+    if ($(window).scrollTop() >= $('#about').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+      $('.navbar-nav li.about-nav').addClass("active");
+    }
 
     //what you can do
     if ($(window).scrollTop() >= $('#what-can-you-do').offset().top - 100) {
@@ -35,16 +46,35 @@ $(function () {
 
     //registration
     if ($(window).scrollTop() >= $('#registration').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-registration');
+      $('.navbar-nav li.reg-nav').addClass("active");
     } else {
       $main.removeClass('scroll-registration');
     }
 
+    //schedule
+    if ($(window).scrollTop() >= $('#schedule').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+      $main.addClass('scroll-schedule');
+      $('.navbar-nav li.sched-nav').addClass("active");
+    } else {
+      $main.removeClass('scroll-schedule');
+    }
+
     //faq
     if ($(window).scrollTop() >= $('#faq').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
       $main.addClass('scroll-faq');
+      $('.navbar-nav li.faq-nav').addClass("active");
     } else {
       $main.removeClass('scroll-faq');
+    }
+
+    //contact
+    if ($(window).scrollTop() >= $('#contact').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+      $('.navbar-nav li.contact-nav').addClass("active");
     }
   });
 });
@@ -128,4 +158,12 @@ var flky = new Flickity('.gallery', {
   // activates if #element:after { content: 'flickity' }
   wrapAround: true,
   // at end of cells, wraps-around to first for infinite scrolling
+});
+
+//schedule
+$(function () {
+  var $sat = $("#sattogglecontainer");
+  var $sun = $("#suntogglecontainer");
+  $("#sattoggle").click(function() { $sat.addClass('active-day'); $sun.removeClass('active-day');});
+  $("#suntoggle").click(function() { $sun.addClass('active-day'); $sat.removeClass('active-day');});
 });
