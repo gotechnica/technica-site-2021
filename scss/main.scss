@@ -6,14 +6,14 @@ $dark-lavender: #8d7c98;
 $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
-$light-grey: #E5E5E5;
+$light-grey: #e5e5e5;
 $dark-grey: #606060;
 $orange: #f9b7ae;
 $hero-blue: #8cd8ed;
 $darker-hero-blue: #2ca0b5;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
-$darker-pastel-green: #45A567; //#779C85;
+$darker-pastel-green: #45a567; //#779C85;
 
 $bg-green: #b5d5b2;
 $bg-blue: #cde9fb;
@@ -184,6 +184,11 @@ body::-webkit-scrollbar {
 
 .scroll-registration {
   background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-speakers {
+  background-color: $bg-pink !important;
   transition: background-color 200ms linear;
 }
 
@@ -1091,6 +1096,56 @@ a:hover {
   }
 }
 
+// *** speakers section ***
+.speaker-label {
+  background-color: white;
+  border-radius: 25px;
+  padding: 2% 0% 0.5% 0%;
+  margin: 0 auto;
+  margin-top: 2%;
+
+  .speaker-name {
+    color: $pink;
+    font-size: 125%;
+    font-weight: bold;
+    margin-bottom: -0.5%;
+  }
+  .speaker-title {
+    font-weight: 500;
+  }
+}
+
+#keynote-label-1,
+#keynote-label-2 {
+  width: 65%;
+  align-content: center;
+}
+
+#other-speaker-label-1,
+#other-speaker-label-2,
+#other-speaker-label-3 {
+  width: 85%;
+}
+
+@media only screen and (max-width: 848px) {
+  #keynote-speaker-1,
+  #keynote-speaker-2 {
+    height: 75%;
+    width: 75%;
+  }
+  #other-speaker-1,
+  #other-speaker-2,
+  #other-speaker-3 {
+    height: 65%;
+    width: 65%;
+  }
+  #other-speaker-label-1,
+  #other-speaker-label-2,
+  #other-speaker-label-3 {
+    width: 50%;
+  }
+}
+
 // *** Schedule Section ***
 
 .schedule-container {
@@ -1123,7 +1178,8 @@ a:hover {
   overflow-y: auto;
 }
 
-.schedule-event-nodesc, .schedule-event {
+.schedule-event-nodesc,
+.schedule-event {
   padding: 15px 30px;
   font-weight: bold;
   border-bottom: 1px $lavender solid;
@@ -1140,13 +1196,15 @@ a:hover {
 }
 
 .event-modal-title {
-  @include dinpro-text(20px,bold, black);
+  @include dinpro-text(20px, bold, black);
   @media (max-width: 767px) {
     font-size: 16px;
   }
 }
 
-.event-time, .event-name, .event-type {
+.event-time,
+.event-name,
+.event-type {
   display: inline-block;
   vertical-align: middle;
 }
@@ -1176,7 +1234,7 @@ a:hover {
 
 .event-subname {
   font-weight: normal;
-  font-size: .9rem;
+  font-size: 0.9rem;
   @media (max-width: 575px) {
     font-size: 12px;
   }
@@ -1218,9 +1276,8 @@ a:hover {
   padding-left: 5px;
   display: inline-block;
   width: 1px;
-  content: url("../img/horizon-icon.svg");
+  content: url('../img/horizon-icon.svg');
 }
-
 
 // *** FAQ section ***
 .faq {

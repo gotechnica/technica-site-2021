@@ -145,6 +145,10 @@ html {
   background-color: #e9e3ed !important;
   transition: background-color 0.2s linear;
 }
+.scroll-speakers {
+  background-color: #f5d6e1 !important;
+  transition: background-color 0.2s linear;
+}
 .scroll-schedule {
   background-color: #f5d6e1 !important;
   transition: background-color 0.2s linear;
@@ -205,7 +209,7 @@ html {
 }
 @media only screen and (min-width: 1422px) {
   .hero-information {
-    margin-left: 12%;
+    margin-left: 5%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -959,6 +963,50 @@ a:hover {
   .mentor .btn,
   .volunteer .btn {
     margin: 0;
+  }
+}
+.speaker-label {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 2% 0 0.5% 0;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.speaker-label .speaker-name {
+  color: #ed648d;
+  font-size: 125%;
+  font-weight: 700;
+  margin-bottom: -0.5%;
+}
+.speaker-label .speaker-title {
+  font-weight: 500;
+}
+#keynote-label-1,
+#keynote-label-2 {
+  width: 65%;
+  align-content: center;
+}
+#other-speaker-label-1,
+#other-speaker-label-2,
+#other-speaker-label-3 {
+  width: 85%;
+}
+@media only screen and (max-width: 848px) {
+  #keynote-speaker-1,
+  #keynote-speaker-2 {
+    height: 75%;
+    width: 75%;
+  }
+  #other-speaker-1,
+  #other-speaker-2,
+  #other-speaker-3 {
+    height: 65%;
+    width: 65%;
+  }
+  #other-speaker-label-1,
+  #other-speaker-label-2,
+  #other-speaker-label-3 {
+    width: 50%;
   }
 }
 .schedule-container {

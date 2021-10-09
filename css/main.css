@@ -128,6 +128,10 @@ body {
   background-color: #e9e3ed !important;
   transition: background-color 200ms linear; }
 
+.scroll-speakers {
+  background-color: #f5d6e1 !important;
+  transition: background-color 200ms linear; }
+
 .scroll-schedule {
   background-color: #f5d6e1 !important;
   transition: background-color 200ms linear; }
@@ -794,6 +798,45 @@ a:hover {
     .volunteer .btn {
       margin: 0; } }
 
+.speaker-label {
+  background-color: white;
+  border-radius: 25px;
+  padding: 2% 0% 0.5% 0%;
+  margin: 0 auto;
+  margin-top: 2%; }
+  .speaker-label .speaker-name {
+    color: #ed648d;
+    font-size: 125%;
+    font-weight: bold;
+    margin-bottom: -0.5%; }
+  .speaker-label .speaker-title {
+    font-weight: 500; }
+
+#keynote-label-1,
+#keynote-label-2 {
+  width: 65%;
+  align-content: center; }
+
+#other-speaker-label-1,
+#other-speaker-label-2,
+#other-speaker-label-3 {
+  width: 85%; }
+
+@media only screen and (max-width: 848px) {
+  #keynote-speaker-1,
+  #keynote-speaker-2 {
+    height: 75%;
+    width: 75%; }
+  #other-speaker-1,
+  #other-speaker-2,
+  #other-speaker-3 {
+    height: 65%;
+    width: 65%; }
+  #other-speaker-label-1,
+  #other-speaker-label-2,
+  #other-speaker-label-3 {
+    width: 50%; } }
+
 .schedule-container {
   background-color: white;
   border-radius: 8px; }
@@ -823,18 +866,20 @@ a:hover {
   height: 500px;
   overflow-y: auto; }
 
-.schedule-event-nodesc, .schedule-event {
+.schedule-event-nodesc,
+.schedule-event {
   padding: 15px 30px;
   font-weight: bold;
   border-bottom: 1px #9c8da5 solid; }
   @media (max-width: 575px) {
-    .schedule-event-nodesc, .schedule-event {
+    .schedule-event-nodesc,
+    .schedule-event {
       padding: 15px; } }
 
 .schedule-event {
   cursor: pointer; }
   .schedule-event:hover {
-    background-color: #E5E5E5; }
+    background-color: #e5e5e5; }
 
 .event-modal-title {
   font-family: DINPro;
@@ -845,7 +890,9 @@ a:hover {
     .event-modal-title {
       font-size: 16px; } }
 
-.event-time, .event-name, .event-type {
+.event-time,
+.event-name,
+.event-type {
   display: inline-block;
   vertical-align: middle; }
 
@@ -872,7 +919,7 @@ a:hover {
 
 .event-subname {
   font-weight: normal;
-  font-size: .9rem; }
+  font-size: 0.9rem; }
   @media (max-width: 575px) {
     .event-subname {
       font-size: 12px; } }
@@ -890,7 +937,7 @@ a:hover {
   color: #ed648d; }
 
 .panel-meetup {
-  color: #45A567; }
+  color: #45a567; }
 
 .event {
   color: #72607b; }
