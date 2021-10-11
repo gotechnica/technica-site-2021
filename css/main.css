@@ -182,7 +182,7 @@ body {
     width: 500px; }
   @media only screen and (min-width: 1422px) {
     .hero-information {
-      margin-left: 12%; } }
+      margin-left: 5%; } }
   @media only screen and (max-width: 1024px) {
     .hero-information {
       margin-top: 0px;
@@ -979,3 +979,7 @@ a:hover {
 @media (max-width: 991px) {
   #mlh-trust-badge {
     right: 15px !important; } }
+
+.sponsor-img {
+  filter: brightness(200%) grayscale(1); 
+}
