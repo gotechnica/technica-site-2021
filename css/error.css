@@ -14,6 +14,9 @@
   border-radius: 33px; }
   .error-information #error-number {
     font-size: 300%; }
+  @media (max-width: 500px) {
+    .error-information {
+      margin-top: 20%; } }
 
 .logo {
   margin-left: 30%;
@@ -28,6 +31,36 @@
         width: 60vw;
         height: 15vw;
         margin-left: -100%; } }
+    @media (max-width: 500px) {
+      .logo #technica-logo {
+        width: 75vw;
+        height: 20vw;
+        margin-left: -160%; } }
+    @media (min-width: 1500px) {
+      .logo #technica-logo {
+        width: 60vw;
+        height: 15vw;
+        margin-left: -90%; } }
+    @media (min-width: 1700px) {
+      .logo #technica-logo {
+        width: 60vw;
+        height: 15vw;
+        margin-left: -110%; } }
+    @media (min-width: 1900px) {
+      .logo #technica-logo {
+        width: 60vw;
+        height: 15vw;
+        margin-left: -140%; } }
+    @media (min-width: 2000px) {
+      .logo #technica-logo {
+        width: 60vw;
+        height: 15vw;
+        margin-left: -160%; } }
+    @media (min-width: 2500px) {
+      .logo #technica-logo {
+        width: 60vw;
+        height: 15vw;
+        margin-left: -210%; } }
 
 .back-to-home-btn {
   margin-top: -5%;
@@ -35,19 +68,73 @@
   font-size: 125%;
   font-weight: bold;
   color: #fff; }
-  @media only screen and (min-width: 2001px) {
-    .back-to-home-btn {
-      width: 15vw;
-      height: 3vw; } }
   @media (min-width: 550px) and (max-width: 750px) {
     .back-to-home-btn {
       width: 45vw;
       height: 5vw; } }
   @media (min-width: 610px) and (max-width: 766px) {
     .back-to-home-btn {
-      width: 20vw;
-      height: 5vw; } }
-  @media (min-width: 767px) and (max-width: 830px) {
-    .back-to-home-btn {
       width: 30vw;
-      height: 5vw; } }
+      height: 8vw; } }
+  @media (min-width: 767px) and (max-width: 900px) {
+    .back-to-home-btn {
+      width: 32vw;
+      height: 6vw;
+      font-family: DINPro;
+      font-size: 150%;
+      font-weight: bold;
+      color: #fff; } }
+  @media (min-width: 901px) and (max-width: 1400px) {
+    .back-to-home-btn {
+      width: 25vw;
+      height: 5vw;
+      margin-top: 0%;
+      font-family: DINPro;
+      font-size: 200%;
+      font-weight: bold;
+      color: #fff; } }
+  @media (min-width: 901px) and (max-width: 1050px) {
+    .back-to-home-btn {
+      width: 28vw;
+      height: 5vw;
+      margin-top: 0%;
+      font-family: DINPro;
+      font-size: 180%;
+      font-weight: bold;
+      color: #fff; } }
+  @media only screen and (min-width: 1401px) {
+    .back-to-home-btn {
+      width: 27vw;
+      height: 4vw;
+      margin-top: -10%;
+      font-family: DINPro;
+      font-size: 210%;
+      font-weight: bold;
+      color: #fff; } }
+  @media only screen and (min-width: 2001px) {
+    .back-to-home-btn {
+      width: 25vw;
+      height: 4vw;
+      margin-top: 5%;
+      font-family: DINPro;
+      font-size: 235%;
+      font-weight: bold;
+      color: #fff; } }
+  @media only screen and (min-width: 2200px) {
+    .back-to-home-btn {
+      width: 22vw;
+      height: 4vw;
+      margin-top: 5%;
+      font-family: DINPro;
+      font-size: 270%;
+      font-weight: bold;
+      color: #fff; } }
+  @media only screen and (min-width: 2500px) {
+    .back-to-home-btn {
+      width: 22vw;
+      height: 4vw;
+      margin-top: 5%;
+      font-family: DINPro;
+      font-size: 300%;
+      font-weight: bold;
+      color: #fff; } }
