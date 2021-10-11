@@ -979,3 +979,7 @@ a:hover {
 @media (max-width: 991px) {
   #mlh-trust-badge {
     right: 15px !important; } }
+
+.sponsor-img {
+  filter: brightness(200%) grayscale(1); 
+}
