@@ -182,7 +182,7 @@ body {
     width: 500px; }
   @media only screen and (min-width: 1422px) {
     .hero-information {
-      margin-left: 12%; } }
+      margin-left: 5%; } }
   @media only screen and (max-width: 1024px) {
     .hero-information {
       margin-top: 0px;
@@ -198,8 +198,8 @@ body {
     .hero-information {
       padding: 3rem 0rem 0rem 2rem; } }
   .hero-information #theme-logo {
-    padding-top: 5%;
-    margin-top: 10%; }
+    padding-top: 4%;
+    margin-top: 7%; }
     @media only screen and (max-width: 767px) {
       .hero-information #theme-logo {
         padding-top: 10%; } }
@@ -768,7 +768,8 @@ a:hover {
       width: 10rem !important; } }
   @media only screen and (max-width: 950px) {
     .polaroid.polaroid2 {
-      margin-left: -2rem !important; } }
+      margin-top: 8rem;
+      margin-left: 0rem !important; } }
 
 @media only screen and (max-width: 991px) {
   .registration .btn {
@@ -868,6 +869,9 @@ a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none; }
+
+.sponsor-img {
+  filter: brightness(200%) grayscale(1); }
 
 .footer-background {
   position: absolute;
