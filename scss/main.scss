@@ -274,8 +274,8 @@ body::-webkit-scrollbar {
   }
 
   #theme-logo {
-    padding-top: 5%;
-    margin-top: 10%;
+    padding-top: 4%;
+    margin-top: 7%;
     @media only screen and (max-width: 767px) {
       padding-top: 10%;
     }
@@ -1052,7 +1052,8 @@ a:hover {
 
   @media only screen and (max-width: 950px) {
     &.polaroid2 {
-      margin-left: -2rem !important;
+      margin-top: 8rem;
+      margin-left: 0rem !important;
     }
   }
 }
@@ -1184,6 +1185,11 @@ a:hover {
   transition: ease 0.3s;
   opacity: 0.7;
   text-decoration: none;
+}
+
+// *** sponsors section ***
+.sponsor-img {
+  filter: brightness(200%) grayscale(1);
 }
 
 // *** footer section ***
