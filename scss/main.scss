@@ -1390,6 +1390,15 @@ a:hover {
   text-decoration: none;
 }
 
+// *** sponsors section ***
+.sponsors-header {
+  margin: 0 auto;
+  text-align: left;
+}
+.sponsor-img {
+  filter: brightness(200%) grayscale(1);
+}
+
 // *** footer section ***
 .footer-background {
   position: absolute;
