@@ -815,12 +815,19 @@ a:hover {
 #keynote-label-1,
 #keynote-label-2 {
   width: 65%;
-  align-content: center; }
+  margin-top: -10%;
+  align-content: center;
+  margin-bottom: 50% !important; }
 
 #other-speaker-label-1,
 #other-speaker-label-2,
 #other-speaker-label-3 {
-  width: 85%; }
+  width: 80%; }
+
+.accordion-holder {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
 
 @media only screen and (max-width: 848px) {
   #keynote-speaker-1,
@@ -1144,7 +1151,3 @@ a:hover {
 @media (max-width: 991px) {
   #mlh-trust-badge {
     right: 15px !important; } }
-
-.sponsor-img {
-  filter: brightness(200%) grayscale(1); 
-}
