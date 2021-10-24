@@ -60,9 +60,6 @@
     
     
     <script>
-      function capitalizeFirstLetter(string) {
-        return string.toLowerCase();
-      }
 
       const mapping = {
         hugo: 'hugo-6tn',
@@ -70,12 +67,12 @@
 
 
       var url_string = window.location.pathname;
-      var s2 = url_string.substring(1);
+      var s2 = url_string.substring(1).toLowerCase();
       if (mapping[s2]) {
         s2 = mapping[s2]
+        window.location.href = "https://register.gotechnica.org/" + encodeURI(s2)
       }
-      window.location.href = "https://register.gotechnica.org/" + encodeURI(s2)
-
+      
     </script>
     
     
