@@ -68,6 +68,10 @@
         linda: 'linda-38q',
         gabrielle: 'gabrielle-m3x'
       }
+      
+      const mapping2 = {
+        branding: 'https://drive.google.com/drive/folders/1ihYpjLf9vTd2B5w7SLrzyvWiEDQa_a7l?usp=sharing'
+      }
 
 
       var url_string = window.location.pathname;
@@ -75,6 +79,8 @@
       if (mapping[s2]) {
         s2 = mapping[s2]
         window.location.href = "https://register.gotechnica.org/" + encodeURI(s2)
+      } else if (mapping2[s2]) {
+        window.location.href = s2;
       }
       
     </script>
