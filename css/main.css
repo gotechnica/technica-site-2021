@@ -45,6 +45,9 @@
 html,
 body {
   width: 100%; }
+  html ::selection,
+  body ::selection {
+    background: #e9e3ed; }
 
 @media (min-width: 986px) {
   body {

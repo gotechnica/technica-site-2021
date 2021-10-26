@@ -56,6 +56,39 @@
     <meta property="og:url" content="http://gotechnica.org">
     <meta property="og:image" content="http://gotechnica.org/img/share-link.png">
     <meta property="og:image:url" content="http://gotechnica.org/img/share-link.png">
+    
+    
+    
+    <script>
+
+      const mapping = {
+        hugo: 'hugo-6tn',
+        klossy: 'klossy-qj5',
+        debbie: 'deborah-atx',
+        linda: 'linda-38q',
+        gabrielle: 'gabrielle-m3x',
+        yt: 'youtube-4ex'
+      }
+      
+      const mapping2 = {
+        branding: 'https://drive.google.com/drive/folders/1ihYpjLf9vTd2B5w7SLrzyvWiEDQa_a7l?usp=sharing',
+        referrals: 'https://technica.retool.com/embedded/public/046e24e8-ec44-49ad-ba82-c8d83720c855',
+        "ambassador-referrals": "https://technica.retool.com/embedded/public/24a0c242-6526-4c34-8a68-ab45b3327531"
+      }
+
+
+      var url_string = window.location.pathname;
+      var s2 = url_string.substring(1).toLowerCase();
+      if (mapping[s2]) {
+        s2 = mapping[s2]
+        window.location.href = "https://register.gotechnica.org/" + encodeURI(s2)
+      } else if (mapping2[s2]) {
+        window.location.href = mapping2[s2];
+      }
+      
+    </script>
+    
+    
 
 
   </head>
