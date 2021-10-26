@@ -1193,6 +1193,7 @@ a:hover {
 
 .event-time,
 .event-name,
+.event-location,
 .event-type {
   display: inline-block;
   vertical-align: middle;
@@ -1213,21 +1214,21 @@ a:hover {
 }
 
 .event-name {
-  width: 60%;
+  width: 40%;
 }
 @media (max-width: 767px) {
   .event-name {
-    width: 55%;
+    width: 40%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .event-name {
-    width: 52%;
+    width: 35%;
   }
 }
 @media (max-width: 330px) {
   .event-name {
-    width: 48%;
+    width: 30%;
   }
 }
 
@@ -1241,17 +1242,31 @@ a:hover {
   }
 }
 
+.event-location {
+  width: 20%;
+}
+@media (max-width: 767px) {
+  .event-location {
+    width: 18%;
+  }
+}
+@media (max-width: 450px) {
+  .event-location {
+    font-size: 15px;
+  }
+}
+
 .event-type {
   width: 15%;
 }
 @media (max-width: 767px) {
   .event-type {
-    width: 20%;
+    width: 18%;
   }
 }
 @media (max-width: 450px) {
   .event-type {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
