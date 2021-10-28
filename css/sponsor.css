@@ -166,7 +166,7 @@ th {
   color: #087f8a; }
 
 .prospectus span {
-  cursor: default;
+  cursor: url("../../img/cursors/grabber_gradient.png"), pointer;
   color: grey;
   padding-left: 3px; }
 
