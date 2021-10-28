@@ -46,6 +46,45 @@
         "url": "https://www.gotechnica.org/",
         "logo": "https://gotechnica.org/img/technica-logo.png",
       }
+
+      {
+        "@context": "https://gotechnica.org",
+        "@type": "Event",
+        "name": "Technica 2021",
+        "startDate": "2021-11-12T8:00-24:00",
+        "endDate": "2021-11-14T00:00-20:00",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": [{
+          "@type": "VirtualLocation",
+          "url": "https://gotechnica.org/"
+        },
+        {
+          "@type": "Place",
+          "name": "Reckord Armory",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4490 Rossborough Ln",
+            "addressLocality": "College Park",
+            "postalCode": "20742",
+            "addressRegion": "MD",
+            "addressCountry": "US"
+          }
+        }],
+        "image": [
+          "https://gotechnica.org/img/technica-logo.png",
+         ],
+        "description": "The world's largest hackathon for underrepresented genders.",
+        "performer": {
+          "@type": "PerformingGroup",
+          "name": "Jewel Burks"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Technica",
+          "url": "https://gotechnica.org"
+        }
+      }
       </script>
     
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -144,6 +183,17 @@
     </script>
 
     <meta name="google-site-verification" content="SY4_05HT_JLBTy9D_iKluy7X5hrU00UdkWS2HYXk3KA" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211023062-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-211023062-1');
+    </script>
   </head>
   <body>
     
@@ -181,7 +231,7 @@
 
     <div class="hero hero-index" role="banner">
       <div class="hero-cottage bg-image" alt="cottage on a countryside hill with full trees and pastel lavender" style="display: flex; grid-area: overlap-content;">
-        <img id=hero-cottage src="img/hero/hero-cottage.png" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%; min-height: 100%; object-fit: cover">
+        <img id=hero-cottage src="img/hero/hero-cottage.webp" alt="cottage on a countryside hill with full trees and pastel lavender" style="width: 100%; min-height: 100%; object-fit: cover">
       </div>
       <div class="hero-text">
         <div class="hero-information" id="hero-nav">
@@ -199,11 +249,16 @@
         <div class="section" id="about">
           <div class="container intro-container">
             <h1 class="header">What is Technica?</h1>
-            <div class="col">
-              <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
-              <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
-              <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
-              <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <p>Technica is the world’s largest hackathon for underrepresented genders, hosted annually by students at the University of Maryland.</p>
+                <p>Over the duration of 24 hours, Technica hackers are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks.</p>
+                <p>This year, Technica will be hosted in a hybrid format, with the option to hack virtually or in-person depending on one's preference.</p>
+                <p>Technica's 2021 theme is "Welcome Home." We want Technica to be an inclusive environment where you can learn new things, meet new people, and receive support! No matter where you are for Technica 2021, we hope you can call Technica home!</p>
+              </div>
+              <div class="col-lg-6">
+                <iframe id="explainer-vid" src="https://www.youtube.com/embed/l4qsQdzdADw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -267,7 +322,7 @@
               <div class="col-lg-6">
                 <div class="content-heading">Mini Events</div>
                 <div class="content-clarification">In-person & Virtual</div>
-                <div class="content-text">Want to take a break from coding and have some fun? Mini Events are for you! Mini-Events allow you to meet new friends, get creative, and even make something you can take home! The Mini Events we have planned for this year are Open Mic Night, Family Feud, DIY Your Own Technica Swag, and Board Game Corner.</div>
+                <div class="content-text">Want to take a break from coding and have some fun? Mini Events are for you! Mini-Events allow you to meet new friends, get creative, and even make something you can take home! The Mini Events we have planned for this year are Open Mic Night, Family Feud, Techni-Arts and Crafts, and Board Game Corner.</div>
               </div>
               <img class="content-img col-10 col-md-5 img-fluid" src="./img/minievents.svg" />
             </div>
@@ -455,7 +510,11 @@
               <div class="mentor">
                 <h3 class="register-heading">Mentor</h3>
                 <p>Come help hackers with their ideas by being a resource for hackers who may have questions about their projects. Mentors can be anyone 18 years or older and of any gender willing to share their knowledge! There will be in-person and virtual opportunities. Learn more about mentor expectations <a class="link" target="_blank" href="./files/MentorTrackExpectations.pdf" style="color: #000;"><b>here</b></a>.</p>
+<<<<<<< HEAD
                 <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/Yw9VMBVi'" type="button" style = "cursor: url('../../img/cursors/grabber_gradient.png'), pointer;">Register</button> <!--Change pointer here-->
+=======
+                <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/Yw9VMBVi'" type="button" disabled style>Closed</button>
+>>>>>>> 60483e3d886593cca3c9c6efeceed3d28f98f91c
               </div>
             </div>
           </div>
@@ -467,6 +526,7 @@
               <div class="volunteer">
                 <h3 class="register-heading">Volunteer</h3>
                 <p>Come help with the operations! Volunteers are a huge helping hand and help make sure the hackathon runs smoothly. Anyone 18 years or older and of any gender can volunteer and help make Technica a success! There will be in-person and virtual opportunities.</p>
+<<<<<<< HEAD
                 <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/rmGg9cCj'" type="button"style = "cursor: url('../../img/cursors/grabber_gradient.png'), pointer;">Register</button> <!--Change pointer here-->
               </div>
             </div>
@@ -1280,6 +1340,9 @@
                 <div class="event-time">3:00 PM -<br>4:00 PM</div>
                 <div class="event-name">Closing Ceremony</div>
                 <div class="event-type event">Main Event</div>
+=======
+                <button class="btn dark-btn" onclick="location.href='https://gotechnica.typeform.com/to/rmGg9cCj'" type="button" disabled style>Closed</button>
+>>>>>>> 60483e3d886593cca3c9c6efeceed3d28f98f91c
               </div>
             </div>
           </div>
@@ -1331,7 +1394,8 @@
               <div class="faq-toggle-icon"></div>
               </div>
               <div class="panel">
-                <p style="text-align: left;">This year Technica will be integrating a hybrid model as we continue adapting through the pandemic. This means <b>Technica will be held both online and in person - not just at UMD</b>! More information on our hybrid model will be available on this website and on social media in June, so stay tuned and get excited!</p>
+                <p style="text-align: left;">This year Technica will be integrating a hybrid model as we continue adapting through the pandemic. This means <b>Technica will be held both online and in person - not just at UMD</b>!</p>
+                <p style="text-align: left;">If you attend UMD, UMBC, Towson, or any other University of Maryland System school, you can attend Technica in person. This decision was made per UMD guidelines to ensure the health and safety of our participants. All people will have the opportunity to hack virtually!</p>
               </div>
               <div class="accordion">
                 <h4>What is a hybrid hackathon?</h4>
@@ -1415,6 +1479,7 @@
         </div>
       </div>
 
+<<<<<<< HEAD
 
       <article class="sponsors-gradient">
         <section class="sponsors">
@@ -1436,6 +1501,113 @@
 
            </div>
          </div>
+=======
+      <div id="sponsors" class="sponsors">
+        <div class="container" style="padding: 3%;">
+            <div class="header" id="sponsors">
+              <h1>Sponsors</h1>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Partner</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="https://eng.umd.edu/"><img class="sponsors-img" src="./img/sponsor/umd-engineering.png" title="UMD Engineering"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://cmns.umd.edu/"><img class="sponsors-img" src="./img/sponsor/umd-cmns.png" title="UMD CMNS"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.cs.umd.edu/"><img class="sponsors-img" src="./img/sponsor/umd-cs.png" title="UMD CS"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.umiacs.umd.edu/"><img class="sponsors-img" src="./img/sponsor/umiacs.png" title="UMIACS"></a></div>
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Platinum</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.bankofamerica.com/"><img class="sponsors-img" src="./img/sponsor/bankofamerica.png" title="Bank of America"></a></div>
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Gold</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.troweprice.com/corporate/us/en/home.html"><img class="sponsors-img" src="./img/sponsor/trp.png" title="TRowe Price"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.fiserv.com/en.html"><img class="sponsors-img" src="./img/sponsor/fiserv.png" title="Fiserv"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.stellar.org/?locale=en"><img class="sponsors-img" src="./img/sponsor/stellar.png" title="Stellar"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://bluehalo.com/"><img class="sponsors-img" src="./img/sponsor/bluehalo.png" title="BlueHalo"></a></div>
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Silver</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.ltsnet.net/"><img class="sponsors-img" src="./img/sponsor/lts.png" title="LTS"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.jhuapl.edu/"><img class="sponsors-img" src="./img/sponsor/jhu-apl.png" title="JHU APL"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.travelers.com/"><img class="sponsors-img" src="./img/sponsor/travelers.png" title="Travelers"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://metal.equinix.com/"><img class="sponsors-img" src="./img/sponsor/equinix-metal.png" title="Equinix Metal"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.sapns2.com/"><img class="sponsors-img" src="./img/sponsor/sap-ns2.png" title="SAP NS2"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://shield.ai/"><img class="sponsors-img" src="./img/sponsor/shield-ai.png" title="Shield AI"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www3.mtb.com/"><img class="sponsors-img" src="./img/sponsor/mtbank.png" title="M&T Bank"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.qualcomm.com/"><img class="sponsors-img" src="./img/sponsor/qualcomm.png" title="Qualcomm"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.jpmorganchase.com/"><img class="sponsors-img" src="./img/sponsor/jpmc.png" title="JPMC"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://twosixtech.com/"><img class="sponsors-img" src="./img/sponsor/two-six-technologies.png" title="Two Six Technologies"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.janestreet.com/"><img class="sponsors-img" src="./img/sponsor/jane-street.png" title="Jane Street"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.caci.com/"><img class="sponsors-img" src="./img/sponsor/caci.png" title="CACI"></a></div>
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Bronze</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.bloomberg.com/company/?utm_source=bloomberg-menu&utm_medium=bcom"><img class="sponsors-img" src="./img/sponsor/bloomberg.png" title="Bloomberg"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.qualtrics.com/"><img class="sponsors-img" src="./img/sponsor/qualtrics.png" title="Qualtrics"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://mtx.gg/"><img class="sponsors-img" src="./img/sponsor/matrix.png" title="Matrix"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://robinhood.com/us/en/"><img class="sponsors-img" src="./img/sponsor/robinhood.png" title="Robinhood"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://dc.breakthroughtech.org/"><img class="sponsors-img" src="./img/sponsor/btt.png" title="Break Through Tech"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://inclusion.cs.umd.edu/"><img class="sponsors-img" src="./img/sponsor/i4c.png" title="Iribe Initiative for Inclusion and Diversity in Computing"></a></div>
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Starter</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.servicenow.com/"><img class="sponsors-img" src="./img/sponsor/servicenow.png" title="ServiceNow"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://contrarycap.com/"><img class="sponsors-img" src="./img/sponsor/contrary-capital.png" title="Contrary Capital"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.rhsmith.umd.edu/centers/dingman-center"><img class="sponsors-img" src="./img/sponsor/dingman-center.png" title="UMD Dingman Center"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://appian.com/"><img class="sponsors-img" src="./img/sponsor/appian.png" title="Appian"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.ycombinator.com/"><img class="sponsors-img" src="./img/sponsor/y-combinator.png" title="YCombinator"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://asymmetrik.com/"><img class="sponsors-img" src="./img/sponsor/asymmetrik.png" title="Asymmetrik"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.elsevier.com/"><img class="sponsors-img" src="./img/sponsor/elsevier.png" title="Elsevier"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://bsos.umd.edu/"><img class="sponsors-img" src="./img/sponsor/bsos.png" title="UMD BSOS"></a></div>
+                <div class="sponsor-img-container"><a target="_blank" href="https://www.rhsmith.umd.edu/centers/social-value-creation"><img class="sponsors-img" src="./img/sponsor/csvc.png" title="UMD Social Value Creation"></a></div>
+              </div>
+            </div>
+            <div class="sponsor-tier">
+              <div class="row sponsor-level-row sponsor-tier-header">
+                <h3>Contributor</h3>
+              </div>
+              <img class="str-lights" src="./img/lights_sponsors.png" alt="string lights with technica colors">
+              <div class="row sponsor-level-row">
+                <div class="sponsor-img-container"><a target="_blank" href="http://hackp.ac/mlh-stickermule-hackathons"><img class="sponsors-img" src="https://2019.gotechnica.org/img/sponsor_logos/sticker_mule.svg" title="Sticker Mule" height="65" width="65"></a></div>
+              </div>
+            </div>
+          <p class="text-center">
+            Interested in becoming a sponsor?
+            <br>
+            Reach us at <a class="link" href="mailto:sponsorship@gotechnica.org">sponsorship@gotechnica.org</a> and check out our sponsorship prospectus <a class="link" href="sponsor.html">here</a>.
+          </p>
+        </div>
+      </div>
+>>>>>>> 60483e3d886593cca3c9c6efeceed3d28f98f91c
 
     <div role="contentinfo">
       <div class="footer-background" id="contact">

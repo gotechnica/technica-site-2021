@@ -80,6 +80,11 @@ $(function () {
       $main.removeClass('scroll-faq');
     }
 
+    //sponsors
+    if ($(window).scrollTop() >= $('#sponsors').offset().top - 100) {
+      $('.navbar-nav li').removeClass("active");
+    }
+
     //contact
     if ($(window).scrollTop() >= $('#contact').offset().top - 100) {
       $('.navbar-nav li').removeClass('active');
