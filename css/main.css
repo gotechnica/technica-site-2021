@@ -26,6 +26,9 @@
 .dark-btn {
   background-color: #8d7c98; }
 
+.dark-btn:hover {
+  cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
+
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.95; }
@@ -49,13 +52,15 @@ body {
   body ::selection {
     background: #e9e3ed; }
 
-@media (min-width: 986px) {
-  body {
-    position: relative;
-    scrollbar-width: none;
-    /* hide scrollbar on Firefox */
-    -ms-overflow-style: none;
-    /* hide scrollbar on IE 10+ */ } }
+body {
+  cursor: url("../../img/cursors/selectionpointer_gradient.png"), default; }
+  @media (min-width: 986px) {
+    body {
+      position: relative;
+      scrollbar-width: none;
+      /* hide scrollbar on Firefox */
+      -ms-overflow-style: none;
+      /* hide scrollbar on IE 10+ */ } }
 
 @media (min-width: 986px) {
   body::-webkit-scrollbar {
@@ -92,7 +97,8 @@ body {
         font-size: 18px; } }
   #navbar .nav-link:hover {
     transition: 0.3s ease;
-    opacity: 0.8; }
+    opacity: 0.8;
+    cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
   #navbar .navbar-nav li.active > a {
     color: #ed648d; }
 
@@ -248,6 +254,7 @@ body {
     .hero-action {
       padding-top: 200px; } }
   .hero-action .register-btn {
+    cursor: pointer;
     font-family: DINPro;
     font-size: 175%;
     font-weight: bold;
@@ -260,6 +267,8 @@ body {
         font-size: 125%;
         font-weight: bold;
         color: #fff; } }
+  .hero-action .register-btn:hover {
+    cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
   .hero-action .hero-learn {
     color: white;
     margin-top: 5px;
@@ -391,7 +400,8 @@ body {
     height: auto; } }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
 
 .what-can-you-do {
   /* text box */
@@ -421,7 +431,7 @@ a:hover {
         .what-can-you-do .expand-btn.btn {
           width: 100%; } }
   .what-can-you-do .expand-btn:hover {
-    cursor: pointer; }
+    cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
   .what-can-you-do .collapse-btn {
     display: flex;
     justify-content: center;
@@ -441,7 +451,7 @@ a:hover {
         .what-can-you-do .collapse-btn.btn {
           width: 100%; } }
   .what-can-you-do .collapse-btn:hover {
-    cursor: pointer; }
+    cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
   .what-can-you-do .tab-content {
     width: 100%;
     height: auto;
@@ -598,14 +608,16 @@ a:hover {
     margin: 15px 0; }
 
 .flickity-page-dots {
-  top: 105%; }
+  top: 105%;
+  cursor: default; }
 
 .flickity-page-dots .dot {
   width: 20px;
   height: 20px;
   opacity: 1;
   background: transparent;
-  border: 2px solid white; }
+  border: 2px solid white;
+  cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
 
 .flickity-page-dots .dot.is-selected {
   background: white; }
@@ -830,7 +842,7 @@ a:hover {
   margin-bottom: 2%;
   border-bottom: 3px solid #f5d6e1;
   transition: ease all 0.3s;
-  cursor: pointer; }
+  cursor: url("../../img/cursors/grabber_gradient.png"), pointer; }
   .accordion h4 {
     max-width: 95%; }
 

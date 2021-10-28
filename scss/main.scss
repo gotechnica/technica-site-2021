@@ -57,6 +57,10 @@ $animation-length: 80s;
   background-color: $dark-lavender;
 }
 
+.dark-btn:hover {
+  cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //WHY DOES THIS NOT WORK?
+}
+
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.95;
@@ -91,6 +95,7 @@ body {
     scrollbar-width: none; /* hide scrollbar on Firefox */
     -ms-overflow-style: none; /* hide scrollbar on IE 10+ */
   }
+  cursor: url('../../img/cursors/selectionpointer_gradient.png'), default;
 }
 
 body::-webkit-scrollbar {
@@ -135,6 +140,7 @@ body::-webkit-scrollbar {
   .nav-link:hover {
     transition: 0.3s ease;
     opacity: 0.8;
+    cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //Get pointer here
   }
 
   .navbar-nav li.active > a {
@@ -332,6 +338,7 @@ body::-webkit-scrollbar {
   }
 
   .register-btn {
+    cursor: pointer;
     @include dinpro-text(175%, bold, #fff);
     position: relative;
     z-index: 2;
@@ -340,6 +347,11 @@ body::-webkit-scrollbar {
       @include dinpro-text(125%, bold, #fff);
     }
   }
+
+  .register-btn:hover {
+    cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //change to pointer
+  }
+
   .hero-learn {
     color: white;
     margin-top: 5px;
@@ -513,6 +525,7 @@ body::-webkit-scrollbar {
 
 a:hover {
   text-decoration: none;
+  cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //change pointer here
 }
 
 .what-can-you-do {
@@ -555,7 +568,7 @@ a:hover {
   }
 
   .expand-btn:hover {
-    cursor: pointer;
+    cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //change pointer here
   }
 
   .collapse-btn {
@@ -585,7 +598,7 @@ a:hover {
   }
 
   .collapse-btn:hover {
-    cursor: pointer;
+    cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //change to pointer
   }
 
   .tab-content {
@@ -822,6 +835,7 @@ a:hover {
 
 .flickity-page-dots {
   top: 105%;
+  cursor: default;
 }
 
 .flickity-page-dots .dot {
@@ -830,6 +844,7 @@ a:hover {
   opacity: 1;
   background: transparent;
   border: 2px solid white;
+  cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //Change pointer here
 }
 
 .flickity-page-dots .dot.is-selected {
@@ -1129,7 +1144,7 @@ a:hover {
   margin-bottom: 2%;
   border-bottom: 3px solid $bg-pink;
   transition: ease all 0.3s;
-  cursor: pointer;
+  cursor: url('../../img/cursors/grabber_gradient.png'), pointer; //change to pointer
   h4 {
     max-width: 95%;
   }
