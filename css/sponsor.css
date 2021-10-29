@@ -34,7 +34,13 @@ h2 {
 }
 
 .inquiry-btn:hover {
+<<<<<<< HEAD
   filter: brightness(1.2);
+=======
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transition: 0.3s ease;
+>>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -45,8 +51,15 @@ h2 {
 .overall-stats img {
   height: 75%;
   width: 95%;
+<<<<<<< HEAD
   object-fit: cover;
   box-shadow: -2rem 0rem 0 -20px #9c8da5, 0.75rem -0.75rem #ed648d;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -2rem 0rem 0 -20px #9c8da5, 0.75rem -0.75rem #ed648d;
+          box-shadow: -2rem 0rem 0 -20px #9c8da5, 0.75rem -0.75rem #ed648d;
+>>>>>>> 99d3408a... add speakers and frames
 }
 
 .overall-stats .stat-number {
@@ -62,11 +75,19 @@ h2 {
 #stat-photo {
   margin-left: 3%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 991px) {
   #stat-photo {
     margin-top: 6%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 991px) {
   #stat-photo {
     margin-left: 10%;
@@ -79,6 +100,10 @@ h2 {
   height: 100%;
   padding: 1.25rem;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 403px) {
   .demo-section {
     font-size: 75%;
@@ -220,7 +245,9 @@ th {
 .prospectus a:hover,
 .prospectus a:active {
   color: #9c8da5;
-  filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   text-decoration: none;
 }
@@ -242,6 +269,7 @@ th {
   .stat-number {
     font-size: 5rem;
   }
+<<<<<<< HEAD
 
   .stat-text {
     font-size: 2.25rem;
@@ -258,6 +286,24 @@ th {
   .lower .demo-name {
     width: 70%;
   }
+=======
+  .stat-text {
+    font-size: 2.25rem;
+  }
+  .demo-name {
+    width: 80%;
+  }
+  .demo-stat {
+    width: 20%;
+  }
+  .lower .demo-name {
+    width: 70%;
+  }
+  .lower .demo-stat {
+    width: 30%;
+  }
+}
+>>>>>>> 99d3408a... add speakers and frames
 
   .lower .demo-stat {
     width: 30%;
@@ -268,6 +314,7 @@ th {
   .stat-number {
     font-size: 3.7rem;
   }
+<<<<<<< HEAD
 
   .stat-text {
     font-size: 1.7rem;
@@ -289,6 +336,23 @@ th {
     width: 15%;
   }
 
+=======
+  .stat-text {
+    font-size: 1.7rem;
+  }
+  .demographics {
+    font-size: 3.5vw;
+  }
+  .demo-name {
+    width: 85%;
+  }
+  .demo-legend {
+    font-size: 1rem;
+  }
+  .demo-stat {
+    width: 15%;
+  }
+>>>>>>> 99d3408a... add speakers and frames
   .main,
 .stats,
 .demographics,
@@ -297,11 +361,15 @@ th {
     padding-left: 3%;
     padding-right: 3%;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99d3408a... add speakers and frames
   .footer {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+<<<<<<< HEAD
 
   h1 {
     font-size: 1.9rem;
@@ -335,11 +403,42 @@ th {
     font-size: 31px;
   }
 
+=======
+  h1 {
+    font-size: 1.9rem;
+  }
+  .overall-stats .heading {
+    font-size: 3.25rem;
+  }
+  .overall-stats img {
+    -webkit-box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac;
+            box-shadow: -1.8rem 0rem 0 -20px #a88aa8, 0.5rem -0.5rem #ff7bac;
+  }
+  .edu .demo-name {
+    padding-left: 10%;
+  }
+  .prospectus {
+    font-size: 0.9rem;
+  }
+  .tooltip-inner {
+    width: 300px;
+  }
+  .heading {
+    text-align: center;
+  }
+  .heading h2 {
+    font-size: 31px;
+  }
+>>>>>>> 99d3408a... add speakers and frames
   .tooltip-inner {
     min-width: 200px;
     max-width: 300px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 #thank-you {
   background-color: #ed648d;
   color: white;
@@ -355,10 +454,20 @@ th {
     padding-left: 7% !important;
     padding-right: 7% !important;
   }
+<<<<<<< HEAD
 
   .stat-number {
     font-size: 6.25vw;
   }
+=======
+  .stat-number {
+    font-size: 6.25vw;
+  }
+  .stat-text {
+    font-size: 2.5vw;
+  }
+}
+>>>>>>> 99d3408a... add speakers and frames
 
   .stat-text {
     font-size: 2.5vw;
@@ -374,6 +483,10 @@ th {
     padding-right: 10% !important;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 .info-input {
   padding: 10px;
   background-color: #ed648d;
@@ -394,7 +507,13 @@ th {
 }
 
 .inquiry-btn:hover {
+<<<<<<< HEAD
   filter: brightness(1.2);
+=======
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transition: 0.3s ease;
+>>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -405,11 +524,16 @@ th {
     width: 70%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 /* large breakpoint, switch to mobile-layout */
 @media only screen and (max-width: 991px) {
   .stat-number {
     font-size: 6rem;
   }
+<<<<<<< HEAD
 
   .stat-text {
     font-size: 2.3rem;
@@ -427,11 +551,26 @@ th {
     padding-left: 20%;
   }
 
+=======
+  .stat-text {
+    font-size: 2.3rem;
+  }
+  .stat-number {
+    font-size: 6rem;
+  }
+  .edu {
+    padding: 5rem;
+  }
+  .edu .demo-name {
+    padding-left: 20%;
+  }
+>>>>>>> 99d3408a... add speakers and frames
   .edu-dot {
     width: 25px;
     height: 25px;
     vertical-align: -6px;
   }
+<<<<<<< HEAD
 
   .lower .demo-name {
     width: 60%;
@@ -452,6 +591,27 @@ th {
   .demo-stat {
     width: 30%;
   }
+=======
+  .lower .demo-name {
+    width: 60%;
+  }
+  .lower .demo-stat {
+    width: 40%;
+  }
+  .demographics {
+    font-size: 16px;
+  }
+  .demo-section {
+    margin-bottom: 20px;
+  }
+  .demo-stat {
+    width: 30%;
+  }
+  canvas {
+    margin-bottom: 20px;
+  }
+}
+>>>>>>> 99d3408a... add speakers and frames
 
   canvas {
     margin-bottom: 20px;
@@ -462,15 +622,25 @@ th {
     display: block;
     margin: 0 auto;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99d3408a... add speakers and frames
   .stat-number {
     font-size: 2em !important;
     margin-top: 2px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99d3408a... add speakers and frames
   .stat-text {
     font-size: 1em !important;
   }
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=sponsor.css.map */
+=======
+/*# sourceMappingURL=sponsor.css.map */
+>>>>>>> 99d3408a... add speakers and frames

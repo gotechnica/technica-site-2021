@@ -1,35 +1,66 @@
 /* Defines custom DINPro and DINPro bold fonts */
 @font-face {
+<<<<<<< HEAD
   font-family: "DINPro";
   src: url("../fonts/dinpro/DINPro-Regular.otf");
 }
+=======
+  font-family: 'DINPro';
+  src: url("../fonts/dinpro/DINPro-Regular.otf");
+}
+
+>>>>>>> 99d3408a... add speakers and frames
 @font-face {
   font-family: "DINPro";
   font-weight: 600;
   src: url("../fonts/dinpro/DINPro-Bold.otf");
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @font-face {
   font-family: "DINPro";
   font-weight: 300;
   src: url("../fonts/dinpro/DINPro-Medium.otf");
 }
+<<<<<<< HEAD
 /* Defines custom NotoSans font */
 @font-face {
   font-family: "NotoSans";
   src: url("../fonts/notosans/NotoSans-Regular.ttf");
 }
+=======
+
+/* Defines custom NotoSans font */
+@font-face {
+  font-family: 'NotoSans';
+  src: url("../fonts/notosans/NotoSans-Regular.ttf");
+}
+
+>>>>>>> 99d3408a... add speakers and frames
 @font-face {
   font-family: "NotoSans";
   font-weight: 300;
   src: url("../fonts/notosans/NotoSans-Medium.ttf");
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @font-face {
   font-family: "NotoSans";
   font-weight: 600;
   src: url("../fonts/notosans/NotoSans-Bold.ttf");
 }
+<<<<<<< HEAD
 body {
   font-family: "NotoSans";
+=======
+
+body {
+  font-family: 'NotoSans';
+>>>>>>> 99d3408a... add speakers and frames
 }
 
 h1 {
@@ -38,12 +69,20 @@ h1 {
   font-size: 60px;
   line-height: 82px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (max-width: 767px) {
   h1 {
     font-size: 50px;
     text-align: center;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (max-width: 575px) {
   h1 {
     font-size: 35px;
@@ -55,8 +94,12 @@ h2 {
   font-family: DINPro;
   font-weight: bold;
   font-size: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   text-transform: uppercase;
 }
@@ -67,6 +110,10 @@ h3 {
   font-size: 36px;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (max-width: 575px) {
   h3 {
     font-size: 30px;
@@ -77,6 +124,10 @@ h4 {
   font-family: DINPro;
   font-size: 1.3rem;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (max-width: 575px) {
   h4 {
     font-size: 1.15rem;
@@ -85,9 +136,17 @@ h4 {
 
 @media (max-width: 575px) {
   html,
+<<<<<<< HEAD
 body {
     overflow-x: hidden;
   }
 }
 
 /*# sourceMappingURL=base.css.map */
+=======
+  body {
+    overflow-x: hidden;
+  }
+}
+/*# sourceMappingURL=base.css.map */
+>>>>>>> 99d3408a... add speakers and frames

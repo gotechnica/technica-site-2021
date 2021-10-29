@@ -1,8 +1,13 @@
 .container {
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-top: 5%;
   width: 75%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 1600px) {
   .container {
     padding-top: 10%;
@@ -16,9 +21,17 @@
   padding: 3%;
   border-radius: 33px;
 }
+<<<<<<< HEAD
 .error-information #error-number {
   font-size: 300%;
 }
+=======
+
+.error-information #error-number {
+  font-size: 300%;
+}
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (max-width: 500px) {
   .error-information {
     margin-top: 20%;
@@ -30,11 +43,16 @@
   margin-right: 50%;
   margin-bottom: 7%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 .logo #technica-logo {
   display: block;
   width: 15vw;
   height: 4vw;
 }
+<<<<<<< HEAD
 @media (max-width: 1500px) {
   .logo #technica-logo {
     width: 60vw;
@@ -70,6 +88,49 @@
     margin-left: -140%;
   }
 }
+=======
+
+@media (max-width: 1500px) {
+  .logo #technica-logo {
+    width: 60vw;
+    height: 15vw;
+    margin-left: -100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo #technica-logo {
+    width: 75vw;
+    height: 20vw;
+    margin-left: -160%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .logo #technica-logo {
+    width: 60vw;
+    height: 15vw;
+    margin-left: -90%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .logo #technica-logo {
+    width: 60vw;
+    height: 15vw;
+    margin-left: -110%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .logo #technica-logo {
+    width: 60vw;
+    height: 15vw;
+    margin-left: -140%;
+  }
+}
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 2000px) {
   .logo #technica-logo {
     width: 60vw;
@@ -77,6 +138,10 @@
     margin-left: -160%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 2500px) {
   .logo #technica-logo {
     width: 60vw;
@@ -92,18 +157,30 @@
   font-weight: bold;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 550px) and (max-width: 750px) {
   .back-to-home-btn {
     width: 45vw;
     height: 5vw;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 610px) and (max-width: 766px) {
   .back-to-home-btn {
     width: 30vw;
     height: 8vw;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 767px) and (max-width: 900px) {
   .back-to-home-btn {
     width: 32vw;
@@ -114,6 +191,10 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 901px) and (max-width: 1400px) {
   .back-to-home-btn {
     width: 25vw;
@@ -125,6 +206,10 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media (min-width: 901px) and (max-width: 1050px) {
   .back-to-home-btn {
     width: 28vw;
@@ -136,6 +221,10 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 1401px) {
   .back-to-home-btn {
     width: 27vw;
@@ -147,6 +236,10 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 2001px) {
   .back-to-home-btn {
     width: 25vw;
@@ -158,6 +251,10 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 2200px) {
   .back-to-home-btn {
     width: 22vw;
@@ -169,6 +266,10 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 2500px) {
   .back-to-home-btn {
     width: 22vw;
@@ -180,5 +281,9 @@
     color: #fff;
   }
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=error.css.map */
+=======
+/*# sourceMappingURL=error.css.map */
+>>>>>>> 99d3408a... add speakers and frames
