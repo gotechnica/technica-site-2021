@@ -23,7 +23,6 @@
   "dependencies": {
     "flickity": "^2.2.2",
     "hoek": "^5.0.4",
-    "jsonld": "^5.2.0",
     "minify": "^5.1.1",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.7",
