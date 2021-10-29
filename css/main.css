@@ -1367,13 +1367,11 @@ a:hover {
 @media only screen and (max-width: 848px) {
   #keynote-speaker-1,
   #keynote-speaker-2 {
-    height: 75%;
     width: 75%;
   }
   #other-speaker-1,
   #other-speaker-2,
   #other-speaker-3 {
-    height: 65%;
     width: 65%;
   }
   #other-speaker-label-1,
