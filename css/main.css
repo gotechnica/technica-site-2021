@@ -131,6 +131,14 @@ body {
   background-color: #e9e3ed !important;
   transition: background-color 200ms linear; }
 
+.scroll-speakers {
+  background-color: #f5d6e1 !important;
+  transition: background-color 200ms linear; }
+
+.scroll-schedule {
+  background-color: #f5d6e1 !important;
+  transition: background-color 200ms linear; }
+
 .scroll-faq {
   background-color: #f7f3ed !important;
   transition: background-color 200ms linear; }
@@ -808,6 +816,179 @@ a:hover {
     .mentor .btn,
     .volunteer .btn {
       margin: 0; } }
+
+.speaker-label {
+  background-color: white;
+  border-radius: 25px;
+  padding: 2% 0% 0.5% 0%;
+  margin: 0 auto;
+  margin-top: 2%; }
+  .speaker-label .speaker-name {
+    color: #ed648d;
+    font-size: 125%;
+    font-weight: bold;
+    margin-bottom: -0.5%; }
+  .speaker-label .speaker-title {
+    font-weight: 500; }
+
+.keynote-speaker {
+  margin: 2rem; }
+
+#keynote-label-1,
+#keynote-label-2 {
+  width: 65%;
+  align-content: center; }
+
+#other-speaker-label-1,
+#other-speaker-label-2,
+#other-speaker-label-3 {
+  width: 80%; }
+
+.accordion-holder {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+
+@media only screen and (max-width: 848px) {
+  #keynote-speaker-1,
+  #keynote-speaker-2 {
+    width: 75%; }
+  #other-speaker-1,
+  #other-speaker-2,
+  #other-speaker-3 {
+    width: 65%; }
+  #other-speaker-label-1,
+  #other-speaker-label-2,
+  #other-speaker-label-3 {
+    width: 50%; } }
+
+.schedule-container {
+  background-color: white;
+  border-radius: 8px; }
+  @media (max-width: 767px) {
+    .schedule-container {
+      font-size: 14px; } }
+  @media (max-width: 575px) {
+    .schedule-container {
+      font-size: 13px; } }
+
+.schedule-toggler {
+  font-family: DINPro;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ed648d;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px #9c8da5 solid; }
+  @media (max-width: 575px) {
+    .schedule-toggler {
+      font-size: 17px; } }
+
+.active-day {
+  border-bottom: 5px #ed648d solid; }
+
+.tab-content {
+  height: 500px;
+  overflow-y: auto; }
+
+.schedule-event-nodesc,
+.schedule-event {
+  padding: 15px 30px;
+  font-weight: bold;
+  border-bottom: 1px #9c8da5 solid; }
+  @media (max-width: 575px) {
+    .schedule-event-nodesc,
+    .schedule-event {
+      padding: 15px; } }
+
+.schedule-event {
+  cursor: pointer; }
+  .schedule-event:hover {
+    background-color: #e5e5e5; }
+
+.event-modal-title {
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: bold;
+  color: black; }
+  @media (max-width: 767px) {
+    .event-modal-title {
+      font-size: 16px; } }
+
+.event-time,
+.event-name,
+.event-location,
+.event-type {
+  display: inline-block;
+  vertical-align: middle; }
+
+.event-time {
+  width: 20%; }
+  @media (max-width: 420px) {
+    .event-time {
+      width: 25%; } }
+  @media (max-width: 330px) {
+    .event-time {
+      width: 27%; } }
+
+.event-name {
+  width: 40%; }
+  @media (max-width: 767px) {
+    .event-name {
+      width: 40%; } }
+  @media (max-width: 600px) {
+    .event-name {
+      width: 35%; } }
+  @media (max-width: 330px) {
+    .event-name {
+      width: 30%; } }
+
+.event-subname {
+  font-weight: normal;
+  font-size: 0.9rem; }
+  @media (max-width: 575px) {
+    .event-subname {
+      font-size: 12px; } }
+
+.event-location {
+  width: 20%; }
+  @media (max-width: 767px) {
+    .event-location {
+      width: 18%; } }
+  @media (max-width: 450px) {
+    .event-location {
+      font-size: 15px; } }
+
+.event-type {
+  width: 15%; }
+  @media (max-width: 767px) {
+    .event-type {
+      width: 18%; } }
+  @media (max-width: 450px) {
+    .event-type {
+      font-size: 15px; } }
+
+.workshop {
+  color: #ed648d; }
+
+.panel-meetup {
+  color: #45a567; }
+
+.event {
+  color: #72607b; }
+
+.minievent {
+  color: #2ca0b5; }
+
+@media (max-width: 450px) {
+  .horizon-event {
+    font-size: 11px; } }
+
+.horizon-event:after {
+  padding-left: 5px;
+  display: inline-block;
+  width: 1px;
+  content: url("../img/horizon-icon.svg"); }
 
 .faq {
   margin-top: 50px; }

@@ -6,11 +6,14 @@ $dark-lavender: #8d7c98;
 $darker-lavender: #72607b;
 $light-lavender: #cca8c1;
 $ex-light-lavender: #e9e3ed;
+$light-grey: #e5e5e5;
 $dark-grey: #606060;
 $orange: #f9b7ae;
 $hero-blue: #8cd8ed;
+$darker-hero-blue: #2ca0b5;
 $tan: #f7f3ed;
 $pastel-green: #a0d6b4;
+$darker-pastel-green: #45a567; //#779C85;
 
 $bg-green: #b5d5b2;
 $bg-blue: #cde9fb;
@@ -184,6 +187,16 @@ body::-webkit-scrollbar {
 
 .scroll-registration {
   background-color: $ex-light-lavender !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-speakers {
+  background-color: $bg-pink !important;
+  transition: background-color 200ms linear;
+}
+
+.scroll-schedule {
+  background-color: $bg-pink !important;
   transition: background-color 200ms linear;
 }
 
@@ -1102,6 +1115,210 @@ a:hover {
       margin: 0;
     }
   }
+}
+
+// *** speakers section ***
+.speaker-label {
+  background-color: white;
+  border-radius: 25px;
+  padding: 2% 0% 0.5% 0%;
+  margin: 0 auto;
+  margin-top: 2%;
+
+  .speaker-name {
+    color: $pink;
+    font-size: 125%;
+    font-weight: bold;
+    margin-bottom: -0.5%;
+  }
+  .speaker-title {
+    font-weight: 500;
+  }
+}
+
+.keynote-speaker {
+  margin: 2rem;
+}
+
+#keynote-label-1,
+#keynote-label-2 {
+  width: 65%;
+  // margin-top: -5%;
+  align-content: center;
+  // margin-bottom: 35% !important;
+}
+
+#other-speaker-label-1,
+#other-speaker-label-2,
+#other-speaker-label-3 {
+  width: 80%;
+}
+
+.accordion-holder {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 848px) {
+  #keynote-speaker-1,
+  #keynote-speaker-2 {
+    width: 75%;
+  }
+  #other-speaker-1,
+  #other-speaker-2,
+  #other-speaker-3 {
+    width: 65%;
+  }
+  #other-speaker-label-1,
+  #other-speaker-label-2,
+  #other-speaker-label-3 {
+    width: 50%;
+  }
+}
+
+// *** Schedule Section ***
+
+.schedule-container {
+  background-color: white;
+  border-radius: 8px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
+}
+
+.schedule-toggler {
+  @include dinpro-text(24px, bold, $pink);
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px $lavender solid;
+  @media (max-width: 575px) {
+    font-size: 17px;
+  }
+}
+
+.active-day {
+  border-bottom: 5px $pink solid;
+}
+
+.tab-content {
+  height: 500px;
+  overflow-y: auto;
+}
+
+.schedule-event-nodesc,
+.schedule-event {
+  padding: 15px 30px;
+  font-weight: bold;
+  border-bottom: 1px $lavender solid;
+  @media (max-width: 575px) {
+    padding: 15px;
+  }
+}
+
+.schedule-event {
+  cursor: pointer;
+  &:hover {
+    background-color: $light-grey;
+  }
+}
+
+.event-modal-title {
+  @include dinpro-text(20px, bold, black);
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.event-time,
+.event-name,
+.event-location,
+.event-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.event-time {
+  width: 20%;
+  @media (max-width: 420px) {
+    width: 25%;
+  }
+  @media (max-width: 330px) {
+    width: 27%;
+  }
+}
+
+.event-name {
+  width: 40%;
+  @media (max-width: 767px) {
+    width: 40%;
+  }
+  @media (max-width: 600px) {
+    width: 35%;
+  }
+  @media (max-width: 330px) {
+    width: 30%;
+  }
+}
+
+.event-subname {
+  font-weight: normal;
+  font-size: 0.9rem;
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
+}
+
+.event-location {
+  width: 20%;
+  @media (max-width: 767px) {
+    width: 18%;
+  }
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
+}
+
+.event-type {
+  width: 15%;
+  @media (max-width: 767px) {
+    width: 18%;
+  }
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
+}
+
+.workshop {
+  color: $pink;
+}
+
+.panel-meetup {
+  color: $darker-pastel-green;
+}
+
+.event {
+  color: $darker-lavender;
+}
+
+.minievent {
+  color: $darker-hero-blue;
+}
+
+.horizon-event {
+  @media (max-width: 450px) {
+    font-size: 11px;
+  }
+}
+
+.horizon-event:after {
+  padding-left: 5px;
+  display: inline-block;
+  width: 1px;
+  content: url('../img/horizon-icon.svg');
 }
 
 // *** FAQ section ***
