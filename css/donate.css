@@ -9,10 +9,7 @@
     margin-top: -100px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-clouds {
   position: absolute;
   width: 100%;
@@ -27,10 +24,7 @@
     top: -5px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 1400px) {
   .hero-clouds {
     height: 850px;
@@ -38,10 +32,7 @@
     top: -5px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 1024px) {
   .hero-clouds {
     height: 663px;
@@ -49,10 +40,7 @@
     top: -5px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 767px) {
   .hero-clouds {
     width: 834px;
@@ -61,17 +49,12 @@
     top: -26px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-donate {
   background-color: white;
   overflow: hidden;
   padding-bottom: 10%;
 }
-<<<<<<< HEAD
-=======
 
 @-webkit-keyframes wait {
   0% {
@@ -81,7 +64,6 @@
     opacity: 0;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
 @keyframes wait {
   0% {
@@ -91,8 +73,6 @@
     opacity: 0;
   }
 }
-<<<<<<< HEAD
-=======
 
 @-webkit-keyframes fade-in {
   0% {
@@ -104,7 +84,6 @@
   }
 }
 
->>>>>>> 99d3408a... add speakers and frames
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -114,24 +93,16 @@
     pointer-events: auto;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-information {
   margin-top: 200px;
   padding-left: 0;
   position: relative;
   z-index: 3;
-<<<<<<< HEAD
-  animation: wait 600ms, fade-in 800ms 600ms;
-  animation-duration: 2s;
-=======
   -webkit-animation: wait 600ms, fade-in 800ms 600ms;
           animation: wait 600ms, fade-in 800ms 600ms;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
->>>>>>> 99d3408a... add speakers and frames
 }
 
 .hero-information .hero-logo {
@@ -144,10 +115,7 @@
     margin-top: 260px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-information #technica-logo {
   padding-top: 5%;
   margin-top: 16%;
@@ -161,10 +129,7 @@
     margin-top: -650px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-information #hero-tagline {
   font-size: 150%;
   width: 55%;
@@ -176,36 +141,24 @@
     width: 95%;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 767px) and (max-width: 1042px) {
   .hero-information #hero-tagline {
     width: 85%;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-action {
   margin-top: -30px;
   position: relative;
   z-index: 5;
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 2s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-=======
   -webkit-animation: fade-in 2s;
           animation: fade-in 2s;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
->>>>>>> 99d3408a... add speakers and frames
 }
 
 @media only screen and (min-width: 996px) {
@@ -213,28 +166,19 @@
     padding-top: 125px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 992px) {
   .hero-action {
     padding-top: 125px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 1400px) {
   .hero-action {
     padding-top: 350px;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-action .big-donate-btn {
   font-family: DINPro;
   font-size: 175%;
@@ -253,10 +197,7 @@
     color: #fff;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 .hero-action .hero-learn {
   color: #b6a1c4;
   font-size: 150%;
@@ -267,37 +208,21 @@
     font-size: 115%;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 991px) {
   .hero-information .hero-logo {
     padding-top: 55px;
   }
-<<<<<<< HEAD
-=======
   .hero-action {
     padding-top: 120px;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .hero-action {
-    padding-top: 120px;
-  }
-}
 @media only screen and (max-width: 767px) {
   .hero-information .hero-logo {
     margin-top: 225px;
     margin-bottom: -200px;
   }
-<<<<<<< HEAD
-
-  .hero-information #technica-logo {
-    width: 500px;
-  }
-=======
   .hero-information #technica-logo {
     width: 500px;
   }
@@ -305,52 +230,28 @@
     padding-top: 100px;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .hero-action {
-    padding-top: 100px;
-  }
-}
 @media only screen and (max-width: 575px) {
   .hero {
     padding-bottom: 75px;
   }
-<<<<<<< HEAD
-
   .hero-information {
     font-size: 150%;
   }
-
-=======
-  .hero-information {
-    font-size: 150%;
-  }
->>>>>>> 99d3408a... add speakers and frames
   .hero-information #technica-logo {
     width: 80vw;
     padding-top: 15%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .hero-information #theme-logo {
     width: 40vw;
     min-width: 120px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .promise-text {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 /*HERO SECTION ENDS*/
 .donate-button {
   z-index: 999;
@@ -378,10 +279,7 @@
   opacity: 75%;
   text-decoration: none;
   color: #fff;
-<<<<<<< HEAD
-=======
   -webkit-transition: 0.3s ease;
->>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -401,11 +299,7 @@ h2 {
 
 .curved {
   background-color: #ece3f2;
-<<<<<<< HEAD
-  border-radius: 50% 50% 0 0/100% 100% 0 0;
-=======
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
->>>>>>> 99d3408a... add speakers and frames
   padding-top: 50px;
 }
 
@@ -422,11 +316,8 @@ h2 {
 }
 
 .story-header {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 99d3408a... add speakers and frames
   display: flex;
 }
 
@@ -438,10 +329,7 @@ h2 {
   padding-top: 3%;
   padding-bottom: 3%;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 767px) {
   .donate-promise {
     padding-top: 30%;
@@ -467,22 +355,14 @@ h2 {
   width: 100%;
   height: 100%;
   left: 783px;
-<<<<<<< HEAD
-  object-fit: cover;
-=======
   -o-object-fit: cover;
      object-fit: cover;
->>>>>>> 99d3408a... add speakers and frames
 }
 
 .top-logo {
   width: 100%;
-<<<<<<< HEAD
-  object-fit: contain;
-=======
   -o-object-fit: contain;
      object-fit: contain;
->>>>>>> 99d3408a... add speakers and frames
 }
 
 .donate-impact {
@@ -551,10 +431,7 @@ h2 {
 #email-link-donate:hover {
   opacity: 75%;
   text-decoration: none;
-<<<<<<< HEAD
-=======
   -webkit-transition: 0.3s ease;
->>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -574,10 +451,7 @@ h2 {
 
 .nav-link:hover {
   opacity: 75%;
-<<<<<<< HEAD
-=======
   -webkit-transition: 0.3s ease;
->>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -586,122 +460,70 @@ h2 {
   .hero-logo {
     padding-top: 5px;
   }
-<<<<<<< HEAD
-
-  .hero-title {
-    padding-top: 20px;
-  }
-
-  .promise-image img {
-    max-height: 260px;
-  }
-
-=======
   .hero-title {
     padding-top: 20px;
   }
   .promise-image img {
     max-height: 260px;
   }
->>>>>>> 99d3408a... add speakers and frames
   /* impact section */
   .donate-btn {
     margin-bottom: 0;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (max-width: 1200px) {
   /* hero section */
   .hero-title {
     padding-top: 20px;
     padding-bottom: 35px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .our-donor {
     line-height: 1em;
     margin-bottom: 5%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .promise-image {
     padding-top: 0;
     margin-top: 0;
     margin-left: 3%;
   }
-<<<<<<< HEAD
-=======
   .donate-impact {
     margin-top: 3%;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .donate-impact {
-    margin-top: 3%;
-  }
-}
 @media only screen and (max-width: 2000px) {
   /* hero section */
   .hero-logo {
     padding-top: 5px;
   }
-<<<<<<< HEAD
-
   .hero-title {
     padding-top: 20px;
   }
-
-=======
-  .hero-title {
-    padding-top: 20px;
-  }
->>>>>>> 99d3408a... add speakers and frames
   /* impact section */
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     width: 80%;
     height: 100%;
     min-height: 300px;
     max-height: 300px;
   }
-<<<<<<< HEAD
-=======
   .donate-btn {
     margin-bottom: 0;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .donate-btn {
-    margin-bottom: 0;
-  }
-}
 @media only screen and (max-width: 991px) {
   /* impact (+ promise) section */
   .impact-header,
-<<<<<<< HEAD
-.our-donor {
-    font-size: 280%;
-  }
-
-=======
   .our-donor {
     font-size: 280%;
   }
->>>>>>> 99d3408a... add speakers and frames
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     margin-left: 2%;
     margin-right: 2%;
@@ -710,16 +532,6 @@ h2 {
     min-height: 300px;
     max-height: 300px;
   }
-<<<<<<< HEAD
-
-  .donate-button {
-    font-size: 120%;
-  }
-
-  .donate-btn {
-    font-size: 100%;
-  }
-=======
   .donate-button {
     font-size: 120%;
   }
@@ -730,39 +542,22 @@ h2 {
     margin-top: 20px;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .donate-questions {
-    margin-top: 20px;
-  }
-}
 @media only screen and (max-width: 767px) {
   /* donor promise */
   .our-donor {
     text-align: center;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   /* impact section */
   .donate-impact {
     margin-top: 3%;
   }
-<<<<<<< HEAD
-
   .impact-header {
     font-size: 280%;
   }
-
-=======
-  .impact-header {
-    font-size: 280%;
-  }
->>>>>>> 99d3408a... add speakers and frames
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 8%;
     margin-left: 0;
     margin-right: 0;
@@ -772,38 +567,16 @@ h2 {
     max-height: 300px;
     font-size: 85%;
   }
-<<<<<<< HEAD
-
-  .donate-button {
-    font-size: 130%;
-  }
-
-  .donate-impact {
-    padding-top: 15%;
-  }
-
-=======
   .donate-button {
     font-size: 130%;
   }
   .donate-impact {
     padding-top: 15%;
   }
->>>>>>> 99d3408a... add speakers and frames
   .donate-questions {
     margin-top: 8%;
     margin-bottom: 8%;
   }
-<<<<<<< HEAD
-
-  .donate-questions {
-    margin-top: 20%;
-  }
-
-  .footer {
-    margin-top: 5%;
-  }
-=======
   .donate-questions {
     margin-top: 20%;
   }
@@ -814,52 +587,31 @@ h2 {
     margin: 8% 0 13% 0;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .contact-footer {
-    margin: 8% 0 13% 0;
-  }
-}
 /* mobile */
 @media only screen and (max-width: 575px) {
   .story-header {
     text-align: center;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .promise-image {
     padding-top: 0%;
     padding-bottom: 5%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   /* impact section */
   .impact-header {
     font-size: 280%;
     padding-top: 10%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .donate-option1-header,
-.donate-option2-header,
-.donate-option3-header {
+  .donate-option2-header,
+  .donate-option3-header {
     display: inline-block;
     font-size: 250%;
     margin-bottom: 10%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .donate-option1,
-.donate-option2,
-.donate-option3 {
+  .donate-option2,
+  .donate-option3 {
     padding: 6%;
     margin: 3% 10%;
     width: 80%;
@@ -867,36 +619,18 @@ h2 {
     min-height: 240px;
     max-height: 240px;
   }
-<<<<<<< HEAD
-
   .donate-button {
     font-size: 130%;
   }
-
-=======
-  .donate-button {
-    font-size: 130%;
-  }
->>>>>>> 99d3408a... add speakers and frames
   .donate-btn {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .donate-questions,
-.contact-footer {
+  .contact-footer {
     margin-top: 8%;
     margin-bottom: 8%;
   }
-<<<<<<< HEAD
-
-  .donate-questions {
-    margin-top: 20%;
-  }
-=======
   .donate-questions {
     margin-top: 20%;
   }
@@ -904,47 +638,24 @@ h2 {
     margin: 12% 0 18%;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .contact-footer {
-    margin: 12% 0 18%;
-  }
-}
 @media only screen and (max-width: 447px) {
   .our-donor {
     text-align: center;
     font-size: 260%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .impact-header {
     margin-top: 10%;
     font-size: 260%;
   }
-<<<<<<< HEAD
-
   .spons-code {
     margin-top: 0;
   }
-
-=======
-  .spons-code {
-    margin-top: 0;
-  }
->>>>>>> 99d3408a... add speakers and frames
   .donate-questions,
-.contact-footer {
+  .contact-footer {
     margin-top: 8%;
     margin-bottom: 8%;
   }
-<<<<<<< HEAD
-
-  .donate-questions {
-    margin-top: 30%;
-  }
-=======
   .donate-questions {
     margin-top: 30%;
   }
@@ -952,36 +663,17 @@ h2 {
     margin: 15% 0 25% 0;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .contact-footer {
-    margin: 15% 0 25% 0;
-  }
-}
 @media only screen and (max-width: 375px) {
   .our-donor {
     font-size: 200%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .impact-header {
     padding-top: 20%;
     font-size: 200%;
     line-height: 1.2em;
     padding-bottom: 7%;
   }
-<<<<<<< HEAD
-
-  .spons-code {
-    margin-top: 0;
-  }
-
-  .donate-questions {
-    margin-top: 35%;
-  }
-=======
   .spons-code {
     margin-top: 0;
   }
@@ -992,32 +684,11 @@ h2 {
     font-size: 200%;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .contact-header {
-    font-size: 200%;
-  }
-}
 @media only screen and (max-width: 280px) {
   .hero-title {
     font-size: 125%;
   }
-<<<<<<< HEAD
-
-  .hero-information #technica-logo {
-    padding-top: 8%;
-  }
-
-  .our-donor {
-    padding-top: 20%;
-  }
-
-  .impact-header,
-.contact-header {
-    font-size: 200%;
-  }
-
-=======
   .hero-information #technica-logo {
     padding-top: 8%;
   }
@@ -1028,30 +699,16 @@ h2 {
   .contact-header {
     font-size: 200%;
   }
->>>>>>> 99d3408a... add speakers and frames
   .donate-questions,
-.contact-footer {
+  .contact-footer {
     margin-top: 8%;
     margin-bottom: 8%;
   }
-<<<<<<< HEAD
-
   .donate-questions {
     margin-top: 40%;
   }
-
-=======
-  .donate-questions {
-    margin-top: 40%;
-  }
->>>>>>> 99d3408a... add speakers and frames
   .contact-footer {
     margin: 20% 0 30% 0;
   }
 }
-<<<<<<< HEAD
-
 /*# sourceMappingURL=donate.css.map */
-=======
-/*# sourceMappingURL=donate.css.map */
->>>>>>> 99d3408a... add speakers and frames

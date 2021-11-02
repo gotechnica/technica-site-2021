@@ -33,13 +33,9 @@ h2 {
 }
 
 .position-desc img:hover {
-<<<<<<< HEAD
-  filter: brightness(1.15);
-=======
   -webkit-filter: brightness(1.15);
           filter: brightness(1.15);
   -webkit-transition: 0.3s ease;
->>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -77,13 +73,9 @@ h2 {
 }
 
 .apply .btn:hover {
-<<<<<<< HEAD
-  filter: brightness(1.2);
-=======
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
   -webkit-transition: 0.3s ease;
->>>>>>> 99d3408a... add speakers and frames
   transition: 0.3s ease;
 }
 
@@ -140,12 +132,6 @@ h2 {
   #responsibilities {
     margin-left: 5%;
   }
-<<<<<<< HEAD
-
-  #why-apply {
-    margin-left: 5%;
-  }
-=======
   #why-apply {
     margin-left: 5%;
   }
@@ -153,50 +139,23 @@ h2 {
     padding-top: 3%;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .faq-heading {
-    padding-top: 3%;
-  }
-}
 /* large breakpoint, position description collapses */
 @media only screen and (max-width: 991px) {
   .position-desc h2 {
     height: auto;
   }
-<<<<<<< HEAD
-=======
   .apply {
     padding-top: 20px;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .apply {
-    padding-top: 20px;
-  }
-}
 /* mobile */
 @media only screen and (max-width: 575px) {
   .position-desc img {
     padding-left: 0px;
     padding-right: 0px;
   }
-<<<<<<< HEAD
-
-  .accordion .btn {
-    text-align: center;
-  }
-
-  .card-body {
-    text-align: center;
-  }
-
-  .heading {
-    font-size: 30px;
-  }
-
-=======
   .accordion .btn {
     text-align: center;
   }
@@ -206,34 +165,20 @@ h2 {
   .heading {
     font-size: 30px;
   }
->>>>>>> 99d3408a... add speakers and frames
   .email {
     font-size: 20px;
     margin-bottom: 10px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   .faq {
     padding-bottom: 0;
     margin-bottom: 0;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 99d3408a... add speakers and frames
 @media only screen and (min-width: 1720px) {
   #responsibilities {
     margin-left: 10%;
   }
-<<<<<<< HEAD
-
-  #why-apply {
-    margin-left: 10%;
-  }
-=======
   #why-apply {
     margin-left: 10%;
   }
@@ -241,27 +186,13 @@ h2 {
     padding-top: 3%;
   }
 }
->>>>>>> 99d3408a... add speakers and frames
 
-  .faq-heading {
-    padding-top: 3%;
-  }
-}
 @media only screen and (min-width: 1875px) {
   #responsibilities {
     margin-left: 14%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 99d3408a... add speakers and frames
   #why-apply {
     margin-left: 14%;
   }
 }
-<<<<<<< HEAD
-
 /*# sourceMappingURL=ambassadors.css.map */
-=======
-/*# sourceMappingURL=ambassadors.css.map */
->>>>>>> 99d3408a... add speakers and frames
