@@ -402,7 +402,6 @@ a:hover {
   text-decoration: none; }
 
 .what-can-you-do {
-  /* text box */
   /* tabs */ }
   .what-can-you-do .content-heading {
     font-size: 2.5rem;
@@ -468,6 +467,9 @@ a:hover {
         animation: fadein 0.5s ease;
         opacity: 1; }
     .what-can-you-do .tab-content.unexpanded {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
       animation: unexpand 0.5s;
       height: 30rem; }
       .what-can-you-do .tab-content.unexpanded .collapse-btn {

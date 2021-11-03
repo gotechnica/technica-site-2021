@@ -529,8 +529,6 @@ a:hover {
 }
 
 .what-can-you-do {
-  /* text box */
-
   .content-heading {
     font-size: 2.5rem;
     font-weight: bold;
@@ -628,6 +626,10 @@ a:hover {
     }
 
     &.unexpanded {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+
       animation: unexpand 0.5s;
       height: 30rem;
 
