@@ -934,22 +934,31 @@ a:hover {
       width: 27%; } }
 
 .event-name {
-  width: 40%; }
+  width: 60%; }
   @media (max-width: 767px) {
     .event-name {
-      width: 40%; } }
-  @media (max-width: 600px) {
+      width: 55%; } }
+  @media (max-width: 420px) {
     .event-name {
-      width: 35%; } }
+      width: 52%; } }
   @media (max-width: 330px) {
     .event-name {
-      width: 30%; } }
+      width: 48%; } }
 
 .event-subname {
   font-weight: normal;
   font-size: 0.9rem; }
   @media (max-width: 575px) {
     .event-subname {
+      font-size: 12px; } }
+
+.event-type {
+  width: 15%; }
+  @media (max-width: 767px) {
+    .event-type {
+      width: 20%; } }
+  @media (max-width: 450px) {
+    .event-type {
       font-size: 12px; } }
 
 /*.event-location {

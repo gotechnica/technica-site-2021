@@ -1256,15 +1256,15 @@ a:hover {
 }
 
 .event-name {
-  width: 40%;
+  width: 60%;
   @media (max-width: 767px) {
-    width: 40%;
+    width: 55%;
   }
-  @media (max-width: 600px) {
-    width: 35%;
+  @media (max-width: 420px) {
+    width: 52%;
   }
   @media (max-width: 330px) {
-    width: 30%;
+    width: 48%;
   }
 }
 
@@ -1272,6 +1272,16 @@ a:hover {
   font-weight: normal;
   font-size: 0.9rem;
   @media (max-width: 575px) {
+    font-size: 12px;
+  }
+}
+
+.event-type {
+  width: 15%;
+  @media (max-width: 767px) {
+    width: 20%;
+  }
+  @media (max-width: 450px) {
     font-size: 12px;
   }
 }
