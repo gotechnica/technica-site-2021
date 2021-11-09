@@ -952,15 +952,15 @@ a:hover {
     .event-subname {
       font-size: 12px; } }
 
-.event-location {
-  width: 20%; }
+/*.event-location {
+  width: 20%;
   @media (max-width: 767px) {
-    .event-location {
-      width: 18%; } }
+    width: 18%;
+  }
   @media (max-width: 450px) {
-    .event-location {
-      font-size: 15px; } }
-
+    font-size: 15px;
+  }
+}*/
 .event-type {
   width: 15%; }
   @media (max-width: 767px) {
@@ -973,14 +973,23 @@ a:hover {
 .workshop {
   color: #ed648d; }
 
-.panel-meetup {
-  color: #45a567; }
-
 .event {
   color: #72607b; }
 
 .minievent {
   color: #2ca0b5; }
+
+.food {
+  color: #45a567; }
+
+.sponsored {
+  color: #606060; }
+
+.technichat {
+  color: #f4d263; }
+
+.community {
+  color: #f9b7ae; }
 
 @media (max-width: 450px) {
   .horizon-event {

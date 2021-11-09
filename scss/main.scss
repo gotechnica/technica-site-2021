@@ -19,6 +19,8 @@ $bg-green: #b5d5b2;
 $bg-blue: #cde9fb;
 $bg-pink: #f5d6e1;
 
+$event-yellow: #f4d263;
+
 $animation-length: 80s;
 
 @keyframes fadein {
@@ -1274,7 +1276,7 @@ a:hover {
   }
 }
 
-.event-location {
+/*.event-location {
   width: 20%;
   @media (max-width: 767px) {
     width: 18%;
@@ -1282,7 +1284,7 @@ a:hover {
   @media (max-width: 450px) {
     font-size: 15px;
   }
-}
+}*/
 
 .event-type {
   width: 15%;
@@ -1298,16 +1300,28 @@ a:hover {
   color: $pink;
 }
 
-.panel-meetup {
-  color: $darker-pastel-green;
-}
-
 .event {
   color: $darker-lavender;
 }
 
 .minievent {
   color: $darker-hero-blue;
+}
+
+.food {
+  color: $darker-pastel-green;
+}
+
+.sponsored {
+  color: $dark-grey;
+}
+
+.technichat {
+  color: $event-yellow;
+}
+
+.community {
+  color: $orange;
 }
 
 .horizon-event {
