@@ -63,13 +63,13 @@ $(function () {
     }
 
     //schedule
-    /*if ($(window).scrollTop() >= $('#schedule').offset().top - 100) {
+    if ($(window).scrollTop() >= $('#schedule').offset().top - 100) {
       $('.navbar-nav li').removeClass('active');
       $main.addClass('scroll-schedule');
       $('.navbar-nav li.sched-nav').addClass('active');
     } else {
       $main.removeClass('scroll-schedule');
-    }*/
+    }
 
     //faq
     if ($(window).scrollTop() >= $('#faq').offset().top - 100) {
